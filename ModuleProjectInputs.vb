@@ -251,7 +251,8 @@ Public Module ProjectInputsManager
                                             ByVal form3 As Form,
                                             ByVal form4 As Form,
                                             ByVal form5 As Form,
-                                            ByVal form6 As Form)
+                                            ByVal form6 As Form,
+                                            Optional ByVal newProjForm As Form = Nothing)
 
         Dim excelApp As Excel.Application = Nothing
         Dim wb As Excel.Workbook = Nothing
@@ -279,7 +280,7 @@ Public Module ProjectInputsManager
             End While
 
             Dim firstSheetUsed As Boolean = False
-            Dim allForms As Form() = {form1, form2, form3, form4, form5, form6}
+            Dim allForms As Form() = {newProjForm, form1, form2, form3, form4, form5, form6}
 
             For Each frm As Form In allForms
                 If frm Is Nothing Then Continue For
@@ -350,7 +351,8 @@ Public Module ProjectInputsManager
                                             ByVal form3 As Form,
                                             ByVal form4 As Form,
                                             ByVal form5 As Form,
-                                            ByVal form6 As Form)
+                                            ByVal form6 As Form,
+                                            Optional ByVal newProjForm As Form = Nothing)
 
         Dim excelApp As Excel.Application = Nothing
         Dim wb As Excel.Workbook = Nothing
@@ -369,7 +371,7 @@ Public Module ProjectInputsManager
 
             wb = excelApp.Workbooks.Open(filePath, ReadOnly:=True)
 
-            Dim allForms As Form() = {form1, form2, form3, form4, form5, form6}
+            Dim allForms As Form() = {newProjForm, form1, form2, form3, form4, form5, form6}
 
             For Each frm As Form In allForms
                 If frm Is Nothing Then Continue For
@@ -620,6 +622,7 @@ Public Module ProjectInputsManager
 
     Private Function GetFormTag(frm As Form) As String
         Select Case True
+            Case frm.Name.ToUpper().Contains("NEWPROJFORM") : Return "F0"
             Case frm.Name.ToUpper().Contains("FORM1") : Return "F1"
             Case frm.Name.ToUpper().Contains("FORM2") : Return "F2"
             Case frm.Name.ToUpper().Contains("FORM3") : Return "F3"

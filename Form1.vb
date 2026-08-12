@@ -5300,7 +5300,7 @@ Public Class Form1
         '==================================================
         If Not String.IsNullOrWhiteSpace(folderPath) AndAlso IO.Directory.Exists(folderPath) Then
             CurrentProjectFolder = folderPath
-            SaveAllVerticalProjectInputs(CurrentProjectFolder, Me, Form2, Form3, Form4, Form5, Form6)
+            SaveAllVerticalProjectInputs(CurrentProjectFolder, Me, Form2, Form3, Form4, Form5, Form6, NewProjForm)
             Debug.Print($"✅ Inputs saved to: {folderPath}")
         Else
             Debug.Print($"⚠ SaveProjectInputs skipped — folderPath = '{folderPath}'")
@@ -6939,7 +6939,7 @@ SkipPipeSupport:
             asmDoc.Activate()
             invApp.ActiveView.Fit(True)
 
-            SaveAllVerticalProjectInputs(CurrentProjectFolder, Me, Form2, Form3, Form4, Form5, Form6)
+            SaveAllVerticalProjectInputs(CurrentProjectFolder, Me, Form2, Form3, Form4, Form5, Form6, NewProjForm)
 
         Catch ex As Exception
             Debug.WriteLine(ex.Message)
