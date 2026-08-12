@@ -1,0 +1,32 @@
+params.Item("MATERIAL").Value = cmb_Shell_Mat_Name.Text
+
+cmb_EH_Mat_Name
+cmb_Shell_Mat_Name
+cmb_CA_Mat
+cmb_TP_Mat
+cmb_LL_Pad_Mat
+cmb_LL_Plate_Mat
+cmb_LS_Beam_Mat
+cmb_LS_Angle_Mat
+cmb_BP_Beam_Mat
+cmb_BP_Angle_Mat
+cmb_CSP_Beam_Mat
+cmb_CSP_Angle_Mat
+cmb_BoP_Beam_Mat
+cmb_BoP_Angle_Mat
+cmb_RF_Beam_Mat
+cmb_RF_Angle_Mat
+
+cmb_GLR_Mat
+cmb_NP_Mat
+cmb_NPB_Mat
+
+
+'' NOT ENABLED
+
+cmb_MD_Top_Head
+cmb_MD_Bottom_Head
+cmb_MD_leg_support
+cmb_MD_lifting_lug
+cmb_MD_name_plate
+
