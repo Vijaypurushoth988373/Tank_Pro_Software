@@ -1245,21 +1245,32 @@ Public Class Form1
             '----------------------------------------------
             ' 2a) VALIDATE PROJECT CODE (used for folder/file naming)
             '----------------------------------------------
-            If String.IsNullOrWhiteSpace(txt_Proj_Code.Text) Then
+            Dim projCode As String = If(String.IsNullOrWhiteSpace(txt_Proj_Code.Text), NewProjForm.txt_Proj_Code.Text.Trim(), txt_Proj_Code.Text.Trim())
+            If String.IsNullOrWhiteSpace(projCode) Then
                 MessageBox.Show("❌ Please enter a Project Code (txt_Proj_Code) before proceeding.", "Edit 3D")
                 Exit Sub
             End If
 
             '----------------------------------------------
-            ' 3) ASK USER WHERE TO COPY THE PROJECT
+            ' 3) DESTINATION: <NewProjForm project location>\REV_<revision>
+            '    (e.g. D:\Project Test\REV_A), falling back to a manual browse
+            '    if no project location was set up via NewProjForm
             '----------------------------------------------
-            Dim destRootFolder As String = ChooseDestinationFolder()
-            If String.IsNullOrWhiteSpace(destRootFolder) Then Exit Sub
+            Dim projLocation As String = NewProjForm.txt_Proj_Location.Text.Trim()
+            Dim revision As String = If(String.IsNullOrWhiteSpace(NewProjForm.txt_Proj_Rev.Text), "A", NewProjForm.txt_Proj_Rev.Text.Trim())
+
+            Dim destRootFolder As String
+            If Not String.IsNullOrWhiteSpace(projLocation) AndAlso Directory.Exists(projLocation) Then
+                destRootFolder = IO.Path.Combine(projLocation, "REV_" & revision)
+            Else
+                destRootFolder = ChooseDestinationFolder()
+                If String.IsNullOrWhiteSpace(destRootFolder) Then Exit Sub
+            End If
 
             '----------------------------------------------
             ' 4) COPY THE WHOLE PROJECT FOLDER TO DESTINATION
             '----------------------------------------------
-            Dim copiedIpjPath As String = CopyProjectToDestination(masterIpjPath, destRootFolder)
+            Dim copiedIpjPath As String = CopyProjectToDestination(masterIpjPath, destRootFolder, projCode)
             If String.IsNullOrWhiteSpace(copiedIpjPath) Then
                 MessageBox.Show("❌ Failed to copy project folder.", "Edit 3D")
                 Exit Sub
