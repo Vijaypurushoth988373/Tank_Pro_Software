@@ -285,22 +285,23 @@ Public Module ProjectInputsManager
     ' =====================================================================================
     ' 5️⃣ SAVE — MULTI FORM (Form1 + Form2-6, Vertical vessel)
     ' =====================================================================================
-    Public Sub SaveAllVerticalProjectInputs(ByVal projectFolder As String,
+    Public Function SaveAllVerticalProjectInputs(ByVal projectFolder As String,
                                             ByVal form1 As Form,
                                             ByVal form2 As Form,
                                             ByVal form3 As Form,
                                             ByVal form4 As Form,
                                             ByVal form5 As Form,
                                             ByVal form6 As Form,
-                                            Optional ByVal newProjForm As Form = Nothing)
+                                            Optional ByVal newProjForm As Form = Nothing) As String
 
         Dim excelApp As Excel.Application = Nothing
         Dim wb As Excel.Workbook = Nothing
+        Dim savedFilePath As String = String.Empty
 
         Try
             If String.IsNullOrWhiteSpace(projectFolder) Then
                 Debug.Print("⚠ SaveAllVerticalProjectInputs: projectFolder is empty.")
-                Exit Sub
+                Return String.Empty
             End If
 
             If Not Directory.Exists(projectFolder) Then
@@ -374,6 +375,7 @@ Public Module ProjectInputsManager
 
             If File.Exists(filePath) Then File.Delete(filePath)
             wb.SaveAs(filePath, Excel.XlFileFormat.xlOpenXMLWorkbook)
+            savedFilePath = filePath
 
             Debug.Print($"✅ Saved ALL vertical-form inputs to: {filePath}")
 
@@ -389,7 +391,9 @@ Public Module ProjectInputsManager
             If wb IsNot Nothing Then Runtime.InteropServices.Marshal.ReleaseComObject(wb)
             If excelApp IsNot Nothing Then Runtime.InteropServices.Marshal.ReleaseComObject(excelApp)
         End Try
-    End Sub
+
+        Return savedFilePath
+    End Function
 
     ' =====================================================================================
     ' 6️⃣ LOAD — MULTI FORM (Form1 + Form2-6, Vertical vessel)
@@ -704,7 +708,15 @@ Public Module ProjectInputsManager
                 projCode = frm.Name
             End If
 
-            Return Path.Combine(projectFolder, $"TankInputs_{projCode}{formType}.xlsx")
+            Dim revSuffix As String = ""
+            Try
+                If Not String.IsNullOrWhiteSpace(NewProjForm.txt_Proj_Rev.Text) Then
+                    revSuffix = "_Rev" & SanitizeFileName(NewProjForm.txt_Proj_Rev.Text.Trim())
+                End If
+            Catch
+            End Try
+
+            Return Path.Combine(projectFolder, $"TankInputs_{projCode}{revSuffix}{formType}.xlsx")
 
         Catch ex As Exception
             Debug.Print($"InputsFilePath failed: {ex.Message}")
