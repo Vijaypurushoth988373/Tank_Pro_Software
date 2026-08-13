@@ -42,7 +42,7 @@ Public Class NewProjForm
         Dim chosenFolder As String = BrowseAndLoadAllVerticalProjectInputs(Form1, Form2, Form3, Form4, Form5, Form6, Me, txt_Proj_Location.Text)
 
         If chosenFolder <> "" Then
-            txt_Proj_Location.Text = chosenFolder
+            txt_Proj_Location.Text = StripRevisionAndProjCode(chosenFolder)
             GoToMainUI()
         End If
     End Sub
@@ -67,9 +67,14 @@ Public Class NewProjForm
     Private Const MasterProjectIpjPath As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
 
     ' =====================================================================================
-    ' Project directory browse button — picks a destination, copies the master Inventor
-    ' project into it (as Form1's own copy logic does for later designs), and proceeds
-    ' to Main_UI once the copy succeeds.
+    ' Project directory browse button — picks a BASE destination, copies the master
+    ' Inventor project into <selected folder>\REV_<revision>\<ProjCode> (matching what
+    ' Form1's Create 3D / Update 3D derive from txt_Proj_Location + txt_Proj_Rev), and
+    ' proceeds to Main_UI once the copy succeeds.
+    '
+    ' txt_Proj_Location is kept as the BASE folder the user picked (not the deeper copied
+    ' path) — Form1 re-derives REV_<rev>\<ProjCode> from it later, so storing the nested
+    ' copy path here would double it up on the next Create/Update 3D.
     ' =====================================================================================
     Private Sub btn_proj_dir_Click(sender As Object, e As EventArgs) Handles btn_proj_dir.Click
         If String.IsNullOrWhiteSpace(txt_Proj_Code.Text) Then
@@ -92,11 +97,14 @@ Public Class NewProjForm
 
             If dlg.ShowDialog() <> DialogResult.OK Then Exit Sub
 
-            Dim copiedIpjPath As String = Form1.CopyProjectToDestination(MasterProjectIpjPath, dlg.SelectedPath, txt_Proj_Code.Text.Trim())
+            Dim revision As String = If(String.IsNullOrWhiteSpace(txt_Proj_Rev.Text), "A", txt_Proj_Rev.Text.Trim())
+            Dim destRootFolder As String = Path.Combine(dlg.SelectedPath, "REV_" & revision)
+
+            Dim copiedIpjPath As String = Form1.CopyProjectToDestination(MasterProjectIpjPath, destRootFolder, txt_Proj_Code.Text.Trim())
             If String.IsNullOrWhiteSpace(copiedIpjPath) Then Exit Sub ' CopyProjectToDestination already showed the error
 
             Dim copiedProjectFolder As String = Path.GetDirectoryName(copiedIpjPath)
-            txt_Proj_Location.Text = copiedProjectFolder
+            txt_Proj_Location.Text = dlg.SelectedPath
 
             ' Keep Form1's own Project Code in sync — it drives its own copy/design flow later.
             Form1.txt_Proj_Code.Text = txt_Proj_Code.Text
@@ -113,24 +121,50 @@ Public Class NewProjForm
     ' =====================================================================================
 
     Private Sub SaveCurrentProject()
-        Dim folder As String = txt_Proj_Location.Text
+        Dim baseFolder As String = txt_Proj_Location.Text
 
-        If String.IsNullOrWhiteSpace(folder) OrElse Not Directory.Exists(folder) Then
+        If String.IsNullOrWhiteSpace(baseFolder) OrElse Not Directory.Exists(baseFolder) Then
             Using dlg As New FolderBrowserDialog()
                 dlg.Description = "Select project directory to save into"
                 If dlg.ShowDialog() <> DialogResult.OK Then Exit Sub
-                folder = dlg.SelectedPath
-                txt_Proj_Location.Text = folder
+                baseFolder = dlg.SelectedPath
+                txt_Proj_Location.Text = baseFolder
             End Using
         End If
 
-        Dim savedPath As String = SaveAllVerticalProjectInputs(folder, Form1, Form2, Form3, Form4, Form5, Form6, Me)
+        ' Save alongside the model, in the same REV_<rev>\<ProjCode> folder
+        ' Create 3D / Update 3D / btn_proj_dir use.
+        Dim revision As String = If(String.IsNullOrWhiteSpace(txt_Proj_Rev.Text), "A", txt_Proj_Rev.Text.Trim())
+        Dim revisionFolder As String = Path.Combine(baseFolder, "REV_" & revision)
+        Dim projectFolder As String = If(String.IsNullOrWhiteSpace(txt_Proj_Code.Text),
+                                         revisionFolder,
+                                         Path.Combine(revisionFolder, txt_Proj_Code.Text.Trim()))
+
+        Dim savedPath As String = SaveAllVerticalProjectInputs(projectFolder, Form1, Form2, Form3, Form4, Form5, Form6, Me)
 
         If Not String.IsNullOrWhiteSpace(savedPath) Then
             MessageBox.Show("✅ Project saved: " & Path.GetFileName(savedPath), "Save Project",
                             MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
+
+    ''' Given a project folder that may be "<base>\REV_<x>\<ProjCode>" (as produced by
+    ''' Save/Create 3D/Update 3D), returns the base folder so it can be stored back into
+    ''' txt_Proj_Location without doubling the REV_<rev>\<ProjCode> suffix on the next save.
+    ''' Returns the folder unchanged if it doesn't match that pattern (e.g. an older/manually
+    ''' organized save).
+    Private Function StripRevisionAndProjCode(projectFolder As String) As String
+        Dim revFolder As String = Path.GetDirectoryName(projectFolder)
+        If revFolder Is Nothing Then Return projectFolder
+
+        Dim revSegment As String = Path.GetFileName(revFolder)
+        If revSegment.StartsWith("REV_", StringComparison.OrdinalIgnoreCase) Then
+            Dim baseFolder As String = Path.GetDirectoryName(revFolder)
+            If Not String.IsNullOrWhiteSpace(baseFolder) Then Return baseFolder
+        End If
+
+        Return projectFolder
+    End Function
 
     Private Sub GoToMainUI()
         Main_UI.StartPosition = FormStartPosition.Manual
