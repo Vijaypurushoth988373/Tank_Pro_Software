@@ -74,19 +74,49 @@ Public Class NewProjForm
                         MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
+    ' The master Inventor project this app initializes every new project from —
+    ' same literal path Form1 itself falls back to (see its ipjPath default).
+    Private Const MasterProjectIpjPath As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
+
     ' =====================================================================================
-    ' Project directory browse button
+    ' Project directory browse button — picks a destination, copies the master Inventor
+    ' project into it (as Form1's own copy logic does for later designs), and proceeds
+    ' to Main_UI once the copy succeeds.
     ' =====================================================================================
     Private Sub btn_proj_dir_Click(sender As Object, e As EventArgs) Handles btn_proj_dir.Click
+        If String.IsNullOrWhiteSpace(txt_Proj_Code.Text) Then
+            MessageBox.Show("Enter a Project Code before selecting the project directory.", "Project Directory",
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        If Not File.Exists(MasterProjectIpjPath) Then
+            MessageBox.Show("Master project file not found:" & vbCrLf & MasterProjectIpjPath, "Project Directory",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
+
         Using dlg As New FolderBrowserDialog()
             dlg.Description = "Select project directory"
             If Directory.Exists(txt_Proj_Location.Text) Then
                 dlg.SelectedPath = txt_Proj_Location.Text
             End If
 
-            If dlg.ShowDialog() = DialogResult.OK Then
-                txt_Proj_Location.Text = dlg.SelectedPath
-            End If
+            If dlg.ShowDialog() <> DialogResult.OK Then Exit Sub
+
+            Dim copiedIpjPath As String = Form1.CopyProjectToDestination(MasterProjectIpjPath, dlg.SelectedPath, txt_Proj_Code.Text.Trim())
+            If String.IsNullOrWhiteSpace(copiedIpjPath) Then Exit Sub ' CopyProjectToDestination already showed the error
+
+            Dim copiedProjectFolder As String = Path.GetDirectoryName(copiedIpjPath)
+            txt_Proj_Location.Text = copiedProjectFolder
+
+            ' Keep Form1's own Project Code in sync — it drives its own copy/design flow later.
+            Form1.txt_Proj_Code.Text = txt_Proj_Code.Text
+
+            MessageBox.Show("✅ Project created at:" & vbCrLf & copiedProjectFolder, "Project Directory",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            GoToMainUI()
         End Using
     End Sub
 

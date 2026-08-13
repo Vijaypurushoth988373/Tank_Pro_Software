@@ -1405,15 +1405,17 @@ Public Class Form1
     '         If the .ipj contains an absolute "Workspace=" / "Frequently Used Subfolders="
     '         entry pointing at the master folder, it is rewritten to point at the copy.
     '==========================================================================================
-    Private Function CopyProjectToDestination(masterIpjPath As String, destRootFolder As String) As String
+    Friend Function CopyProjectToDestination(masterIpjPath As String, destRootFolder As String, Optional overrideProjCode As String = Nothing) As String
 
         Try
             Dim sourceFolder As String = IO.Path.GetDirectoryName(masterIpjPath)
 
             '--------------------------------------------
             ' Build destination folder/file names from txt_Proj_Code
+            ' (or overrideProjCode, e.g. when called from NewProjForm before
+            ' this form's own txt_Proj_Code has been populated)
             '--------------------------------------------
-            Dim projCode As String = SanitizeForFileName(txt_Proj_Code.Text.Trim())
+            Dim projCode As String = SanitizeForFileName(If(String.IsNullOrWhiteSpace(overrideProjCode), txt_Proj_Code.Text.Trim(), overrideProjCode.Trim()))
 
             If String.IsNullOrWhiteSpace(projCode) Then
                 MessageBox.Show("❌ Project Code (txt_Proj_Code) is empty or invalid.", "Edit 3D")
