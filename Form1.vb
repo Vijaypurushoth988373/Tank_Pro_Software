@@ -5246,15 +5246,32 @@ Public Class Form1
                 If invApp IsNot Nothing Then
                     Try
                         '--------------------------------------
-                        ' Default project path
+                        ' Master project file
                         '--------------------------------------
                         Dim ipjPath As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
                         'Dim ipjPath As String = "Z:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
 
                         '--------------------------------------
-                        ' Get project folder
+                        ' Copy the master project into
+                        '   <NewProjForm project location>\REV_<revision>\<ProjCode>
+                        ' e.g. D:\Project Test\REV_A\TEST_26_001
+                        ' (falls back to the master folder itself if no project
+                        ' location/code was set up via NewProjForm)
                         '--------------------------------------
-                        folderPath = IO.Path.GetDirectoryName(ipjPath)
+                        Dim projLocation As String = NewProjForm.txt_Proj_Location.Text.Trim()
+                        Dim revision As String = If(String.IsNullOrWhiteSpace(NewProjForm.txt_Proj_Rev.Text), "A", NewProjForm.txt_Proj_Rev.Text.Trim())
+                        Dim projCode As String = If(String.IsNullOrWhiteSpace(txt_Proj_Code.Text), NewProjForm.txt_Proj_Code.Text.Trim(), txt_Proj_Code.Text.Trim())
+
+                        If Not String.IsNullOrWhiteSpace(projLocation) AndAlso Directory.Exists(projLocation) AndAlso Not String.IsNullOrWhiteSpace(projCode) Then
+                            Dim destRootFolder As String = IO.Path.Combine(projLocation, "REV_" & revision)
+                            Dim copiedIpjPath As String = CopyProjectToDestination(ipjPath, destRootFolder, projCode)
+
+                            folderPath = If(Not String.IsNullOrWhiteSpace(copiedIpjPath),
+                                            IO.Path.GetDirectoryName(copiedIpjPath),
+                                            IO.Path.GetDirectoryName(ipjPath))
+                        Else
+                            folderPath = IO.Path.GetDirectoryName(ipjPath)
+                        End If
 
                         '--------------------------------------
                         ' Activate project
