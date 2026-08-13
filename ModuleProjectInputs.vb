@@ -243,6 +243,46 @@ Public Module ProjectInputsManager
     End Function
 
     ' =====================================================================================
+    ' 4️⃣b BROWSE AND LOAD — MULTI FORM (Form1 + Form2-6 + NewProjForm, Vertical vessel)
+    ' Use this for files produced by SaveAllVerticalProjectInputs (F0_Inputs, F1_Inputs, ...)
+    ' — BrowseAndLoadProjectInputs/LoadProjectInputsFromFile only understand the single-form
+    ' "Inputs" sheet name and silently load nothing against a vertical-save workbook.
+    ' =====================================================================================
+    Public Function BrowseAndLoadAllVerticalProjectInputs(ByVal form1 As Form,
+                                                           ByVal form2 As Form,
+                                                           ByVal form3 As Form,
+                                                           ByVal form4 As Form,
+                                                           ByVal form5 As Form,
+                                                           ByVal form6 As Form,
+                                                           Optional ByVal newProjForm As Form = Nothing,
+                                                           Optional ByVal currentFolder As String = "") As String
+        Using dlg As New OpenFileDialog()
+            dlg.Title = "Select saved project inputs file"
+            dlg.Filter = "Tank Inputs|TankInputs_*.xlsx|Excel Files|*.xlsx"
+            dlg.RestoreDirectory = True
+            dlg.CheckFileExists = True
+            dlg.Multiselect = False
+
+            If Not String.IsNullOrWhiteSpace(currentFolder) AndAlso Directory.Exists(currentFolder) Then
+                dlg.InitialDirectory = currentFolder
+            Else
+                dlg.InitialDirectory = "D:\TEST"
+            End If
+
+            If dlg.ShowDialog() = DialogResult.OK Then
+                Dim fileToLoad As String = dlg.FileName
+                If Not File.Exists(fileToLoad) Then
+                    MessageBox.Show("❌ File not found: " & fileToLoad)
+                    Return ""
+                End If
+                LoadAllVerticalProjectInputs(fileToLoad, form1, form2, form3, form4, form5, form6, newProjForm)
+                Return Path.GetDirectoryName(fileToLoad)
+            End If
+        End Using
+        Return ""
+    End Function
+
+    ' =====================================================================================
     ' 5️⃣ SAVE — MULTI FORM (Form1 + Form2-6, Vertical vessel)
     ' =====================================================================================
     Public Sub SaveAllVerticalProjectInputs(ByVal projectFolder As String,

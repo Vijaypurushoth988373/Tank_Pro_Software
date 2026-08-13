@@ -1337,7 +1337,7 @@ Public Class Form1
     ' Name it: Btn_Load_Inputs
     '=========================================
     Private Sub Btn_Load_Inputs_Click(sender As Object, e As EventArgs) Handles Btn_Load_Inputs.Click
-        Dim chosenFolder As String = BrowseAndLoadProjectInputs(Me)
+        Dim chosenFolder As String = BrowseAndLoadAllVerticalProjectInputs(Me, Form2, Form3, Form4, Form5, Form6, NewProjForm, CurrentProjectFolder)
         If chosenFolder <> "" Then
             '✅ Update CurrentProjectFolder so Edit 3D
             '   and 2D Drawing also use this project
