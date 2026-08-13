@@ -2,17 +2,9 @@ Imports System.IO
 
 Public Class NewProjForm
 
-    Private Const MaxRecentEntries As Integer = 8
-
-    Private ReadOnly RecentListPath As String =
-        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "TankPro", "recent_projects.txt")
-
-    Private Sub NewProjForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        RefreshRecentMenu()
-    End Sub
-
     ' =====================================================================================
-    ' File > New Project — clears this form's project fields and proceeds to Main_UI
+    ' File > New Project — resets Revision to "A" and clears Project Code/Directory so the
+    ' user enters a code and picks a location (via btn_proj_dir) before continuing.
     ' =====================================================================================
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
         If Not String.IsNullOrWhiteSpace(txt_Proj_Code.Text) OrElse Not String.IsNullOrWhiteSpace(txt_Proj_Location.Text) Then
@@ -26,8 +18,6 @@ Public Class NewProjForm
         txt_Proj_Code.Text = ""
         txt_Proj_Rev.Text = "A"
         txt_Proj_Location.Text = ""
-
-        GoToMainUI()
     End Sub
 
     ' =====================================================================================
@@ -46,17 +36,15 @@ Public Class NewProjForm
     End Sub
 
     ' =====================================================================================
-    ' File > Open — browse for a saved TankInputs_*.xlsx and load it
+    ' File > Open/Load — browse for a saved TankInputs_*.xlsx and load it
     ' =====================================================================================
     Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
-        OpenProjectViaBrowse()
-    End Sub
+        Dim chosenFolder As String = BrowseAndLoadAllVerticalProjectInputs(Form1, Form2, Form3, Form4, Form5, Form6, Me, txt_Proj_Location.Text)
 
-    ' =====================================================================================
-    ' File > Upload Data — same as Open (load an existing project's saved inputs)
-    ' =====================================================================================
-    Private Sub UploadDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UploadDataToolStripMenuItem.Click
-        OpenProjectViaBrowse()
+        If chosenFolder <> "" Then
+            txt_Proj_Location.Text = chosenFolder
+            GoToMainUI()
+        End If
     End Sub
 
     ' =====================================================================================
@@ -139,32 +127,9 @@ Public Class NewProjForm
         Dim savedPath As String = SaveAllVerticalProjectInputs(folder, Form1, Form2, Form3, Form4, Form5, Form6, Me)
 
         If Not String.IsNullOrWhiteSpace(savedPath) Then
-            AddToRecentList(savedPath)
             MessageBox.Show("✅ Project saved: " & Path.GetFileName(savedPath), "Save Project",
                             MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
-    End Sub
-
-    Private Sub OpenProjectViaBrowse()
-        Dim chosenFolder As String = BrowseAndLoadAllVerticalProjectInputs(Form1, Form2, Form3, Form4, Form5, Form6, Me, txt_Proj_Location.Text)
-
-        If chosenFolder <> "" Then
-            txt_Proj_Location.Text = chosenFolder
-            GoToMainUI()
-        End If
-    End Sub
-
-    Private Sub LoadProjectDirect(filePath As String)
-        If Not File.Exists(filePath) Then
-            MessageBox.Show("File not found: " & filePath, "Open Recent",
-                            MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End If
-
-        LoadAllVerticalProjectInputs(filePath, Form1, Form2, Form3, Form4, Form5, Form6, Me)
-        txt_Proj_Location.Text = Path.GetDirectoryName(filePath)
-        AddToRecentList(filePath)
-        GoToMainUI()
     End Sub
 
     Private Sub GoToMainUI()
@@ -202,64 +167,5 @@ Public Class NewProjForm
 
         Return rev & "-2"
     End Function
-
-    Private Sub AddToRecentList(filePath As String)
-        Try
-            Dim dir As String = Path.GetDirectoryName(RecentListPath)
-            If Not Directory.Exists(dir) Then Directory.CreateDirectory(dir)
-
-            Dim entries As New List(Of String)
-            If File.Exists(RecentListPath) Then
-                entries.AddRange(File.ReadAllLines(RecentListPath))
-            End If
-
-            entries.RemoveAll(Function(p) p.Equals(filePath, StringComparison.OrdinalIgnoreCase))
-            entries.Insert(0, filePath)
-
-            If entries.Count > MaxRecentEntries Then
-                entries = entries.GetRange(0, MaxRecentEntries)
-            End If
-
-            File.WriteAllLines(RecentListPath, entries)
-            RefreshRecentMenu()
-
-        Catch ex As Exception
-            Debug.Print($"⚠ AddToRecentList failed: {ex.Message}")
-        End Try
-    End Sub
-
-    ''' The "Open Recent" menu item's control name is SaveAsToolStripMenuItem
-    ''' (a pre-existing naming mismatch in the Designer file — its .Text is "Open Recent").
-    Private Sub RefreshRecentMenu()
-        Try
-            SaveAsToolStripMenuItem.DropDownItems.Clear()
-
-            If Not File.Exists(RecentListPath) Then
-                Dim emptyItem As New ToolStripMenuItem("(No recent projects)")
-                emptyItem.Enabled = False
-                SaveAsToolStripMenuItem.DropDownItems.Add(emptyItem)
-                Exit Sub
-            End If
-
-            Dim entries As String() = File.ReadAllLines(RecentListPath)
-            If entries.Length = 0 Then
-                Dim emptyItem As New ToolStripMenuItem("(No recent projects)")
-                emptyItem.Enabled = False
-                SaveAsToolStripMenuItem.DropDownItems.Add(emptyItem)
-                Exit Sub
-            End If
-
-            For Each entry As String In entries
-                Dim capturedPath As String = entry
-                Dim item As New ToolStripMenuItem(Path.GetFileName(capturedPath))
-                item.ToolTipText = capturedPath
-                AddHandler item.Click, Sub(s, e) LoadProjectDirect(capturedPath)
-                SaveAsToolStripMenuItem.DropDownItems.Add(item)
-            Next
-
-        Catch ex As Exception
-            Debug.Print($"⚠ RefreshRecentMenu failed: {ex.Message}")
-        End Try
-    End Sub
 
 End Class

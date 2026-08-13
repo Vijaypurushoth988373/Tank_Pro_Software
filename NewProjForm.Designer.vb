@@ -37,9 +37,7 @@ Partial Class NewProjForm
         Me.NewRevisionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RevisionsComparingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UploadDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -147,7 +145,7 @@ Partial Class NewProjForm
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.NewRevisionToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.RevisionsComparingToolStripMenuItem, Me.UploadDataToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.NewRevisionToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.RevisionsComparingToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
         Me.FileToolStripMenuItem.Text = "File"
@@ -168,7 +166,7 @@ Partial Class NewProjForm
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
-        Me.OpenToolStripMenuItem.Text = "Open"
+        Me.OpenToolStripMenuItem.Text = "Open/Load"
         '
         'SaveToolStripMenuItem
         '
@@ -176,23 +174,11 @@ Partial Class NewProjForm
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
-        'SaveAsToolStripMenuItem
-        '
-        Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
-        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
-        Me.SaveAsToolStripMenuItem.Text = "Open Recent"
-        '
         'RevisionsComparingToolStripMenuItem
         '
         Me.RevisionsComparingToolStripMenuItem.Name = "RevisionsComparingToolStripMenuItem"
         Me.RevisionsComparingToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
         Me.RevisionsComparingToolStripMenuItem.Text = "Revisions comparing"
-        '
-        'UploadDataToolStripMenuItem
-        '
-        Me.UploadDataToolStripMenuItem.Name = "UploadDataToolStripMenuItem"
-        Me.UploadDataToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
-        Me.UploadDataToolStripMenuItem.Text = "Upload Data"
         '
         'NewProjForm
         '
@@ -232,7 +218,5 @@ Partial Class NewProjForm
     Friend WithEvents NewRevisionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SaveAsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RevisionsComparingToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UploadDataToolStripMenuItem As ToolStripMenuItem
 End Class
