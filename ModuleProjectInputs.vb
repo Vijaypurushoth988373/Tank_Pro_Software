@@ -282,39 +282,48 @@ Public Module ProjectInputsManager
             Dim firstSheetUsed As Boolean = False
             Dim allForms As Form() = {newProjForm, form1, form2, form3, form4, form5, form6}
 
+            ' Tags whose "*_Inputs" control-value sheet is skipped — their DataGridViews
+            ' (e.g. F3's Stiffener grid) are still saved as DGV sheets, and the
+            ' MOD_Skirt/MOD_Lug/MOD_Stiff/MOD_LegSup module sheets cover their non-grid data.
+            Dim skipInputsSheetTags As New HashSet(Of String)(StringComparer.OrdinalIgnoreCase) From {"F2", "F3", "F4", "F5", "F6"}
+
             For Each frm As Form In allForms
                 If frm Is Nothing Then Continue For
 
                 Dim tag As String = GetFormTag(frm)
-
-                Dim inputSheet As Excel.Worksheet
-                If Not firstSheetUsed Then
-                    inputSheet = CType(wb.Sheets(1), Excel.Worksheet)
-                    firstSheetUsed = True
-                Else
-                    inputSheet = CType(wb.Sheets.Add(After:=wb.Sheets(wb.Sheets.Count)), Excel.Worksheet)
-                End If
-                inputSheet.Name = TruncateSheetName(tag & "_Inputs")
-
-                inputSheet.Cells(1, 1) = "Type"
-                inputSheet.Cells(1, 2) = "Name"
-                inputSheet.Cells(1, 3) = "Value"
-                With inputSheet.Range("A1:C1")
-                    .Font.Bold = True
-                    .Interior.Color = RGB(220, 230, 241)
-                End With
-
-                Dim rowIndex As Integer = 2
                 Dim dgvList As New List(Of DataGridView)
 
-                SaveControlsRecursive(frm.Controls, inputSheet, rowIndex, dgvList)
-                inputSheet.Columns("A:C").AutoFit()
+                If skipInputsSheetTags.Contains(tag) Then
+                    CollectDataGridViewsRecursive(frm.Controls, dgvList)
+                Else
+                    Dim inputSheet As Excel.Worksheet
+                    If Not firstSheetUsed Then
+                        inputSheet = CType(wb.Sheets(1), Excel.Worksheet)
+                        firstSheetUsed = True
+                    Else
+                        inputSheet = CType(wb.Sheets.Add(After:=wb.Sheets(wb.Sheets.Count)), Excel.Worksheet)
+                    End If
+                    inputSheet.Name = TruncateSheetName(tag & "_Inputs")
+
+                    inputSheet.Cells(1, 1) = "Type"
+                    inputSheet.Cells(1, 2) = "Name"
+                    inputSheet.Cells(1, 3) = "Value"
+                    With inputSheet.Range("A1:C1")
+                        .Font.Bold = True
+                        .Interior.Color = RGB(220, 230, 241)
+                    End With
+
+                    Dim rowIndex As Integer = 2
+                    SaveControlsRecursive(frm.Controls, inputSheet, rowIndex, dgvList)
+                    inputSheet.Columns("A:C").AutoFit()
+                End If
 
                 For Each dgv As DataGridView In dgvList
                     SaveDGVSheet(wb, dgv, tag)
                 Next
 
-                Debug.Print($"✅ Saved form {frm.Name} as tag {tag} — {dgvList.Count} DGVs")
+                Debug.Print($"✅ Saved form {frm.Name} as tag {tag} — {dgvList.Count} DGVs" &
+                            If(skipInputsSheetTags.Contains(tag), " (Inputs sheet skipped)", ""))
             Next
 
             '==================================================
@@ -710,6 +719,17 @@ Public Module ProjectInputsManager
             Catch ex As Exception
                 Debug.Print($"SaveControlsRecursive: skipped '{ctrl.Name}': {ex.Message}")
             End Try
+        Next
+    End Sub
+
+    Private Sub CollectDataGridViewsRecursive(controls As Control.ControlCollection, dgvList As List(Of DataGridView))
+        For Each ctrl As Control In controls
+            If TypeOf ctrl Is DataGridView Then
+                dgvList.Add(CType(ctrl, DataGridView))
+            End If
+            If ctrl.Controls.Count > 0 Then
+                CollectDataGridViewsRecursive(ctrl.Controls, dgvList)
+            End If
         Next
     End Sub
 
