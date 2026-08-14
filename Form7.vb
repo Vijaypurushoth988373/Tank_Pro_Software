@@ -806,11 +806,15 @@ Public Class Form7
                 Dim pipePath As String = parts("PIPE")
                 Dim flangePath As String = parts("FLANGE")
                 Dim padPath As String = If(parts.ContainsKey("PAD"), parts("PAD"), "")
+                Dim pipePtfePath As String = If(parts.ContainsKey("PIPE_PTFE"), parts("PIPE_PTFE"), "")
+                Dim flangePtfePath As String = If(parts.ContainsKey("FLANGE_PTFE"), parts("FLANGE_PTFE"), "")
+                Dim padPtfePath As String = If(parts.ContainsKey("PAD_PTFE"), parts("PAD_PTFE"), "")
                 BuildNozzleAssembly_Shell_HOR(invApp, nozAsm,
         pipePath, flangePath, padPath,
         SelectedClient, nozzleName, nozzleODmm, pipeThkMm,
         pipeLengthMm, outsideProjMm, rfPadODmm, rfPadThkMm,
-        nps, isManway, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg)
+        nps, isManway, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg,
+        pipePtfePath, flangePtfePath, padPtfePath)
 
             End If
 
@@ -2297,7 +2301,8 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
     End Function
 
     Public Sub BuildNozzleAssembly_Shell_HOR(invApp As Inventor.Application, nozAsm As AssemblyDocument, pipePath As String, flangePath As String, rfPadPath As String, SelectedClient As String, nozzleName As String, pipeODmm As Double,
-    pipeThkMm As Double, pipeLengthMm As Double, outsideProjMm As Double, rfPadODmm As Double, rfPadThkMm As Double, nps As String, isManway As Boolean, nozzleDistanceMm As Double, offsetDistMm As Double, angleDeg As Double)
+    pipeThkMm As Double, pipeLengthMm As Double, outsideProjMm As Double, rfPadODmm As Double, rfPadThkMm As Double, nps As String, isManway As Boolean, nozzleDistanceMm As Double, offsetDistMm As Double, angleDeg As Double,
+    Optional pipePtfePath As String = "", Optional flangePtfePath As String = "", Optional padPtfePath As String = "")
 
         Dim asmDef = nozAsm.ComponentDefinition
         Dim tg = invApp.TransientGeometry
@@ -2309,6 +2314,13 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
 
         SetPipeDimensions_HOR(pipeOcc, pipeODmm, pipeThkMm, pipeLengthMm, nozzleDistanceMm, offsetDistMm)
 
+        '================ PTFE LINING — PIPE =================
+        If pipePtfePath <> "" Then
+            Dim pipePtfeOcc = asmDef.Occurrences.Add(pipePtfePath, tg.CreateMatrix())
+            pipePtfeOcc.Name = nozzleName & "_PIPE_PTFE"
+            PlaceAndConstrainShellComponent(nozAsm, pipeOcc, pipePtfeOcc, nozzleName & "_PIPE_PTFE")
+        End If
+
         '================ FLANGE =================
         Dim flangeOcc = asmDef.Occurrences.Add(flangePath, tg.CreateMatrix())
         flangeOcc.Name = nozzleName & "_FLANGE"
@@ -2317,6 +2329,13 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
         ConstrainFlangeToPipe_Shell_HOR(nozAsm, pipeOcc, flangeOcc, nozzleName, angleDeg)
 
         SetFlangeOutsideProjection(flangeOcc, outsideProjMm)
+
+        '================ PTFE LINING — FLANGE =================
+        If flangePtfePath <> "" Then
+            Dim flangePtfeOcc = asmDef.Occurrences.Add(flangePtfePath, tg.CreateMatrix())
+            flangePtfeOcc.Name = nozzleName & "_FLANGE_PTFE"
+            PlaceAndConstrainShellComponent(nozAsm, flangeOcc, flangePtfeOcc, nozzleName & "_FLANGE_PTFE")
+        End If
 
         '================ RF PAD =================
         If rfPadPath <> "" Then
@@ -2328,6 +2347,13 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
 
             ' Pipe → RF PAD
             ConstrainPadToPipe_Shell_HOR(nozAsm, pipeOcc, padOcc, isManway)
+
+            '================ PTFE LINING — RF PAD =================
+            If padPtfePath <> "" Then
+                Dim padPtfeOcc = asmDef.Occurrences.Add(padPtfePath, tg.CreateMatrix())
+                padPtfeOcc.Name = nozzleName & "_RF_PAD_PTFE"
+                PlaceAndConstrainShellComponent(nozAsm, padOcc, padPtfeOcc, nozzleName & "_RF_PAD_PTFE")
+            End If
 
         End If
 
@@ -4143,6 +4169,27 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
             End If
             result("PIPE") = nozzlePipe
 
+            '--------------------------------------------------
+            ' 🟦 PTFE LINING — PIPE (ARAMCO only, "PTFE LINING" checkbox)
+            ' Standard pipe above is kept as-is; this is placed alongside it.
+            '--------------------------------------------------
+            If SelectedClient = "ARAMCO" AndAlso CheckBox1.Checked Then
+
+                Dim ptfeFolder As String = IO.Path.Combine(projectFolder, "ARAMCO\PTFE_LINING")
+                Dim pipePtfeMaster As String = IO.Path.Combine(ptfeFolder, $"PIPE_ANG_{ang}_{dir}_PTFE.ipt")
+
+                If Not IO.File.Exists(pipePtfeMaster) Then
+                    Throw New Exception($"❌ PTFE pipe master missing : {pipePtfeMaster}")
+                End If
+
+                Dim nozzlePipePtfe As String = IO.Path.Combine(nozzleFolder, nozzleName & "_PIPE_PTFE.ipt")
+                If Not IO.File.Exists(nozzlePipePtfe) Then
+                    IO.File.Copy(pipePtfeMaster, nozzlePipePtfe, True)
+                End If
+                result("PIPE_PTFE") = nozzlePipePtfe
+
+            End If
+
         End If
 
         '==================================================
@@ -4156,12 +4203,47 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         result("FLANGE") = nozzleFlange
 
         '==================================================
+        ' PTFE LINING — FLANGE (ARAMCO only, "PTFE LINING" checkbox)
+        ' Standard flange above is kept as-is; this is placed alongside it.
+        '==================================================
+        If SelectedClient = "ARAMCO" AndAlso CheckBox1.Checked Then
+
+            Dim ptfeFolder As String = IO.Path.Combine(projectFolder, "ARAMCO\PTFE_LINING")
+            Dim flangePtfeFileName As String
+            Select Case flangeClass.Trim().ToUpper()
+                Case "150", "150#"
+                    flangePtfeFileName = $"FLANGE_{nps}_INCH_PTFE.ipt"
+                Case "300", "300#"
+                    flangePtfeFileName = $"FLANGE_{nps}_INCH_CL300_PTFE.ipt"
+                Case Else
+                    Throw New Exception($"❌ Unsupported flange class for PTFE lining: {flangeClass}")
+            End Select
+            Dim flangePtfeMaster As String = IO.Path.Combine(ptfeFolder, flangePtfeFileName)
+
+            If Not IO.File.Exists(flangePtfeMaster) Then
+                Throw New Exception($"❌ PTFE flange master missing : {flangePtfeMaster}")
+            End If
+
+            Dim nozzleFlangePtfe As String = IO.Path.Combine(nozzleFolder, nozzleName & "_FLANGE_PTFE.ipt")
+            If Not IO.File.Exists(nozzleFlangePtfe) Then
+                IO.File.Copy(flangePtfeMaster, nozzleFlangePtfe, True)
+            End If
+            result("FLANGE_PTFE") = nozzleFlangePtfe
+
+        End If
+
+        '==================================================
         ' OPTIONAL RF PAD
         '==================================================
         If includePad Then
 
-            Dim rfPadFileName As String = $"RF_PAD_ANG_{ang}_{dir}.ipt"
-            Dim rfPadMaster As String = IO.Path.Combine(projectFolder, rfPadFileName)
+            Dim usePtfeLining As Boolean = (SelectedClient = "ARAMCO" AndAlso CheckBox1.Checked)
+            Dim ptfeFolder As String = IO.Path.Combine(projectFolder, "ARAMCO\PTFE_LINING")
+
+            ' With PTFE lining, the base pad is the "_FOR_LINING" variant (designed to sit
+            ' against a PTFE-lined shell) instead of the standard RF pad.
+            Dim rfPadFileName As String = If(usePtfeLining, $"RF_PAD_ANG_{ang}_{dir}_FOR_LINING.ipt", $"RF_PAD_ANG_{ang}_{dir}.ipt")
+            Dim rfPadMaster As String = IO.Path.Combine(If(usePtfeLining, ptfeFolder, projectFolder), rfPadFileName)
 
             If Not IO.File.Exists(rfPadMaster) Then
                 Throw New Exception($"❌ RF Pad master missing : {rfPadMaster}")
@@ -4172,6 +4254,22 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
                 IO.File.Copy(rfPadMaster, padPath, True)
             End If
             result("PAD") = padPath
+
+            If usePtfeLining Then
+
+                Dim rfPadPtfeMaster As String = IO.Path.Combine(ptfeFolder, $"RF_PAD_ANG_{ang}_{dir}_PTFE.ipt")
+
+                If Not IO.File.Exists(rfPadPtfeMaster) Then
+                    Throw New Exception($"❌ PTFE RF Pad master missing : {rfPadPtfeMaster}")
+                End If
+
+                Dim padPtfePath As String = IO.Path.Combine(nozzleFolder, nozzleName & "_RF_PAD_PTFE.ipt")
+                If Not IO.File.Exists(padPtfePath) Then
+                    IO.File.Copy(rfPadPtfeMaster, padPtfePath, True)
+                End If
+                result("PAD_PTFE") = padPtfePath
+
+            End If
 
         End If
 
