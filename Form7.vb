@@ -2675,15 +2675,15 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
 
         Dim pDef As PartComponentDefinition = CType(padOcc.Definition, PartComponentDefinition)
 
-        GetParameterSafe(pDef, "PAD_OD")?.Value = rfPadODmm / 10.0
+        SetParamSafe(pDef, "PAD_OD", rfPadODmm / 10.0)
 
-        GetParameterSafe(pDef, "PAD_THK")?.Value = rfPadThkMm / 10.0
+        SetParamSafe(pDef, "PAD_THK", rfPadThkMm / 10.0)
 
-        GetParameterSafe(pDef, "PIPE_OD")?.Value = pipeODmm / 10.0
+        SetParamSafe(pDef, "PIPE_OD", pipeODmm / 10.0)
 
-        GetParameterSafe(pDef, "DISTANCE")?.Value = nozzleDistanceMm / 10.0
+        SetParamSafe(pDef, "DISTANCE", nozzleDistanceMm / 10.0)
 
-        GetParameterSafe(pDef, "PIPE_OFFSET")?.Value = offsetDistMm / 10.0
+        SetParamSafe(pDef, "PIPE_OFFSET", offsetDistMm / 10.0)
 
     End Sub
 
@@ -4785,6 +4785,13 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         Debug.Print($"⚠ Parameter not found (skipped): {paramName}")
         Return Nothing
     End Function
+
+    ''' Sets a parameter's value if it exists; silently skips (logging via
+    ''' GetParameterSafe) if it doesn't, instead of throwing.
+    Private Sub SetParamSafe(pDef As PartComponentDefinition, paramName As String, value As Double)
+        Dim p As Parameter = GetParameterSafe(pDef, paramName)
+        If p IsNot Nothing Then p.Value = value
+    End Sub
 
     Private Sub AddNewRowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddNewRowToolStripMenuItem.Click
         ' Adds a new empty row to the DataGridView named DGV_Shell_Head_Tab
