@@ -13204,6 +13204,13 @@ SkipPipeSupport:
         Return Nothing
     End Function
 
+    ''' Sets a parameter's value if it exists; silently skips (logging via
+    ''' GetParameterSafe) if it doesn't, instead of throwing.
+    Private Sub SetParamSafe(pDef As PartComponentDefinition, paramName As String, value As Double)
+        Dim p As Parameter = GetParameterSafe(pDef, paramName)
+        If p IsNot Nothing Then p.Value = value
+    End Sub
+
     Public Sub SetRFPadParameters(padOcc As ComponentOccurrence, rfPadODmm As Double, rfPadThkMm As Double, pipeODmm As Double, Optional padDistXmm As Double = 0, Optional padDistYmm As Double = 0)
 
         Dim pDef As PartComponentDefinition = CType(padOcc.Definition, PartComponentDefinition)
@@ -13211,37 +13218,37 @@ SkipPipeSupport:
         '--------------------------------------------------
         ' RF PAD OD
         '--------------------------------------------------
-        GetParameterSafe(pDef, "PAD_OD")?.Value = rfPadODmm / 10.0
+        SetParamSafe(pDef, "PAD_OD", rfPadODmm / 10.0)
 
         '--------------------------------------------------
         ' RF PAD THICKNESS
         '--------------------------------------------------
-        GetParameterSafe(pDef, "PAD_THK")?.Value = rfPadThkMm / 10.0
+        SetParamSafe(pDef, "PAD_THK", rfPadThkMm / 10.0)
 
         '--------------------------------------------------
         ' 🔑 RF PAD ID = PIPE OD
         '--------------------------------------------------
-        GetParameterSafe(pDef, "PAD_ID")?.Value = pipeODmm / 10.0
+        SetParamSafe(pDef, "PAD_ID", pipeODmm / 10.0)
 
         '--------------------------------------------------
         ' 🔑 RF PAD ID = SHELL ID
         '--------------------------------------------------
-        GetParameterSafe(pDef, "ID")?.Value = CDbl(txt_Shell_Inside_Dia.Text) / 10
+        SetParamSafe(pDef, "ID", CDbl(txt_Shell_Inside_Dia.Text) / 10)
 
         '--------------------------------------------------
         ' 🔑 RF PAD ID = SHELL THK
         '--------------------------------------------------
-        GetParameterSafe(pDef, "THK")?.Value = CDbl(txt_Shell_Nom_Thk.Text) / 10
+        SetParamSafe(pDef, "THK", CDbl(txt_Shell_Nom_Thk.Text) / 10)
 
         '==================================================
         ' 🔑 BOTTOM HEAD ONLY PARAMETERS
         '==================================================
         If padDistXmm <> 0 Then
-            GetParameterSafe(pDef, "PAD_DIST_X")?.Value = padDistXmm / 10.0
+            SetParamSafe(pDef, "PAD_DIST_X", padDistXmm / 10.0)
         End If
 
         If padDistYmm <> 0 Then
-            GetParameterSafe(pDef, "PAD_DIST_Y")?.Value = padDistYmm / 10.0
+            SetParamSafe(pDef, "PAD_DIST_Y", padDistYmm / 10.0)
         End If
 
     End Sub
