@@ -4209,12 +4209,13 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         If SelectedClient = "ARAMCO" AndAlso CheckBox1.Checked Then
 
             Dim ptfeFolder As String = IO.Path.Combine(projectFolder, "ARAMCO\PTFE_LINING")
+            Dim npsClean As String = nps.Replace("'", "").Replace("""", "").Trim()
             Dim flangePtfeFileName As String
             Select Case flangeClass.Trim().ToUpper()
                 Case "150", "150#"
-                    flangePtfeFileName = $"FLANGE_{nps}_INCH_PTFE.ipt"
+                    flangePtfeFileName = $"FLANGE_{npsClean}_INCH_PTFE.ipt"
                 Case "300", "300#"
-                    flangePtfeFileName = $"FLANGE_{nps}_INCH_CL300_PTFE.ipt"
+                    flangePtfeFileName = $"FLANGE_{npsClean}_INCH_CL300_PTFE.ipt"
                 Case Else
                     Throw New Exception($"❌ Unsupported flange class for PTFE lining: {flangeClass}")
             End Select
