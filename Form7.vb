@@ -1294,9 +1294,9 @@ Public Class Form7
 #Region "PTFE LINING COMPONENTS"
         '=========================
         ' PLACE & CONSTRAIN PTFE LINING COMPONENTS
-        ' ARAMCO ONLY
+        ' ARAMCO ONLY, AND ONLY IF THE "PTFE LINING" CHECKBOX IS CHECKED
         '=========================
-        If SelectedClient = "ARAMCO" Then
+        If SelectedClient = "ARAMCO" AndAlso CheckBox1.Checked Then
 
             '--- 1️⃣ SHELL PTFE ---
             Dim shellPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\SHELL_PTFE.ipt")
