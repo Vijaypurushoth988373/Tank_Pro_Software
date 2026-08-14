@@ -2674,17 +2674,72 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
 
     Public Sub SetRFPadParameters_HOR(padOcc As ComponentOccurrence, rfPadODmm As Double, rfPadThkMm As Double, pipeODmm As Double, nozzleDistanceMm As Double, offsetDistMm As Double)
 
-        Dim pDef As PartComponentDefinition = CType(padOcc.Definition, PartComponentDefinition)
+        '==================================================
+        ' VALIDATION
+        '==================================================
+        If padOcc Is Nothing Then
+            Throw New Exception("❌ RF Pad occurrence is Nothing")
+        End If
 
-        SetParamSafe(pDef, "PAD_OD", rfPadODmm / 10.0)
+        '==================================================
+        ' GET PART DEFINITION
+        '==================================================
+        Dim partDef As PartComponentDefinition = CType(padOcc.Definition, PartComponentDefinition)
+        Dim params As Parameters = partDef.Parameters
 
-        SetParamSafe(pDef, "PAD_THK", rfPadThkMm / 10.0)
+        '==================================================
+        ' FETCH PARAMETERS
+        '==================================================
+        Dim pPadOD As Parameter = params.Item("PAD_OD")
+        Dim pPadTHK As Parameter = params.Item("PAD_THK")
+        Dim pPipeOD As Parameter = params.Item("PIPE_OD")
+        Dim pDIST As Parameter = params.Item("DISTANCE")
+        Dim pOFF As Parameter = params.Item("PIPE_OFFSET")
 
-        SetParamSafe(pDef, "PIPE_OD", pipeODmm / 10.0)
+        Try
+            pPadOD.Value = rfPadODmm / 10.0
+            Debug.Print("PAD_OD OK")
+        Catch ex As Exception
+            Debug.Print("PAD_OD failed : " & ex.Message)
+        End Try
 
-        SetParamSafe(pDef, "DISTANCE", nozzleDistanceMm / 10.0)
+        Try
+            pPadTHK.Value = rfPadThkMm / 10.0
+            Debug.Print("PAD_THK OK")
+        Catch ex As Exception
+            Debug.Print("PAD_THK failed : " & ex.Message)
+        End Try
 
-        SetParamSafe(pDef, "PIPE_OFFSET", offsetDistMm / 10.0)
+        Try
+            pPipeOD.Value = pipeODmm / 10.0
+            Debug.Print("PIPE_OD OK")
+        Catch ex As Exception
+            Debug.Print("PIPE_OD failed : " & ex.Message)
+        End Try
+
+        Try
+            pDIST.Value = nozzleDistanceMm / 10.0
+            Debug.Print("DISTANCE OK")
+        Catch ex As Exception
+            Debug.Print("DISTANCE failed : " & ex.Message)
+        End Try
+
+        Try
+            pOFF.Value = offsetDistMm / 10.0
+            Debug.Print("PIPE_OFFSET OK")
+        Catch ex As Exception
+            Debug.Print("PIPE_OFFSET failed : " & ex.Message)
+        End Try
+
+        '==================================================
+        ' UPDATE DOCUMENT
+        '==================================================
+        Try
+            partDef.Document.Update()
+            Debug.Print("UPDATE OK")
+        Catch ex As Exception
+            Debug.Print("UPDATE failed : " & ex.Message)
+        End Try
 
     End Sub
 
