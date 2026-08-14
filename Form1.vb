@@ -11372,6 +11372,89 @@ SkipPipeSupport:
 
     End Function
 
+    ''' Measures a Blind Flange's height as the distance from its origin YZ Plane to its
+    ''' BOTTOM_PLANE (e.g. BLIND_FLANGE_CL_150_24_INCH.IPT), in mm.
+    Public Function MeasureBlindFlangeHeight(invApp As Inventor.Application, blindFlangeOcc As ComponentOccurrence) As Double
+
+        If blindFlangeOcc Is Nothing Then
+            MessageBox.Show("❌ Blind Flange occurrence is Nothing.", "Measure Height")
+            Return 0
+        End If
+
+        '--------------------------------------------------
+        ' Get part document
+        '--------------------------------------------------
+        Dim partDoc As PartDocument = Nothing
+
+        Try
+            partDoc = CType(blindFlangeOcc.Definition.Document, PartDocument)
+        Catch
+        End Try
+
+        If partDoc Is Nothing Then
+            Try
+                partDoc = CType(blindFlangeOcc.ReferencedDocumentDescriptor.ReferencedDocument, PartDocument)
+            Catch ex As Exception
+                Debug.WriteLine("MeasureBlindFlangeHeight: " & ex.Message)
+                Return 0
+            End Try
+        End If
+
+        If partDoc Is Nothing Then Return 0
+
+        Try
+            Dim partDef As PartComponentDefinition = partDoc.ComponentDefinition
+
+            '--------------------------------------------------
+            ' Get YZ Plane (origin plane)
+            '--------------------------------------------------
+            Dim yzPlane As WorkPlane = Nothing
+            For Each wp As WorkPlane In partDef.WorkPlanes
+                If wp.Name.Equals("YZ Plane", StringComparison.OrdinalIgnoreCase) Then
+                    yzPlane = wp
+                    Exit For
+                End If
+            Next
+
+            If yzPlane Is Nothing Then
+                MessageBox.Show("❌ YZ Plane not found in Blind Flange.", "Measure Height")
+                Return 0
+            End If
+
+            '--------------------------------------------------
+            ' Get BOTTOM_PLANE
+            '--------------------------------------------------
+            Dim bottomPlane As WorkPlane = Nothing
+            For Each wp As WorkPlane In partDef.WorkPlanes
+                If wp.Name.Equals("BOTTOM_PLANE", StringComparison.OrdinalIgnoreCase) Then
+                    bottomPlane = wp
+                    Exit For
+                End If
+            Next
+
+            If bottomPlane Is Nothing Then
+                MessageBox.Show("❌ BOTTOM_PLANE not found in Blind Flange.", "Measure Height")
+                Return 0
+            End If
+
+            '--------------------------------------------------
+            ' Measure distance using MeasureTools
+            ' Inventor internal units = cm → convert to mm
+            '--------------------------------------------------
+            Dim mt As Inventor.MeasureTools = partDoc.MeasureTools
+
+            Dim distanceCm As Double = mt.GetMinimumDistance(yzPlane, bottomPlane)
+            Dim distanceMm As Double = distanceCm * 10.0
+
+            Return distanceMm
+
+        Catch ex As Exception
+            MessageBox.Show("❌ Measurement failed: " & ex.Message, "Measure Height")
+            Return 0
+        End Try
+
+    End Function
+
     Public Sub ConstrainPadToPipe(nozAsm As AssemblyDocument, pipeOcc As ComponentOccurrence, padOcc As ComponentOccurrence, nozzleName As String, Optional remarks As String = "")
 
         Dim cons As AssemblyConstraints = nozAsm.ComponentDefinition.Constraints
