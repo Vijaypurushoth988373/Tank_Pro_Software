@@ -337,219 +337,219 @@ Public Class Form7
 
 #Region "LEFT SIDE SADDLE"
 
-        ''=========================
-        '' PLACE & CONSTRAIN LEFT SIDE SADDLE
-        ''=========================
-        'Dim saddleLeftOcc As ComponentOccurrence = Nothing
-        'Dim saddleLeftPath As String
+        '=========================
+        ' PLACE & CONSTRAIN LEFT SIDE SADDLE
+        '=========================
+        Dim saddleLeftOcc As ComponentOccurrence = Nothing
+        Dim saddleLeftPath As String
 
-        'If SelectedClient = "ARAMCO" Then
-        '    saddleLeftPath = IO.Path.Combine(folderPath, "ARAMCO\LEFT SADDLE\LEFT_SADDLE.iam")
-        'ElseIf SelectedClient = "ADNOC" Then
-        '    saddleLeftPath = IO.Path.Combine(folderPath, "ADNOC\LEFT SADDLE\LEFT_SADDLE.iam")
-        'End If
+        If SelectedClient = "ARAMCO" Then
+            saddleLeftPath = IO.Path.Combine(folderPath, "ARAMCO\LEFT SADDLE\LEFT_SADDLE.iam")
+        ElseIf SelectedClient = "ADNOC" Then
+            saddleLeftPath = IO.Path.Combine(folderPath, "ADNOC\LEFT SADDLE\LEFT_SADDLE.iam")
+        End If
 
-        'If IO.File.Exists(saddleLeftPath) Then
-        '    saddleLeftOcc = asmDoc.ComponentDefinition.Occurrences.Add(saddleLeftPath, invApp.TransientGeometry.CreateMatrix())
-        '    PlaceAndConstrainSaddleLeft(asmDoc, shellOcc, saddleLeftOcc)
-        'Else
-        '    Debug.Print($"LEFT SADDLE.iam not found: {saddleLeftPath}")
-        'End If
+        If IO.File.Exists(saddleLeftPath) Then
+            saddleLeftOcc = asmDoc.ComponentDefinition.Occurrences.Add(saddleLeftPath, invApp.TransientGeometry.CreateMatrix())
+            PlaceAndConstrainSaddleLeft(asmDoc, shellOcc, saddleLeftOcc)
+        Else
+            Debug.Print($"LEFT SADDLE.iam not found: {saddleLeftPath}")
+        End If
 
 #End Region
 
 #Region "RIGHT SIDE SADDLE"
 
-        ''=========================
-        '' PLACE & CONSTRAIN RIGHT SIDE SADDLE
-        ''=========================
-        'Dim saddleRightOcc As ComponentOccurrence = Nothing
-        'Dim saddleRightPath As String
+        '=========================
+        ' PLACE & CONSTRAIN RIGHT SIDE SADDLE
+        '=========================
+        Dim saddleRightOcc As ComponentOccurrence = Nothing
+        Dim saddleRightPath As String
 
-        'If SelectedClient = "ARAMCO" Then
-        '    saddleRightPath = IO.Path.Combine(folderPath, "ARAMCO\RIGHT SADDLE\RIGHT_SADDLE.iam")
-        'ElseIf SelectedClient = "ADNOC" Then
-        '    saddleRightPath = IO.Path.Combine(folderPath, "ADNOC\RIGHT SADDLE\RIGHT_SADDLE.iam")
-        'End If
+        If SelectedClient = "ARAMCO" Then
+            saddleRightPath = IO.Path.Combine(folderPath, "ARAMCO\RIGHT SADDLE\RIGHT_SADDLE.iam")
+        ElseIf SelectedClient = "ADNOC" Then
+            saddleRightPath = IO.Path.Combine(folderPath, "ADNOC\RIGHT SADDLE\RIGHT_SADDLE.iam")
+        End If
 
-        'If IO.File.Exists(saddleRightPath) Then
-        '    saddleRightOcc = asmDoc.ComponentDefinition.Occurrences.Add(saddleRightPath, invApp.TransientGeometry.CreateMatrix())
-        '    PlaceAndConstrainSaddleLeft(asmDoc, shellOcc, saddleRightOcc)
-        'Else
-        '    Debug.Print($"RIGHT SADDLE.iam not found: {saddleRightPath}")
-        'End If
+        If IO.File.Exists(saddleRightPath) Then
+            saddleRightOcc = asmDoc.ComponentDefinition.Occurrences.Add(saddleRightPath, invApp.TransientGeometry.CreateMatrix())
+            PlaceAndConstrainSaddleLeft(asmDoc, shellOcc, saddleRightOcc)
+        Else
+            Debug.Print($"RIGHT SADDLE.iam not found: {saddleRightPath}")
+        End If
 
 #End Region
 
 #Region "LIFTING LUG"
 
-        ''UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_1_.ipt"))                   'LL1
-        ''UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_2_.ipt"))                   'LL2
-        ''UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_3_.ipt"))                   'LL3
-        ''UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_4_.ipt"))                   'LL4
+        'UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_1_.ipt"))                   'LL1
+        'UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_2_.ipt"))                   'LL2
+        'UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_3_.ipt"))                   'LL3
+        'UpdateLiftingLugParameters(invApp, IO.Path.Combine(folderPath, "LL_BASE_4_.ipt"))                   'LL4
 
-        ''=========================
-        '' PLACE & CONSTRAIN LIFTING LUG ASSEMBLIES (1 TO 4)
-        ''=========================
-        'Dim liftingLugPaths As String()
+        '=========================
+        ' PLACE & CONSTRAIN LIFTING LUG ASSEMBLIES (1 TO 4)
+        '=========================
+        Dim liftingLugPaths As String()
 
-        'If SelectedClient = "ARAMCO" Then
-        '    liftingLugPaths = {IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_1\LIFTING_LUG_ASMBY_1.iam"),
-        'IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_2\LIFTING_LUG_ASMBY_2.iam"),
-        'IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_3\LIFTING_LUG_ASMBY_3.iam"),
-        'IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_4\LIFTING_LUG_ASMBY_4.iam")}
-        'ElseIf SelectedClient = "ADNOC" Then
-        '    liftingLugPaths = {IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_1_\LL_ASSEMBLY_1_.iam"),
-        'IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_2_\LL_ASSEMBLY_2_.iam"),
-        'IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_3_\LL_ASSEMBLY_3_.iam"),
-        'IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_4_\LL_ASSEMBLY_4_.iam")}
-        'ElseIf SelectedClient = "QATAR" Then
-        '    liftingLugPaths = {IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_1\LIFTING_LUG_ASMBY_1.iam"),
-        'IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_2\LIFTING_LUG_ASMBY_2.iam"),
-        'IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_3\LIFTING_LUG_ASMBY_3.iam"),
-        'IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_4\LIFTING_LUG_ASMBY_4.iam")}
-        'Else
-        '    liftingLugPaths = {}
-        'End If
+        If SelectedClient = "ARAMCO" Then
+            liftingLugPaths = {IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_1\LIFTING_LUG_ASMBY_1.iam"),
+        IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_2\LIFTING_LUG_ASMBY_2.iam"),
+        IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_3\LIFTING_LUG_ASMBY_3.iam"),
+        IO.Path.Combine(folderPath, "ARAMCO\LIFT_LUG_ASSEMBLY_4\LIFTING_LUG_ASMBY_4.iam")}
+        ElseIf SelectedClient = "ADNOC" Then
+            liftingLugPaths = {IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_1_\LL_ASSEMBLY_1_.iam"),
+        IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_2_\LL_ASSEMBLY_2_.iam"),
+        IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_3_\LL_ASSEMBLY_3_.iam"),
+        IO.Path.Combine(folderPath, "ADNOC\LIFTING _LUG_4_\LL_ASSEMBLY_4_.iam")}
+        ElseIf SelectedClient = "QATAR" Then
+            liftingLugPaths = {IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_1\LIFTING_LUG_ASMBY_1.iam"),
+        IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_2\LIFTING_LUG_ASMBY_2.iam"),
+        IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_3\LIFTING_LUG_ASMBY_3.iam"),
+        IO.Path.Combine(folderPath, "QATAR\LIFT_LUG_ASSEMBLY_4\LIFTING_LUG_ASMBY_4.iam")}
+        Else
+            liftingLugPaths = {}
+        End If
 
-        'For i As Integer = 0 To liftingLugPaths.Length - 1
-        '    Dim lugPath As String = liftingLugPaths(i)
-        '    Dim lugNumber As Integer = i + 1
+        For i As Integer = 0 To liftingLugPaths.Length - 1
+            Dim lugPath As String = liftingLugPaths(i)
+            Dim lugNumber As Integer = i + 1
 
-        '    If IO.File.Exists(lugPath) Then
-        '        Dim lugOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lugPath, invApp.TransientGeometry.CreateMatrix())
-        '        PlaceAndConstrainLiftingLug(asmDoc, shellOcc, lugOcc, lugNumber)
-        '    Else
-        '        Debug.Print($"LIFTING_LUG_ASMBY_{lugNumber}.iam not found: {lugPath}")
-        '    End If
+            If IO.File.Exists(lugPath) Then
+                Dim lugOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lugPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainLiftingLug(asmDoc, shellOcc, lugOcc, lugNumber)
+            Else
+                Debug.Print($"LIFTING_LUG_ASMBY_{lugNumber}.iam not found: {lugPath}")
+            End If
 
-        'Next i
+        Next i
 
 #End Region
 
 #Region "PLATFORM SUPPORT CLEAT - PFC"
-        '        '=========================
-        '        ' PLACE & CONSTRAIN PFC ASSEMBLIES (1 TO 10)
-        '        '=========================
-        '        For i As Integer = 1 To 10
+        '=========================
+        ' PLACE & CONSTRAIN PFC ASSEMBLIES (1 TO 10)
+        '=========================
+        For i As Integer = 1 To 10
 
-        '            Dim pfcPath As String = ""
+            Dim pfcPath As String = ""
 
-        '            If SelectedClient = "ARAMCO" Then
-        '                pfcPath = IO.Path.Combine(folderPath, $"ARAMCO\PFC_{i}\PFC_ASMBY_{i}.iam")
-        '            ElseIf SelectedClient = "ADNOC" Then
-        '                pfcPath = IO.Path.Combine(folderPath, $"ADNOC\PFC_{i}_\PFC_ASMBY_{i}_.iam")
-        '            ElseIf SelectedClient = "QATAR" Then
-        '                pfcPath = IO.Path.Combine(folderPath, $"QATAR\PFC_{i}\PFC_ASMBY_{i}.iam")
-        '            End If
+            If SelectedClient = "ARAMCO" Then
+                pfcPath = IO.Path.Combine(folderPath, $"ARAMCO\PFC_{i}\PFC_ASMBY_{i}.iam")
+            ElseIf SelectedClient = "ADNOC" Then
+                pfcPath = IO.Path.Combine(folderPath, $"ADNOC\PFC_{i}_\PFC_ASMBY_{i}_.iam")
+            ElseIf SelectedClient = "QATAR" Then
+                pfcPath = IO.Path.Combine(folderPath, $"QATAR\PFC_{i}\PFC_ASMBY_{i}.iam")
+            End If
 
-        '            If pfcPath = "" Then Continue For
+            If pfcPath = "" Then Continue For
 
-        '            If IO.File.Exists(pfcPath) Then
-        '                Dim pfcOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pfcPath, invApp.TransientGeometry.CreateMatrix())
-        '                PlaceAndConstrainShellComponent(asmDoc, shellOcc, pfcOcc, $"PFC_ASMBY_{i}")
-        '            Else
-        '                Debug.Print($"PFC_ASMBY_{i}.iam not found: {pfcPath}")
-        '            End If
+            If IO.File.Exists(pfcPath) Then
+                Dim pfcOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pfcPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, pfcOcc, $"PFC_ASMBY_{i}")
+            Else
+                Debug.Print($"PFC_ASMBY_{i}.iam not found: {pfcPath}")
+            End If
 
-        '        Next i
+        Next i
 #End Region
 
 #Region "PLATFORM SUPPORT CLEAT - LSC"
 
-        '        '=========================
-        '        ' PLACE & CONSTRAIN LSC ASSEMBLIES (1 TO 2)
-        '        '=========================
-        '        For i As Integer = 1 To 2
-        '            Dim lscPath As String = IO.Path.Combine(folderPath, $"ARAMCO\LSC_{i}\LSC_ASMBY_{i}.iam")
+        '=========================
+        ' PLACE & CONSTRAIN LSC ASSEMBLIES (1 TO 2)
+        '=========================
+        For i As Integer = 1 To 2
+            Dim lscPath As String = IO.Path.Combine(folderPath, $"ARAMCO\LSC_{i}\LSC_ASMBY_{i}.iam")
 
-        '            If IO.File.Exists(lscPath) Then
-        '                Dim lscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lscPath, invApp.TransientGeometry.CreateMatrix())
-        '                PlaceAndConstrainShellComponent(asmDoc, shellOcc, lscOcc, $"LSC_ASMBY_{i}")
-        '            Else
-        '                Debug.Print($"LSC_ASMBY_{i}.iam not found: {lscPath}")
-        '            End If
+            If IO.File.Exists(lscPath) Then
+                Dim lscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lscPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, lscOcc, $"LSC_ASMBY_{i}")
+            Else
+                Debug.Print($"LSC_ASMBY_{i}.iam not found: {lscPath}")
+            End If
 
-        '        Next i
+        Next i
 
 #End Region
 
 #Region "PIPE SUPPORT CLEAT - LGS/PSC"
 
-        '        If SelectedClient = "ARAMCO" Then
-        '            '=========================
-        '            ' ARAMCO → 1 LGS
-        '            '=========================
-        '            Dim lgsPath As String = IO.Path.Combine(folderPath, "ARAMCO\LGS_1\LGS_ASMBY_1.iam")
+        If SelectedClient = "ARAMCO" Then
+            '=========================
+            ' ARAMCO → 1 LGS
+            '=========================
+            Dim lgsPath As String = IO.Path.Combine(folderPath, "ARAMCO\LGS_1\LGS_ASMBY_1.iam")
 
-        '            If IO.File.Exists(lgsPath) Then
-        '                Dim lgsOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lgsPath, invApp.TransientGeometry.CreateMatrix())
-        '                PlaceAndConstrainShellComponent(asmDoc, shellOcc, lgsOcc, "LGS_ASMBY_1")
-        '            Else
-        '                Debug.Print($"LGS_ASMBY_1.iam not found: {lgsPath}")
-        '            End If
+            If IO.File.Exists(lgsPath) Then
+                Dim lgsOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lgsPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, lgsOcc, "LGS_ASMBY_1")
+            Else
+                Debug.Print($"LGS_ASMBY_1.iam not found: {lgsPath}")
+            End If
 
-        '        ElseIf SelectedClient = "ADNOC" Then
-        '            '=========================
-        '            ' ADNOC → 5 PSC
-        '            '=========================
-        '            For i As Integer = 1 To 5
-        '                Dim pscPath As String = IO.Path.Combine(folderPath, $"ADNOC\PSC_{i}\Assembly_PSC_{i}.iam")
+        ElseIf SelectedClient = "ADNOC" Then
+            '=========================
+            ' ADNOC → 5 PSC
+            '=========================
+            For i As Integer = 1 To 5
+                Dim pscPath As String = IO.Path.Combine(folderPath, $"ADNOC\PSC_{i}\Assembly_PSC_{i}.iam")
 
-        '                If IO.File.Exists(pscPath) Then
-        '                    Dim pscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pscPath, invApp.TransientGeometry.CreateMatrix())
-        '                    PlaceAndConstrainShellComponent(asmDoc, shellOcc, pscOcc, $"Assembly_PSC_{i}")
-        '                Else
-        '                    Debug.Print($"Assembly_PSC_{i}.iam not found: {pscPath}")
-        '                End If
-        '            Next i
+                If IO.File.Exists(pscPath) Then
+                    Dim pscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pscPath, invApp.TransientGeometry.CreateMatrix())
+                    PlaceAndConstrainShellComponent(asmDoc, shellOcc, pscOcc, $"Assembly_PSC_{i}")
+                Else
+                    Debug.Print($"Assembly_PSC_{i}.iam not found: {pscPath}")
+                End If
+            Next i
 
-        '        End If
+        End If
 
 #End Region
 
 #Region "PIPE SUPPORT - CTC"
 
-        '        If SelectedClient = "ARAMCO" Then
+        If SelectedClient = "ARAMCO" Then
 
-        '        ElseIf SelectedClient = "ADNOC" Then
+        ElseIf SelectedClient = "ADNOC" Then
 
-        '            Dim CTCPath As String = IO.Path.Combine(folderPath, "ADNOC\CTC_1\Assembly_CTC_1.iam")
+            Dim CTCPath As String = IO.Path.Combine(folderPath, "ADNOC\CTC_1\Assembly_CTC_1.iam")
 
-        '            If IO.File.Exists(CTCPath) Then
-        '                Dim ctcOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(CTCPath, invApp.TransientGeometry.CreateMatrix())
-        '                PlaceAndConstrainShellComponent(asmDoc, shellOcc, ctcOcc, "Assembly_CTC_1")
-        '            Else
-        '                Debug.Print($"Assembly_CTC_1.iam not found: {CTCPath}")
-        '            End If
+            If IO.File.Exists(CTCPath) Then
+                Dim ctcOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(CTCPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, ctcOcc, "Assembly_CTC_1")
+            Else
+                Debug.Print($"Assembly_CTC_1.iam not found: {CTCPath}")
+            End If
 
-        '        End If
+        End If
 
 #End Region
 
 #Region "NAME PLATE - ASSEMBLY"
 
-        ''=========================
-        '' PLACE & CONSTRAIN NAME PLATE ASSEMBLY
-        ''=========================
-        'Dim namePlatePath As String = ""
+        '=========================
+        ' PLACE & CONSTRAIN NAME PLATE ASSEMBLY
+        '=========================
+        Dim namePlatePath As String = ""
 
-        'If SelectedClient = "ARAMCO" Then
-        '    namePlatePath = IO.Path.Combine(folderPath, "ARAMCO\NAME_PLATE\NAME_PLATE_ASSEMBLY.iam")
-        'ElseIf SelectedClient = "ADNOC" Then
-        '    namePlatePath = IO.Path.Combine(folderPath, "ADNOC\NAME_PLATE\NAME_PLATE_ASSEMBLY.iam")
-        'ElseIf SelectedClient = "QATAR" Then
-        '    namePlatePath = IO.Path.Combine(folderPath, "QATAR\NAME_PLATE\NAME_PLATE_ASSEMBLY.iam")
-        'End If
+        If SelectedClient = "ARAMCO" Then
+            namePlatePath = IO.Path.Combine(folderPath, "ARAMCO\NAME_PLATE\NAME_PLATE_ASSEMBLY.iam")
+        ElseIf SelectedClient = "ADNOC" Then
+            namePlatePath = IO.Path.Combine(folderPath, "ADNOC\NAME_PLATE\NAME_PLATE_ASSEMBLY.iam")
+        ElseIf SelectedClient = "QATAR" Then
+            namePlatePath = IO.Path.Combine(folderPath, "QATAR\NAME_PLATE\NAME_PLATE_ASSEMBLY.iam")
+        End If
 
-        'If namePlatePath <> "" Then
-        '    If IO.File.Exists(namePlatePath) Then
-        '        Dim namePlateOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(namePlatePath, invApp.TransientGeometry.CreateMatrix())
-        '        PlaceAndConstrainShellComponent(asmDoc, shellOcc, namePlateOcc, "NAME_PLATE_ASSEMBLY")
-        '    Else
-        '        Debug.Print($"NAME_PLATE_ASSEMBLY.iam not found: {namePlatePath}")
-        '    End If
-        'End If
+        If namePlatePath <> "" Then
+            If IO.File.Exists(namePlatePath) Then
+                Dim namePlateOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(namePlatePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, namePlateOcc, "NAME_PLATE_ASSEMBLY")
+            Else
+                Debug.Print($"NAME_PLATE_ASSEMBLY.iam not found: {namePlatePath}")
+            End If
+        End If
 
 #End Region
 
@@ -1020,254 +1020,254 @@ Public Class Form7
 
 #Region "MANWAY GASKET & COVER"
 
-        ''==================================================
-        '' 🟢 PLACE & CONSTRAIN MANWAY GASKET AND COVER (DYNAMIC)
-        ''==================================================
+        '==================================================
+        ' 🟢 PLACE & CONSTRAIN MANWAY GASKET AND COVER (DYNAMIC)
+        '==================================================
 
-        'Dim manwayTags As String() = {"M1", "M2", "M3", "M4"}
+        Dim manwayTags As String() = {"M1", "M2", "M3", "M4"}
 
-        'For Each tag As String In manwayTags
+        For Each tag As String In manwayTags
 
-        '    Dim nozzleOcc As ComponentOccurrence = Nothing
-        '    Dim gasketOcc As ComponentOccurrence = Nothing
-        '    Dim coverOcc As ComponentOccurrence = Nothing
+            Dim nozzleOcc As ComponentOccurrence = Nothing
+            Dim gasketOcc As ComponentOccurrence = Nothing
+            Dim coverOcc As ComponentOccurrence = Nothing
 
-        '    '----------------------------
-        '    ' Find NOZZLE_Mx in assembly
-        '    '----------------------------
-        '    For Each occ As ComponentOccurrence In asmDoc.ComponentDefinition.Occurrences
-        '        If occ.Name.ToUpper().Contains("NOZZLE_" & tag.ToUpper()) Then
-        '            nozzleOcc = occ
-        '            Exit For
-        '        End If
-        '    Next
+            '----------------------------
+            ' Find NOZZLE_Mx in assembly
+            '----------------------------
+            For Each occ As ComponentOccurrence In asmDoc.ComponentDefinition.Occurrences
+                If occ.Name.ToUpper().Contains("NOZZLE_" & tag.ToUpper()) Then
+                    nozzleOcc = occ
+                    Exit For
+                End If
+            Next
 
-        '    If nozzleOcc Is Nothing Then
-        '        Debug.Print($"NOZZLE_{tag} not found. Skipping.")
-        '        Continue For
-        '    End If
+            If nozzleOcc Is Nothing Then
+                Debug.Print($"NOZZLE_{tag} not found. Skipping.")
+                Continue For
+            End If
 
-        '    '----------------------------
-        '    ' 1️⃣ CLIENT-BASED GASKET PATH
-        '    '----------------------------
-        '    Dim gasketPath As String = ""
-        '    If SelectedClient = "ARAMCO" Then
-        '        gasketPath = IO.Path.Combine(folderPath, "ARAMCO\MANWAY_GASKET.ipt")
-        '    ElseIf SelectedClient = "ADNOC" Then
-        '        gasketPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_GASKET.ipt")
-        '    ElseIf SelectedClient = "QATAR" Then
-        '        gasketPath = IO.Path.Combine(folderPath, "QATAR\MANWAY_GASKET.ipt")
-        '    End If
+            '----------------------------
+            ' 1️⃣ CLIENT-BASED GASKET PATH
+            '----------------------------
+            Dim gasketPath As String = ""
+            If SelectedClient = "ARAMCO" Then
+                gasketPath = IO.Path.Combine(folderPath, "ARAMCO\MANWAY_GASKET.ipt")
+            ElseIf SelectedClient = "ADNOC" Then
+                gasketPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_GASKET.ipt")
+            ElseIf SelectedClient = "QATAR" Then
+                gasketPath = IO.Path.Combine(folderPath, "QATAR\MANWAY_GASKET.ipt")
+            End If
 
-        '    If IO.File.Exists(gasketPath) Then
-        '        gasketOcc = asmDoc.ComponentDefinition.Occurrences.Add(gasketPath, invApp.TransientGeometry.CreateMatrix())
-        '        PlaceAndConstrainManwayGasket(asmDoc, nozzleOcc, gasketOcc, tag & "_FLANGE")
-        '    Else
-        '        Debug.Print($"Gasket file not found: {gasketPath}. Skipping {tag}.")
-        '        Continue For
-        '    End If
+            If IO.File.Exists(gasketPath) Then
+                gasketOcc = asmDoc.ComponentDefinition.Occurrences.Add(gasketPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainManwayGasket(asmDoc, nozzleOcc, gasketOcc, tag & "_FLANGE")
+            Else
+                Debug.Print($"Gasket file not found: {gasketPath}. Skipping {tag}.")
+                Continue For
+            End If
 
-        '    '----------------------------
-        '    ' 2️⃣ CLIENT-BASED COVER / BLIND FLANGE PATH
-        '    '----------------------------
-        '    Dim coverPath As String = ""
-        '    If SelectedClient = "ARAMCO" Then
-        '        coverPath = IO.Path.Combine(folderPath, "ARAMCO\MANWAY_BLIND_FLANGE.ipt")
-        '    ElseIf SelectedClient = "ADNOC" Then
-        '        coverPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_BLIND_FLANGE.ipt")
-        '    ElseIf SelectedClient = "QATAR" Then
-        '        coverPath = IO.Path.Combine(folderPath, "QATAR\MANWAY_BLIND_FLANGE.ipt")
-        '    End If
+            '----------------------------
+            ' 2️⃣ CLIENT-BASED COVER / BLIND FLANGE PATH
+            '----------------------------
+            Dim coverPath As String = ""
+            If SelectedClient = "ARAMCO" Then
+                coverPath = IO.Path.Combine(folderPath, "ARAMCO\MANWAY_BLIND_FLANGE.ipt")
+            ElseIf SelectedClient = "ADNOC" Then
+                coverPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_BLIND_FLANGE.ipt")
+            ElseIf SelectedClient = "QATAR" Then
+                coverPath = IO.Path.Combine(folderPath, "QATAR\MANWAY_BLIND_FLANGE.ipt")
+            End If
 
-        '    If IO.File.Exists(coverPath) AndAlso gasketOcc IsNot Nothing Then
-        '        coverOcc = asmDoc.ComponentDefinition.Occurrences.Add(coverPath, invApp.TransientGeometry.CreateMatrix())
-        '        PlaceAndConstrainManwayCover(asmDoc, gasketOcc, coverOcc)
-        '    Else
-        '        Debug.Print($"Cover file not found: {coverPath}. Skipping {tag}.")
-        '        Continue For
-        '    End If
+            If IO.File.Exists(coverPath) AndAlso gasketOcc IsNot Nothing Then
+                coverOcc = asmDoc.ComponentDefinition.Occurrences.Add(coverPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainManwayCover(asmDoc, gasketOcc, coverOcc)
+            Else
+                Debug.Print($"Cover file not found: {coverPath}. Skipping {tag}.")
+                Continue For
+            End If
 
-        '    '----------------------------
-        '    ' 3️⃣ CLIENT-BASED DAVIT ARM PATH
-        '    '----------------------------
-        '    Dim davitAsmPath As String = ""
-        '    If SelectedClient = "ARAMCO" Then
-        '        davitAsmPath = IO.Path.Combine(folderPath, "ARAMCO\MANWAY_DAVIT_ARM_ASSEMBLY.iam")
-        '    ElseIf SelectedClient = "ADNOC" Then
-        '        If tag = "M1" Then
-        '            davitAsmPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_DAVIT_ASSM\MANWAY_DAVIT_ARM_ASSEMBLY.iam")
-        '        ElseIf tag = "M2" Then
-        '            davitAsmPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_DAVIT_TOP\MANWAY_DAVIT_ARM_TOP.iam")
-        '        End If
-        '    ElseIf SelectedClient = "QATAR" Then
-        '        davitAsmPath = IO.Path.Combine(folderPath, "QATAR\MANWAY_DAVIT_ARM_ASSEMBLY.iam")
-        '    End If
+            '----------------------------
+            ' 3️⃣ CLIENT-BASED DAVIT ARM PATH
+            '----------------------------
+            Dim davitAsmPath As String = ""
+            If SelectedClient = "ARAMCO" Then
+                davitAsmPath = IO.Path.Combine(folderPath, "ARAMCO\MANWAY_DAVIT_ARM_ASSEMBLY.iam")
+            ElseIf SelectedClient = "ADNOC" Then
+                If tag = "M1" Then
+                    davitAsmPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_DAVIT_ASSM\MANWAY_DAVIT_ARM_ASSEMBLY.iam")
+                ElseIf tag = "M2" Then
+                    davitAsmPath = IO.Path.Combine(folderPath, "ADNOC\MANWAY_DAVIT_TOP\MANWAY_DAVIT_ARM_TOP.iam")
+                End If
+            ElseIf SelectedClient = "QATAR" Then
+                davitAsmPath = IO.Path.Combine(folderPath, "QATAR\MANWAY_DAVIT_ARM_ASSEMBLY.iam")
+            End If
 
-        '    If davitAsmPath <> "" AndAlso IO.File.Exists(davitAsmPath) AndAlso nozzleOcc IsNot Nothing Then
-        '        Dim davitOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(davitAsmPath, invApp.TransientGeometry.CreateMatrix())
-        '        If SelectedClient = "ARAMCO" Then
-        '            PlaceAndConstrainManwayDavit(asmDoc, nozzleOcc, davitOcc, coverOcc, tag & "_FLANGE")
-        '        ElseIf SelectedClient = "ADNOC" Then
-        '            If tag = "M1" Then
-        '                PlaceAndConstrainManwayDavit_ADNOC(asmDoc, nozzleOcc, davitOcc, coverOcc, gasketOcc)
-        '            ElseIf tag = "M2" Then
-        '                PlaceAndConstrainManwayDavit_ADNOC_M2(asmDoc, davitOcc, coverOcc)
-        '            End If
-        '        ElseIf SelectedClient = "QATAR" Then
-        '            PlaceAndConstrainManwayDavit(asmDoc, nozzleOcc, davitOcc, coverOcc, tag & "_FLANGE")
-        '        End If
-        '    Else
-        '        Debug.Print($"Davit arm file not found or NOZZLE_{tag} missing. Skipping {tag}.")
-        '    End If
+            If davitAsmPath <> "" AndAlso IO.File.Exists(davitAsmPath) AndAlso nozzleOcc IsNot Nothing Then
+                Dim davitOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(davitAsmPath, invApp.TransientGeometry.CreateMatrix())
+                If SelectedClient = "ARAMCO" Then
+                    PlaceAndConstrainManwayDavit(asmDoc, nozzleOcc, davitOcc, coverOcc, tag & "_FLANGE")
+                ElseIf SelectedClient = "ADNOC" Then
+                    If tag = "M1" Then
+                        PlaceAndConstrainManwayDavit_ADNOC(asmDoc, nozzleOcc, davitOcc, coverOcc, gasketOcc)
+                    ElseIf tag = "M2" Then
+                        PlaceAndConstrainManwayDavit_ADNOC_M2(asmDoc, davitOcc, coverOcc)
+                    End If
+                ElseIf SelectedClient = "QATAR" Then
+                    PlaceAndConstrainManwayDavit(asmDoc, nozzleOcc, davitOcc, coverOcc, tag & "_FLANGE")
+                End If
+            Else
+                Debug.Print($"Davit arm file not found or NOZZLE_{tag} missing. Skipping {tag}.")
+            End If
 
-        '    '----------------------------
-        '    ' 4️⃣ JACK SCREW LUG MW FLANGE
-        '    ' ✅ ARAMCO ONLY
-        '    '----------------------------
-        '    If SelectedClient = "ARAMCO" Then
+            '----------------------------
+            ' 4️⃣ JACK SCREW LUG MW FLANGE
+            ' ✅ ARAMCO ONLY
+            '----------------------------
+            If SelectedClient = "ARAMCO" Then
 
-        '        Dim jsOcc As ComponentOccurrence = Nothing
-        '        Dim JS_MW_FLANGE_Path As String = IO.Path.Combine(folderPath, "ARAMCO\JACK_SCREW_LUG_MW_FLANGE.ipt")
+                Dim jsOcc As ComponentOccurrence = Nothing
+                Dim JS_MW_FLANGE_Path As String = IO.Path.Combine(folderPath, "ARAMCO\JACK_SCREW_LUG_MW_FLANGE.ipt")
 
-        '        If IO.File.Exists(JS_MW_FLANGE_Path) AndAlso nozzleOcc IsNot Nothing Then
-        '            jsOcc = asmDoc.ComponentDefinition.Occurrences.Add(JS_MW_FLANGE_Path, invApp.TransientGeometry.CreateMatrix())
-        '            PlaceAndConstrainJS_MW_FLANGE(asmDoc, nozzleOcc, jsOcc, invApp, tag & "_FLANGE")
-        '        Else
-        '            Debug.Print($"JS_MW_FLANGE file not found or NOZZLE_{tag} missing. Skipping {tag}.")
-        '        End If
+                If IO.File.Exists(JS_MW_FLANGE_Path) AndAlso nozzleOcc IsNot Nothing Then
+                    jsOcc = asmDoc.ComponentDefinition.Occurrences.Add(JS_MW_FLANGE_Path, invApp.TransientGeometry.CreateMatrix())
+                    PlaceAndConstrainJS_MW_FLANGE(asmDoc, nozzleOcc, jsOcc, invApp, tag & "_FLANGE")
+                Else
+                    Debug.Print($"JS_MW_FLANGE file not found or NOZZLE_{tag} missing. Skipping {tag}.")
+                End If
 
-        '        If jsOcc IsNot Nothing Then
-        '            CreateCircularPattern_JS_MW_FLANGE(asmDoc, jsOcc, invApp)
-        '        Else
-        '            Debug.Print($"jsOcc is Nothing. Cannot create circular pattern for {tag}.")
-        '        End If
+                If jsOcc IsNot Nothing Then
+                    CreateCircularPattern_JS_MW_FLANGE(asmDoc, jsOcc, invApp)
+                Else
+                    Debug.Print($"jsOcc is Nothing. Cannot create circular pattern for {tag}.")
+                End If
 
-        '        '----------------------------
-        '        ' 5️⃣ JACK SCREW LUG MW BLIND FLANGE
-        '        ' ✅ ARAMCO ONLY
-        '        '----------------------------
-        '        Dim jsBFOcc As ComponentOccurrence = Nothing
-        '        Dim blindFlangeOcc As ComponentOccurrence = Nothing
-        '        Dim JS_MW_BLIND_FLANGE_Path As String = IO.Path.Combine(folderPath, "ARAMCO\JACK_SCREW_LUG_MW_BLIND_FLANGE.ipt")
+                '----------------------------
+                ' 5️⃣ JACK SCREW LUG MW BLIND FLANGE
+                ' ✅ ARAMCO ONLY
+                '----------------------------
+                Dim jsBFOcc As ComponentOccurrence = Nothing
+                Dim blindFlangeOcc As ComponentOccurrence = Nothing
+                Dim JS_MW_BLIND_FLANGE_Path As String = IO.Path.Combine(folderPath, "ARAMCO\JACK_SCREW_LUG_MW_BLIND_FLANGE.ipt")
 
-        '        For Each occ As ComponentOccurrence In asmDoc.ComponentDefinition.Occurrences
-        '            If occ.Name.ToUpper().Contains("MANWAY_BLIND_FLANGE") Then
-        '                blindFlangeOcc = occ
-        '                Exit For
-        '            End If
-        '        Next
+                For Each occ As ComponentOccurrence In asmDoc.ComponentDefinition.Occurrences
+                    If occ.Name.ToUpper().Contains("MANWAY_BLIND_FLANGE") Then
+                        blindFlangeOcc = occ
+                        Exit For
+                    End If
+                Next
 
-        '        If IO.File.Exists(JS_MW_BLIND_FLANGE_Path) AndAlso blindFlangeOcc IsNot Nothing Then
-        '            jsBFOcc = asmDoc.ComponentDefinition.Occurrences.Add(JS_MW_BLIND_FLANGE_Path, invApp.TransientGeometry.CreateMatrix())
-        '            PlaceAndConstrainJS_MW_BLIND_FLANGE(asmDoc, blindFlangeOcc, jsBFOcc, invApp)
-        '        Else
-        '            Debug.Print($"JS_MW_BLIND_FLANGE file not found or MANWAY_BLIND_FLANGE missing. Skipping {tag}.")
-        '        End If
+                If IO.File.Exists(JS_MW_BLIND_FLANGE_Path) AndAlso blindFlangeOcc IsNot Nothing Then
+                    jsBFOcc = asmDoc.ComponentDefinition.Occurrences.Add(JS_MW_BLIND_FLANGE_Path, invApp.TransientGeometry.CreateMatrix())
+                    PlaceAndConstrainJS_MW_BLIND_FLANGE(asmDoc, blindFlangeOcc, jsBFOcc, invApp)
+                Else
+                    Debug.Print($"JS_MW_BLIND_FLANGE file not found or MANWAY_BLIND_FLANGE missing. Skipping {tag}.")
+                End If
 
-        '        If jsBFOcc IsNot Nothing Then
-        '            CreateCircularPattern_JS_MW_FLANGE(asmDoc, jsBFOcc, invApp)
-        '        Else
-        '            Debug.Print($"jsBFOcc is Nothing. Cannot create circular pattern for {tag}.")
-        '        End If
+                If jsBFOcc IsNot Nothing Then
+                    CreateCircularPattern_JS_MW_FLANGE(asmDoc, jsBFOcc, invApp)
+                Else
+                    Debug.Print($"jsBFOcc is Nothing. Cannot create circular pattern for {tag}.")
+                End If
 
-        '    End If  ' ARAMCO only block ends
+            End If  ' ARAMCO only block ends
 
-        'Next tag
+        Next tag
 
 #End Region
 
 #Region "LADDER RUNG ASSEMBLY"
-        '        '=========================
-        '        ' PLACE & CONSTRAIN LADDER RUNG ASSEMBLY
-        '        ' ADNOC ONLY
-        '        '=========================
-        '        If SelectedClient = "ADNOC" Then
-        '            Dim ladderRungPath As String = IO.Path.Combine(folderPath, "ADNOC\INSIDE_LADDER\LADDER_RUNG_ASSEMBLY.iam")
+        '=========================
+        ' PLACE & CONSTRAIN LADDER RUNG ASSEMBLY
+        ' ADNOC ONLY
+        '=========================
+        If SelectedClient = "ADNOC" Then
+            Dim ladderRungPath As String = IO.Path.Combine(folderPath, "ADNOC\INSIDE_LADDER\LADDER_RUNG_ASSEMBLY.iam")
 
-        '            If IO.File.Exists(ladderRungPath) Then
-        '                Dim ladderRungOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(ladderRungPath, invApp.TransientGeometry.CreateMatrix())
-        '                PlaceAndConstrainShellComponent(asmDoc, shellOcc, ladderRungOcc, "LADDER_RUNG_ASSEMBLY")
-        '            Else
-        '                Debug.Print($"LADDER_RUNG_ASSEMBLY.iam not found: {ladderRungPath}")
-        '            End If
-        '        End If
-        '#End Region
+            If IO.File.Exists(ladderRungPath) Then
+                Dim ladderRungOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(ladderRungPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, ladderRungOcc, "LADDER_RUNG_ASSEMBLY")
+            Else
+                Debug.Print($"LADDER_RUNG_ASSEMBLY.iam not found: {ladderRungPath}")
+            End If
+        End If
+#End Region
 
-        '#Region "PIPE SUPPORT - ANGLE"
-        '        '==================================================
-        '        ' PLACE & CONSTRAIN PIPE SUPPORT ANGLE ASSEMBLY
-        '        ' Triggered if ANY nozzle has DIP PIPE (ANGLE)
-        '        '==================================================
-        '        Dim hasDipPipeAngle As Boolean = DGV_Nozzle_Tab_Shell_HOR.Rows.Cast(Of DataGridViewRow)().Where(Function(r) Not r.IsNewRow).Any(Function(r) r.Cells("REMARKS_SHELL_HOR").Value IsNot Nothing AndAlso
-        '                     r.Cells("REMARKS_SHELL_HOR").Value.ToString().Trim().ToUpper() = "DIP PIPE (ANGLE)")
+#Region "PIPE SUPPORT - ANGLE"
+        '==================================================
+        ' PLACE & CONSTRAIN PIPE SUPPORT ANGLE ASSEMBLY
+        ' Triggered if ANY nozzle has DIP PIPE (ANGLE)
+        '==================================================
+        Dim hasDipPipeAngle As Boolean = DGV_Nozzle_Tab_Shell_HOR.Rows.Cast(Of DataGridViewRow)().Where(Function(r) Not r.IsNewRow).Any(Function(r) r.Cells("REMARKS_SHELL_HOR").Value IsNot Nothing AndAlso
+                     r.Cells("REMARKS_SHELL_HOR").Value.ToString().Trim().ToUpper() = "DIP PIPE (ANGLE)")
 
-        '        If hasDipPipeAngle Then
+        If hasDipPipeAngle Then
 
-        '            Dim pipeSupAnglePath As String = ""
+            Dim pipeSupAnglePath As String = ""
 
-        '            If SelectedClient = "ARAMCO" Then
-        '                pipeSupAnglePath = IO.Path.Combine(folderPath, "ARAMCO\PIPE_SUPPORT_ANGLE\PIPE_SUPPORT_ANGLE_ASSEMBLY.iam")
-        '            ElseIf SelectedClient = "ADNOC" Then
-        '                pipeSupAnglePath = IO.Path.Combine(folderPath, "ADNOC\PIPE_SUPPORT_ANGLE\PIPE_SUPPORT_ANGLE_FOR_NOZZLE.iam")
-        '            ElseIf SelectedClient = "QATAR" Then
-        '                pipeSupAnglePath = IO.Path.Combine(folderPath, "QATAR\PIPE_SUPPORT_ANGLE\PIPE_SUPPORT_ANGLE_ASSEMBLY.iam")
-        '            End If
+            If SelectedClient = "ARAMCO" Then
+                pipeSupAnglePath = IO.Path.Combine(folderPath, "ARAMCO\PIPE_SUPPORT_ANGLE\PIPE_SUPPORT_ANGLE_ASSEMBLY.iam")
+            ElseIf SelectedClient = "ADNOC" Then
+                pipeSupAnglePath = IO.Path.Combine(folderPath, "ADNOC\PIPE_SUPPORT_ANGLE\PIPE_SUPPORT_ANGLE_FOR_NOZZLE.iam")
+            ElseIf SelectedClient = "QATAR" Then
+                pipeSupAnglePath = IO.Path.Combine(folderPath, "QATAR\PIPE_SUPPORT_ANGLE\PIPE_SUPPORT_ANGLE_ASSEMBLY.iam")
+            End If
 
-        '            If pipeSupAnglePath <> "" AndAlso IO.File.Exists(pipeSupAnglePath) Then
-        '                Dim pipeSupAngleOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pipeSupAnglePath, invApp.TransientGeometry.CreateMatrix())
-        '                PlaceAndConstrainShellComponent(asmDoc, shellOcc, pipeSupAngleOcc, "PIPE_SUPPORT_ANGLE")
-        '            Else
-        '                Debug.Print($"Pipe Support Angle file not found: {pipeSupAnglePath}")
-        '            End If
+            If pipeSupAnglePath <> "" AndAlso IO.File.Exists(pipeSupAnglePath) Then
+                Dim pipeSupAngleOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pipeSupAnglePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, pipeSupAngleOcc, "PIPE_SUPPORT_ANGLE")
+            Else
+                Debug.Print($"Pipe Support Angle file not found: {pipeSupAnglePath}")
+            End If
 
-        '        End If
+        End If
 #End Region
 
 #Region "PIPE SUPPORT - CHANNEL"
-        '        '==================================================
-        '        ' PLACE & CONSTRAIN PIPE SUPPORT CHANNEL ASSEMBLY
-        '        ' Triggered if ANY nozzle has DIP PIPE (CHANNEL)
-        '        '==================================================
-        '        Dim hasDipPipeChannel As Boolean = DGV_Nozzle_Tab_Shell_HOR.Rows.Cast(Of DataGridViewRow)().Where(Function(r) Not r.IsNewRow).Any(Function(r) r.Cells("REMARKS_SHELL_HOR").Value IsNot Nothing AndAlso
-        '                     r.Cells("REMARKS_SHELL_HOR").Value.ToString().Trim().ToUpper() = "DIP PIPE (CHANNEL)")
+        '==================================================
+        ' PLACE & CONSTRAIN PIPE SUPPORT CHANNEL ASSEMBLY
+        ' Triggered if ANY nozzle has DIP PIPE (CHANNEL)
+        '==================================================
+        Dim hasDipPipeChannel As Boolean = DGV_Nozzle_Tab_Shell_HOR.Rows.Cast(Of DataGridViewRow)().Where(Function(r) Not r.IsNewRow).Any(Function(r) r.Cells("REMARKS_SHELL_HOR").Value IsNot Nothing AndAlso
+                     r.Cells("REMARKS_SHELL_HOR").Value.ToString().Trim().ToUpper() = "DIP PIPE (CHANNEL)")
 
-        '        If hasDipPipeChannel Then
+        If hasDipPipeChannel Then
 
-        '            Dim pipeSupChannelPath As String = ""
+            Dim pipeSupChannelPath As String = ""
 
-        '            If SelectedClient = "ARAMCO" Then
-        '                pipeSupChannelPath = IO.Path.Combine(folderPath, "ARAMCO\PIPE_SUPPORT_CHANNEL\PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam")
-        '            ElseIf SelectedClient = "ADNOC" Then
-        '                pipeSupChannelPath = IO.Path.Combine(folderPath, "ADNOC\PIPE_SUPPORT_CHANNEL\PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam")
-        '            ElseIf SelectedClient = "QATAR" Then
-        '                pipeSupChannelPath = IO.Path.Combine(folderPath, "QATAR\PIPE_SUPPORT_CHANNEL\PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam")
-        '            End If
+            If SelectedClient = "ARAMCO" Then
+                pipeSupChannelPath = IO.Path.Combine(folderPath, "ARAMCO\PIPE_SUPPORT_CHANNEL\PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam")
+            ElseIf SelectedClient = "ADNOC" Then
+                pipeSupChannelPath = IO.Path.Combine(folderPath, "ADNOC\PIPE_SUPPORT_CHANNEL\PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam")
+            ElseIf SelectedClient = "QATAR" Then
+                pipeSupChannelPath = IO.Path.Combine(folderPath, "QATAR\PIPE_SUPPORT_CHANNEL\PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam")
+            End If
 
-        '            If pipeSupChannelPath <> "" AndAlso IO.File.Exists(pipeSupChannelPath) Then
-        '                Dim pipeSupChannelOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pipeSupChannelPath, invApp.TransientGeometry.CreateMatrix())
-        '                PlaceAndConstrainShellComponent(asmDoc, shellOcc, pipeSupChannelOcc, "PIPE_SUPPORT_CHANNEL_FOR_NOZZLE")
-        '            Else
-        '                Debug.Print("PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam not found: " & pipeSupChannelPath)
-        '            End If
+            If pipeSupChannelPath <> "" AndAlso IO.File.Exists(pipeSupChannelPath) Then
+                Dim pipeSupChannelOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pipeSupChannelPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, pipeSupChannelOcc, "PIPE_SUPPORT_CHANNEL_FOR_NOZZLE")
+            Else
+                Debug.Print("PIPE_SUPPORT_CHANNEL_FOR_NOZZLE.iam not found: " & pipeSupChannelPath)
+            End If
 
-        '        End If
+        End If
 #End Region
 
 #Region "GRAB RUNG"
-        ''=========================
-        '' PLACE & CONSTRAIN GRAB RUNG
-        '' ADNOC ONLY
-        ''=========================
-        ''If SelectedClient = "ADNOC" Then
-        ''    Dim grabRungPath As String = IO.Path.Combine(folderPath, "ADNOC\GRAB_RUNG.ipt")
+        '=========================
+        ' PLACE & CONSTRAIN GRAB RUNG
+        ' ADNOC ONLY
+        '=========================
+        If SelectedClient = "ADNOC" Then
+            Dim grabRungPath As String = IO.Path.Combine(folderPath, "ADNOC\GRAB_RUNG.ipt")
 
-        ''    If IO.File.Exists(grabRungPath) Then
-        ''        Dim grabRungOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(grabRungPath, invApp.TransientGeometry.CreateMatrix())
-        ''        PlaceAndConstrainShellComponent(asmDoc, shellOcc, grabRungOcc, "GRAB_RUNG")
-        ''    Else
-        ''        Debug.Print($"GRAB_RUNG.ipt not found: {grabRungPath}")
-        ''    End If
-        ''End If
+            If IO.File.Exists(grabRungPath) Then
+                Dim grabRungOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(grabRungPath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, grabRungOcc, "GRAB_RUNG")
+            Else
+                Debug.Print($"GRAB_RUNG.ipt not found: {grabRungPath}")
+            End If
+        End If
 #End Region
 
 #Region "STEP RUNG"
@@ -1291,7 +1291,7 @@ Public Class Form7
 
 #Region "STIFFENER RING"
 
-        '        '        'Dim stiffRingOcc As ComponentOccurrence = PlaceAndConstrainStiffenerRing(invApp, asmDoc, folderPath)
+        '                'Dim stiffRingOcc As ComponentOccurrence = PlaceAndConstrainStiffenerRing(invApp, asmDoc, folderPath)
 
 #End Region
 
@@ -1302,38 +1302,38 @@ Public Class Form7
         '=========================
         If SelectedClient = "ARAMCO" AndAlso CheckBox1.Checked Then
 
-            '--- 1️⃣ SHELL PTFE ---
-            Dim shellPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\SHELL_PTFE.ipt")
-            If IO.File.Exists(shellPtfePath) Then
-                Dim shellPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(shellPtfePath, invApp.TransientGeometry.CreateMatrix())
-                PlaceAndConstrainShellComponent(asmDoc, shellOcc, shellPtfeOcc, "SHELL_PTFE")
-            Else
-                Debug.Print($"SHELL_PTFE.ipt not found: {shellPtfePath}")
-            End If
+                '--- 1️⃣ SHELL PTFE ---
+                Dim shellPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\SHELL_PTFE.ipt")
+                If IO.File.Exists(shellPtfePath) Then
+                    Dim shellPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(shellPtfePath, invApp.TransientGeometry.CreateMatrix())
+                    PlaceAndConstrainShellComponent(asmDoc, shellOcc, shellPtfeOcc, "SHELL_PTFE")
+                Else
+                    Debug.Print($"SHELL_PTFE.ipt not found: {shellPtfePath}")
+                End If
 
-            '--- 2️⃣ LEFT HEAD PTFE ---
-            Dim leftHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\LEFT_HEAD_PTFE.ipt")
-            If IO.File.Exists(leftHeadPtfePath) Then
-                Dim leftHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(leftHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
-                PlaceAndConstrainShellComponent(asmDoc, leftheadOcc, leftHeadPtfeOcc, "LEFT_HEAD_PTFE")
-            Else
-                Debug.Print($"LEFT_HEAD_PTFE.ipt not found: {leftHeadPtfePath}")
-            End If
+                '--- 2️⃣ LEFT HEAD PTFE ---
+                Dim leftHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\LEFT_HEAD_PTFE.ipt")
+                If IO.File.Exists(leftHeadPtfePath) Then
+                    Dim leftHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(leftHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
+                    PlaceAndConstrainShellComponent(asmDoc, leftheadOcc, leftHeadPtfeOcc, "LEFT_HEAD_PTFE")
+                Else
+                    Debug.Print($"LEFT_HEAD_PTFE.ipt not found: {leftHeadPtfePath}")
+                End If
 
-            '--- 3️⃣ RIGHT HEAD PTFE ---
-            Dim rightHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\RIGHT_HEAD_PTFE.ipt")
-            If IO.File.Exists(rightHeadPtfePath) Then
-                Dim rightHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(rightHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
-                PlaceAndConstrainShellComponent(asmDoc, rightheadOcc, rightHeadPtfeOcc, "RIGHT_HEAD_PTFE")
-            Else
-                Debug.Print($"RIGHT_HEAD_PTFE.ipt not found: {rightHeadPtfePath}")
-            End If
+                '--- 3️⃣ RIGHT HEAD PTFE ---
+                Dim rightHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\RIGHT_HEAD_PTFE.ipt")
+                If IO.File.Exists(rightHeadPtfePath) Then
+                    Dim rightHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(rightHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
+                    PlaceAndConstrainShellComponent(asmDoc, rightheadOcc, rightHeadPtfeOcc, "RIGHT_HEAD_PTFE")
+                Else
+                    Debug.Print($"RIGHT_HEAD_PTFE.ipt not found: {rightHeadPtfePath}")
+                End If
 
-        End If
+            End If
 #End Region
 
 
-        Try
+            Try
             asmDoc.Update()
             asmDoc.Activate()
             invApp.ActiveView.Fit(True)
