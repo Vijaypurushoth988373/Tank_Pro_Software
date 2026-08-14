@@ -2353,6 +2353,7 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
             If padPtfePath <> "" Then
                 Dim padPtfeOcc = asmDef.Occurrences.Add(padPtfePath, tg.CreateMatrix())
                 padPtfeOcc.Name = nozzleName & "_RF_PAD_PTFE"
+                SetRFPadParameters_HOR(padPtfeOcc, rfPadODmm, rfPadThkMm, pipeODmm, nozzleDistanceMm, offsetDistMm)
                 PlaceAndConstrainShellComponent(nozAsm, padOcc, padPtfeOcc, nozzleName & "_RF_PAD_PTFE")
             End If
 
