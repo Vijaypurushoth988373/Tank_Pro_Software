@@ -2318,6 +2318,7 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
         If pipePtfePath <> "" Then
             Dim pipePtfeOcc = asmDef.Occurrences.Add(pipePtfePath, tg.CreateMatrix())
             pipePtfeOcc.Name = nozzleName & "_PIPE_PTFE"
+            SetPipeDimensions_HOR(pipePtfeOcc, pipeODmm, pipeThkMm, pipeLengthMm, nozzleDistanceMm, offsetDistMm)
             PlaceAndConstrainShellComponent(nozAsm, pipeOcc, pipePtfeOcc, nozzleName & "_PIPE_PTFE")
         End If
 
