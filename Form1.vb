@@ -11500,7 +11500,12 @@ SkipPipeSupport:
         '==================================================
         Dim offsetCm As Double = CDbl(txt_DP_Offset_Length1.Text)
 
-        If SelectedClient = "ARAMCO" Then
+        If RB_RT_BF.Checked Then
+
+            Dim invApp As Inventor.Application = nozAsm.Parent
+            offsetCm = MeasureBlindFlangeHeight(invApp, padOcc) / 10.0
+
+        ElseIf SelectedClient = "ARAMCO" Then
 
             If isDipPipe Then
                 offsetCm = txt_DP_Offset_Length1.Text / 10.0   '✅ Stored value
