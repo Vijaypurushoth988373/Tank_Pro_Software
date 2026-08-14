@@ -2675,15 +2675,15 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
 
         Dim pDef As PartComponentDefinition = CType(padOcc.Definition, PartComponentDefinition)
 
-        GetParameterSafe(pDef, "PAD_OD").Value = rfPadODmm / 10.0
+        GetParameterSafe(pDef, "PAD_OD")?.Value = rfPadODmm / 10.0
 
-        GetParameterSafe(pDef, "PAD_THK").Value = rfPadThkMm / 10.0
+        GetParameterSafe(pDef, "PAD_THK")?.Value = rfPadThkMm / 10.0
 
-        GetParameterSafe(pDef, "PIPE_OD").Value = pipeODmm / 10.0
+        GetParameterSafe(pDef, "PIPE_OD")?.Value = pipeODmm / 10.0
 
-        GetParameterSafe(pDef, "DISTANCE").Value = nozzleDistanceMm / 10.0
+        GetParameterSafe(pDef, "DISTANCE")?.Value = nozzleDistanceMm / 10.0
 
-        GetParameterSafe(pDef, "PIPE_OFFSET").Value = offsetDistMm / 10.0
+        GetParameterSafe(pDef, "PIPE_OFFSET")?.Value = offsetDistMm / 10.0
 
     End Sub
 
@@ -4782,7 +4782,8 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
             End If
         Next
 
-        Throw New Exception($"❌ Parameter not found: {paramName}")
+        Debug.Print($"⚠ Parameter not found (skipped): {paramName}")
+        Return Nothing
     End Function
 
     Private Sub AddNewRowToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddNewRowToolStripMenuItem.Click

@@ -13200,7 +13200,8 @@ SkipPipeSupport:
             End If
         Next
 
-        Throw New Exception($"❌ Parameter not found: {paramName}")
+        Debug.Print($"⚠ Parameter not found (skipped): {paramName}")
+        Return Nothing
     End Function
 
     Public Sub SetRFPadParameters(padOcc As ComponentOccurrence, rfPadODmm As Double, rfPadThkMm As Double, pipeODmm As Double, Optional padDistXmm As Double = 0, Optional padDistYmm As Double = 0)
@@ -13210,37 +13211,37 @@ SkipPipeSupport:
         '--------------------------------------------------
         ' RF PAD OD
         '--------------------------------------------------
-        GetParameterSafe(pDef, "PAD_OD").Value = rfPadODmm / 10.0
+        GetParameterSafe(pDef, "PAD_OD")?.Value = rfPadODmm / 10.0
 
         '--------------------------------------------------
         ' RF PAD THICKNESS
         '--------------------------------------------------
-        GetParameterSafe(pDef, "PAD_THK").Value = rfPadThkMm / 10.0
+        GetParameterSafe(pDef, "PAD_THK")?.Value = rfPadThkMm / 10.0
 
         '--------------------------------------------------
         ' 🔑 RF PAD ID = PIPE OD
         '--------------------------------------------------
-        GetParameterSafe(pDef, "PAD_ID").Value = pipeODmm / 10.0
+        GetParameterSafe(pDef, "PAD_ID")?.Value = pipeODmm / 10.0
 
         '--------------------------------------------------
         ' 🔑 RF PAD ID = SHELL ID
         '--------------------------------------------------
-        GetParameterSafe(pDef, "ID").Value = CDbl(txt_Shell_Inside_Dia.Text) / 10
+        GetParameterSafe(pDef, "ID")?.Value = CDbl(txt_Shell_Inside_Dia.Text) / 10
 
         '--------------------------------------------------
         ' 🔑 RF PAD ID = SHELL THK
         '--------------------------------------------------
-        GetParameterSafe(pDef, "THK").Value = CDbl(txt_Shell_Nom_Thk.Text) / 10
+        GetParameterSafe(pDef, "THK")?.Value = CDbl(txt_Shell_Nom_Thk.Text) / 10
 
         '==================================================
         ' 🔑 BOTTOM HEAD ONLY PARAMETERS
         '==================================================
         If padDistXmm <> 0 Then
-            GetParameterSafe(pDef, "PAD_DIST_X").Value = padDistXmm / 10.0
+            GetParameterSafe(pDef, "PAD_DIST_X")?.Value = padDistXmm / 10.0
         End If
 
         If padDistYmm <> 0 Then
-            GetParameterSafe(pDef, "PAD_DIST_Y").Value = padDistYmm / 10.0
+            GetParameterSafe(pDef, "PAD_DIST_Y")?.Value = padDistYmm / 10.0
         End If
 
     End Sub
