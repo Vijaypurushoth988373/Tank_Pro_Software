@@ -5462,7 +5462,7 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         RB_RIGHT_HEAD_EH.Checked = True
 
         PipeTable = LoadPipeTable()
-        'LoadDefaultShellNozzlesToDGV()
+        LoadDefaultShellNozzlesToDGV()
         LoadDefaultHeadNozzlesToDGV()
 
         PB_Left_Saddle.Visible = True
