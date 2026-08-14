@@ -1285,11 +1285,48 @@ Public Class Form7
         'End If
 #End Region
 
-        '#Region "STIFFENER RING"
+#Region "STIFFENER RING"
 
         '        '        'Dim stiffRingOcc As ComponentOccurrence = PlaceAndConstrainStiffenerRing(invApp, asmDoc, folderPath)
 
-        '#End Region
+#End Region
+
+#Region "PTFE LINING COMPONENTS"
+        '=========================
+        ' PLACE & CONSTRAIN PTFE LINING COMPONENTS
+        ' ARAMCO ONLY
+        '=========================
+        If SelectedClient = "ARAMCO" Then
+
+            '--- 1️⃣ SHELL PTFE ---
+            Dim shellPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\SHELL_PTFE.ipt")
+            If IO.File.Exists(shellPtfePath) Then
+                Dim shellPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(shellPtfePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, shellPtfeOcc, "SHELL_PTFE")
+            Else
+                Debug.Print($"SHELL_PTFE.ipt not found: {shellPtfePath}")
+            End If
+
+            '--- 2️⃣ LEFT HEAD PTFE ---
+            Dim leftHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\LEFT_HEAD_PTFE.ipt")
+            If IO.File.Exists(leftHeadPtfePath) Then
+                Dim leftHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(leftHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, leftheadOcc, leftHeadPtfeOcc, "LEFT_HEAD_PTFE")
+            Else
+                Debug.Print($"LEFT_HEAD_PTFE.ipt not found: {leftHeadPtfePath}")
+            End If
+
+            '--- 3️⃣ RIGHT HEAD PTFE ---
+            Dim rightHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\RIGHT_HEAD_PTFE.ipt")
+            If IO.File.Exists(rightHeadPtfePath) Then
+                Dim rightHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(rightHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, rightheadOcc, rightHeadPtfeOcc, "RIGHT_HEAD_PTFE")
+            Else
+                Debug.Print($"RIGHT_HEAD_PTFE.ipt not found: {rightHeadPtfePath}")
+            End If
+
+        End If
+#End Region
 
 
         Try
@@ -5463,7 +5500,7 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
 
         PipeTable = LoadPipeTable()
         LoadDefaultShellNozzlesToDGV()
-        LoadDefaultHeadNozzlesToDGV()
+        'LoadDefaultHeadNozzlesToDGV()
 
         PB_Left_Saddle.Visible = True
         PB_Right_Saddle.Visible = False
@@ -5886,11 +5923,11 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         If SelectedClient = "ARAMCO" Then
 
             defaultShellNozzles = New Object(,) {
-        {"N1", "CHEMICAL INLET", 1, "2''", "160", 8.74, "300#", "WNRF", 1550, 180, 12, "DIP PIPE (ANGLE)", 3355, -350, 0},
-        {"N2", "CHEMICAL OUTLET", 1, "2''", "160", 8.74, "300#", "WNRF", 1373, 180, 12, "VORTEX BREAKER", 3765, 200, 180},
+        {"N1", "CHEMICAL INLET", 1, "2''", "160", 8.74, "300#", "WNRF", 1550, 180, 12, "NIL", 3355, -350, 0},
+        {"N2", "CHEMICAL OUTLET", 1, "2''", "160", 8.74, "300#", "WNRF", 1573, 180, 12, "NIL", 3765, 200, 180},
         {"N3", "DRUM PZV", 1, "6''", "80S", 10.97, "150#", "WNRF", 1550, 290, 12, "NIL", 3355, 400, 0},
-        {"N4", "DRUM DRAIN", 1, "2''", "160", 8.74, "300#", "WNRF", 1411, 180, 12, "NIL", 3765, 0, 180},
-        {"N5A", "LT (GWR)", 1, "4''", "120", 11.13, "300#", "WNRF", 1550, 235, 12, "DIP PIPE (CHANNEL)", 2955, 400, 0},
+        {"N4", "DRUM DRAIN", 1, "2''", "160", 8.74, "300#", "WNRF", 1611, 180, 12, "NIL", 3765, 0, 180},
+        {"N5A", "LT (GWR)", 1, "4''", "120", 11.13, "300#", "WNRF", 1550, 235, 12, "NIL", 2955, 400, 0},
         {"N5B", "LT (GWR)", 1, "4''", "120", 11.13, "300#", "WNRF", 1550, 235, 12, "NIL", 2455, 400, 0},
         {"N6A", "LEVEL GAUGE", 1, "2''", "160", 8.74, "300#", "WNRF", 1320, 180, 12, "NIL", 2895, 966, 270},
         {"N6B", "LEVEL GAUGE", 1, "2''", "160", 8.74, "300#", "WNRF", 1320, 180, 12, "NIL", 2895, -974, 270},
@@ -5899,7 +5936,7 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         {"N9", "UTILITY CONNECTION", 1, "2''", "160", 8.74, "300#", "WNRF", 1320, 180, 12, "NIL", 3755, -979, 270},
         {"N10", "N2 INLET", 1, "2''", "160", 8.74, "300#", "WNRF", 1550, 180, 12, "NIL", 2955, -400, 0},
         {"N11", "VENT", 1, "6''", "80S", 10.97, "150#", "WNRF", 1550, 290, 12, "NIL", 3705, 0, 0},
-        {"M1", "MANWAY", 1, "24''", "-", 12, "150#", "WNRF", 1530, 900, 12, "NIL", 1050, 0, 270}
+        {"M1", "MANWAY", 1, "24''", "-", 12, "150#", "WNRF", 1750, 900, 12, "NIL", 1050, 0, 270}
         }
 
             For i As Integer = 0 To defaultShellNozzles.GetLength(0) - 1
