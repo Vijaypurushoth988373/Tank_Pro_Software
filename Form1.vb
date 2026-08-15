@@ -11358,7 +11358,8 @@ SkipPipeSupport:
             ' Measure distance using MeasureTools
             ' Inventor internal units = cm → convert to mm
             '--------------------------------------------------
-            Dim mt As Inventor.MeasureTools = partDoc.MeasureTools
+            Dim doc As Inventor.Document = CType(partDoc, Inventor.Document)
+            Dim mt As Inventor.MeasureTools = doc.MeasureTools
 
             Dim distanceCm As Double = mt.GetMinimumDistance(bottomPlane, topPlane)
             Dim distanceMm As Double = distanceCm * 10.0
@@ -11441,7 +11442,8 @@ SkipPipeSupport:
             ' Measure distance using MeasureTools
             ' Inventor internal units = cm → convert to mm
             '--------------------------------------------------
-            Dim mt As Inventor.MeasureTools = partDoc.MeasureTools
+            Dim doc As Inventor.Document = CType(partDoc, Inventor.Document)
+            Dim mt As Inventor.MeasureTools = doc.MeasureTools
 
             Dim distanceCm As Double = mt.GetMinimumDistance(yzPlane, bottomPlane)
             Dim distanceMm As Double = distanceCm * 10.0
