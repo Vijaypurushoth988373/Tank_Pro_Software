@@ -3192,7 +3192,7 @@ Public Class Form1
         Dim addStiffener As Boolean = If(IsDBNull(row.Cells("Stiffener_Head").Value), False, CBool(row.Cells("Stiffener_Head").Value))
         'Dim flipPattern As Boolean = If(IsDBNull(row.Cells("FLIP").Value), False, CBool(row.Cells("FLIP").Value))
 
-        Dim pipeLengthMm As Double = CalculatePipeLength_Head(row, nps, outsideProjMm, flangeClass, remarks)
+        Dim pipeLengthMm As Double = CalculatePipeLength_Head(row, nps, outsideProjMm, flangeClass, remarks, invApp, blindFlangeOcc)
         Dim pipeThkMm As Double = If(IsDBNull(row.Cells("Nozzle_THK").Value), 0.0, CDbl(row.Cells("Nozzle_THK").Value))
 
         Dim xMm As Double = SafeDouble(row.Cells("X_MM").Value)
@@ -6187,7 +6187,7 @@ Public Class Form1
             Dim addStiffener As Boolean = If(IsDBNull(row.Cells("Stiffener_Head").Value), False, CBool(row.Cells("Stiffener_Head").Value))
             'Dim flipPattern As Boolean = If(IsDBNull(row.Cells("FLIP").Value), False, CBool(row.Cells("FLIP").Value))
 
-            Dim pipeLengthMm As Double = CalculatePipeLength_Head(row, nps, outsideProjMm, flangeClass, remarks)
+            Dim pipeLengthMm As Double = CalculatePipeLength_Head(row, nps, outsideProjMm, flangeClass, remarks, invApp, blindFlangeOcc)
             Dim pipeThkMm As Double = If(IsDBNull(row.Cells("Nozzle_THK").Value), 0.0, CDbl(row.Cells("Nozzle_THK").Value))
 
             Dim xMm As Double = SafeDouble(row.Cells("X_MM").Value)
@@ -20715,7 +20715,8 @@ NextAngle:
 
     End Function
 
-    Private Function CalculatePipeLength_Head(currentRow As DataGridViewRow, nps As String, outsideProjMm As Double, flangeClass As String, remarks As String) As Double
+    Private Function CalculatePipeLength_Head(currentRow As DataGridViewRow, nps As String, outsideProjMm As Double, flangeClass As String, remarks As String,
+    Optional invApp As Inventor.Application = Nothing, Optional blindFlangeOcc As ComponentOccurrence = Nothing) As Double
 
         Dim pipeLengthMm As Double = 0
         remarks = remarks.Trim().ToUpper()
@@ -20782,9 +20783,14 @@ NextAngle:
             topCoverThkMm = txt_RF_THK.Text
         End If
 
-
-        ' Pipe Length formula
-        pipeLengthMm = outsideProjMm - flangeHeightMm + CDbl(topCoverThkMm)
+        ' Pipe Length formula — with a Blind Flange (RB_RT_BF), sum the
+        ' Blind Flange height instead of the top cover thickness
+        If RB_RT_BF.Checked AndAlso invApp IsNot Nothing AndAlso blindFlangeOcc IsNot Nothing Then
+            Dim blindFlangeHeightMm As Double = MeasureBlindFlangeHeight(invApp, blindFlangeOcc)
+            pipeLengthMm = outsideProjMm - flangeHeightMm + blindFlangeHeightMm
+        Else
+            pipeLengthMm = outsideProjMm - flangeHeightMm + CDbl(topCoverThkMm)
+        End If
 
         pipeLengthMm = Math.Round(pipeLengthMm, 2)
 
