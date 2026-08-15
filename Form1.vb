@@ -11373,8 +11373,8 @@ SkipPipeSupport:
 
     End Function
 
-    ''' Measures a Blind Flange's height as the distance from its origin YZ Plane to its
-    ''' BOTTOM_PLANE (e.g. BLIND_FLANGE_CL_150_24_INCH.IPT), in mm.
+    ''' Measures a Blind Flange's height (e.g. BLIND_FLANGE_CL_150_24_INCH.IPT) as its
+    ''' bounding-box extent along X, in mm — same approach as GetFlangeThicknessCm.
     Public Function MeasureBlindFlangeHeight(invApp As Inventor.Application, blindFlangeOcc As ComponentOccurrence) As Double
 
         If blindFlangeOcc Is Nothing Then
@@ -11404,48 +11404,17 @@ SkipPipeSupport:
         If partDoc Is Nothing Then Return 0
 
         Try
-            Dim partDef As PartComponentDefinition = partDoc.ComponentDefinition
-
             '--------------------------------------------------
-            ' Get YZ Plane (origin plane)
-            '--------------------------------------------------
-            Dim yzPlane As WorkPlane = Nothing
-            For Each wp As WorkPlane In partDef.WorkPlanes
-                If wp.Name.Equals("YZ Plane", StringComparison.OrdinalIgnoreCase) Then
-                    yzPlane = wp
-                    Exit For
-                End If
-            Next
-
-            If yzPlane Is Nothing Then
-                MessageBox.Show("❌ YZ Plane not found in Blind Flange.", "Measure Height")
-                Return 0
-            End If
-
-            '--------------------------------------------------
-            ' Get BOTTOM_PLANE
-            '--------------------------------------------------
-            Dim bottomPlane As WorkPlane = Nothing
-            For Each wp As WorkPlane In partDef.WorkPlanes
-                If wp.Name.Equals("BOTTOM_PLANE", StringComparison.OrdinalIgnoreCase) Then
-                    bottomPlane = wp
-                    Exit For
-                End If
-            Next
-
-            If bottomPlane Is Nothing Then
-                MessageBox.Show("❌ BOTTOM_PLANE not found in Blind Flange.", "Measure Height")
-                Return 0
-            End If
-
-            '--------------------------------------------------
-            ' Measure distance using MeasureTools
+            ' Bounding-box height (same approach as GetFlangeThicknessCm)
             ' Inventor internal units = cm → convert to mm
             '--------------------------------------------------
-            Dim doc As Inventor.Document = CType(partDoc, Inventor.Document)
-            Dim mt As Inventor.MeasureTools = doc.MeasureTools
+            Dim body As SurfaceBody = partDoc.ComponentDefinition.SurfaceBodies.Item(1)
 
-            Dim distanceCm As Double = mt.GetMinimumDistance(yzPlane, bottomPlane)
+            ' Assuming blind flange axis is along X
+            Dim minX As Double = body.RangeBox.MinPoint.X
+            Dim maxX As Double = body.RangeBox.MaxPoint.X
+
+            Dim distanceCm As Double = Math.Abs(maxX - minX)
             Dim distanceMm As Double = distanceCm * 10.0
 
             Return distanceMm
