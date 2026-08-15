@@ -3291,7 +3291,7 @@ Public Class Form1
             '----------------------------------------------
             ' E) BUILD NOZZLE (TOP COVER)
             '----------------------------------------------
-            BuildNozzleAssembly_TopPlate(invApp, nozAsm, pipePath, flangePath, padPath, nozzleName, outsideProjMm, nozzleODmm, pipeThkMm, pipeLengthMm, rfPadODmm, rfPadThkMm)
+            BuildNozzleAssembly_TopPlate(invApp, nozAsm, pipePath, flangePath, padPath, nozzleName, outsideProjMm, nozzleODmm, pipeThkMm, pipeLengthMm, rfPadODmm, rfPadThkMm, blindFlangeOcc:=blindFlangeOcc)
 
             nozAsm.Update()
 
@@ -6286,7 +6286,7 @@ Public Class Form1
                 '----------------------------------------------
                 ' E) BUILD NOZZLE (TOP COVER)
                 '----------------------------------------------
-                BuildNozzleAssembly_TopPlate(invApp, nozAsm, pipePath, flangePath, padPath, nozzleName, outsideProjMm, nozzleODmm, pipeThkMm, pipeLengthMm, rfPadODmm, rfPadThkMm)
+                BuildNozzleAssembly_TopPlate(invApp, nozAsm, pipePath, flangePath, padPath, nozzleName, outsideProjMm, nozzleODmm, pipeThkMm, pipeLengthMm, rfPadODmm, rfPadThkMm, blindFlangeOcc:=blindFlangeOcc)
 
                 nozAsm.Update()
 
@@ -11455,7 +11455,7 @@ SkipPipeSupport:
 
     End Function
 
-    Public Sub ConstrainPadToPipe(nozAsm As AssemblyDocument, pipeOcc As ComponentOccurrence, padOcc As ComponentOccurrence, nozzleName As String, Optional remarks As String = "")
+    Public Sub ConstrainPadToPipe(nozAsm As AssemblyDocument, pipeOcc As ComponentOccurrence, padOcc As ComponentOccurrence, nozzleName As String, Optional remarks As String = "", Optional blindFlangeOcc As ComponentOccurrence = Nothing)
 
         Dim cons As AssemblyConstraints = nozAsm.ComponentDefinition.Constraints
         Dim isDipPipe As Boolean = False
@@ -11500,7 +11500,17 @@ SkipPipeSupport:
         '==================================================
         Dim offsetCm As Double = CDbl(txt_DP_Offset_Length1.Text)
 
-        If SelectedClient = "ARAMCO" Then
+        If RB_RT_BF.Checked Then
+
+            If blindFlangeOcc Is Nothing Then
+                MessageBox.Show("❌ Blind Flange occurrence is Nothing — cannot measure blind flange height.",
+                            "ConstrainPadToPipe")
+            Else
+                Dim invApp As Inventor.Application = nozAsm.Parent
+                offsetCm = MeasureBlindFlangeHeight(invApp, blindFlangeOcc) / 10.0
+            End If
+
+        ElseIf SelectedClient = "ARAMCO" Then
 
             If isDipPipe Then
                 offsetCm = txt_DP_Offset_Length1.Text / 10.0   '✅ Stored value
@@ -11672,7 +11682,7 @@ SkipPipeSupport:
     End Function
 
     Public Sub BuildNozzleAssembly_TopPlate(invApp As Inventor.Application, nozAsm As AssemblyDocument, pipePath As String, flangePath As String, Optional rfPadPath As String = "", Optional nozzleName As String = "",
-    Optional outsideProjectionMm As Double = 0, Optional pipeODmm As Double = 0, Optional pipeThkMm As Double = 0, Optional pipeLengthMm As Double = 0, Optional rfPadODmm As Double = 0, Optional rfPadThkMm As Double = 0)
+    Optional outsideProjectionMm As Double = 0, Optional pipeODmm As Double = 0, Optional pipeThkMm As Double = 0, Optional pipeLengthMm As Double = 0, Optional rfPadODmm As Double = 0, Optional rfPadThkMm As Double = 0, Optional blindFlangeOcc As ComponentOccurrence = Nothing)
 
         Dim asmDef As AssemblyComponentDefinition = nozAsm.ComponentDefinition
         Dim tg As TransientGeometry = invApp.TransientGeometry
@@ -11715,7 +11725,7 @@ SkipPipeSupport:
 
             SetRFPadParameters(padOcc, rfPadODmm, rfPadThkMm, pipeODmm)
 
-            ConstrainPadToPipe(nozAsm, pipeOcc, padOcc, nozzleName)
+            ConstrainPadToPipe(nozAsm, pipeOcc, padOcc, nozzleName, blindFlangeOcc:=blindFlangeOcc)
         End If
 
         nozAsm.Update()
