@@ -15050,50 +15050,50 @@ SkipPipeSupport:
             '=========================================
             Dim compDefShell As PartComponentDefinition = CType(shellOcc.Definition.Document, PartDocument).ComponentDefinition
 
-                Dim anglePlaneName = $"NZ_{nozzleName}_Angle"
-                Dim perpPlaneName = $"NZ_{nozzleName}_Angle_Perp"
+            Dim anglePlaneName = $"NZ_{nozzleName}_Angle"
+            Dim perpPlaneName = $"NZ_{nozzleName}_Angle_Perp"
 
-                Dim shellAnglePlane As WorkPlane = Nothing
-                Dim shellPerpPlane As WorkPlane = Nothing
+            Dim shellAnglePlane As WorkPlane = Nothing
+            Dim shellPerpPlane As WorkPlane = Nothing
 
-                For Each wp As WorkPlane In compDefShell.WorkPlanes
+            For Each wp As WorkPlane In compDefShell.WorkPlanes
 
-                    If wp.Name.Equals(anglePlaneName,
+                If wp.Name.Equals(anglePlaneName,
                               StringComparison.OrdinalIgnoreCase) Then
-                        shellAnglePlane = wp
+                    shellAnglePlane = wp
 
-                    ElseIf wp.Name.Equals(perpPlaneName,
+                ElseIf wp.Name.Equals(perpPlaneName,
                                   StringComparison.OrdinalIgnoreCase) Then
-                        shellPerpPlane = wp
-                    End If
-
-                Next
-
-                If shellAnglePlane Is Nothing Then
-                    Throw New Exception($"{anglePlaneName} not found on shell!")
+                    shellPerpPlane = wp
                 End If
 
-                If shellPerpPlane Is Nothing Then
-                    Throw New Exception($"{perpPlaneName} not found on shell!")
-                End If
+            Next
+
+            If shellAnglePlane Is Nothing Then
+                Throw New Exception($"{anglePlaneName} not found on shell!")
+            End If
+
+            If shellPerpPlane Is Nothing Then
+                Throw New Exception($"{perpPlaneName} not found on shell!")
+            End If
 
 
-                Dim shellAnglePlaneP, shellPerpPlaneP As Object
+            Dim shellAnglePlaneP, shellPerpPlaneP As Object
 
-                shellOcc.CreateGeometryProxy(shellAnglePlane, shellAnglePlaneP)
-                shellOcc.CreateGeometryProxy(shellPerpPlane, shellPerpPlaneP)
+            shellOcc.CreateGeometryProxy(shellAnglePlane, shellAnglePlaneP)
+            shellOcc.CreateGeometryProxy(shellPerpPlane, shellPerpPlaneP)
 
 
-                ' 1️⃣ Shell XZ ↔ Nozzle XY
-                cons.AddFlushConstraint(shellXZp, nozXYp, xCm)
+            ' 1️⃣ Shell XZ ↔ Nozzle XY
+            cons.AddFlushConstraint(shellXZp, nozXYp, xCm)
 
-                ' 2️⃣ Shell Angle_Perp ↔ Pipe End Plane
-                cons.AddFlushConstraint(shellPerpPlaneP, pipeEndPlaneP, 0)
+            ' 2️⃣ Shell Angle_Perp ↔ Pipe End Plane
+            cons.AddFlushConstraint(shellPerpPlaneP, pipeEndPlaneP, 0)
 
-                ' 3️⃣ Shell Angle ↔ Nozzle YZ
-                cons.AddMateConstraint(shellAnglePlaneP, nozYZp, yCm)
+            ' 3️⃣ Shell Angle ↔ Nozzle YZ
+            cons.AddMateConstraint(shellAnglePlaneP, nozYZp, yCm)
 
-            Else
+        Else
 
             '=========================================
             ' ARAMCO CONSTRAINT STRATEGY (UNCHANGED)
