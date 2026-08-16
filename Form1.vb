@@ -20860,6 +20860,9 @@ NextAngle:
 
             If includeElbow Then
                 pipeLengthMm -= GetElbowAmm(nps)
+            Else
+                flangeHeightMm = GetFlangeHeightMm(nps, flangeClass)
+                pipeLengthMm -= flangeHeightMm
             End If
 
         ElseIf SelectedClient.ToUpper() = "QATAR" Then
