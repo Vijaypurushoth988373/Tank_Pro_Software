@@ -12017,8 +12017,7 @@ SkipPipeSupport:
         '==================================================
         ' Identify DIP PIPE
         '==================================================
-        Dim isDipPipe As Boolean = nozzleName.ToUpper().Contains("N4") OrElse
-                               remarks.ToUpper().Contains("DIP")
+        Dim isDipPipe As Boolean = remarks.ToUpper().Contains("DIP")
 
         '==================================================
         ' DIP PIPE SPECIAL CASE
