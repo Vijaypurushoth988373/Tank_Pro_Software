@@ -1252,16 +1252,18 @@ Public Class Form1
             End If
 
             '----------------------------------------------
-            ' 3) DESTINATION: <NewProjForm project location>\REV_<revision>
-            '    (e.g. D:\Project Test\REV_A), falling back to a manual browse
-            '    if no project location was set up via NewProjForm
+            ' 3) DESTINATION: <NewProjForm project location>\<ProjCode>\REV_<revision>
+            '    (e.g. D:\Project Test\CD.24.012\REV_A), falling back to a manual
+            '    browse if no project location was set up via NewProjForm
             '----------------------------------------------
             Dim projLocation As String = NewProjForm.txt_Proj_Location.Text.Trim()
             Dim revision As String = If(String.IsNullOrWhiteSpace(NewProjForm.txt_Proj_Rev.Text), "A", NewProjForm.txt_Proj_Rev.Text.Trim())
 
             Dim destRootFolder As String
+            Dim useRevisionFolder As Boolean = False
             If Not String.IsNullOrWhiteSpace(projLocation) AndAlso Directory.Exists(projLocation) Then
-                destRootFolder = IO.Path.Combine(projLocation, "REV_" & revision)
+                destRootFolder = projLocation
+                useRevisionFolder = True
             Else
                 destRootFolder = ChooseDestinationFolder()
                 If String.IsNullOrWhiteSpace(destRootFolder) Then Exit Sub
@@ -1270,7 +1272,9 @@ Public Class Form1
             '----------------------------------------------
             ' 4) COPY THE WHOLE PROJECT FOLDER TO DESTINATION
             '----------------------------------------------
-            Dim copiedIpjPath As String = CopyProjectToDestination(masterIpjPath, destRootFolder, projCode)
+            Dim copiedIpjPath As String = If(useRevisionFolder,
+                                             CopyProjectToDestination(masterIpjPath, destRootFolder, projCode, revision),
+                                             CopyProjectToDestination(masterIpjPath, destRootFolder, projCode))
             If String.IsNullOrWhiteSpace(copiedIpjPath) Then
                 MessageBox.Show("❌ Failed to copy project folder.", "Edit 3D")
                 Exit Sub
@@ -1416,7 +1420,7 @@ Public Class Form1
     '         If the .ipj contains an absolute "Workspace=" / "Frequently Used Subfolders="
     '         entry pointing at the master folder, it is rewritten to point at the copy.
     '==========================================================================================
-    Friend Function CopyProjectToDestination(masterIpjPath As String, destRootFolder As String, Optional overrideProjCode As String = Nothing) As String
+    Friend Function CopyProjectToDestination(masterIpjPath As String, destRootFolder As String, Optional overrideProjCode As String = Nothing, Optional revision As String = Nothing) As String
 
         Try
             Dim sourceFolder As String = IO.Path.GetDirectoryName(masterIpjPath)
@@ -1433,7 +1437,11 @@ Public Class Form1
                 Return String.Empty
             End If
 
+            ' <destRootFolder>\<ProjCode>\REV_<revision> (or just <destRootFolder>\<ProjCode> if no revision given)
             Dim destFolder As String = IO.Path.Combine(destRootFolder, projCode)
+            If Not String.IsNullOrWhiteSpace(revision) Then
+                destFolder = IO.Path.Combine(destFolder, "REV_" & SanitizeForFileName(revision.Trim()))
+            End If
 
             If IO.Directory.Exists(destFolder) Then
                 MessageBox.Show("❌ Destination folder already exists:" & vbCrLf & destFolder &
@@ -5264,8 +5272,8 @@ Public Class Form1
 
                         '--------------------------------------
                         ' Copy the master project into
-                        '   <NewProjForm project location>\REV_<revision>\<ProjCode>
-                        ' e.g. D:\Project Test\REV_A\TEST_26_001
+                        '   <NewProjForm project location>\<ProjCode>\REV_<revision>
+                        ' e.g. D:\Project Test\TEST_26_001\REV_A
                         ' (falls back to the master folder itself if no project
                         ' location/code was set up via NewProjForm)
                         '--------------------------------------
@@ -5274,8 +5282,7 @@ Public Class Form1
                         Dim projCode As String = If(String.IsNullOrWhiteSpace(txt_Proj_Code.Text), NewProjForm.txt_Proj_Code.Text.Trim(), txt_Proj_Code.Text.Trim())
 
                         If Not String.IsNullOrWhiteSpace(projLocation) AndAlso Directory.Exists(projLocation) AndAlso Not String.IsNullOrWhiteSpace(projCode) Then
-                            Dim destRootFolder As String = IO.Path.Combine(projLocation, "REV_" & revision)
-                            Dim copiedIpjPath As String = CopyProjectToDestination(ipjPath, destRootFolder, projCode)
+                            Dim copiedIpjPath As String = CopyProjectToDestination(ipjPath, projLocation, projCode, revision)
 
                             folderPath = If(Not String.IsNullOrWhiteSpace(copiedIpjPath),
                                             IO.Path.GetDirectoryName(copiedIpjPath),

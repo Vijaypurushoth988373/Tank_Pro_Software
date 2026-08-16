@@ -98,9 +98,8 @@ Public Class NewProjForm
             If dlg.ShowDialog() <> DialogResult.OK Then Exit Sub
 
             Dim revision As String = If(String.IsNullOrWhiteSpace(txt_Proj_Rev.Text), "A", txt_Proj_Rev.Text.Trim())
-            Dim destRootFolder As String = Path.Combine(dlg.SelectedPath, "REV_" & revision)
 
-            Dim copiedIpjPath As String = Form1.CopyProjectToDestination(MasterProjectIpjPath, destRootFolder, txt_Proj_Code.Text.Trim())
+            Dim copiedIpjPath As String = Form1.CopyProjectToDestination(MasterProjectIpjPath, dlg.SelectedPath, txt_Proj_Code.Text.Trim(), revision)
             If String.IsNullOrWhiteSpace(copiedIpjPath) Then Exit Sub ' CopyProjectToDestination already showed the error
 
             Dim copiedProjectFolder As String = Path.GetDirectoryName(copiedIpjPath)
@@ -132,13 +131,12 @@ Public Class NewProjForm
             End Using
         End If
 
-        ' Save alongside the model, in the same REV_<rev>\<ProjCode> folder
+        ' Save alongside the model, in the same <ProjCode>\REV_<rev> folder
         ' Create 3D / Update 3D / btn_proj_dir use.
         Dim revision As String = If(String.IsNullOrWhiteSpace(txt_Proj_Rev.Text), "A", txt_Proj_Rev.Text.Trim())
-        Dim revisionFolder As String = Path.Combine(baseFolder, "REV_" & revision)
         Dim projectFolder As String = If(String.IsNullOrWhiteSpace(txt_Proj_Code.Text),
-                                         revisionFolder,
-                                         Path.Combine(revisionFolder, txt_Proj_Code.Text.Trim()))
+                                         baseFolder,
+                                         Path.Combine(baseFolder, txt_Proj_Code.Text.Trim(), "REV_" & revision))
 
         Dim savedPath As String = SaveAllVerticalProjectInputs(projectFolder, Form1, Form2, Form3, Form4, Form5, Form6, Me)
 
@@ -148,19 +146,19 @@ Public Class NewProjForm
         End If
     End Sub
 
-    ''' Given a project folder that may be "<base>\REV_<x>\<ProjCode>" (as produced by
+    ''' Given a project folder that may be "<base>\<ProjCode>\REV_<x>" (as produced by
     ''' Save/Create 3D/Update 3D), returns the base folder so it can be stored back into
-    ''' txt_Proj_Location without doubling the REV_<rev>\<ProjCode> suffix on the next save.
+    ''' txt_Proj_Location without doubling the <ProjCode>\REV_<rev> suffix on the next save.
     ''' Returns the folder unchanged if it doesn't match that pattern (e.g. an older/manually
     ''' organized save).
     Private Function StripRevisionAndProjCode(projectFolder As String) As String
-        Dim revFolder As String = Path.GetDirectoryName(projectFolder)
-        If revFolder Is Nothing Then Return projectFolder
-
-        Dim revSegment As String = Path.GetFileName(revFolder)
+        Dim revSegment As String = Path.GetFileName(projectFolder)
         If revSegment.StartsWith("REV_", StringComparison.OrdinalIgnoreCase) Then
-            Dim baseFolder As String = Path.GetDirectoryName(revFolder)
-            If Not String.IsNullOrWhiteSpace(baseFolder) Then Return baseFolder
+            Dim projCodeFolder As String = Path.GetDirectoryName(projectFolder)
+            If Not String.IsNullOrWhiteSpace(projCodeFolder) Then
+                Dim baseFolder As String = Path.GetDirectoryName(projCodeFolder)
+                If Not String.IsNullOrWhiteSpace(baseFolder) Then Return baseFolder
+            End If
         End If
 
         Return projectFolder
