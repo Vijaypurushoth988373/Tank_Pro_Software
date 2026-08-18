@@ -62,30 +62,17 @@ Public Class NewProjForm
                         MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
-    ' The master Inventor project this app initializes every new project from —
-    ' same literal path Form1 itself falls back to (see its ipjPath default).
-    Private Const MasterProjectIpjPath As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
-
     ' =====================================================================================
-    ' Project directory browse button — picks a BASE destination, copies the master
-    ' Inventor project into <selected folder>\REV_<revision>\<ProjCode> (matching what
-    ' Form1's Create 3D / Update 3D derive from txt_Proj_Location + txt_Proj_Rev), and
-    ' proceeds to Main_UI once the copy succeeds.
-    '
-    ' txt_Proj_Location is kept as the BASE folder the user picked (not the deeper copied
-    ' path) — Form1 re-derives REV_<rev>\<ProjCode> from it later, so storing the nested
-    ' copy path here would double it up on the next Create/Update 3D.
+    ' Project directory browse button — picks the BASE project directory and proceeds to
+    ' Main_UI. The master Inventor project is NOT copied here: at this point the tank type
+    ' (Horizontal/Vertical) and client (ARAMCO/ADNOC/QATAR) aren't known yet — those are
+    ' chosen on Main_UI/Client_UI, which is where the correct master gets copied into
+    ' <this folder>\<ProjCode>\REV_<revision> (see Client_UI.CopyMasterProjectIfNeeded).
     ' =====================================================================================
     Private Sub btn_proj_dir_Click(sender As Object, e As EventArgs) Handles btn_proj_dir.Click
         If String.IsNullOrWhiteSpace(txt_Proj_Code.Text) Then
             MessageBox.Show("Enter a Project Code before selecting the project directory.", "Project Directory",
                             MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Exit Sub
-        End If
-
-        If Not File.Exists(MasterProjectIpjPath) Then
-            MessageBox.Show("Master project file not found:" & vbCrLf & MasterProjectIpjPath, "Project Directory",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
 
@@ -97,19 +84,7 @@ Public Class NewProjForm
 
             If dlg.ShowDialog() <> DialogResult.OK Then Exit Sub
 
-            Dim revision As String = If(String.IsNullOrWhiteSpace(txt_Proj_Rev.Text), "A", txt_Proj_Rev.Text.Trim())
-
-            Dim copiedIpjPath As String = Form1.CopyProjectToDestination(MasterProjectIpjPath, dlg.SelectedPath, txt_Proj_Code.Text.Trim(), revision)
-            If String.IsNullOrWhiteSpace(copiedIpjPath) Then Exit Sub ' CopyProjectToDestination already showed the error
-
-            Dim copiedProjectFolder As String = Path.GetDirectoryName(copiedIpjPath)
             txt_Proj_Location.Text = dlg.SelectedPath
-
-            ' Keep Form1's own Project Code in sync — it drives its own copy/design flow later.
-            Form1.txt_Proj_Code.Text = txt_Proj_Code.Text
-
-            MessageBox.Show("✅ Project created at:" & vbCrLf & copiedProjectFolder, "Project Directory",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             GoToMainUI()
         End Using
