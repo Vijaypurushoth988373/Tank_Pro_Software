@@ -153,32 +153,32 @@ Partial Class NewProjForm
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
         Me.NewToolStripMenuItem.Text = "New Project"
         '
         'NewRevisionToolStripMenuItem
         '
         Me.NewRevisionToolStripMenuItem.Name = "NewRevisionToolStripMenuItem"
-        Me.NewRevisionToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.NewRevisionToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
         Me.NewRevisionToolStripMenuItem.Text = "New Revision"
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
-        Me.OpenToolStripMenuItem.Text = "Open/Load"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
+        Me.OpenToolStripMenuItem.Text = "Open / Load"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'RevisionsComparingToolStripMenuItem
         '
         Me.RevisionsComparingToolStripMenuItem.Name = "RevisionsComparingToolStripMenuItem"
-        Me.RevisionsComparingToolStripMenuItem.Size = New System.Drawing.Size(229, 26)
-        Me.RevisionsComparingToolStripMenuItem.Text = "Revisions comparing"
+        Me.RevisionsComparingToolStripMenuItem.Size = New System.Drawing.Size(231, 26)
+        Me.RevisionsComparingToolStripMenuItem.Text = "Revision Comparison"
         '
         'NewProjForm
         '
