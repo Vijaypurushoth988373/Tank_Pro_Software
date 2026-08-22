@@ -745,7 +745,8 @@ Public Class Form7
                         BuildNozzleAssembly_Shell_HOR(invApp, nozAsm, parts("PIPE1"), parts("FLANGE"),
             padPath_DP, SelectedClient, nozzleName, nozzleODmm, pipeThkMm,
             pipeLengthMm, outsideProjMm, rfPadODmm, rfPadThkMm,
-            nps, isManway, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg)
+            nps, isManway, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg,
+            pipeIDmm:=pipeIDmm)
 
                     Case "DIP PIPE (CHANNEL)"
                         '--------------------------------------------------
@@ -776,7 +777,8 @@ Public Class Form7
             parts("PIPE1"), parts("FLANGE"), padPath_ADNOC,
             SelectedClient, nozzleName, nozzleODmm, pipeThkMm,
             pipeLengthMm, outsideProjMm, rfPadODmm, rfPadThkMm,
-            nps, isManway, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg)
+            nps, isManway, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg,
+            pipeIDmm:=pipeIDmm)
 
                         End If
 
@@ -792,7 +794,8 @@ Public Class Form7
         parts("PIPE1"), parts("FLANGE"), padPath_DPA,
         SelectedClient, nozzleName, nozzleODmm, pipeThkMm,
         pipeLengthMm, outsideProjMm, rfPadODmm, rfPadThkMm,
-        nps, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg)
+        nps, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg,
+        pipeIDmm:=pipeIDmm)
 
                 End Select
 
@@ -814,7 +817,7 @@ Public Class Form7
         SelectedClient, nozzleName, nozzleODmm, pipeThkMm,
         pipeLengthMm, outsideProjMm, rfPadODmm, rfPadThkMm,
         nps, isManway, nozzleDistanceMm - Straight_face, offsetDistMm, angleDeg,
-        pipePtfePath, flangePtfePath, padPtfePath)
+        pipePtfePath, flangePtfePath, padPtfePath, pipeIDmm)
 
             End If
 
@@ -1004,7 +1007,7 @@ Public Class Form7
             Dim padPath_Head As String = If(parts_Head.ContainsKey("PAD"), parts_Head("PAD"), "")
 
             BuildNozzleAssembly_Head_HOR(invApp, nozAsm_Head, pipePath_Head, flangePath_Head, padPath_Head, SelectedClient, nozzleName, nozzleODmm, pipeThkMm, pipeLengthMm, outsideProjMm, rfPadODmm, rfPadThkMm,
-            npsNorm, isManway, radiusMm, angleDeg, xDist, yDist, nozzleLocation)
+            npsNorm, isManway, radiusMm, angleDeg, xDist, yDist, nozzleLocation, pipeIDmm)
 
             nozAsm_Head.Update()
 
@@ -2124,7 +2127,8 @@ Public Class Form7
     ' UPDATED BuildNozzleAssembly_Head_HOR
     '==================================================
     Public Sub BuildNozzleAssembly_Head_HOR(invApp As Inventor.Application, nozAsm As AssemblyDocument, pipePath As String, flangePath As String, rfPadPath As String, SelectedClient As String, nozzleName As String,
-    pipeODmm As Double, pipeThkMm As Double, pipeLengthMm As Double, outsideProjMm As Double, rfPadODmm As Double, rfPadThkMm As Double, nps As String, isManway As Boolean, radiusMm As Double, angleDeg As Double, xDist As Double, yDist As Double, nozzleLocation As String)
+    pipeODmm As Double, pipeThkMm As Double, pipeLengthMm As Double, outsideProjMm As Double, rfPadODmm As Double, rfPadThkMm As Double, nps As String, isManway As Boolean, radiusMm As Double, angleDeg As Double, xDist As Double, yDist As Double, nozzleLocation As String,
+    Optional pipeIDmm As Double = 0)
 
         Dim asmDef = nozAsm.ComponentDefinition
         Dim tg = invApp.TransientGeometry
@@ -2142,6 +2146,7 @@ Public Class Form7
         flangeOcc.Name = nozzleName & "_FLANGE"
         ConstrainFlangeToPipe_Shell_HOR(nozAsm, pipeOcc, flangeOcc, nozzleName, angleDeg, nozzleLocation)
         SetFlangeOutsideProjection(flangeOcc, outsideProjMm)
+        If pipeIDmm > 0 Then SetFlangeBore(flangeOcc, pipeIDmm)
 
         '================ RF PAD =================
         If rfPadPath <> "" Then
@@ -2302,7 +2307,7 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
 
     Public Sub BuildNozzleAssembly_Shell_HOR(invApp As Inventor.Application, nozAsm As AssemblyDocument, pipePath As String, flangePath As String, rfPadPath As String, SelectedClient As String, nozzleName As String, pipeODmm As Double,
     pipeThkMm As Double, pipeLengthMm As Double, outsideProjMm As Double, rfPadODmm As Double, rfPadThkMm As Double, nps As String, isManway As Boolean, nozzleDistanceMm As Double, offsetDistMm As Double, angleDeg As Double,
-    Optional pipePtfePath As String = "", Optional flangePtfePath As String = "", Optional padPtfePath As String = "")
+    Optional pipePtfePath As String = "", Optional flangePtfePath As String = "", Optional padPtfePath As String = "", Optional pipeIDmm As Double = 0)
 
         Dim asmDef = nozAsm.ComponentDefinition
         Dim tg = invApp.TransientGeometry
@@ -2330,6 +2335,7 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
         ConstrainFlangeToPipe_Shell_HOR(nozAsm, pipeOcc, flangeOcc, nozzleName, angleDeg)
 
         SetFlangeOutsideProjection(flangeOcc, outsideProjMm)
+        If pipeIDmm > 0 Then SetFlangeBore(flangeOcc, pipeIDmm)
 
         '================ PTFE LINING — FLANGE =================
         If flangePtfePath <> "" Then
@@ -2364,7 +2370,8 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
     End Sub
 
     Public Sub BuildNozzleAssembly_DipPipe_Angle_HOR(invApp As Inventor.Application, nozAsm As AssemblyDocument, pipePath As String, flangePath As String, rfPadPath As String, SelectedClient As String,
-    nozzleName As String, pipeODmm As Double, pipeThkMm As Double, pipeLengthMm As Double, outsideProjMm As Double, rfPadODmm As Double, rfPadThkMm As Double, nps As String, nozzleDistanceMm As Double, offsetDistMm As Double, angleDeg As Double)
+    nozzleName As String, pipeODmm As Double, pipeThkMm As Double, pipeLengthMm As Double, outsideProjMm As Double, rfPadODmm As Double, rfPadThkMm As Double, nps As String, nozzleDistanceMm As Double, offsetDistMm As Double, angleDeg As Double,
+    Optional pipeIDmm As Double = 0)
 
         Dim asmDef = nozAsm.ComponentDefinition
         Dim tg = invApp.TransientGeometry
@@ -2392,6 +2399,7 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
         flangeOcc.Name = nozzleName & "_FLANGE"
         ConstrainFlangeToPipe_Shell_HOR(nozAsm, pipeOcc, flangeOcc, nozzleName, angleDeg)
         SetFlangeOutsideProjection(flangeOcc, outsideProjMm)
+        If pipeIDmm > 0 Then SetFlangeBore(flangeOcc, pipeIDmm)
 
         '================ RF PAD =================
         If rfPadPath <> "" Then
@@ -4776,6 +4784,28 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
 
         ' mm → cm
         p.Expression = (outsideProjectionMm).ToString()
+        flangeDef.Document.Update()
+
+    End Sub
+
+    ''' Sets the flange's "B" (Bore) parameter to the mating pipe's inside diameter, so the
+    ''' flange bore matches whatever NPS/schedule the pipe was resolved to. Silently skipped
+    ''' if the flange part has no "B" parameter, same tolerant pattern as
+    ''' SetFlangeOutsideProjection.
+    Public Sub SetFlangeBore(flangeOcc As ComponentOccurrence, boreMm As Double)
+
+        Dim flangeDef As PartComponentDefinition = CType(flangeOcc.Definition, PartComponentDefinition)
+        Dim p As Parameter = Nothing
+
+        Try
+            p = flangeDef.Parameters.Item("B")
+        Catch
+        End Try
+
+        If p Is Nothing Then Exit Sub
+
+        ' mm → cm
+        p.Expression = (boreMm).ToString()
         flangeDef.Document.Update()
 
     End Sub
