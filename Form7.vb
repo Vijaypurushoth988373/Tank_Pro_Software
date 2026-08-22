@@ -4809,8 +4809,10 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
 
         If p Is Nothing Then Exit Sub
 
-        ' mm → cm
-        p.Expression = (boreMm).ToString()
+        ' Explicit "mm" suffix — without it Inventor parses the raw number using the
+        ' document's default unit system (which may not be mm), same fix pattern used
+        ' elsewhere (e.g. params.Item("ID").Expression = txt_EH_Inside_Dia.Text & " mm").
+        p.Expression = boreMm.ToString() & " mm"
         flangeDef.Document.Update()
 
     End Sub
