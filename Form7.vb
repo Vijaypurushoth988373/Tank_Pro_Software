@@ -1305,38 +1305,38 @@ Public Class Form7
         '=========================
         If SelectedClient = "ARAMCO" AndAlso CheckBox1.Checked Then
 
-                '--- 1️⃣ SHELL PTFE ---
-                Dim shellPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\SHELL_PTFE.ipt")
-                If IO.File.Exists(shellPtfePath) Then
-                    Dim shellPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(shellPtfePath, invApp.TransientGeometry.CreateMatrix())
-                    PlaceAndConstrainShellComponent(asmDoc, shellOcc, shellPtfeOcc, "SHELL_PTFE")
-                Else
-                    Debug.Print($"SHELL_PTFE.ipt not found: {shellPtfePath}")
-                End If
-
-                '--- 2️⃣ LEFT HEAD PTFE ---
-                Dim leftHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\LEFT_HEAD_PTFE.ipt")
-                If IO.File.Exists(leftHeadPtfePath) Then
-                    Dim leftHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(leftHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
-                    PlaceAndConstrainShellComponent(asmDoc, leftheadOcc, leftHeadPtfeOcc, "LEFT_HEAD_PTFE")
-                Else
-                    Debug.Print($"LEFT_HEAD_PTFE.ipt not found: {leftHeadPtfePath}")
-                End If
-
-                '--- 3️⃣ RIGHT HEAD PTFE ---
-                Dim rightHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\RIGHT_HEAD_PTFE.ipt")
-                If IO.File.Exists(rightHeadPtfePath) Then
-                    Dim rightHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(rightHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
-                    PlaceAndConstrainShellComponent(asmDoc, rightheadOcc, rightHeadPtfeOcc, "RIGHT_HEAD_PTFE")
-                Else
-                    Debug.Print($"RIGHT_HEAD_PTFE.ipt not found: {rightHeadPtfePath}")
-                End If
-
+            '--- 1️⃣ SHELL PTFE ---
+            Dim shellPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\SHELL_PTFE.ipt")
+            If IO.File.Exists(shellPtfePath) Then
+                Dim shellPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(shellPtfePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, shellOcc, shellPtfeOcc, "SHELL_PTFE")
+            Else
+                Debug.Print($"SHELL_PTFE.ipt not found: {shellPtfePath}")
             End If
+
+            '--- 2️⃣ LEFT HEAD PTFE ---
+            Dim leftHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\LEFT_HEAD_PTFE.ipt")
+            If IO.File.Exists(leftHeadPtfePath) Then
+                Dim leftHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(leftHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, leftheadOcc, leftHeadPtfeOcc, "LEFT_HEAD_PTFE")
+            Else
+                Debug.Print($"LEFT_HEAD_PTFE.ipt not found: {leftHeadPtfePath}")
+            End If
+
+            '--- 3️⃣ RIGHT HEAD PTFE ---
+            Dim rightHeadPtfePath As String = IO.Path.Combine(folderPath, "ARAMCO\PTFE_LINING\RIGHT_HEAD_PTFE.ipt")
+            If IO.File.Exists(rightHeadPtfePath) Then
+                Dim rightHeadPtfeOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(rightHeadPtfePath, invApp.TransientGeometry.CreateMatrix())
+                PlaceAndConstrainShellComponent(asmDoc, rightheadOcc, rightHeadPtfeOcc, "RIGHT_HEAD_PTFE")
+            Else
+                Debug.Print($"RIGHT_HEAD_PTFE.ipt not found: {rightHeadPtfePath}")
+            End If
+
+        End If
 #End Region
 
 
-            Try
+        Try
             asmDoc.Update()
             asmDoc.Activate()
             invApp.ActiveView.Fit(True)
