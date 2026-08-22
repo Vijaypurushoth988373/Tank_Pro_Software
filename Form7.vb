@@ -2439,7 +2439,7 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
 
         '==================================================
         ' 2️⃣ PIPE (END_PLANE) ↔ FLANGE (N1_End_Plane)
-        ' MATE
+        ' 180° / 270° → FLUSH · 0° / 90° → MATE
         '==================================================
         Dim pipeEndPlane As WorkPlane = pipeOcc.Definition.WorkPlanes.Item("END_PLANE")
         Dim flangeEndPlane As WorkPlane = GetOrCreateFlangeEndPlane(invApp, flangeOcc, nozzleName)
@@ -2448,7 +2448,12 @@ isManway As Boolean, xDist As Double, yDist As Double, nozzleLocation As String,
         Dim flangeEndPlanep As Object
         pipeOcc.CreateGeometryProxy(pipeEndPlane, pipeEndPlanep)
         flangeOcc.CreateGeometryProxy(flangeEndPlane, flangeEndPlanep)
-        cons.AddMateConstraint(pipeEndPlanep, flangeEndPlanep, 0)
+
+        If angleDeg = 180 OrElse angleDeg = 270 Then
+            cons.AddFlushConstraint(pipeEndPlanep, flangeEndPlanep, 0)
+        Else
+            cons.AddMateConstraint(pipeEndPlanep, flangeEndPlanep, 0)
+        End If
 
         '==================================================
         ' 3️⃣ PIPE (MID_PLANE) ↔ FLANGE (XY)
