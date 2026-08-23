@@ -135,7 +135,7 @@ Public Class Client_UI
         ElseIf tankType = "HORIZONTAL" Then
             Select Case client
                 Case "ARAMCO"
-                    Return "D:\HORIZONTAL_TANK\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
+                    Return "D:\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
                 Case "ADNOC", "QATAR"
                     Return "D:\HORIZONTAL_TANK\ADNOC_HOR_VESSEL\ADNOC_HOR_VESSEL.ipj"
             End Select
