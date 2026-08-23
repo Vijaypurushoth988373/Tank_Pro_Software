@@ -562,6 +562,20 @@ Public Class Form7
         Dim pipeTable As List(Of PipeDim) = LoadPipeTable()
 
         '==================================================
+        ' Wipe every existing nozzle cut on the shell part(s) first, so nozzles removed
+        ' or renamed in the DGV since the last run don't leave stale cuts behind.
+        '==================================================
+        If shellOcc IsNot Nothing Then
+            DeleteAllNozzleCutFeatures(CType(shellOcc.Definition.Document, PartDocument).ComponentDefinition)
+        End If
+        If shellOcc1 IsNot Nothing Then
+            DeleteAllNozzleCutFeatures(CType(shellOcc1.Definition.Document, PartDocument).ComponentDefinition)
+        End If
+        If shellOcc2 IsNot Nothing Then
+            DeleteAllNozzleCutFeatures(CType(shellOcc2.Definition.Document, PartDocument).ComponentDefinition)
+        End If
+
+        '==================================================
         ' Loop through Shell Nozzle DataGridView
         '==================================================
         For Each row As DataGridViewRow In DGV_Nozzle_Tab_Shell_HOR.Rows
@@ -846,6 +860,17 @@ Public Class Form7
         If pipeTable_Head Is Nothing OrElse pipeTable_Head.Count = 0 Then
             Debug.Print("⚠ PipeTable is empty — reloading.")
             pipeTable_Head = LoadPipeTable()
+        End If
+
+        '==================================================
+        ' Wipe every existing nozzle cut on both heads first, so nozzles removed or
+        ' renamed in the DGV since the last run don't leave stale cuts behind.
+        '==================================================
+        If leftheadOcc IsNot Nothing Then
+            DeleteAllNozzleCutFeatures(CType(leftheadOcc.Definition.Document, PartDocument).ComponentDefinition)
+        End If
+        If rightheadOcc IsNot Nothing Then
+            DeleteAllNozzleCutFeatures(CType(rightheadOcc.Definition.Document, PartDocument).ComponentDefinition)
         End If
 
         '==================================================
@@ -1730,6 +1755,54 @@ Public Class Form7
         Return pipeLengthMm
 
     End Function
+
+    ' =====================================================================================
+    ' Deletes every existing nozzle-cut extrude feature + sketch on a shell/head part before
+    ' the DGV loop recreates them. CreateShellNozzle_CircleCut_HOR/CreateHeadNozzle_CircleCut_HOR
+    ' only replace the feature matching the CURRENT nozzle's own name, so a nozzle that was
+    ' removed or renamed in the DGV since the last run left its old cut behind. Matches both
+    ' shell naming ("NZ_<name>_Cut" / "NZ_<name>_Sketch") and head naming
+    ' ("NozzleCut_<name>" / "Nozzle_<name>_Cut_Sketch").
+    ' =====================================================================================
+    Private Sub DeleteAllNozzleCutFeatures(compDef As PartComponentDefinition)
+        Try
+            Dim featsToDelete As New List(Of PartFeature)
+            For Each feat As PartFeature In compDef.Features
+                If (feat.Name.StartsWith("NZ_", StringComparison.OrdinalIgnoreCase) AndAlso feat.Name.EndsWith("_Cut", StringComparison.OrdinalIgnoreCase)) OrElse
+                   feat.Name.StartsWith("NozzleCut_", StringComparison.OrdinalIgnoreCase) Then
+                    featsToDelete.Add(feat)
+                End If
+            Next
+            For Each feat As PartFeature In featsToDelete
+                Try
+                    feat.Delete()
+                Catch ex As Exception
+                    Debug.Print($"   ⚠ DeleteAllNozzleCutFeatures — feature '{feat.Name}': {ex.Message}")
+                End Try
+            Next
+        Catch ex As Exception
+            Debug.Print($"   ⚠ DeleteAllNozzleCutFeatures — features: {ex.Message}")
+        End Try
+
+        Try
+            Dim sketchesToDelete As New List(Of PlanarSketch)
+            For Each sk As PlanarSketch In compDef.Sketches
+                If (sk.Name.StartsWith("NZ_", StringComparison.OrdinalIgnoreCase) AndAlso sk.Name.EndsWith("_Sketch", StringComparison.OrdinalIgnoreCase)) OrElse
+                   (sk.Name.StartsWith("Nozzle_", StringComparison.OrdinalIgnoreCase) AndAlso sk.Name.EndsWith("_Cut_Sketch", StringComparison.OrdinalIgnoreCase)) Then
+                    sketchesToDelete.Add(sk)
+                End If
+            Next
+            For Each sk As PlanarSketch In sketchesToDelete
+                Try
+                    sk.Delete()
+                Catch ex As Exception
+                    Debug.Print($"   ⚠ DeleteAllNozzleCutFeatures — sketch '{sk.Name}': {ex.Message}")
+                End Try
+            Next
+        Catch ex As Exception
+            Debug.Print($"   ⚠ DeleteAllNozzleCutFeatures — sketches: {ex.Message}")
+        End Try
+    End Sub
 
     Public Sub CreateShellNozzle_CircleCut_HOR(invApp As Inventor.Application, shellOcc As ComponentOccurrence, nozzleIndex As String, nozzleDiaMm As Double, distMm As Double, offsetMm As Double, angleDeg As Double)
 
