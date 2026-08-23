@@ -36,16 +36,52 @@ Public Class NewProjForm
     End Sub
 
     ' =====================================================================================
-    ' File > Open/Load — browse for a saved TankInputs_*.xlsx and load it, then require the
-    ' user to explicitly pick/confirm the project directory (defaulting to the location the
-    ' file was loaded from) rather than silently deriving it — avoids saving to the wrong
-    ' place if the file wasn't sitting in the standard <base>\<ProjCode>\REV_<rev> layout.
+    ' File > Open/Load — browse for a saved TankInputs_*.xlsx and load it, routing to the
+    ' correct loader based on the file's suffix: InputsFilePath names Horizontal saves
+    ' "..._HOR.xlsx" (single-form, Form7 only — same file Form7's own "Load Inputs" button
+    ' reads) and Vertical saves "..._VERT.xlsx" (multi-form, Form1-Form6 + this form).
+    ' Loading only Form1-Form6 for a Horizontal save left Form7 showing nothing but its own
+    ' Form7_Load defaults, since Form7 was never included in the load target at all.
+    '
+    ' Then requires the user to explicitly pick/confirm the project directory (defaulting to
+    ' the location the file was loaded from) rather than silently deriving it — avoids saving
+    ' to the wrong place if the file wasn't sitting in the standard
+    ' <base>\<ProjCode>\REV_<rev> layout.
     ' =====================================================================================
     Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
-        Dim chosenFolder As String = BrowseAndLoadAllVerticalProjectInputs(Form1, Form2, Form3, Form4, Form5, Form6, Me, txt_Proj_Location.Text)
+        Dim fileToLoad As String = ""
 
-        If chosenFolder = "" Then Exit Sub
+        Using dlg As New OpenFileDialog()
+            dlg.Title = "Select saved project inputs file"
+            dlg.Filter = "Tank Inputs|TankInputs_*.xlsx|Excel Files|*.xlsx"
+            dlg.RestoreDirectory = True
+            dlg.CheckFileExists = True
+            dlg.Multiselect = False
+            If Directory.Exists(txt_Proj_Location.Text) Then
+                dlg.InitialDirectory = txt_Proj_Location.Text
+            End If
 
+            If dlg.ShowDialog() <> DialogResult.OK Then Exit Sub
+            fileToLoad = dlg.FileName
+        End Using
+
+        If Not File.Exists(fileToLoad) Then
+            MessageBox.Show("❌ File not found: " & fileToLoad, "Open/Load", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim isHorizontal As Boolean = Path.GetFileNameWithoutExtension(fileToLoad).ToUpper().EndsWith("_HOR")
+
+        If isHorizontal Then
+            LoadProjectInputsFromFile(Form7, fileToLoad)
+            ' Horizontal saves have no NewProjForm/revision sheet of their own — mirror
+            ' Form7's own Project Code so this form stays in sync.
+            txt_Proj_Code.Text = Form7.txt_Proj_Code.Text
+        Else
+            LoadAllVerticalProjectInputs(fileToLoad, Form1, Form2, Form3, Form4, Form5, Form6, Me)
+        End If
+
+        Dim chosenFolder As String = Path.GetDirectoryName(fileToLoad)
         Dim suggestedBase As String = StripRevisionAndProjCode(chosenFolder)
 
         Using dlg As New FolderBrowserDialog()
