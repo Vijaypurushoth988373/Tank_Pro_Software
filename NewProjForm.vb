@@ -36,15 +36,30 @@ Public Class NewProjForm
     End Sub
 
     ' =====================================================================================
-    ' File > Open/Load — browse for a saved TankInputs_*.xlsx and load it
+    ' File > Open/Load — browse for a saved TankInputs_*.xlsx and load it, then require the
+    ' user to explicitly pick/confirm the project directory (defaulting to the location the
+    ' file was loaded from) rather than silently deriving it — avoids saving to the wrong
+    ' place if the file wasn't sitting in the standard <base>\<ProjCode>\REV_<rev> layout.
     ' =====================================================================================
     Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
         Dim chosenFolder As String = BrowseAndLoadAllVerticalProjectInputs(Form1, Form2, Form3, Form4, Form5, Form6, Me, txt_Proj_Location.Text)
 
-        If chosenFolder <> "" Then
-            txt_Proj_Location.Text = StripRevisionAndProjCode(chosenFolder)
-            GoToMainUI()
-        End If
+        If chosenFolder = "" Then Exit Sub
+
+        Dim suggestedBase As String = StripRevisionAndProjCode(chosenFolder)
+
+        Using dlg As New FolderBrowserDialog()
+            dlg.Description = "Confirm project directory"
+            If Directory.Exists(suggestedBase) Then
+                dlg.SelectedPath = suggestedBase
+            End If
+
+            If dlg.ShowDialog() <> DialogResult.OK Then Exit Sub
+
+            txt_Proj_Location.Text = dlg.SelectedPath
+        End Using
+
+        GoToMainUI()
     End Sub
 
     ' =====================================================================================
