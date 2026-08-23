@@ -908,12 +908,19 @@ Public Module ProjectInputsManager
 
                             If TypeOf dgv.Columns(colIndex) Is DataGridViewComboBoxColumn Then
                                 Dim cbc = CType(dgv.Columns(colIndex), DataGridViewComboBoxColumn)
-                                If value <> "" AndAlso Not cbc.Items.Contains(value) Then
-                                    cbc.Items.Add(value)
+                                If value <> "" Then
+                                    If Not cbc.Items.Contains(value) Then
+                                        cbc.Items.Add(value)
+                                    End If
+                                    row.Cells(colIndex).Value = value
                                 End If
+                                ' Empty saved value: leave the combobox cell at its default rather
+                                ' than assigning Nothing — DataGridViewComboBoxCell.Value = Nothing
+                                ' throws ArgumentNullException ("source") when the column's Items
+                                ' list is still empty at load time.
+                            Else
+                                row.Cells(colIndex).Value = If(value = "", Nothing, value)
                             End If
-
-                            row.Cells(colIndex).Value = If(value = "", Nothing, value)
 
                         Catch ex As Exception
                             errors.Add($"{dgv.Name} cell: {ex.Message}")
