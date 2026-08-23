@@ -68,7 +68,8 @@ Public Class Form7
                     Try
                         Dim ipjPath As String = ""
                         If SelectedClient = "ARAMCO" Then
-                            ipjPath = "D:\HORIZONTAL_TANK\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
+                            ipjPath = "D:\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
+                            'ipjPath = "D:\HORIZONTAL_TANK\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
                         ElseIf SelectedClient = "ADNOC" Then
                             ipjPath = "D:\HORIZONTAL_TANK\ADNOC_HOR_VESSEL\ADNOC_HOR_VESSEL.ipj"
                         ElseIf SelectedClient = "QATAR" Then
