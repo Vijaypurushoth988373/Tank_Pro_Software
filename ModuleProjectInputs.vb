@@ -895,6 +895,16 @@ Public Module ProjectInputsManager
     Private Sub LoadDGV(dgv As DataGridView, rows As List(Of List(Of String)), errors As List(Of String))
         Try
             AddHandler dgv.DataError, AddressOf SuppressDataError
+
+            ' DataGridViewComboBoxCell.Value throws a spurious ArgumentNullException
+            ' ("Parameter name: source") when values are assigned before the grid has a
+            ' Win32 handle (e.g. loading into a form that hasn't been shown yet, as with
+            ' Open/Load routing straight into Form7). Forcing handle creation up front
+            ' — without making anything visible — avoids it.
+            If Not dgv.IsHandleCreated Then
+                Dim forceHandle As IntPtr = dgv.Handle
+            End If
+
             dgv.Rows.Clear()
 
             For Each rowVals As List(Of String) In rows
@@ -912,7 +922,15 @@ Public Module ProjectInputsManager
                                     If Not cbc.Items.Contains(value) Then
                                         cbc.Items.Add(value)
                                     End If
-                                    row.Cells(colIndex).Value = value
+                                    Try
+                                        row.Cells(colIndex).Value = value
+                                    Catch exCombo As ArgumentNullException
+                                        ' Known WinForms quirk: harmless, non-blocking — the cell
+                                        ' keeps its default and the row still loads. Log quietly
+                                        ' instead of surfacing it in the "could not be restored"
+                                        ' dialog.
+                                        Debug.Print($"⚠ Suppressed combo cell load error: {dgv.Name}[{rowIndex},{colIndex}] = '{value}': {exCombo.Message}")
+                                    End Try
                                 End If
                                 ' Empty saved value: leave the combobox cell at its default rather
                                 ' than assigning Nothing — DataGridViewComboBoxCell.Value = Nothing
