@@ -458,54 +458,54 @@ Public Class Form7
 
 #Region "PLATFORM SUPPORT CLEAT - LSC"
 
-        '=========================
-        ' PLACE & CONSTRAIN LSC ASSEMBLIES (1 TO 2)
-        '=========================
-        For i As Integer = 1 To 2
-            Dim lscPath As String = IO.Path.Combine(folderPath, $"ARAMCO\LSC_{i}\LSC_ASMBY_{i}.iam")
+        ''=========================
+        '' PLACE & CONSTRAIN LSC ASSEMBLIES (1 TO 2)
+        ''=========================
+        'For i As Integer = 1 To 2
+        '    Dim lscPath As String = IO.Path.Combine(folderPath, $"ARAMCO\LSC_{i}\LSC_ASMBY_{i}.iam")
 
-            If IO.File.Exists(lscPath) Then
-                Dim lscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lscPath, invApp.TransientGeometry.CreateMatrix())
-                PlaceAndConstrainShellComponent(asmDoc, shellOcc, lscOcc, $"LSC_ASMBY_{i}")
-            Else
-                Debug.Print($"LSC_ASMBY_{i}.iam not found: {lscPath}")
-            End If
+        '    If IO.File.Exists(lscPath) Then
+        '        Dim lscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lscPath, invApp.TransientGeometry.CreateMatrix())
+        '        PlaceAndConstrainShellComponent(asmDoc, shellOcc, lscOcc, $"LSC_ASMBY_{i}")
+        '    Else
+        '        Debug.Print($"LSC_ASMBY_{i}.iam not found: {lscPath}")
+        '    End If
 
-        Next i
+        'Next i
 
 #End Region
 
 #Region "PIPE SUPPORT CLEAT - LGS/PSC"
 
-        If SelectedClient = "ARAMCO" Then
-            '=========================
-            ' ARAMCO → 1 LGS
-            '=========================
-            Dim lgsPath As String = IO.Path.Combine(folderPath, "ARAMCO\LGS_1\LGS_ASMBY_1.iam")
+        'If SelectedClient = "ARAMCO" Then
+        '    '=========================
+        '    ' ARAMCO → 1 LGS
+        '    '=========================
+        '    Dim lgsPath As String = IO.Path.Combine(folderPath, "ARAMCO\LGS_1\LGS_ASMBY_1.iam")
 
-            If IO.File.Exists(lgsPath) Then
-                Dim lgsOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lgsPath, invApp.TransientGeometry.CreateMatrix())
-                PlaceAndConstrainShellComponent(asmDoc, shellOcc, lgsOcc, "LGS_ASMBY_1")
-            Else
-                Debug.Print($"LGS_ASMBY_1.iam not found: {lgsPath}")
-            End If
+        '    If IO.File.Exists(lgsPath) Then
+        '        Dim lgsOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(lgsPath, invApp.TransientGeometry.CreateMatrix())
+        '        PlaceAndConstrainShellComponent(asmDoc, shellOcc, lgsOcc, "LGS_ASMBY_1")
+        '    Else
+        '        Debug.Print($"LGS_ASMBY_1.iam not found: {lgsPath}")
+        '    End If
 
-        ElseIf SelectedClient = "ADNOC" Then
-            '=========================
-            ' ADNOC → 5 PSC
-            '=========================
-            For i As Integer = 1 To 5
-                Dim pscPath As String = IO.Path.Combine(folderPath, $"ADNOC\PSC_{i}\Assembly_PSC_{i}.iam")
+        'ElseIf SelectedClient = "ADNOC" Then
+        '    '=========================
+        '    ' ADNOC → 5 PSC
+        '    '=========================
+        '    For i As Integer = 1 To 5
+        '        Dim pscPath As String = IO.Path.Combine(folderPath, $"ADNOC\PSC_{i}\Assembly_PSC_{i}.iam")
 
-                If IO.File.Exists(pscPath) Then
-                    Dim pscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pscPath, invApp.TransientGeometry.CreateMatrix())
-                    PlaceAndConstrainShellComponent(asmDoc, shellOcc, pscOcc, $"Assembly_PSC_{i}")
-                Else
-                    Debug.Print($"Assembly_PSC_{i}.iam not found: {pscPath}")
-                End If
-            Next i
+        '        If IO.File.Exists(pscPath) Then
+        '            Dim pscOcc As ComponentOccurrence = asmDoc.ComponentDefinition.Occurrences.Add(pscPath, invApp.TransientGeometry.CreateMatrix())
+        '            PlaceAndConstrainShellComponent(asmDoc, shellOcc, pscOcc, $"Assembly_PSC_{i}")
+        '        Else
+        '            Debug.Print($"Assembly_PSC_{i}.iam not found: {pscPath}")
+        '        End If
+        '    Next i
 
-        End If
+        'End If
 
 #End Region
 
