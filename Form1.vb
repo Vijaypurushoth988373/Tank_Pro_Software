@@ -7000,158 +7000,158 @@ SkipPipeSupport:
 
 #Region "OTHER FUNCTION"
 
-        ''========================================
-        '' LET INVENTOR FINISH PROCESSING
-        ''========================================
-        'System.Windows.Forms.Application.DoEvents()
-        'System.Threading.Thread.Sleep(3000)
+        '========================================
+        ' LET INVENTOR FINISH PROCESSING
+        '========================================
+        System.Windows.Forms.Application.DoEvents()
+        System.Threading.Thread.Sleep(3000)
 
 
-        ''========================================
-        '' CLOSE TEST ASSEMBLY
-        ''========================================
-        'Try
-        '    If asmDoc IsNot Nothing Then
-        '        'asmDoc.Save()
-        '        asmDoc.Close(True)
-        '        asmDoc = Nothing
-        '    End If
-        'Catch ex As Exception
-        '    Debug.WriteLine(ex.Message)
-        'End Try
+        '========================================
+        ' CLOSE TEST ASSEMBLY
+        '========================================
+        Try
+            If asmDoc IsNot Nothing Then
+                'asmDoc.Save()
+                asmDoc.Close(True)
+                asmDoc = Nothing
+            End If
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        End Try
 
 
-        ''========================================
-        '' WAIT BEFORE QUITTING INVENTOR
-        ''========================================
-        'System.Windows.Forms.Application.DoEvents()
-        ''System.Threading.Thread.Sleep(2000)
+        '========================================
+        ' WAIT BEFORE QUITTING INVENTOR
+        '========================================
+        System.Windows.Forms.Application.DoEvents()
+        'System.Threading.Thread.Sleep(2000)
 
 
-        ''========================================
-        '' CLOSE INVENTOR SAFELY
-        ''========================================
-        'Try
-        '    If invApp IsNot Nothing Then
-        '        invApp.Quit()
-        '    End If
-        'Catch ex As Exception
-        '    Debug.WriteLine(ex.Message)
-        'End Try
+        '========================================
+        ' CLOSE INVENTOR SAFELY
+        '========================================
+        Try
+            If invApp IsNot Nothing Then
+                invApp.Quit()
+            End If
+        Catch ex As Exception
+            Debug.WriteLine(ex.Message)
+        End Try
 
 
-        ''========================================
-        '' RELEASE COM OBJECTS
-        ''========================================
-        'Try
-        '    If asmDoc IsNot Nothing Then
-        '        System.Runtime.InteropServices.Marshal.ReleaseComObject(asmDoc)
-        '    End If
+        '========================================
+        ' RELEASE COM OBJECTS
+        '========================================
+        Try
+            If asmDoc IsNot Nothing Then
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(asmDoc)
+            End If
 
-        '    If invApp IsNot Nothing Then
-        '        System.Runtime.InteropServices.Marshal.ReleaseComObject(invApp)
-        '    End If
-        'Catch
-        'End Try
+            If invApp IsNot Nothing Then
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(invApp)
+            End If
+        Catch
+        End Try
 
-        'asmDoc = Nothing
-        'invApp = Nothing
+        asmDoc = Nothing
+        invApp = Nothing
 
-        'GC.Collect()
-        'GC.WaitForPendingFinalizers()
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
 
-        ''========================================
-        '' SHOW LOADING UI (3–5 sec)
-        ''========================================
-        'Dim loading As New LOAD()
-        'loading.Show()
-        'loading.Refresh()
+        '========================================
+        ' SHOW LOADING UI (3–5 sec)
+        '========================================
+        Dim loading As New LOAD()
+        loading.Show()
+        loading.Refresh()
 
-        'System.Windows.Forms.Application.DoEvents()
+        System.Windows.Forms.Application.DoEvents()
 
-        'Try
-        '    '==================================================
-        '    ' 1) GET OR START INVENTOR
-        '    '==================================================
-        '    Try
-        '        invApp = CType(Marshal.GetActiveObject("Inventor.Application"), Inventor.Application)
-        '    Catch
-        '        invApp = CType(Activator.CreateInstance(Type.GetTypeFromProgID("Inventor.Application")), Inventor.Application)
-        '        invApp.Visible = True
-        '    End Try
+        Try
+            '==================================================
+            ' 1) GET OR START INVENTOR
+            '==================================================
+            Try
+                invApp = CType(Marshal.GetActiveObject("Inventor.Application"), Inventor.Application)
+            Catch
+                invApp = CType(Activator.CreateInstance(Type.GetTypeFromProgID("Inventor.Application")), Inventor.Application)
+                invApp.Visible = True
+            End Try
 
-        '    If invApp Is Nothing Then
-        '        MessageBox.Show("❌ Unable to start Inventor.", "Edit 3D")
-        '        loading.Close()
-        '        Exit Sub
-        '    End If
+            If invApp Is Nothing Then
+                MessageBox.Show("❌ Unable to start Inventor.", "Edit 3D")
+                loading.Close()
+                Exit Sub
+            End If
 
-        '    invApp.SilentOperation = True
-        '    loading.Close()
+            invApp.SilentOperation = True
+            loading.Close()
 
-        '    '==================================================
-        '    ' CONDITION 2: NO DOCUMENT OPEN
-        '    '==================================================
+            '==================================================
+            ' CONDITION 2: NO DOCUMENT OPEN
+            '==================================================
 
-        '    '----------------------------------------------
-        '    ' 2) ACTIVATE PROJECT
-        '    '----------------------------------------------
-        '    Dim ipjPath As String = SelectInventorProjectFile()
-        '    If String.IsNullOrWhiteSpace(ipjPath) Then Exit Sub
+            '----------------------------------------------
+            ' 2) ACTIVATE PROJECT
+            '----------------------------------------------
+            Dim ipjPath As String = SelectInventorProjectFile()
+            If String.IsNullOrWhiteSpace(ipjPath) Then Exit Sub
 
-        '    Dim activeProject As Inventor.DesignProject = AddAndActivateProject(invApp, ipjPath)
+            Dim activeProject As Inventor.DesignProject = AddAndActivateProject(invApp, ipjPath)
 
-        '    If activeProject Is Nothing Then Exit Sub
-
-
-        '    '----------------------------------------------
-        '    ' 3) LEG SUPPORT TYPE
-        '    '----------------------------------------------
-        '    Dim legType As String
-
-        '    If Rbn_Angle.Checked Then
-        '        legType = "ANGLE"
-        '    ElseIf Rbn_Beam.Checked Then
-        '        legType = "BEAM"
-        '    Else
-        '        MessageBox.Show("❌ Select Leg Support Type", "Edit 3D")
-        '        Exit Sub
-        '    End If
+            If activeProject Is Nothing Then Exit Sub
 
 
-        '    '----------------------------------------------
-        '    ' 4) OPEN CORRESPONDING MAIN ASSEMBLY
-        '    '----------------------------------------------
-        '    asmDoc = OpenMainAssemblyFromProject(invApp, activeProject, legType)
-        '    If asmDoc Is Nothing Then Exit Sub
+            '----------------------------------------------
+            ' 3) LEG SUPPORT TYPE
+            '----------------------------------------------
+            Dim legType As String
 
-        '    '----------------------------------------------
-        '    ' 5) RUN VISIBILITY iLOGIC
-        '    '----------------------------------------------
-        '    Dim visibilityRulePath As String = GetVisibilityILogicRulePath()
+            If Rbn_Angle.Checked Then
+                legType = "ANGLE"
+            ElseIf Rbn_Beam.Checked Then
+                legType = "BEAM"
+            Else
+                MessageBox.Show("❌ Select Leg Support Type", "Edit 3D")
+                Exit Sub
+            End If
 
-        '    If visibilityRulePath <> "" Then
-        '        RunExternalILogicRule(invApp, asmDoc, visibilityRulePath)
-        '    End If
 
-        '    '----------------------------------------------
-        '    ' 6) UPDATE & SAVE
-        '    '----------------------------------------------
-        '    Update_All_Parameters_Only(invApp, asmDoc)
+            '----------------------------------------------
+            ' 4) OPEN CORRESPONDING MAIN ASSEMBLY
+            '----------------------------------------------
+            asmDoc = OpenMainAssemblyFromProject(invApp, activeProject, legType)
+            If asmDoc Is Nothing Then Exit Sub
 
-        '    asmDoc.Update()
-        '    asmDoc.Save()
+            '----------------------------------------------
+            ' 5) RUN VISIBILITY iLOGIC
+            '----------------------------------------------
+            Dim visibilityRulePath As String = GetVisibilityILogicRulePath()
 
-        '    MessageBox.Show("3D Model Created Successfully", "Create 3D")
+            If visibilityRulePath <> "" Then
+                RunExternalILogicRule(invApp, asmDoc, visibilityRulePath)
+            End If
 
-        'Catch ex As Exception
-        '    MessageBox.Show("❌ Edit failed: " & ex.Message, "Create 3D")
+            '----------------------------------------------
+            ' 6) UPDATE & SAVE
+            '----------------------------------------------
+            Update_All_Parameters_Only(invApp, asmDoc)
 
-        'Finally
-        '    If invApp IsNot Nothing Then
-        '        invApp.SilentOperation = False
-        '    End If
-        'End Try
+            asmDoc.Update()
+            asmDoc.Save()
+
+            MessageBox.Show("3D Model Created Successfully", "Create 3D")
+
+        Catch ex As Exception
+            MessageBox.Show("❌ Edit failed: " & ex.Message, "Create 3D")
+
+        Finally
+            If invApp IsNot Nothing Then
+                invApp.SilentOperation = False
+            End If
+        End Try
 
 #End Region
 
