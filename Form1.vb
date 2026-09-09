@@ -5286,11 +5286,23 @@ Public Class Form1
                         Dim projCode As String = If(String.IsNullOrWhiteSpace(txt_Proj_Code.Text), NewProjForm.txt_Proj_Code.Text.Trim(), txt_Proj_Code.Text.Trim())
 
                         If Not String.IsNullOrWhiteSpace(projLocation) AndAlso Directory.Exists(projLocation) AndAlso Not String.IsNullOrWhiteSpace(projCode) Then
-                            Dim copiedIpjPath As String = CopyProjectToDestination(ipjPath, projLocation, projCode, revision)
+                            ' NewProjForm/Client_UI may already have copied the master project
+                            ' into this exact folder (CopyMasterProjectIfNeeded) when the client
+                            ' was selected. Reuse it instead of calling CopyProjectToDestination
+                            ' again, which would just hit its "Destination folder already exists"
+                            ' guard and bail out, silently falling back to the master's own folder.
+                            Dim expectedFolder As String = IO.Path.Combine(projLocation, SanitizeForFileName(projCode.Trim()), "REV_" & SanitizeForFileName(revision.Trim()))
+                            Dim existingIpj As String = If(IO.Directory.Exists(expectedFolder), IO.Directory.GetFiles(expectedFolder, "*.ipj").FirstOrDefault(), Nothing)
 
-                            folderPath = If(Not String.IsNullOrWhiteSpace(copiedIpjPath),
-                                            IO.Path.GetDirectoryName(copiedIpjPath),
-                                            IO.Path.GetDirectoryName(ipjPath))
+                            If Not String.IsNullOrWhiteSpace(existingIpj) Then
+                                folderPath = expectedFolder
+                            Else
+                                Dim copiedIpjPath As String = CopyProjectToDestination(ipjPath, projLocation, projCode, revision)
+
+                                folderPath = If(Not String.IsNullOrWhiteSpace(copiedIpjPath),
+                                                IO.Path.GetDirectoryName(copiedIpjPath),
+                                                IO.Path.GetDirectoryName(ipjPath))
+                            End If
                         Else
                             folderPath = IO.Path.GetDirectoryName(ipjPath)
                         End If
