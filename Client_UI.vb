@@ -131,7 +131,11 @@ Public Class Client_UI
     ''' the same paths Form1's Create 3D and Form7's own default-project logic already use.
     Private Function ResolveMasterIpjPath(tankType As String, client As String) As String
         If tankType = "VERTICAL" Then
-            Return "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
+            ' Z: is the primary location; fall back to the D: copy if it isn't found there
+            ' (e.g. Z: not mapped/available on this machine).
+            Dim zPath As String = "Z:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
+            Dim dPath As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
+            Return If(IO.File.Exists(zPath), zPath, dPath)
         ElseIf tankType = "HORIZONTAL" Then
             Select Case client
                 Case "ARAMCO"
