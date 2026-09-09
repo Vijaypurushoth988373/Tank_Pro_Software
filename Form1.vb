@@ -5267,8 +5267,11 @@ Public Class Form1
                         '--------------------------------------
                         ' Master project file
                         '--------------------------------------
-                        'Dim ipjPath As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
-                        Dim ipjPath As String = "Z:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
+                        ' Z: is the primary location; fall back to the D: copy if it isn't
+                        ' found there (e.g. Z: not mapped/available on this machine).
+                        Dim ipjPathZ As String = "Z:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
+                        Dim ipjPathD As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
+                        Dim ipjPath As String = If(IO.File.Exists(ipjPathZ), ipjPathZ, ipjPathD)
                         'Dim ipjPath As String = "D:\CP.26.003.C01.004\CP.26.003.C01.004.ipj"
 
                         '--------------------------------------
