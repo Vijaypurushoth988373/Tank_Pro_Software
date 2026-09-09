@@ -137,12 +137,19 @@ Public Class Client_UI
             Dim dPath As String = "D:\Projects\Inventor\CD.24.12_3D_Model - Test\CD.24.012.007_Test.ipj"
             Return If(IO.File.Exists(zPath), zPath, dPath)
         ElseIf tankType = "HORIZONTAL" Then
+            ' Z: is the primary location for these too; fall back to the D: copy if it
+            ' isn't found there (e.g. Z: not mapped/available on this machine).
+            Dim zPath As String = ""
+            Dim dPath As String = ""
             Select Case client
                 Case "ARAMCO"
-                    Return "D:\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
+                    zPath = "Z:\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
+                    dPath = "D:\ARAMCO_HOR_VESSEL\ARAMCO_HOR_VESSEL.ipj"
                 Case "ADNOC", "QATAR"
-                    Return "D:\HORIZONTAL_TANK\ADNOC_HOR_VESSEL\ADNOC_HOR_VESSEL.ipj"
+                    zPath = "Z:\HORIZONTAL_TANK\ADNOC_HOR_VESSEL\ADNOC_HOR_VESSEL.ipj"
+                    dPath = "D:\HORIZONTAL_TANK\ADNOC_HOR_VESSEL\ADNOC_HOR_VESSEL.ipj"
             End Select
+            If dPath <> "" Then Return If(IO.File.Exists(zPath), zPath, dPath)
         End If
 
         Return String.Empty
