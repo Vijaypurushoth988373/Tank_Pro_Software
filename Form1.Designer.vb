@@ -1067,6 +1067,8 @@ Partial Class Form1
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label178 = New System.Windows.Forms.Label()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout
         Me.TabPage21.SuspendLayout
         Me.TabPage2.SuspendLayout
@@ -3531,10 +3533,10 @@ Partial Class Form1
         Me.Panel11.Controls.Add(Me.TextBox6)
         Me.Panel11.Controls.Add(Me.Label191)
         Me.Panel11.Controls.Add(Me.TextBox7)
-        Me.Panel11.Location = New System.Drawing.Point(37, 86)
+        Me.Panel11.Location = New System.Drawing.Point(30, 68)
         Me.Panel11.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(704, 279)
+        Me.Panel11.Size = New System.Drawing.Size(563, 223)
         Me.Panel11.TabIndex = 132
         '
         'Label188
@@ -3638,10 +3640,10 @@ Partial Class Form1
         'PB_SS_TYPE_4_
         '
         Me.PB_SS_TYPE_4_.Image = CType(resources.GetObject("PB_SS_TYPE_4_.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_4_.Location = New System.Drawing.Point(1137, 0)
+        Me.PB_SS_TYPE_4_.Location = New System.Drawing.Point(910, 0)
         Me.PB_SS_TYPE_4_.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_4_.Name = "PB_SS_TYPE_4_"
-        Me.PB_SS_TYPE_4_.Size = New System.Drawing.Size(485, 455)
+        Me.PB_SS_TYPE_4_.Size = New System.Drawing.Size(388, 364)
         Me.PB_SS_TYPE_4_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_4_.TabIndex = 130
         Me.PB_SS_TYPE_4_.TabStop = False
@@ -3649,10 +3651,10 @@ Partial Class Form1
         'PB_SS_TYPE_4
         '
         Me.PB_SS_TYPE_4.Image = CType(resources.GetObject("PB_SS_TYPE_4.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_4.Location = New System.Drawing.Point(769, 0)
+        Me.PB_SS_TYPE_4.Location = New System.Drawing.Point(615, 0)
         Me.PB_SS_TYPE_4.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_4.Name = "PB_SS_TYPE_4"
-        Me.PB_SS_TYPE_4.Size = New System.Drawing.Size(367, 455)
+        Me.PB_SS_TYPE_4.Size = New System.Drawing.Size(294, 364)
         Me.PB_SS_TYPE_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_4.TabIndex = 129
         Me.PB_SS_TYPE_4.TabStop = False
@@ -3660,10 +3662,10 @@ Partial Class Form1
         'PB_SS_TYPE_3_
         '
         Me.PB_SS_TYPE_3_.Image = CType(resources.GetObject("PB_SS_TYPE_3_.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_3_.Location = New System.Drawing.Point(1137, 0)
+        Me.PB_SS_TYPE_3_.Location = New System.Drawing.Point(910, 0)
         Me.PB_SS_TYPE_3_.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_3_.Name = "PB_SS_TYPE_3_"
-        Me.PB_SS_TYPE_3_.Size = New System.Drawing.Size(485, 455)
+        Me.PB_SS_TYPE_3_.Size = New System.Drawing.Size(388, 364)
         Me.PB_SS_TYPE_3_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_3_.TabIndex = 128
         Me.PB_SS_TYPE_3_.TabStop = False
@@ -3671,10 +3673,10 @@ Partial Class Form1
         'PB_SS_TYPE_3
         '
         Me.PB_SS_TYPE_3.Image = CType(resources.GetObject("PB_SS_TYPE_3.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_3.Location = New System.Drawing.Point(769, 0)
+        Me.PB_SS_TYPE_3.Location = New System.Drawing.Point(615, 0)
         Me.PB_SS_TYPE_3.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_3.Name = "PB_SS_TYPE_3"
-        Me.PB_SS_TYPE_3.Size = New System.Drawing.Size(367, 455)
+        Me.PB_SS_TYPE_3.Size = New System.Drawing.Size(294, 364)
         Me.PB_SS_TYPE_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_3.TabIndex = 127
         Me.PB_SS_TYPE_3.TabStop = False
@@ -3682,10 +3684,10 @@ Partial Class Form1
         'PB_SS_TYPE_2_
         '
         Me.PB_SS_TYPE_2_.Image = CType(resources.GetObject("PB_SS_TYPE_2_.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_2_.Location = New System.Drawing.Point(1137, 0)
+        Me.PB_SS_TYPE_2_.Location = New System.Drawing.Point(910, 0)
         Me.PB_SS_TYPE_2_.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_2_.Name = "PB_SS_TYPE_2_"
-        Me.PB_SS_TYPE_2_.Size = New System.Drawing.Size(485, 455)
+        Me.PB_SS_TYPE_2_.Size = New System.Drawing.Size(388, 364)
         Me.PB_SS_TYPE_2_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_2_.TabIndex = 126
         Me.PB_SS_TYPE_2_.TabStop = False
@@ -3693,10 +3695,10 @@ Partial Class Form1
         'PB_SS_TYPE_2
         '
         Me.PB_SS_TYPE_2.Image = CType(resources.GetObject("PB_SS_TYPE_2.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_2.Location = New System.Drawing.Point(769, 0)
+        Me.PB_SS_TYPE_2.Location = New System.Drawing.Point(615, 0)
         Me.PB_SS_TYPE_2.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_2.Name = "PB_SS_TYPE_2"
-        Me.PB_SS_TYPE_2.Size = New System.Drawing.Size(367, 455)
+        Me.PB_SS_TYPE_2.Size = New System.Drawing.Size(294, 364)
         Me.PB_SS_TYPE_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_2.TabIndex = 76
         Me.PB_SS_TYPE_2.TabStop = False
@@ -3704,10 +3706,10 @@ Partial Class Form1
         'PB_SS_TYPE_1_
         '
         Me.PB_SS_TYPE_1_.Image = CType(resources.GetObject("PB_SS_TYPE_1_.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_1_.Location = New System.Drawing.Point(1137, 0)
+        Me.PB_SS_TYPE_1_.Location = New System.Drawing.Point(910, 0)
         Me.PB_SS_TYPE_1_.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_1_.Name = "PB_SS_TYPE_1_"
-        Me.PB_SS_TYPE_1_.Size = New System.Drawing.Size(485, 455)
+        Me.PB_SS_TYPE_1_.Size = New System.Drawing.Size(388, 364)
         Me.PB_SS_TYPE_1_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_1_.TabIndex = 125
         Me.PB_SS_TYPE_1_.TabStop = False
@@ -3715,10 +3717,10 @@ Partial Class Form1
         'PB_SS_TYPE_1
         '
         Me.PB_SS_TYPE_1.Image = CType(resources.GetObject("PB_SS_TYPE_1.Image"), System.Drawing.Image)
-        Me.PB_SS_TYPE_1.Location = New System.Drawing.Point(769, 0)
+        Me.PB_SS_TYPE_1.Location = New System.Drawing.Point(615, 0)
         Me.PB_SS_TYPE_1.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_SS_TYPE_1.Name = "PB_SS_TYPE_1"
-        Me.PB_SS_TYPE_1.Size = New System.Drawing.Size(367, 455)
+        Me.PB_SS_TYPE_1.Size = New System.Drawing.Size(294, 364)
         Me.PB_SS_TYPE_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_SS_TYPE_1.TabIndex = 75
         Me.PB_SS_TYPE_1.TabStop = False
@@ -3729,10 +3731,10 @@ Partial Class Form1
         Me.Panel9.Controls.Add(Me.Rbn_SS_Type_3)
         Me.Panel9.Controls.Add(Me.Rbn_SS_Type_2)
         Me.Panel9.Controls.Add(Me.Rbn_SS_Type_1)
-        Me.Panel9.Location = New System.Drawing.Point(168, 43)
+        Me.Panel9.Location = New System.Drawing.Point(134, 34)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(473, 36)
+        Me.Panel9.Size = New System.Drawing.Size(378, 29)
         Me.Panel9.TabIndex = 124
         '
         'Rbn_SS_Type_4
@@ -3824,10 +3826,10 @@ Partial Class Form1
         Me.Panel10.Controls.Add(Me.txt_LugS_Angle)
         Me.Panel10.Controls.Add(Me.Label184)
         Me.Panel10.Controls.Add(Me.txt_LugS_Dist)
-        Me.Panel10.Location = New System.Drawing.Point(39, 86)
+        Me.Panel10.Location = New System.Drawing.Point(31, 68)
         Me.Panel10.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(704, 279)
+        Me.Panel10.Size = New System.Drawing.Size(563, 223)
         Me.Panel10.TabIndex = 127
         '
         'Button8
@@ -3931,10 +3933,10 @@ Partial Class Form1
         'PB_LugS_TYPE_3_
         '
         Me.PB_LugS_TYPE_3_.Image = CType(resources.GetObject("PB_LugS_TYPE_3_.Image"), System.Drawing.Image)
-        Me.PB_LugS_TYPE_3_.Location = New System.Drawing.Point(1085, 0)
+        Me.PB_LugS_TYPE_3_.Location = New System.Drawing.Point(868, 0)
         Me.PB_LugS_TYPE_3_.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_LugS_TYPE_3_.Name = "PB_LugS_TYPE_3_"
-        Me.PB_LugS_TYPE_3_.Size = New System.Drawing.Size(548, 455)
+        Me.PB_LugS_TYPE_3_.Size = New System.Drawing.Size(438, 364)
         Me.PB_LugS_TYPE_3_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_LugS_TYPE_3_.TabIndex = 126
         Me.PB_LugS_TYPE_3_.TabStop = False
@@ -3942,10 +3944,10 @@ Partial Class Form1
         'PB_LugS_TYPE_2_
         '
         Me.PB_LugS_TYPE_2_.Image = CType(resources.GetObject("PB_LugS_TYPE_2_.Image"), System.Drawing.Image)
-        Me.PB_LugS_TYPE_2_.Location = New System.Drawing.Point(1085, 0)
+        Me.PB_LugS_TYPE_2_.Location = New System.Drawing.Point(868, 0)
         Me.PB_LugS_TYPE_2_.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_LugS_TYPE_2_.Name = "PB_LugS_TYPE_2_"
-        Me.PB_LugS_TYPE_2_.Size = New System.Drawing.Size(548, 455)
+        Me.PB_LugS_TYPE_2_.Size = New System.Drawing.Size(438, 364)
         Me.PB_LugS_TYPE_2_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_LugS_TYPE_2_.TabIndex = 126
         Me.PB_LugS_TYPE_2_.TabStop = False
@@ -3953,10 +3955,10 @@ Partial Class Form1
         'PB_LugS_TYPE_3
         '
         Me.PB_LugS_TYPE_3.Image = CType(resources.GetObject("PB_LugS_TYPE_3.Image"), System.Drawing.Image)
-        Me.PB_LugS_TYPE_3.Location = New System.Drawing.Point(769, 0)
+        Me.PB_LugS_TYPE_3.Location = New System.Drawing.Point(615, 0)
         Me.PB_LugS_TYPE_3.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_LugS_TYPE_3.Name = "PB_LugS_TYPE_3"
-        Me.PB_LugS_TYPE_3.Size = New System.Drawing.Size(317, 455)
+        Me.PB_LugS_TYPE_3.Size = New System.Drawing.Size(254, 364)
         Me.PB_LugS_TYPE_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_LugS_TYPE_3.TabIndex = 125
         Me.PB_LugS_TYPE_3.TabStop = False
@@ -3964,10 +3966,10 @@ Partial Class Form1
         'PB_LugS_TYPE_2
         '
         Me.PB_LugS_TYPE_2.Image = CType(resources.GetObject("PB_LugS_TYPE_2.Image"), System.Drawing.Image)
-        Me.PB_LugS_TYPE_2.Location = New System.Drawing.Point(769, 0)
+        Me.PB_LugS_TYPE_2.Location = New System.Drawing.Point(615, 0)
         Me.PB_LugS_TYPE_2.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_LugS_TYPE_2.Name = "PB_LugS_TYPE_2"
-        Me.PB_LugS_TYPE_2.Size = New System.Drawing.Size(317, 455)
+        Me.PB_LugS_TYPE_2.Size = New System.Drawing.Size(254, 364)
         Me.PB_LugS_TYPE_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_LugS_TYPE_2.TabIndex = 125
         Me.PB_LugS_TYPE_2.TabStop = False
@@ -3975,10 +3977,10 @@ Partial Class Form1
         'PB_LugS_TYPE_1_
         '
         Me.PB_LugS_TYPE_1_.Image = CType(resources.GetObject("PB_LugS_TYPE_1_.Image"), System.Drawing.Image)
-        Me.PB_LugS_TYPE_1_.Location = New System.Drawing.Point(1085, 0)
+        Me.PB_LugS_TYPE_1_.Location = New System.Drawing.Point(868, 0)
         Me.PB_LugS_TYPE_1_.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_LugS_TYPE_1_.Name = "PB_LugS_TYPE_1_"
-        Me.PB_LugS_TYPE_1_.Size = New System.Drawing.Size(548, 455)
+        Me.PB_LugS_TYPE_1_.Size = New System.Drawing.Size(438, 364)
         Me.PB_LugS_TYPE_1_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_LugS_TYPE_1_.TabIndex = 124
         Me.PB_LugS_TYPE_1_.TabStop = False
@@ -3986,10 +3988,10 @@ Partial Class Form1
         'PB_LugS_TYPE_1
         '
         Me.PB_LugS_TYPE_1.Image = CType(resources.GetObject("PB_LugS_TYPE_1.Image"), System.Drawing.Image)
-        Me.PB_LugS_TYPE_1.Location = New System.Drawing.Point(769, 0)
+        Me.PB_LugS_TYPE_1.Location = New System.Drawing.Point(615, 0)
         Me.PB_LugS_TYPE_1.Margin = New System.Windows.Forms.Padding(4)
         Me.PB_LugS_TYPE_1.Name = "PB_LugS_TYPE_1"
-        Me.PB_LugS_TYPE_1.Size = New System.Drawing.Size(317, 455)
+        Me.PB_LugS_TYPE_1.Size = New System.Drawing.Size(254, 364)
         Me.PB_LugS_TYPE_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB_LugS_TYPE_1.TabIndex = 123
         Me.PB_LugS_TYPE_1.TabStop = False
@@ -3999,10 +4001,10 @@ Partial Class Form1
         Me.Panel8.Controls.Add(Me.Rbn_Lug_type3)
         Me.Panel8.Controls.Add(Me.Rbn_Lug_type2)
         Me.Panel8.Controls.Add(Me.Rbn_Lug_type1)
-        Me.Panel8.Location = New System.Drawing.Point(196, 43)
+        Me.Panel8.Location = New System.Drawing.Point(157, 34)
         Me.Panel8.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(391, 36)
+        Me.Panel8.Size = New System.Drawing.Size(313, 29)
         Me.Panel8.TabIndex = 122
         '
         'Rbn_Lug_type3
@@ -4084,21 +4086,21 @@ Partial Class Form1
         'txt_LLA_Ang_bw
         '
         Me.txt_LLA_Ang_bw.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LLA_Ang_bw.Location = New System.Drawing.Point(204, 169)
+        Me.txt_LLA_Ang_bw.Location = New System.Drawing.Point(163, 135)
         Me.txt_LLA_Ang_bw.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Ang_bw.Name = "txt_LLA_Ang_bw"
         Me.txt_LLA_Ang_bw.ReadOnly = True
-        Me.txt_LLA_Ang_bw.Size = New System.Drawing.Size(172, 27)
+        Me.txt_LLA_Ang_bw.Size = New System.Drawing.Size(138, 22)
         Me.txt_LLA_Ang_bw.TabIndex = 122
         Me.txt_LLA_Ang_bw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'PictureBox16
         '
         Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
-        Me.PictureBox16.Location = New System.Drawing.Point(1133, 0)
+        Me.PictureBox16.Location = New System.Drawing.Point(906, 0)
         Me.PictureBox16.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(485, 455)
+        Me.PictureBox16.Size = New System.Drawing.Size(388, 364)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox16.TabIndex = 75
         Me.PictureBox16.TabStop = False
@@ -4107,10 +4109,10 @@ Partial Class Form1
         '
         Me.Panel6.Controls.Add(Me.Rbn_Beam)
         Me.Panel6.Controls.Add(Me.Rbn_Angle)
-        Me.Panel6.Location = New System.Drawing.Point(231, 43)
+        Me.Panel6.Location = New System.Drawing.Point(184, 34)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(337, 36)
+        Me.Panel6.Size = New System.Drawing.Size(270, 29)
         Me.Panel6.TabIndex = 121
         '
         'Rbn_Beam
@@ -4141,10 +4143,10 @@ Partial Class Form1
         'PictureBox15
         '
         Me.PictureBox15.Image = CType(resources.GetObject("PictureBox15.Image"), System.Drawing.Image)
-        Me.PictureBox15.Location = New System.Drawing.Point(769, 0)
+        Me.PictureBox15.Location = New System.Drawing.Point(615, 0)
         Me.PictureBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(367, 455)
+        Me.PictureBox15.Size = New System.Drawing.Size(294, 364)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox15.TabIndex = 74
         Me.PictureBox15.TabStop = False
@@ -4152,20 +4154,20 @@ Partial Class Form1
         'PictureBox11
         '
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(1133, 0)
+        Me.PictureBox11.Location = New System.Drawing.Point(906, 0)
         Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(485, 455)
+        Me.PictureBox11.Size = New System.Drawing.Size(388, 364)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox11.TabIndex = 60
         Me.PictureBox11.TabStop = False
         '
         'btn_LSD
         '
-        Me.btn_LSD.Location = New System.Drawing.Point(276, 217)
+        Me.btn_LSD.Location = New System.Drawing.Point(220, 173)
         Me.btn_LSD.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_LSD.Name = "btn_LSD"
-        Me.btn_LSD.Size = New System.Drawing.Size(233, 36)
+        Me.btn_LSD.Size = New System.Drawing.Size(186, 29)
         Me.btn_LSD.TabIndex = 59
         Me.btn_LSD.Text = "Show Leg Support Details"
         Me.btn_LSD.UseVisualStyleBackColor = True
@@ -4173,31 +4175,31 @@ Partial Class Form1
         'txt_LLA_Leg_Length
         '
         Me.txt_LLA_Leg_Length.BackColor = System.Drawing.Color.Silver
-        Me.txt_LLA_Leg_Length.Location = New System.Drawing.Point(579, 169)
+        Me.txt_LLA_Leg_Length.Location = New System.Drawing.Point(463, 135)
         Me.txt_LLA_Leg_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Leg_Length.Name = "txt_LLA_Leg_Length"
         Me.txt_LLA_Leg_Length.ReadOnly = True
-        Me.txt_LLA_Leg_Length.Size = New System.Drawing.Size(172, 27)
+        Me.txt_LLA_Leg_Length.Size = New System.Drawing.Size(138, 22)
         Me.txt_LLA_Leg_Length.TabIndex = 52
         Me.txt_LLA_Leg_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LLA_Base_To_W_L
         '
         Me.txt_LLA_Base_To_W_L.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LLA_Base_To_W_L.Location = New System.Drawing.Point(579, 132)
+        Me.txt_LLA_Base_To_W_L.Location = New System.Drawing.Point(463, 105)
         Me.txt_LLA_Base_To_W_L.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Base_To_W_L.Name = "txt_LLA_Base_To_W_L"
-        Me.txt_LLA_Base_To_W_L.Size = New System.Drawing.Size(172, 27)
+        Me.txt_LLA_Base_To_W_L.Size = New System.Drawing.Size(138, 22)
         Me.txt_LLA_Base_To_W_L.TabIndex = 50
         Me.txt_LLA_Base_To_W_L.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LLA_Base_To_TL
         '
         Me.txt_LLA_Base_To_TL.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LLA_Base_To_TL.Location = New System.Drawing.Point(579, 95)
+        Me.txt_LLA_Base_To_TL.Location = New System.Drawing.Point(463, 76)
         Me.txt_LLA_Base_To_TL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Base_To_TL.Name = "txt_LLA_Base_To_TL"
-        Me.txt_LLA_Base_To_TL.Size = New System.Drawing.Size(172, 27)
+        Me.txt_LLA_Base_To_TL.Size = New System.Drawing.Size(138, 22)
         Me.txt_LLA_Base_To_TL.TabIndex = 49
         Me.txt_LLA_Base_To_TL.Text = "1398.5"
         Me.txt_LLA_Base_To_TL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4217,7 +4219,7 @@ Partial Class Form1
         '
         Me.txt_LLA_Base_To_WL.AutoSize = True
         Me.txt_LLA_Base_To_WL.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_LLA_Base_To_WL.Location = New System.Drawing.Point(421, 135)
+        Me.txt_LLA_Base_To_WL.Location = New System.Drawing.Point(420, 135)
         Me.txt_LLA_Base_To_WL.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.txt_LLA_Base_To_WL.Name = "txt_LLA_Base_To_WL"
         Me.txt_LLA_Base_To_WL.Size = New System.Drawing.Size(146, 21)
@@ -4249,21 +4251,21 @@ Partial Class Form1
         'txt_LLA_NOL
         '
         Me.txt_LLA_NOL.BackColor = System.Drawing.Color.Silver
-        Me.txt_LLA_NOL.Location = New System.Drawing.Point(204, 132)
+        Me.txt_LLA_NOL.Location = New System.Drawing.Point(163, 105)
         Me.txt_LLA_NOL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_NOL.Name = "txt_LLA_NOL"
         Me.txt_LLA_NOL.ReadOnly = True
-        Me.txt_LLA_NOL.Size = New System.Drawing.Size(172, 27)
+        Me.txt_LLA_NOL.Size = New System.Drawing.Size(138, 22)
         Me.txt_LLA_NOL.TabIndex = 42
         Me.txt_LLA_NOL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LSA_Angle
         '
         Me.txt_LSA_Angle.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LSA_Angle.Location = New System.Drawing.Point(204, 95)
+        Me.txt_LSA_Angle.Location = New System.Drawing.Point(163, 76)
         Me.txt_LSA_Angle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LSA_Angle.Name = "txt_LSA_Angle"
-        Me.txt_LSA_Angle.Size = New System.Drawing.Size(172, 27)
+        Me.txt_LSA_Angle.Size = New System.Drawing.Size(138, 22)
         Me.txt_LSA_Angle.TabIndex = 41
         Me.txt_LSA_Angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -4282,7 +4284,7 @@ Partial Class Form1
         '
         Me.Label116.AutoSize = True
         Me.Label116.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label116.Location = New System.Drawing.Point(73, 135)
+        Me.Label116.Location = New System.Drawing.Point(72, 135)
         Me.Label116.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label116.Name = "Label116"
         Me.Label116.Size = New System.Drawing.Size(120, 21)
@@ -4303,10 +4305,10 @@ Partial Class Form1
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(769, 0)
+        Me.PictureBox6.Location = New System.Drawing.Point(615, 0)
         Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(367, 455)
+        Me.PictureBox6.Size = New System.Drawing.Size(294, 364)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 0
         Me.PictureBox6.TabStop = False
@@ -4409,10 +4411,10 @@ Partial Class Form1
         'PictureBox48
         '
         Me.PictureBox48.Image = CType(resources.GetObject("PictureBox48.Image"), System.Drawing.Image)
-        Me.PictureBox48.Location = New System.Drawing.Point(816, 0)
+        Me.PictureBox48.Location = New System.Drawing.Point(653, 0)
         Me.PictureBox48.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox48.Name = "PictureBox48"
-        Me.PictureBox48.Size = New System.Drawing.Size(287, 233)
+        Me.PictureBox48.Size = New System.Drawing.Size(230, 186)
         Me.PictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox48.TabIndex = 106
         Me.PictureBox48.TabStop = False
@@ -4420,10 +4422,10 @@ Partial Class Form1
         'PictureBox47
         '
         Me.PictureBox47.Image = CType(resources.GetObject("PictureBox47.Image"), System.Drawing.Image)
-        Me.PictureBox47.Location = New System.Drawing.Point(441, 0)
+        Me.PictureBox47.Location = New System.Drawing.Point(353, 0)
         Me.PictureBox47.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox47.Name = "PictureBox47"
-        Me.PictureBox47.Size = New System.Drawing.Size(379, 534)
+        Me.PictureBox47.Size = New System.Drawing.Size(303, 427)
         Me.PictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox47.TabIndex = 105
         Me.PictureBox47.TabStop = False
@@ -4431,10 +4433,10 @@ Partial Class Form1
         'txt_BP_Assm_Angle
         '
         Me.txt_BP_Assm_Angle.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_BP_Assm_Angle.Location = New System.Drawing.Point(279, 288)
+        Me.txt_BP_Assm_Angle.Location = New System.Drawing.Point(223, 231)
         Me.txt_BP_Assm_Angle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Assm_Angle.Name = "txt_BP_Assm_Angle"
-        Me.txt_BP_Assm_Angle.Size = New System.Drawing.Size(147, 27)
+        Me.txt_BP_Assm_Angle.Size = New System.Drawing.Size(118, 22)
         Me.txt_BP_Assm_Angle.TabIndex = 42
         Me.txt_BP_Assm_Angle.Text = "180"
         Me.txt_BP_Assm_Angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4442,10 +4444,10 @@ Partial Class Form1
         'txt_BP_No_of_BP_Assm
         '
         Me.txt_BP_No_of_BP_Assm.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_BP_No_of_BP_Assm.Location = New System.Drawing.Point(279, 251)
+        Me.txt_BP_No_of_BP_Assm.Location = New System.Drawing.Point(223, 201)
         Me.txt_BP_No_of_BP_Assm.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_No_of_BP_Assm.Name = "txt_BP_No_of_BP_Assm"
-        Me.txt_BP_No_of_BP_Assm.Size = New System.Drawing.Size(147, 27)
+        Me.txt_BP_No_of_BP_Assm.Size = New System.Drawing.Size(118, 22)
         Me.txt_BP_No_of_BP_Assm.TabIndex = 42
         Me.txt_BP_No_of_BP_Assm.Text = "2"
         Me.txt_BP_No_of_BP_Assm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4453,10 +4455,10 @@ Partial Class Form1
         'txt_BP_Dist_bw_BP
         '
         Me.txt_BP_Dist_bw_BP.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_BP_Dist_bw_BP.Location = New System.Drawing.Point(279, 167)
+        Me.txt_BP_Dist_bw_BP.Location = New System.Drawing.Point(223, 134)
         Me.txt_BP_Dist_bw_BP.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Dist_bw_BP.Name = "txt_BP_Dist_bw_BP"
-        Me.txt_BP_Dist_bw_BP.Size = New System.Drawing.Size(147, 27)
+        Me.txt_BP_Dist_bw_BP.Size = New System.Drawing.Size(118, 22)
         Me.txt_BP_Dist_bw_BP.TabIndex = 42
         Me.txt_BP_Dist_bw_BP.Text = "1500"
         Me.txt_BP_Dist_bw_BP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4464,10 +4466,10 @@ Partial Class Form1
         'txt_BP_No_of_BP
         '
         Me.txt_BP_No_of_BP.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_BP_No_of_BP.Location = New System.Drawing.Point(279, 130)
+        Me.txt_BP_No_of_BP.Location = New System.Drawing.Point(223, 104)
         Me.txt_BP_No_of_BP.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_No_of_BP.Name = "txt_BP_No_of_BP"
-        Me.txt_BP_No_of_BP.Size = New System.Drawing.Size(147, 27)
+        Me.txt_BP_No_of_BP.Size = New System.Drawing.Size(118, 22)
         Me.txt_BP_No_of_BP.TabIndex = 42
         Me.txt_BP_No_of_BP.Text = "2"
         Me.txt_BP_No_of_BP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4475,10 +4477,10 @@ Partial Class Form1
         'txt_BP_Angle
         '
         Me.txt_BP_Angle.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_BP_Angle.Location = New System.Drawing.Point(279, 94)
+        Me.txt_BP_Angle.Location = New System.Drawing.Point(223, 75)
         Me.txt_BP_Angle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Angle.Name = "txt_BP_Angle"
-        Me.txt_BP_Angle.Size = New System.Drawing.Size(147, 27)
+        Me.txt_BP_Angle.Size = New System.Drawing.Size(118, 22)
         Me.txt_BP_Angle.TabIndex = 42
         Me.txt_BP_Angle.Text = "60"
         Me.txt_BP_Angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4486,10 +4488,10 @@ Partial Class Form1
         'txt_BP_Length
         '
         Me.txt_BP_Length.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_BP_Length.Location = New System.Drawing.Point(279, 57)
+        Me.txt_BP_Length.Location = New System.Drawing.Point(223, 46)
         Me.txt_BP_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Length.Name = "txt_BP_Length"
-        Me.txt_BP_Length.Size = New System.Drawing.Size(147, 27)
+        Me.txt_BP_Length.Size = New System.Drawing.Size(118, 22)
         Me.txt_BP_Length.TabIndex = 42
         Me.txt_BP_Length.Text = "2050"
         Me.txt_BP_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4564,7 +4566,7 @@ Partial Class Form1
         '
         Me.Label393.AutoSize = True
         Me.Label393.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label393.Location = New System.Drawing.Point(96, 134)
+        Me.Label393.Location = New System.Drawing.Point(96, 135)
         Me.Label393.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label393.Name = "Label393"
         Me.Label393.Size = New System.Drawing.Size(130, 21)
@@ -4624,10 +4626,10 @@ Partial Class Form1
         Me.txt_NPB_mat_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_NPB_mat_QTR.FormattingEnabled = True
         Me.txt_NPB_mat_QTR.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.txt_NPB_mat_QTR.Location = New System.Drawing.Point(544, 223)
+        Me.txt_NPB_mat_QTR.Location = New System.Drawing.Point(435, 179)
         Me.txt_NPB_mat_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_mat_QTR.Name = "txt_NPB_mat_QTR"
-        Me.txt_NPB_mat_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_mat_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_mat_QTR.TabIndex = 110
         Me.txt_NPB_mat_QTR.Text = "A 240 Gr.316L"
         '
@@ -4636,10 +4638,10 @@ Partial Class Form1
         Me.txt_NP_mat_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_NP_mat_QTR.FormattingEnabled = True
         Me.txt_NP_mat_QTR.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.txt_NP_mat_QTR.Location = New System.Drawing.Point(544, 76)
+        Me.txt_NP_mat_QTR.Location = New System.Drawing.Point(435, 61)
         Me.txt_NP_mat_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_mat_QTR.Name = "txt_NP_mat_QTR"
-        Me.txt_NP_mat_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_mat_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_mat_QTR.TabIndex = 109
         Me.txt_NP_mat_QTR.Text = "A 240 Gr.316L"
         '
@@ -4668,10 +4670,10 @@ Partial Class Form1
         'PictureBox44
         '
         Me.PictureBox44.Image = CType(resources.GetObject("PictureBox44.Image"), System.Drawing.Image)
-        Me.PictureBox44.Location = New System.Drawing.Point(1720, 0)
+        Me.PictureBox44.Location = New System.Drawing.Point(1376, 0)
         Me.PictureBox44.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox44.Name = "PictureBox44"
-        Me.PictureBox44.Size = New System.Drawing.Size(279, 425)
+        Me.PictureBox44.Size = New System.Drawing.Size(223, 340)
         Me.PictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox44.TabIndex = 76
         Me.PictureBox44.TabStop = False
@@ -4679,10 +4681,10 @@ Partial Class Form1
         'PictureBox45
         '
         Me.PictureBox45.Image = CType(resources.GetObject("PictureBox45.Image"), System.Drawing.Image)
-        Me.PictureBox45.Location = New System.Drawing.Point(1373, 0)
+        Me.PictureBox45.Location = New System.Drawing.Point(1099, 0)
         Me.PictureBox45.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox45.Name = "PictureBox45"
-        Me.PictureBox45.Size = New System.Drawing.Size(349, 425)
+        Me.PictureBox45.Size = New System.Drawing.Size(279, 340)
         Me.PictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox45.TabIndex = 75
         Me.PictureBox45.TabStop = False
@@ -4690,10 +4692,10 @@ Partial Class Form1
         'txt_NP_Orientation_QTR
         '
         Me.txt_NP_Orientation_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_Orientation_QTR.Location = New System.Drawing.Point(188, 187)
+        Me.txt_NP_Orientation_QTR.Location = New System.Drawing.Point(151, 150)
         Me.txt_NP_Orientation_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Orientation_QTR.Name = "txt_NP_Orientation_QTR"
-        Me.txt_NP_Orientation_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Orientation_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Orientation_QTR.TabIndex = 55
         Me.txt_NP_Orientation_QTR.Text = "225"
         Me.txt_NP_Orientation_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4702,7 +4704,7 @@ Partial Class Form1
         '
         Me.Label376.AutoSize = True
         Me.Label376.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label376.Location = New System.Drawing.Point(53, 191)
+        Me.Label376.Location = New System.Drawing.Point(53, 192)
         Me.Label376.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label376.Name = "Label376"
         Me.Label376.Size = New System.Drawing.Size(122, 21)
@@ -4712,10 +4714,10 @@ Partial Class Form1
         'PictureBox46
         '
         Me.PictureBox46.Image = CType(resources.GetObject("PictureBox46.Image"), System.Drawing.Image)
-        Me.PictureBox46.Location = New System.Drawing.Point(712, 0)
+        Me.PictureBox46.Location = New System.Drawing.Point(570, 0)
         Me.PictureBox46.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox46.Name = "PictureBox46"
-        Me.PictureBox46.Size = New System.Drawing.Size(664, 290)
+        Me.PictureBox46.Size = New System.Drawing.Size(531, 232)
         Me.PictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox46.TabIndex = 51
         Me.PictureBox46.TabStop = False
@@ -4723,10 +4725,10 @@ Partial Class Form1
         'txt_NP_width_QTR
         '
         Me.txt_NP_width_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_width_QTR.Location = New System.Drawing.Point(188, 76)
+        Me.txt_NP_width_QTR.Location = New System.Drawing.Point(151, 61)
         Me.txt_NP_width_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_width_QTR.Name = "txt_NP_width_QTR"
-        Me.txt_NP_width_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_width_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_width_QTR.TabIndex = 42
         Me.txt_NP_width_QTR.Text = "100"
         Me.txt_NP_width_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4745,10 +4747,10 @@ Partial Class Form1
         'txt_NP_length_QTR
         '
         Me.txt_NP_length_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_length_QTR.Location = New System.Drawing.Point(188, 39)
+        Me.txt_NP_length_QTR.Location = New System.Drawing.Point(151, 32)
         Me.txt_NP_length_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_length_QTR.Name = "txt_NP_length_QTR"
-        Me.txt_NP_length_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_length_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_length_QTR.TabIndex = 40
         Me.txt_NP_length_QTR.Text = "160"
         Me.txt_NP_length_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4757,7 +4759,7 @@ Partial Class Form1
         '
         Me.Label379.AutoSize = True
         Me.Label379.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label379.Location = New System.Drawing.Point(3, 43)
+        Me.Label379.Location = New System.Drawing.Point(3, 44)
         Me.Label379.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label379.Name = "Label379"
         Me.Label379.Size = New System.Drawing.Size(177, 21)
@@ -4778,10 +4780,10 @@ Partial Class Form1
         'txt_NP_Dist_Base_QTR
         '
         Me.txt_NP_Dist_Base_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_Dist_Base_QTR.Location = New System.Drawing.Point(188, 223)
+        Me.txt_NP_Dist_Base_QTR.Location = New System.Drawing.Point(151, 179)
         Me.txt_NP_Dist_Base_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist_Base_QTR.Name = "txt_NP_Dist_Base_QTR"
-        Me.txt_NP_Dist_Base_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Dist_Base_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Dist_Base_QTR.TabIndex = 34
         Me.txt_NP_Dist_Base_QTR.Text = "600"
         Me.txt_NP_Dist_Base_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4790,7 +4792,7 @@ Partial Class Form1
         '
         Me.Label382.AutoSize = True
         Me.Label382.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label382.Location = New System.Drawing.Point(29, 226)
+        Me.Label382.Location = New System.Drawing.Point(29, 227)
         Me.Label382.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label382.Name = "Label382"
         Me.Label382.Size = New System.Drawing.Size(147, 21)
@@ -4800,10 +4802,10 @@ Partial Class Form1
         'txt_NPB_Fillet_QTR
         '
         Me.txt_NPB_Fillet_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_Fillet_QTR.Location = New System.Drawing.Point(544, 188)
+        Me.txt_NPB_Fillet_QTR.Location = New System.Drawing.Point(435, 151)
         Me.txt_NPB_Fillet_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_Fillet_QTR.Name = "txt_NPB_Fillet_QTR"
-        Me.txt_NPB_Fillet_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_Fillet_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_Fillet_QTR.TabIndex = 29
         Me.txt_NPB_Fillet_QTR.Text = "3"
         Me.txt_NPB_Fillet_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4811,10 +4813,10 @@ Partial Class Form1
         'txt_NPB_height_QTR
         '
         Me.txt_NPB_height_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_height_QTR.Location = New System.Drawing.Point(544, 151)
+        Me.txt_NPB_height_QTR.Location = New System.Drawing.Point(435, 121)
         Me.txt_NPB_height_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_height_QTR.Name = "txt_NPB_height_QTR"
-        Me.txt_NPB_height_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_height_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_height_QTR.TabIndex = 29
         Me.txt_NPB_height_QTR.Text = "120"
         Me.txt_NPB_height_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4822,10 +4824,10 @@ Partial Class Form1
         'txt_NPB_thk_QTR
         '
         Me.txt_NPB_thk_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_thk_QTR.Location = New System.Drawing.Point(544, 113)
+        Me.txt_NPB_thk_QTR.Location = New System.Drawing.Point(435, 91)
         Me.txt_NPB_thk_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_thk_QTR.Name = "txt_NPB_thk_QTR"
-        Me.txt_NPB_thk_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_thk_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_thk_QTR.TabIndex = 25
         Me.txt_NPB_thk_QTR.Text = "6"
         Me.txt_NPB_thk_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4833,10 +4835,10 @@ Partial Class Form1
         'txt_NPB_width_QTR
         '
         Me.txt_NPB_width_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_width_QTR.Location = New System.Drawing.Point(188, 150)
+        Me.txt_NPB_width_QTR.Location = New System.Drawing.Point(151, 120)
         Me.txt_NPB_width_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_width_QTR.Name = "txt_NPB_width_QTR"
-        Me.txt_NPB_width_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_width_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_width_QTR.TabIndex = 24
         Me.txt_NPB_width_QTR.Text = "50"
         Me.txt_NPB_width_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4856,7 +4858,7 @@ Partial Class Form1
         '
         Me.Label387.AutoSize = True
         Me.Label387.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label387.Location = New System.Drawing.Point(8, 154)
+        Me.Label387.Location = New System.Drawing.Point(8, 155)
         Me.Label387.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label387.Name = "Label387"
         Me.Label387.Size = New System.Drawing.Size(168, 21)
@@ -4866,10 +4868,10 @@ Partial Class Form1
         'txt_NPB_length_QTR
         '
         Me.txt_NPB_length_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_length_QTR.Location = New System.Drawing.Point(188, 113)
+        Me.txt_NPB_length_QTR.Location = New System.Drawing.Point(151, 91)
         Me.txt_NPB_length_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_length_QTR.Name = "txt_NPB_length_QTR"
-        Me.txt_NPB_length_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_length_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_length_QTR.TabIndex = 21
         Me.txt_NPB_length_QTR.Text = "180"
         Me.txt_NPB_length_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4877,10 +4879,10 @@ Partial Class Form1
         'txt_NP_thk_QTR
         '
         Me.txt_NP_thk_QTR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_thk_QTR.Location = New System.Drawing.Point(544, 39)
+        Me.txt_NP_thk_QTR.Location = New System.Drawing.Point(435, 32)
         Me.txt_NP_thk_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_thk_QTR.Name = "txt_NP_thk_QTR"
-        Me.txt_NP_thk_QTR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_thk_QTR.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_thk_QTR.TabIndex = 20
         Me.txt_NP_thk_QTR.Text = "3"
         Me.txt_NP_thk_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4900,7 +4902,7 @@ Partial Class Form1
         '
         Me.Label388.AutoSize = True
         Me.Label388.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label388.Location = New System.Drawing.Point(360, 154)
+        Me.Label388.Location = New System.Drawing.Point(360, 155)
         Me.Label388.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label388.Name = "Label388"
         Me.Label388.Size = New System.Drawing.Size(171, 21)
@@ -4911,7 +4913,7 @@ Partial Class Form1
         '
         Me.Label389.AutoSize = True
         Me.Label389.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label389.Location = New System.Drawing.Point(380, 43)
+        Me.Label389.Location = New System.Drawing.Point(380, 44)
         Me.Label389.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label389.Name = "Label389"
         Me.Label389.Size = New System.Drawing.Size(155, 21)
@@ -5000,10 +5002,10 @@ Partial Class Form1
         'txt_PS_ad_Angle1
         '
         Me.txt_PS_ad_Angle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Angle1.Location = New System.Drawing.Point(197, 302)
+        Me.txt_PS_ad_Angle1.Location = New System.Drawing.Point(158, 242)
         Me.txt_PS_ad_Angle1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle1.Name = "txt_PS_ad_Angle1"
-        Me.txt_PS_ad_Angle1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Angle1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Angle1.TabIndex = 57
         Me.txt_PS_ad_Angle1.Text = "225"
         Me.txt_PS_ad_Angle1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5011,10 +5013,10 @@ Partial Class Form1
         'PictureBox22
         '
         Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
-        Me.PictureBox22.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox22.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox22.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox22.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox22.TabIndex = 56
         Me.PictureBox22.TabStop = False
@@ -5023,7 +5025,7 @@ Partial Class Form1
         '
         Me.Label197.AutoSize = True
         Me.Label197.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label197.Location = New System.Drawing.Point(44, 431)
+        Me.Label197.Location = New System.Drawing.Point(44, 432)
         Me.Label197.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label197.Name = "Label197"
         Me.Label197.Size = New System.Drawing.Size(140, 21)
@@ -5034,7 +5036,7 @@ Partial Class Form1
         '
         Me.Label84.AutoSize = True
         Me.Label84.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label84.Location = New System.Drawing.Point(44, 395)
+        Me.Label84.Location = New System.Drawing.Point(44, 396)
         Me.Label84.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label84.Name = "Label84"
         Me.Label84.Size = New System.Drawing.Size(140, 21)
@@ -5045,7 +5047,7 @@ Partial Class Form1
         '
         Me.Label85.AutoSize = True
         Me.Label85.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label85.Location = New System.Drawing.Point(35, 267)
+        Me.Label85.Location = New System.Drawing.Point(35, 268)
         Me.Label85.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label85.Name = "Label85"
         Me.Label85.Size = New System.Drawing.Size(147, 21)
@@ -5056,7 +5058,7 @@ Partial Class Form1
         '
         Me.Label86.AutoSize = True
         Me.Label86.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label86.Location = New System.Drawing.Point(33, 234)
+        Me.Label86.Location = New System.Drawing.Point(33, 235)
         Me.Label86.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label86.Name = "Label86"
         Me.Label86.Size = New System.Drawing.Size(148, 21)
@@ -5077,10 +5079,10 @@ Partial Class Form1
         'txt_adn_DP1_Length2
         '
         Me.txt_adn_DP1_Length2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP1_Length2.Location = New System.Drawing.Point(197, 427)
+        Me.txt_adn_DP1_Length2.Location = New System.Drawing.Point(158, 342)
         Me.txt_adn_DP1_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP1_Length2.Name = "txt_adn_DP1_Length2"
-        Me.txt_adn_DP1_Length2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP1_Length2.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP1_Length2.TabIndex = 54
         Me.txt_adn_DP1_Length2.Text = "1283"
         Me.txt_adn_DP1_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5088,10 +5090,10 @@ Partial Class Form1
         'txt_adn_DP1_Length1
         '
         Me.txt_adn_DP1_Length1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP1_Length1.Location = New System.Drawing.Point(197, 391)
+        Me.txt_adn_DP1_Length1.Location = New System.Drawing.Point(158, 313)
         Me.txt_adn_DP1_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP1_Length1.Name = "txt_adn_DP1_Length1"
-        Me.txt_adn_DP1_Length1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP1_Length1.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP1_Length1.TabIndex = 54
         Me.txt_adn_DP1_Length1.Text = "969"
         Me.txt_adn_DP1_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5099,10 +5101,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Base1
         '
         Me.txt_PS_ad_Dist_from_Base1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Base1.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_ad_Dist_from_Base1.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base1.Name = "txt_PS_ad_Dist_from_Base1"
-        Me.txt_PS_ad_Dist_from_Base1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Base1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Base1.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base1.Text = "351"
         Me.txt_PS_ad_Dist_from_Base1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5110,10 +5112,10 @@ Partial Class Form1
         'txt_PS_ad_Angle_Dist1
         '
         Me.txt_PS_ad_Angle_Dist1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Angle_Dist1.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_ad_Angle_Dist1.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist1.Name = "txt_PS_ad_Angle_Dist1"
-        Me.txt_PS_ad_Angle_Dist1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Angle_Dist1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Angle_Dist1.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist1.Text = "332"
         Me.txt_PS_ad_Angle_Dist1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5121,10 +5123,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_bw_Support1
         '
         Me.txt_PS_ad_Dist_bw_Support1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_bw_Support1.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_ad_Dist_bw_Support1.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support1.Name = "txt_PS_ad_Dist_bw_Support1"
-        Me.txt_PS_ad_Dist_bw_Support1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_bw_Support1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_bw_Support1.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support1.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5132,10 +5134,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Top1
         '
         Me.txt_PS_ad_Dist_from_Top1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Top1.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_ad_Dist_from_Top1.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top1.Name = "txt_PS_ad_Dist_from_Top1"
-        Me.txt_PS_ad_Dist_from_Top1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Top1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Top1.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top1.Text = "308"
         Me.txt_PS_ad_Dist_from_Top1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5143,11 +5145,11 @@ Partial Class Form1
         'txt_PS_ad_Dia1
         '
         Me.txt_PS_ad_Dia1.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Dia1.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_ad_Dia1.Location = New System.Drawing.Point(158, 38)
         Me.txt_PS_ad_Dia1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia1.Name = "txt_PS_ad_Dia1"
         Me.txt_PS_ad_Dia1.ReadOnly = True
-        Me.txt_PS_ad_Dia1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dia1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dia1.TabIndex = 51
         Me.txt_PS_ad_Dia1.Text = "1200"
         Me.txt_PS_ad_Dia1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5156,7 +5158,7 @@ Partial Class Form1
         '
         Me.Label166.AutoSize = True
         Me.Label166.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label166.Location = New System.Drawing.Point(67, 50)
+        Me.Label166.Location = New System.Drawing.Point(67, 51)
         Me.Label166.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label166.Name = "Label166"
         Me.Label166.Size = New System.Drawing.Size(113, 21)
@@ -5167,7 +5169,7 @@ Partial Class Form1
         '
         Me.Label192.AutoSize = True
         Me.Label192.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label192.Location = New System.Drawing.Point(124, 347)
+        Me.Label192.Location = New System.Drawing.Point(124, 348)
         Me.Label192.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label192.Name = "Label192"
         Me.Label192.Size = New System.Drawing.Size(217, 29)
@@ -5178,7 +5180,7 @@ Partial Class Form1
         '
         Me.Label193.AutoSize = True
         Me.Label193.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label193.Location = New System.Drawing.Point(124, 11)
+        Me.Label193.Location = New System.Drawing.Point(124, 12)
         Me.Label193.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label193.Name = "Label193"
         Me.Label193.Size = New System.Drawing.Size(263, 29)
@@ -5188,10 +5190,10 @@ Partial Class Form1
         'txt_PS_ad_No1
         '
         Me.txt_PS_ad_No1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_No1.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_ad_No1.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No1.Name = "txt_PS_ad_No1"
-        Me.txt_PS_ad_No1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_No1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_No1.TabIndex = 48
         Me.txt_PS_ad_No1.Text = "2"
         Me.txt_PS_ad_No1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5221,11 +5223,11 @@ Partial Class Form1
         'txt_PS_ad_Thk1
         '
         Me.txt_PS_ad_Thk1.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Thk1.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_ad_Thk1.Location = New System.Drawing.Point(158, 68)
         Me.txt_PS_ad_Thk1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk1.Name = "txt_PS_ad_Thk1"
         Me.txt_PS_ad_Thk1.ReadOnly = True
-        Me.txt_PS_ad_Thk1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Thk1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Thk1.TabIndex = 46
         Me.txt_PS_ad_Thk1.Text = "6"
         Me.txt_PS_ad_Thk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5234,7 +5236,7 @@ Partial Class Form1
         '
         Me.Label196.AutoSize = True
         Me.Label196.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label196.Location = New System.Drawing.Point(69, 87)
+        Me.Label196.Location = New System.Drawing.Point(69, 88)
         Me.Label196.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label196.Name = "Label196"
         Me.Label196.Size = New System.Drawing.Size(113, 21)
@@ -5299,10 +5301,10 @@ Partial Class Form1
         'txt_PS_ad_Angle2
         '
         Me.txt_PS_ad_Angle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Angle2.Location = New System.Drawing.Point(197, 302)
+        Me.txt_PS_ad_Angle2.Location = New System.Drawing.Point(158, 242)
         Me.txt_PS_ad_Angle2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle2.Name = "txt_PS_ad_Angle2"
-        Me.txt_PS_ad_Angle2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Angle2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Angle2.TabIndex = 59
         Me.txt_PS_ad_Angle2.Text = "135"
         Me.txt_PS_ad_Angle2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5310,10 +5312,10 @@ Partial Class Form1
         'PictureBox23
         '
         Me.PictureBox23.Image = CType(resources.GetObject("PictureBox23.Image"), System.Drawing.Image)
-        Me.PictureBox23.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox23.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox23.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox23.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox23.TabIndex = 56
         Me.PictureBox23.TabStop = False
@@ -5322,7 +5324,7 @@ Partial Class Form1
         '
         Me.Label198.AutoSize = True
         Me.Label198.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label198.Location = New System.Drawing.Point(44, 426)
+        Me.Label198.Location = New System.Drawing.Point(44, 427)
         Me.Label198.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label198.Name = "Label198"
         Me.Label198.Size = New System.Drawing.Size(140, 21)
@@ -5333,7 +5335,7 @@ Partial Class Form1
         '
         Me.Label199.AutoSize = True
         Me.Label199.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label199.Location = New System.Drawing.Point(44, 390)
+        Me.Label199.Location = New System.Drawing.Point(44, 391)
         Me.Label199.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label199.Name = "Label199"
         Me.Label199.Size = New System.Drawing.Size(140, 21)
@@ -5344,7 +5346,7 @@ Partial Class Form1
         '
         Me.Label200.AutoSize = True
         Me.Label200.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label200.Location = New System.Drawing.Point(35, 267)
+        Me.Label200.Location = New System.Drawing.Point(35, 268)
         Me.Label200.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label200.Name = "Label200"
         Me.Label200.Size = New System.Drawing.Size(147, 21)
@@ -5355,7 +5357,7 @@ Partial Class Form1
         '
         Me.Label201.AutoSize = True
         Me.Label201.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label201.Location = New System.Drawing.Point(33, 234)
+        Me.Label201.Location = New System.Drawing.Point(33, 235)
         Me.Label201.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label201.Name = "Label201"
         Me.Label201.Size = New System.Drawing.Size(148, 21)
@@ -5376,10 +5378,10 @@ Partial Class Form1
         'txt_adn_DP2_Length2
         '
         Me.txt_adn_DP2_Length2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP2_Length2.Location = New System.Drawing.Point(197, 422)
+        Me.txt_adn_DP2_Length2.Location = New System.Drawing.Point(158, 338)
         Me.txt_adn_DP2_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP2_Length2.Name = "txt_adn_DP2_Length2"
-        Me.txt_adn_DP2_Length2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP2_Length2.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP2_Length2.TabIndex = 54
         Me.txt_adn_DP2_Length2.Text = "1283"
         Me.txt_adn_DP2_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5387,10 +5389,10 @@ Partial Class Form1
         'txt_adn_DP2_Length1
         '
         Me.txt_adn_DP2_Length1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP2_Length1.Location = New System.Drawing.Point(197, 386)
+        Me.txt_adn_DP2_Length1.Location = New System.Drawing.Point(158, 309)
         Me.txt_adn_DP2_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP2_Length1.Name = "txt_adn_DP2_Length1"
-        Me.txt_adn_DP2_Length1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP2_Length1.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP2_Length1.TabIndex = 54
         Me.txt_adn_DP2_Length1.Text = "969"
         Me.txt_adn_DP2_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5398,10 +5400,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Base2
         '
         Me.txt_PS_ad_Dist_from_Base2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Base2.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_ad_Dist_from_Base2.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base2.Name = "txt_PS_ad_Dist_from_Base2"
-        Me.txt_PS_ad_Dist_from_Base2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Base2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Base2.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base2.Text = "351"
         Me.txt_PS_ad_Dist_from_Base2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5409,10 +5411,10 @@ Partial Class Form1
         'txt_PS_ad_Angle_Dist2
         '
         Me.txt_PS_ad_Angle_Dist2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Angle_Dist2.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_ad_Angle_Dist2.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist2.Name = "txt_PS_ad_Angle_Dist2"
-        Me.txt_PS_ad_Angle_Dist2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Angle_Dist2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Angle_Dist2.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist2.Text = "332"
         Me.txt_PS_ad_Angle_Dist2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5420,10 +5422,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_bw_Support2
         '
         Me.txt_PS_ad_Dist_bw_Support2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_bw_Support2.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_ad_Dist_bw_Support2.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support2.Name = "txt_PS_ad_Dist_bw_Support2"
-        Me.txt_PS_ad_Dist_bw_Support2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_bw_Support2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_bw_Support2.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support2.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5431,10 +5433,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Top2
         '
         Me.txt_PS_ad_Dist_from_Top2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Top2.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_ad_Dist_from_Top2.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top2.Name = "txt_PS_ad_Dist_from_Top2"
-        Me.txt_PS_ad_Dist_from_Top2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Top2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Top2.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top2.Text = "308"
         Me.txt_PS_ad_Dist_from_Top2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5442,11 +5444,11 @@ Partial Class Form1
         'txt_PS_ad_Dia2
         '
         Me.txt_PS_ad_Dia2.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Dia2.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_ad_Dia2.Location = New System.Drawing.Point(158, 38)
         Me.txt_PS_ad_Dia2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia2.Name = "txt_PS_ad_Dia2"
         Me.txt_PS_ad_Dia2.ReadOnly = True
-        Me.txt_PS_ad_Dia2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dia2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dia2.TabIndex = 51
         Me.txt_PS_ad_Dia2.Text = "1200"
         Me.txt_PS_ad_Dia2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5455,7 +5457,7 @@ Partial Class Form1
         '
         Me.Label203.AutoSize = True
         Me.Label203.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label203.Location = New System.Drawing.Point(67, 50)
+        Me.Label203.Location = New System.Drawing.Point(67, 51)
         Me.Label203.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label203.Name = "Label203"
         Me.Label203.Size = New System.Drawing.Size(113, 21)
@@ -5466,7 +5468,7 @@ Partial Class Form1
         '
         Me.Label204.AutoSize = True
         Me.Label204.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label204.Location = New System.Drawing.Point(124, 342)
+        Me.Label204.Location = New System.Drawing.Point(124, 343)
         Me.Label204.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label204.Name = "Label204"
         Me.Label204.Size = New System.Drawing.Size(217, 29)
@@ -5477,7 +5479,7 @@ Partial Class Form1
         '
         Me.Label205.AutoSize = True
         Me.Label205.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label205.Location = New System.Drawing.Point(124, 11)
+        Me.Label205.Location = New System.Drawing.Point(124, 12)
         Me.Label205.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label205.Name = "Label205"
         Me.Label205.Size = New System.Drawing.Size(263, 29)
@@ -5487,10 +5489,10 @@ Partial Class Form1
         'txt_PS_ad_No2
         '
         Me.txt_PS_ad_No2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_No2.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_ad_No2.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No2.Name = "txt_PS_ad_No2"
-        Me.txt_PS_ad_No2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_No2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_No2.TabIndex = 48
         Me.txt_PS_ad_No2.Text = "2"
         Me.txt_PS_ad_No2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5520,11 +5522,11 @@ Partial Class Form1
         'txt_PS_ad_Thk2
         '
         Me.txt_PS_ad_Thk2.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Thk2.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_ad_Thk2.Location = New System.Drawing.Point(158, 68)
         Me.txt_PS_ad_Thk2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk2.Name = "txt_PS_ad_Thk2"
         Me.txt_PS_ad_Thk2.ReadOnly = True
-        Me.txt_PS_ad_Thk2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Thk2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Thk2.TabIndex = 46
         Me.txt_PS_ad_Thk2.Text = "6"
         Me.txt_PS_ad_Thk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5533,7 +5535,7 @@ Partial Class Form1
         '
         Me.Label208.AutoSize = True
         Me.Label208.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label208.Location = New System.Drawing.Point(69, 87)
+        Me.Label208.Location = New System.Drawing.Point(69, 88)
         Me.Label208.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label208.Name = "Label208"
         Me.Label208.Size = New System.Drawing.Size(113, 21)
@@ -5597,10 +5599,10 @@ Partial Class Form1
         'txt_PS_ad_Angle3
         '
         Me.txt_PS_ad_Angle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Angle3.Location = New System.Drawing.Point(197, 302)
+        Me.txt_PS_ad_Angle3.Location = New System.Drawing.Point(158, 242)
         Me.txt_PS_ad_Angle3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle3.Name = "txt_PS_ad_Angle3"
-        Me.txt_PS_ad_Angle3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Angle3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Angle3.TabIndex = 59
         Me.txt_PS_ad_Angle3.Text = "90"
         Me.txt_PS_ad_Angle3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5608,10 +5610,10 @@ Partial Class Form1
         'PictureBox24
         '
         Me.PictureBox24.Image = CType(resources.GetObject("PictureBox24.Image"), System.Drawing.Image)
-        Me.PictureBox24.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox24.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox24.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox24.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox24.TabIndex = 56
         Me.PictureBox24.TabStop = False
@@ -5620,7 +5622,7 @@ Partial Class Form1
         '
         Me.Label209.AutoSize = True
         Me.Label209.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label209.Location = New System.Drawing.Point(48, 430)
+        Me.Label209.Location = New System.Drawing.Point(48, 431)
         Me.Label209.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label209.Name = "Label209"
         Me.Label209.Size = New System.Drawing.Size(140, 21)
@@ -5631,7 +5633,7 @@ Partial Class Form1
         '
         Me.Label304.AutoSize = True
         Me.Label304.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label304.Location = New System.Drawing.Point(48, 394)
+        Me.Label304.Location = New System.Drawing.Point(48, 395)
         Me.Label304.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label304.Name = "Label304"
         Me.Label304.Size = New System.Drawing.Size(140, 21)
@@ -5642,7 +5644,7 @@ Partial Class Form1
         '
         Me.Label305.AutoSize = True
         Me.Label305.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label305.Location = New System.Drawing.Point(35, 267)
+        Me.Label305.Location = New System.Drawing.Point(35, 268)
         Me.Label305.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label305.Name = "Label305"
         Me.Label305.Size = New System.Drawing.Size(147, 21)
@@ -5653,7 +5655,7 @@ Partial Class Form1
         '
         Me.Label306.AutoSize = True
         Me.Label306.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label306.Location = New System.Drawing.Point(33, 234)
+        Me.Label306.Location = New System.Drawing.Point(33, 235)
         Me.Label306.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label306.Name = "Label306"
         Me.Label306.Size = New System.Drawing.Size(148, 21)
@@ -5674,10 +5676,10 @@ Partial Class Form1
         'txt_adn_DP3_Length2
         '
         Me.txt_adn_DP3_Length2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP3_Length2.Location = New System.Drawing.Point(201, 426)
+        Me.txt_adn_DP3_Length2.Location = New System.Drawing.Point(161, 341)
         Me.txt_adn_DP3_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP3_Length2.Name = "txt_adn_DP3_Length2"
-        Me.txt_adn_DP3_Length2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP3_Length2.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP3_Length2.TabIndex = 54
         Me.txt_adn_DP3_Length2.Text = "1306"
         Me.txt_adn_DP3_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5685,10 +5687,10 @@ Partial Class Form1
         'txt_adn_DP3_Length1
         '
         Me.txt_adn_DP3_Length1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP3_Length1.Location = New System.Drawing.Point(201, 390)
+        Me.txt_adn_DP3_Length1.Location = New System.Drawing.Point(161, 312)
         Me.txt_adn_DP3_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP3_Length1.Name = "txt_adn_DP3_Length1"
-        Me.txt_adn_DP3_Length1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP3_Length1.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP3_Length1.TabIndex = 54
         Me.txt_adn_DP3_Length1.Text = "969"
         Me.txt_adn_DP3_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5696,10 +5698,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Base3
         '
         Me.txt_PS_ad_Dist_from_Base3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Base3.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_ad_Dist_from_Base3.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base3.Name = "txt_PS_ad_Dist_from_Base3"
-        Me.txt_PS_ad_Dist_from_Base3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Base3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Base3.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base3.Text = "150"
         Me.txt_PS_ad_Dist_from_Base3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5707,10 +5709,10 @@ Partial Class Form1
         'txt_PS_ad_Angle_Dist3
         '
         Me.txt_PS_ad_Angle_Dist3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Angle_Dist3.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_ad_Angle_Dist3.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist3.Name = "txt_PS_ad_Angle_Dist3"
-        Me.txt_PS_ad_Angle_Dist3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Angle_Dist3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Angle_Dist3.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist3.Text = "268"
         Me.txt_PS_ad_Angle_Dist3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5718,10 +5720,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_bw_Support3
         '
         Me.txt_PS_ad_Dist_bw_Support3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_bw_Support3.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_ad_Dist_bw_Support3.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support3.Name = "txt_PS_ad_Dist_bw_Support3"
-        Me.txt_PS_ad_Dist_bw_Support3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_bw_Support3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_bw_Support3.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support3.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5729,10 +5731,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Top3
         '
         Me.txt_PS_ad_Dist_from_Top3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Top3.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_ad_Dist_from_Top3.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top3.Name = "txt_PS_ad_Dist_from_Top3"
-        Me.txt_PS_ad_Dist_from_Top3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Top3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Top3.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top3.Text = "308"
         Me.txt_PS_ad_Dist_from_Top3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5740,11 +5742,11 @@ Partial Class Form1
         'txt_PS_ad_Dia3
         '
         Me.txt_PS_ad_Dia3.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Dia3.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_ad_Dia3.Location = New System.Drawing.Point(158, 38)
         Me.txt_PS_ad_Dia3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia3.Name = "txt_PS_ad_Dia3"
         Me.txt_PS_ad_Dia3.ReadOnly = True
-        Me.txt_PS_ad_Dia3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dia3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dia3.TabIndex = 51
         Me.txt_PS_ad_Dia3.Text = "1200"
         Me.txt_PS_ad_Dia3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5753,7 +5755,7 @@ Partial Class Form1
         '
         Me.Label308.AutoSize = True
         Me.Label308.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label308.Location = New System.Drawing.Point(67, 50)
+        Me.Label308.Location = New System.Drawing.Point(67, 51)
         Me.Label308.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label308.Name = "Label308"
         Me.Label308.Size = New System.Drawing.Size(113, 21)
@@ -5764,7 +5766,7 @@ Partial Class Form1
         '
         Me.Label309.AutoSize = True
         Me.Label309.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label309.Location = New System.Drawing.Point(128, 346)
+        Me.Label309.Location = New System.Drawing.Point(128, 347)
         Me.Label309.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label309.Name = "Label309"
         Me.Label309.Size = New System.Drawing.Size(217, 29)
@@ -5775,7 +5777,7 @@ Partial Class Form1
         '
         Me.Label310.AutoSize = True
         Me.Label310.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label310.Location = New System.Drawing.Point(124, 11)
+        Me.Label310.Location = New System.Drawing.Point(124, 12)
         Me.Label310.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label310.Name = "Label310"
         Me.Label310.Size = New System.Drawing.Size(263, 29)
@@ -5785,10 +5787,10 @@ Partial Class Form1
         'txt_PS_ad_No3
         '
         Me.txt_PS_ad_No3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_No3.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_ad_No3.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No3.Name = "txt_PS_ad_No3"
-        Me.txt_PS_ad_No3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_No3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_No3.TabIndex = 48
         Me.txt_PS_ad_No3.Text = "2"
         Me.txt_PS_ad_No3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5818,11 +5820,11 @@ Partial Class Form1
         'txt_PS_ad_Thk3
         '
         Me.txt_PS_ad_Thk3.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Thk3.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_ad_Thk3.Location = New System.Drawing.Point(158, 68)
         Me.txt_PS_ad_Thk3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk3.Name = "txt_PS_ad_Thk3"
         Me.txt_PS_ad_Thk3.ReadOnly = True
-        Me.txt_PS_ad_Thk3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Thk3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Thk3.TabIndex = 46
         Me.txt_PS_ad_Thk3.Text = "6"
         Me.txt_PS_ad_Thk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5831,7 +5833,7 @@ Partial Class Form1
         '
         Me.Label313.AutoSize = True
         Me.Label313.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label313.Location = New System.Drawing.Point(69, 87)
+        Me.Label313.Location = New System.Drawing.Point(69, 88)
         Me.Label313.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label313.Name = "Label313"
         Me.Label313.Size = New System.Drawing.Size(113, 21)
@@ -5885,7 +5887,7 @@ Partial Class Form1
         '
         Me.Label384.AutoSize = True
         Me.Label384.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label384.Location = New System.Drawing.Point(3, 303)
+        Me.Label384.Location = New System.Drawing.Point(3, 304)
         Me.Label384.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label384.Name = "Label384"
         Me.Label384.Size = New System.Drawing.Size(177, 21)
@@ -5895,10 +5897,10 @@ Partial Class Form1
         'TextBox51
         '
         Me.TextBox51.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TextBox51.Location = New System.Drawing.Point(197, 299)
+        Me.TextBox51.Location = New System.Drawing.Point(158, 240)
         Me.TextBox51.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox51.Name = "TextBox51"
-        Me.TextBox51.Size = New System.Drawing.Size(221, 27)
+        Me.TextBox51.Size = New System.Drawing.Size(177, 22)
         Me.TextBox51.TabIndex = 59
         Me.TextBox51.Text = "315"
         Me.TextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5906,10 +5908,10 @@ Partial Class Form1
         'PictureBox38
         '
         Me.PictureBox38.Image = CType(resources.GetObject("PictureBox38.Image"), System.Drawing.Image)
-        Me.PictureBox38.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox38.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox38.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox38.Name = "PictureBox38"
-        Me.PictureBox38.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox38.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox38.TabIndex = 56
         Me.PictureBox38.TabStop = False
@@ -5940,7 +5942,7 @@ Partial Class Form1
         '
         Me.Label316.AutoSize = True
         Me.Label316.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label316.Location = New System.Drawing.Point(35, 267)
+        Me.Label316.Location = New System.Drawing.Point(35, 268)
         Me.Label316.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label316.Name = "Label316"
         Me.Label316.Size = New System.Drawing.Size(147, 21)
@@ -5951,7 +5953,7 @@ Partial Class Form1
         '
         Me.Label317.AutoSize = True
         Me.Label317.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label317.Location = New System.Drawing.Point(33, 234)
+        Me.Label317.Location = New System.Drawing.Point(33, 235)
         Me.Label317.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label317.Name = "Label317"
         Me.Label317.Size = New System.Drawing.Size(148, 21)
@@ -5972,10 +5974,10 @@ Partial Class Form1
         'txt_adn_DP4_Length2
         '
         Me.txt_adn_DP4_Length2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP4_Length2.Location = New System.Drawing.Point(197, 425)
+        Me.txt_adn_DP4_Length2.Location = New System.Drawing.Point(158, 340)
         Me.txt_adn_DP4_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP4_Length2.Name = "txt_adn_DP4_Length2"
-        Me.txt_adn_DP4_Length2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP4_Length2.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP4_Length2.TabIndex = 54
         Me.txt_adn_DP4_Length2.Text = "1283"
         Me.txt_adn_DP4_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5983,10 +5985,10 @@ Partial Class Form1
         'txt_adn_DP4_Length1
         '
         Me.txt_adn_DP4_Length1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_adn_DP4_Length1.Location = New System.Drawing.Point(197, 389)
+        Me.txt_adn_DP4_Length1.Location = New System.Drawing.Point(158, 312)
         Me.txt_adn_DP4_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP4_Length1.Name = "txt_adn_DP4_Length1"
-        Me.txt_adn_DP4_Length1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_adn_DP4_Length1.Size = New System.Drawing.Size(177, 22)
         Me.txt_adn_DP4_Length1.TabIndex = 54
         Me.txt_adn_DP4_Length1.Text = "969"
         Me.txt_adn_DP4_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5994,10 +5996,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Base4
         '
         Me.txt_PS_ad_Dist_from_Base4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Base4.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_ad_Dist_from_Base4.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base4.Name = "txt_PS_ad_Dist_from_Base4"
-        Me.txt_PS_ad_Dist_from_Base4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Base4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Base4.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base4.Text = "150"
         Me.txt_PS_ad_Dist_from_Base4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6005,10 +6007,10 @@ Partial Class Form1
         'txt_PS_ad_Angle_Dist4
         '
         Me.txt_PS_ad_Angle_Dist4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Angle_Dist4.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_ad_Angle_Dist4.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist4.Name = "txt_PS_ad_Angle_Dist4"
-        Me.txt_PS_ad_Angle_Dist4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Angle_Dist4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Angle_Dist4.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist4.Text = "268"
         Me.txt_PS_ad_Angle_Dist4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6016,10 +6018,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_bw_Support4
         '
         Me.txt_PS_ad_Dist_bw_Support4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_bw_Support4.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_ad_Dist_bw_Support4.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support4.Name = "txt_PS_ad_Dist_bw_Support4"
-        Me.txt_PS_ad_Dist_bw_Support4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_bw_Support4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_bw_Support4.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support4.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6027,10 +6029,10 @@ Partial Class Form1
         'txt_PS_ad_Dist_from_Top4
         '
         Me.txt_PS_ad_Dist_from_Top4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_Dist_from_Top4.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_ad_Dist_from_Top4.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top4.Name = "txt_PS_ad_Dist_from_Top4"
-        Me.txt_PS_ad_Dist_from_Top4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dist_from_Top4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dist_from_Top4.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top4.Text = "308"
         Me.txt_PS_ad_Dist_from_Top4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6038,11 +6040,11 @@ Partial Class Form1
         'txt_PS_ad_Dia4
         '
         Me.txt_PS_ad_Dia4.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Dia4.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_ad_Dia4.Location = New System.Drawing.Point(158, 38)
         Me.txt_PS_ad_Dia4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia4.Name = "txt_PS_ad_Dia4"
         Me.txt_PS_ad_Dia4.ReadOnly = True
-        Me.txt_PS_ad_Dia4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Dia4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Dia4.TabIndex = 51
         Me.txt_PS_ad_Dia4.Text = "1200"
         Me.txt_PS_ad_Dia4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6051,7 +6053,7 @@ Partial Class Form1
         '
         Me.Label319.AutoSize = True
         Me.Label319.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label319.Location = New System.Drawing.Point(67, 50)
+        Me.Label319.Location = New System.Drawing.Point(67, 51)
         Me.Label319.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label319.Name = "Label319"
         Me.Label319.Size = New System.Drawing.Size(113, 21)
@@ -6073,7 +6075,7 @@ Partial Class Form1
         '
         Me.Label321.AutoSize = True
         Me.Label321.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label321.Location = New System.Drawing.Point(124, 11)
+        Me.Label321.Location = New System.Drawing.Point(124, 12)
         Me.Label321.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label321.Name = "Label321"
         Me.Label321.Size = New System.Drawing.Size(263, 29)
@@ -6083,10 +6085,10 @@ Partial Class Form1
         'txt_PS_ad_No4
         '
         Me.txt_PS_ad_No4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_ad_No4.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_ad_No4.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No4.Name = "txt_PS_ad_No4"
-        Me.txt_PS_ad_No4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_No4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_No4.TabIndex = 48
         Me.txt_PS_ad_No4.Text = "2"
         Me.txt_PS_ad_No4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6116,11 +6118,11 @@ Partial Class Form1
         'txt_PS_ad_Thk4
         '
         Me.txt_PS_ad_Thk4.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_ad_Thk4.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_ad_Thk4.Location = New System.Drawing.Point(158, 68)
         Me.txt_PS_ad_Thk4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk4.Name = "txt_PS_ad_Thk4"
         Me.txt_PS_ad_Thk4.ReadOnly = True
-        Me.txt_PS_ad_Thk4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_ad_Thk4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_ad_Thk4.TabIndex = 46
         Me.txt_PS_ad_Thk4.Text = "6"
         Me.txt_PS_ad_Thk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6129,7 +6131,7 @@ Partial Class Form1
         '
         Me.Label324.AutoSize = True
         Me.Label324.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label324.Location = New System.Drawing.Point(69, 87)
+        Me.Label324.Location = New System.Drawing.Point(69, 88)
         Me.Label324.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label324.Name = "Label324"
         Me.Label324.Size = New System.Drawing.Size(113, 21)
@@ -6207,10 +6209,10 @@ Partial Class Form1
         'PictureBox37
         '
         Me.PictureBox37.Image = CType(resources.GetObject("PictureBox37.Image"), System.Drawing.Image)
-        Me.PictureBox37.Location = New System.Drawing.Point(869, 0)
+        Me.PictureBox37.Location = New System.Drawing.Point(695, 0)
         Me.PictureBox37.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox37.Name = "PictureBox37"
-        Me.PictureBox37.Size = New System.Drawing.Size(360, 281)
+        Me.PictureBox37.Size = New System.Drawing.Size(288, 225)
         Me.PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox37.TabIndex = 57
         Me.PictureBox37.TabStop = False
@@ -6218,10 +6220,10 @@ Partial Class Form1
         'PictureBox33
         '
         Me.PictureBox33.Image = CType(resources.GetObject("PictureBox33.Image"), System.Drawing.Image)
-        Me.PictureBox33.Location = New System.Drawing.Point(444, 0)
+        Me.PictureBox33.Location = New System.Drawing.Point(355, 0)
         Me.PictureBox33.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox33.Name = "PictureBox33"
-        Me.PictureBox33.Size = New System.Drawing.Size(429, 281)
+        Me.PictureBox33.Size = New System.Drawing.Size(343, 225)
         Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox33.TabIndex = 56
         Me.PictureBox33.TabStop = False
@@ -6241,7 +6243,7 @@ Partial Class Form1
         '
         Me.Label257.AutoSize = True
         Me.Label257.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label257.Location = New System.Drawing.Point(15, 165)
+        Me.Label257.Location = New System.Drawing.Point(15, 164)
         Me.Label257.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label257.Name = "Label257"
         Me.Label257.Size = New System.Drawing.Size(80, 21)
@@ -6284,11 +6286,11 @@ Partial Class Form1
         'txt_VBP2_Fillet
         '
         Me.txt_VBP2_Fillet.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP2_Fillet.Location = New System.Drawing.Point(331, 240)
+        Me.txt_VBP2_Fillet.Location = New System.Drawing.Point(265, 192)
         Me.txt_VBP2_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Fillet.Name = "txt_VBP2_Fillet"
         Me.txt_VBP2_Fillet.ReadOnly = True
-        Me.txt_VBP2_Fillet.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP2_Fillet.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP2_Fillet.TabIndex = 54
         Me.txt_VBP2_Fillet.Text = "5"
         Me.txt_VBP2_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6296,11 +6298,11 @@ Partial Class Form1
         'txt_VBP1_Fillet
         '
         Me.txt_VBP1_Fillet.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP1_Fillet.Location = New System.Drawing.Point(113, 159)
+        Me.txt_VBP1_Fillet.Location = New System.Drawing.Point(91, 127)
         Me.txt_VBP1_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Fillet.Name = "txt_VBP1_Fillet"
         Me.txt_VBP1_Fillet.ReadOnly = True
-        Me.txt_VBP1_Fillet.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP1_Fillet.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP1_Fillet.TabIndex = 54
         Me.txt_VBP1_Fillet.Text = "5"
         Me.txt_VBP1_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6308,11 +6310,11 @@ Partial Class Form1
         'txt_VBP1_D3
         '
         Me.txt_VBP1_D3.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP1_D3.Location = New System.Drawing.Point(331, 122)
+        Me.txt_VBP1_D3.Location = New System.Drawing.Point(265, 97)
         Me.txt_VBP1_D3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_D3.Name = "txt_VBP1_D3"
         Me.txt_VBP1_D3.ReadOnly = True
-        Me.txt_VBP1_D3.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP1_D3.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP1_D3.TabIndex = 54
         Me.txt_VBP1_D3.Text = "60"
         Me.txt_VBP1_D3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6320,11 +6322,11 @@ Partial Class Form1
         'txt_VBP2_Thk
         '
         Me.txt_VBP2_Thk.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP2_Thk.Location = New System.Drawing.Point(113, 314)
+        Me.txt_VBP2_Thk.Location = New System.Drawing.Point(91, 251)
         Me.txt_VBP2_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Thk.Name = "txt_VBP2_Thk"
         Me.txt_VBP2_Thk.ReadOnly = True
-        Me.txt_VBP2_Thk.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP2_Thk.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP2_Thk.TabIndex = 54
         Me.txt_VBP2_Thk.Text = "6"
         Me.txt_VBP2_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6332,11 +6334,11 @@ Partial Class Form1
         'txt_VBP1_Thk
         '
         Me.txt_VBP1_Thk.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP1_Thk.Location = New System.Drawing.Point(113, 122)
+        Me.txt_VBP1_Thk.Location = New System.Drawing.Point(91, 97)
         Me.txt_VBP1_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Thk.Name = "txt_VBP1_Thk"
         Me.txt_VBP1_Thk.ReadOnly = True
-        Me.txt_VBP1_Thk.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP1_Thk.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP1_Thk.TabIndex = 54
         Me.txt_VBP1_Thk.Text = "6"
         Me.txt_VBP1_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6344,11 +6346,11 @@ Partial Class Form1
         'txt_VBP2_D2
         '
         Me.txt_VBP2_D2.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP2_D2.Location = New System.Drawing.Point(331, 314)
+        Me.txt_VBP2_D2.Location = New System.Drawing.Point(265, 251)
         Me.txt_VBP2_D2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_D2.Name = "txt_VBP2_D2"
         Me.txt_VBP2_D2.ReadOnly = True
-        Me.txt_VBP2_D2.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP2_D2.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP2_D2.TabIndex = 54
         Me.txt_VBP2_D2.Text = "50"
         Me.txt_VBP2_D2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6356,11 +6358,11 @@ Partial Class Form1
         'txt_VBP1_D2
         '
         Me.txt_VBP1_D2.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP1_D2.Location = New System.Drawing.Point(331, 85)
+        Me.txt_VBP1_D2.Location = New System.Drawing.Point(265, 68)
         Me.txt_VBP1_D2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_D2.Name = "txt_VBP1_D2"
         Me.txt_VBP1_D2.ReadOnly = True
-        Me.txt_VBP1_D2.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP1_D2.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP1_D2.TabIndex = 54
         Me.txt_VBP1_D2.Text = "25"
         Me.txt_VBP1_D2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6368,11 +6370,11 @@ Partial Class Form1
         'txt_VBP2_Height
         '
         Me.txt_VBP2_Height.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP2_Height.Location = New System.Drawing.Point(113, 277)
+        Me.txt_VBP2_Height.Location = New System.Drawing.Point(91, 221)
         Me.txt_VBP2_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Height.Name = "txt_VBP2_Height"
         Me.txt_VBP2_Height.ReadOnly = True
-        Me.txt_VBP2_Height.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP2_Height.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP2_Height.TabIndex = 54
         Me.txt_VBP2_Height.Text = "75"
         Me.txt_VBP2_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6380,11 +6382,11 @@ Partial Class Form1
         'txt_VBP1_Height
         '
         Me.txt_VBP1_Height.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP1_Height.Location = New System.Drawing.Point(113, 85)
+        Me.txt_VBP1_Height.Location = New System.Drawing.Point(91, 68)
         Me.txt_VBP1_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Height.Name = "txt_VBP1_Height"
         Me.txt_VBP1_Height.ReadOnly = True
-        Me.txt_VBP1_Height.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP1_Height.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP1_Height.TabIndex = 54
         Me.txt_VBP1_Height.Text = "75"
         Me.txt_VBP1_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6404,7 +6406,7 @@ Partial Class Form1
         '
         Me.Label266.AutoSize = True
         Me.Label266.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label266.Location = New System.Drawing.Point(116, 197)
+        Me.Label266.Location = New System.Drawing.Point(116, 196)
         Me.Label266.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label266.Name = "Label266"
         Me.Label266.Size = New System.Drawing.Size(234, 29)
@@ -6425,11 +6427,11 @@ Partial Class Form1
         'txt_VBP2_D1
         '
         Me.txt_VBP2_D1.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP2_D1.Location = New System.Drawing.Point(331, 277)
+        Me.txt_VBP2_D1.Location = New System.Drawing.Point(265, 221)
         Me.txt_VBP2_D1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_D1.Name = "txt_VBP2_D1"
         Me.txt_VBP2_D1.ReadOnly = True
-        Me.txt_VBP2_D1.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP2_D1.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP2_D1.TabIndex = 48
         Me.txt_VBP2_D1.Text = "12.5"
         Me.txt_VBP2_D1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6437,11 +6439,11 @@ Partial Class Form1
         'txt_VBP1_D1
         '
         Me.txt_VBP1_D1.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP1_D1.Location = New System.Drawing.Point(331, 48)
+        Me.txt_VBP1_D1.Location = New System.Drawing.Point(265, 38)
         Me.txt_VBP1_D1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_D1.Name = "txt_VBP1_D1"
         Me.txt_VBP1_D1.ReadOnly = True
-        Me.txt_VBP1_D1.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP1_D1.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP1_D1.TabIndex = 48
         Me.txt_VBP1_D1.Text = "12.5"
         Me.txt_VBP1_D1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6461,7 +6463,7 @@ Partial Class Form1
         '
         Me.Label270.AutoSize = True
         Me.Label270.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label270.Location = New System.Drawing.Point(251, 89)
+        Me.Label270.Location = New System.Drawing.Point(251, 88)
         Me.Label270.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label270.Name = "Label270"
         Me.Label270.Size = New System.Drawing.Size(65, 21)
@@ -6471,10 +6473,10 @@ Partial Class Form1
         'txt_VB_Pipe_Length_1
         '
         Me.txt_VB_Pipe_Length_1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_VB_Pipe_Length_1.Location = New System.Drawing.Point(331, 396)
+        Me.txt_VB_Pipe_Length_1.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_1.Name = "txt_VB_Pipe_Length_1"
-        Me.txt_VB_Pipe_Length_1.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VB_Pipe_Length_1.Size = New System.Drawing.Size(76, 22)
         Me.txt_VB_Pipe_Length_1.TabIndex = 48
         Me.txt_VB_Pipe_Length_1.Text = "314"
         Me.txt_VB_Pipe_Length_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6482,11 +6484,11 @@ Partial Class Form1
         'txt_VBP2_Length
         '
         Me.txt_VBP2_Length.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP2_Length.Location = New System.Drawing.Point(113, 240)
+        Me.txt_VBP2_Length.Location = New System.Drawing.Point(91, 192)
         Me.txt_VBP2_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Length.Name = "txt_VBP2_Length"
         Me.txt_VBP2_Length.ReadOnly = True
-        Me.txt_VBP2_Length.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP2_Length.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP2_Length.TabIndex = 48
         Me.txt_VBP2_Length.Text = "40"
         Me.txt_VBP2_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6495,7 +6497,7 @@ Partial Class Form1
         '
         Me.Label298.AutoSize = True
         Me.Label298.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label298.Location = New System.Drawing.Point(251, 281)
+        Me.Label298.Location = New System.Drawing.Point(251, 280)
         Me.Label298.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label298.Name = "Label298"
         Me.Label298.Size = New System.Drawing.Size(65, 21)
@@ -6505,11 +6507,11 @@ Partial Class Form1
         'txt_VBP1_Length
         '
         Me.txt_VBP1_Length.BackColor = System.Drawing.Color.Silver
-        Me.txt_VBP1_Length.Location = New System.Drawing.Point(113, 48)
+        Me.txt_VBP1_Length.Location = New System.Drawing.Point(91, 38)
         Me.txt_VBP1_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Length.Name = "txt_VBP1_Length"
         Me.txt_VBP1_Length.ReadOnly = True
-        Me.txt_VBP1_Length.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VBP1_Length.Size = New System.Drawing.Size(76, 22)
         Me.txt_VBP1_Length.TabIndex = 48
         Me.txt_VBP1_Length.Text = "85"
         Me.txt_VBP1_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6518,7 +6520,7 @@ Partial Class Form1
         '
         Me.Label297.AutoSize = True
         Me.Label297.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label297.Location = New System.Drawing.Point(15, 281)
+        Me.Label297.Location = New System.Drawing.Point(15, 280)
         Me.Label297.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label297.Name = "Label297"
         Me.Label297.Size = New System.Drawing.Size(92, 21)
@@ -6562,7 +6564,7 @@ Partial Class Form1
         '
         Me.Label268.AutoSize = True
         Me.Label268.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label268.Location = New System.Drawing.Point(15, 89)
+        Me.Label268.Location = New System.Drawing.Point(15, 88)
         Me.Label268.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label268.Name = "Label268"
         Me.Label268.Size = New System.Drawing.Size(92, 21)
@@ -6637,10 +6639,10 @@ Partial Class Form1
         'PictureBox26
         '
         Me.PictureBox26.Image = CType(resources.GetObject("PictureBox26.Image"), System.Drawing.Image)
-        Me.PictureBox26.Location = New System.Drawing.Point(869, 0)
+        Me.PictureBox26.Location = New System.Drawing.Point(695, 0)
         Me.PictureBox26.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(360, 281)
+        Me.PictureBox26.Size = New System.Drawing.Size(288, 225)
         Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox26.TabIndex = 57
         Me.PictureBox26.TabStop = False
@@ -6648,10 +6650,10 @@ Partial Class Form1
         'PictureBox27
         '
         Me.PictureBox27.Image = CType(resources.GetObject("PictureBox27.Image"), System.Drawing.Image)
-        Me.PictureBox27.Location = New System.Drawing.Point(444, 0)
+        Me.PictureBox27.Location = New System.Drawing.Point(355, 0)
         Me.PictureBox27.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(429, 281)
+        Me.PictureBox27.Size = New System.Drawing.Size(343, 225)
         Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox27.TabIndex = 56
         Me.PictureBox27.TabStop = False
@@ -6671,7 +6673,7 @@ Partial Class Form1
         '
         Me.Label214.AutoSize = True
         Me.Label214.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label214.Location = New System.Drawing.Point(15, 165)
+        Me.Label214.Location = New System.Drawing.Point(15, 164)
         Me.Label214.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label214.Name = "Label214"
         Me.Label214.Size = New System.Drawing.Size(80, 21)
@@ -6714,11 +6716,11 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.Silver
-        Me.TextBox1.Location = New System.Drawing.Point(331, 240)
+        Me.TextBox1.Location = New System.Drawing.Point(265, 192)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(76, 22)
         Me.TextBox1.TabIndex = 54
         Me.TextBox1.Text = "5"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6726,11 +6728,11 @@ Partial Class Form1
         'TextBox8
         '
         Me.TextBox8.BackColor = System.Drawing.Color.Silver
-        Me.TextBox8.Location = New System.Drawing.Point(113, 159)
+        Me.TextBox8.Location = New System.Drawing.Point(91, 127)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox8.Size = New System.Drawing.Size(76, 22)
         Me.TextBox8.TabIndex = 54
         Me.TextBox8.Text = "5"
         Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6738,11 +6740,11 @@ Partial Class Form1
         'TextBox9
         '
         Me.TextBox9.BackColor = System.Drawing.Color.Silver
-        Me.TextBox9.Location = New System.Drawing.Point(331, 122)
+        Me.TextBox9.Location = New System.Drawing.Point(265, 97)
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox9.Size = New System.Drawing.Size(76, 22)
         Me.TextBox9.TabIndex = 54
         Me.TextBox9.Text = "60"
         Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6750,11 +6752,11 @@ Partial Class Form1
         'TextBox10
         '
         Me.TextBox10.BackColor = System.Drawing.Color.Silver
-        Me.TextBox10.Location = New System.Drawing.Point(113, 314)
+        Me.TextBox10.Location = New System.Drawing.Point(91, 251)
         Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox10.Size = New System.Drawing.Size(76, 22)
         Me.TextBox10.TabIndex = 54
         Me.TextBox10.Text = "6"
         Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6762,11 +6764,11 @@ Partial Class Form1
         'TextBox11
         '
         Me.TextBox11.BackColor = System.Drawing.Color.Silver
-        Me.TextBox11.Location = New System.Drawing.Point(113, 122)
+        Me.TextBox11.Location = New System.Drawing.Point(91, 97)
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox11.Size = New System.Drawing.Size(76, 22)
         Me.TextBox11.TabIndex = 54
         Me.TextBox11.Text = "6"
         Me.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6774,11 +6776,11 @@ Partial Class Form1
         'TextBox12
         '
         Me.TextBox12.BackColor = System.Drawing.Color.Silver
-        Me.TextBox12.Location = New System.Drawing.Point(331, 314)
+        Me.TextBox12.Location = New System.Drawing.Point(265, 251)
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox12.Size = New System.Drawing.Size(76, 22)
         Me.TextBox12.TabIndex = 54
         Me.TextBox12.Text = "50"
         Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6786,11 +6788,11 @@ Partial Class Form1
         'TextBox13
         '
         Me.TextBox13.BackColor = System.Drawing.Color.Silver
-        Me.TextBox13.Location = New System.Drawing.Point(331, 85)
+        Me.TextBox13.Location = New System.Drawing.Point(265, 68)
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.ReadOnly = True
-        Me.TextBox13.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox13.Size = New System.Drawing.Size(76, 22)
         Me.TextBox13.TabIndex = 54
         Me.TextBox13.Text = "25"
         Me.TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6798,11 +6800,11 @@ Partial Class Form1
         'TextBox14
         '
         Me.TextBox14.BackColor = System.Drawing.Color.Silver
-        Me.TextBox14.Location = New System.Drawing.Point(113, 277)
+        Me.TextBox14.Location = New System.Drawing.Point(91, 221)
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.ReadOnly = True
-        Me.TextBox14.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox14.Size = New System.Drawing.Size(76, 22)
         Me.TextBox14.TabIndex = 54
         Me.TextBox14.Text = "75"
         Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6810,11 +6812,11 @@ Partial Class Form1
         'TextBox15
         '
         Me.TextBox15.BackColor = System.Drawing.Color.Silver
-        Me.TextBox15.Location = New System.Drawing.Point(113, 85)
+        Me.TextBox15.Location = New System.Drawing.Point(91, 68)
         Me.TextBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.ReadOnly = True
-        Me.TextBox15.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox15.Size = New System.Drawing.Size(76, 22)
         Me.TextBox15.TabIndex = 54
         Me.TextBox15.Text = "75"
         Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6834,7 +6836,7 @@ Partial Class Form1
         '
         Me.Label224.AutoSize = True
         Me.Label224.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label224.Location = New System.Drawing.Point(116, 197)
+        Me.Label224.Location = New System.Drawing.Point(116, 196)
         Me.Label224.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label224.Name = "Label224"
         Me.Label224.Size = New System.Drawing.Size(234, 29)
@@ -6855,11 +6857,11 @@ Partial Class Form1
         'TextBox16
         '
         Me.TextBox16.BackColor = System.Drawing.Color.Silver
-        Me.TextBox16.Location = New System.Drawing.Point(331, 277)
+        Me.TextBox16.Location = New System.Drawing.Point(265, 221)
         Me.TextBox16.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.ReadOnly = True
-        Me.TextBox16.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox16.Size = New System.Drawing.Size(76, 22)
         Me.TextBox16.TabIndex = 48
         Me.TextBox16.Text = "12.5"
         Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6867,11 +6869,11 @@ Partial Class Form1
         'TextBox17
         '
         Me.TextBox17.BackColor = System.Drawing.Color.Silver
-        Me.TextBox17.Location = New System.Drawing.Point(331, 48)
+        Me.TextBox17.Location = New System.Drawing.Point(265, 38)
         Me.TextBox17.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox17.Name = "TextBox17"
         Me.TextBox17.ReadOnly = True
-        Me.TextBox17.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox17.Size = New System.Drawing.Size(76, 22)
         Me.TextBox17.TabIndex = 48
         Me.TextBox17.Text = "12.5"
         Me.TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6891,7 +6893,7 @@ Partial Class Form1
         '
         Me.Label229.AutoSize = True
         Me.Label229.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label229.Location = New System.Drawing.Point(251, 89)
+        Me.Label229.Location = New System.Drawing.Point(251, 88)
         Me.Label229.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label229.Name = "Label229"
         Me.Label229.Size = New System.Drawing.Size(65, 21)
@@ -6901,10 +6903,10 @@ Partial Class Form1
         'txt_VB_Pipe_Length_2
         '
         Me.txt_VB_Pipe_Length_2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_VB_Pipe_Length_2.Location = New System.Drawing.Point(331, 396)
+        Me.txt_VB_Pipe_Length_2.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_2.Name = "txt_VB_Pipe_Length_2"
-        Me.txt_VB_Pipe_Length_2.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VB_Pipe_Length_2.Size = New System.Drawing.Size(76, 22)
         Me.txt_VB_Pipe_Length_2.TabIndex = 48
         Me.txt_VB_Pipe_Length_2.Text = "163"
         Me.txt_VB_Pipe_Length_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6912,11 +6914,11 @@ Partial Class Form1
         'TextBox31
         '
         Me.TextBox31.BackColor = System.Drawing.Color.Silver
-        Me.TextBox31.Location = New System.Drawing.Point(113, 240)
+        Me.TextBox31.Location = New System.Drawing.Point(91, 192)
         Me.TextBox31.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox31.Name = "TextBox31"
         Me.TextBox31.ReadOnly = True
-        Me.TextBox31.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox31.Size = New System.Drawing.Size(76, 22)
         Me.TextBox31.TabIndex = 48
         Me.TextBox31.Text = "40"
         Me.TextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6925,7 +6927,7 @@ Partial Class Form1
         '
         Me.Label230.AutoSize = True
         Me.Label230.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label230.Location = New System.Drawing.Point(251, 281)
+        Me.Label230.Location = New System.Drawing.Point(251, 280)
         Me.Label230.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label230.Name = "Label230"
         Me.Label230.Size = New System.Drawing.Size(65, 21)
@@ -6935,11 +6937,11 @@ Partial Class Form1
         'TextBox32
         '
         Me.TextBox32.BackColor = System.Drawing.Color.Silver
-        Me.TextBox32.Location = New System.Drawing.Point(113, 48)
+        Me.TextBox32.Location = New System.Drawing.Point(91, 38)
         Me.TextBox32.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox32.Name = "TextBox32"
         Me.TextBox32.ReadOnly = True
-        Me.TextBox32.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox32.Size = New System.Drawing.Size(76, 22)
         Me.TextBox32.TabIndex = 48
         Me.TextBox32.Text = "85"
         Me.TextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6948,7 +6950,7 @@ Partial Class Form1
         '
         Me.Label271.AutoSize = True
         Me.Label271.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label271.Location = New System.Drawing.Point(15, 281)
+        Me.Label271.Location = New System.Drawing.Point(15, 280)
         Me.Label271.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label271.Name = "Label271"
         Me.Label271.Size = New System.Drawing.Size(92, 21)
@@ -6992,7 +6994,7 @@ Partial Class Form1
         '
         Me.Label275.AutoSize = True
         Me.Label275.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label275.Location = New System.Drawing.Point(15, 89)
+        Me.Label275.Location = New System.Drawing.Point(15, 88)
         Me.Label275.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label275.Name = "Label275"
         Me.Label275.Size = New System.Drawing.Size(92, 21)
@@ -7066,10 +7068,10 @@ Partial Class Form1
         'PictureBox34
         '
         Me.PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"), System.Drawing.Image)
-        Me.PictureBox34.Location = New System.Drawing.Point(869, 0)
+        Me.PictureBox34.Location = New System.Drawing.Point(695, 0)
         Me.PictureBox34.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.Size = New System.Drawing.Size(360, 281)
+        Me.PictureBox34.Size = New System.Drawing.Size(288, 225)
         Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox34.TabIndex = 57
         Me.PictureBox34.TabStop = False
@@ -7077,10 +7079,10 @@ Partial Class Form1
         'PictureBox35
         '
         Me.PictureBox35.Image = CType(resources.GetObject("PictureBox35.Image"), System.Drawing.Image)
-        Me.PictureBox35.Location = New System.Drawing.Point(444, 0)
+        Me.PictureBox35.Location = New System.Drawing.Point(355, 0)
         Me.PictureBox35.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox35.Name = "PictureBox35"
-        Me.PictureBox35.Size = New System.Drawing.Size(429, 281)
+        Me.PictureBox35.Size = New System.Drawing.Size(343, 225)
         Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox35.TabIndex = 56
         Me.PictureBox35.TabStop = False
@@ -7100,7 +7102,7 @@ Partial Class Form1
         '
         Me.Label278.AutoSize = True
         Me.Label278.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label278.Location = New System.Drawing.Point(15, 165)
+        Me.Label278.Location = New System.Drawing.Point(15, 164)
         Me.Label278.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label278.Name = "Label278"
         Me.Label278.Size = New System.Drawing.Size(80, 21)
@@ -7143,11 +7145,11 @@ Partial Class Form1
         'TextBox19
         '
         Me.TextBox19.BackColor = System.Drawing.Color.Silver
-        Me.TextBox19.Location = New System.Drawing.Point(331, 240)
+        Me.TextBox19.Location = New System.Drawing.Point(265, 192)
         Me.TextBox19.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox19.Name = "TextBox19"
         Me.TextBox19.ReadOnly = True
-        Me.TextBox19.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox19.Size = New System.Drawing.Size(76, 22)
         Me.TextBox19.TabIndex = 54
         Me.TextBox19.Text = "5"
         Me.TextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7155,11 +7157,11 @@ Partial Class Form1
         'TextBox20
         '
         Me.TextBox20.BackColor = System.Drawing.Color.Silver
-        Me.TextBox20.Location = New System.Drawing.Point(113, 159)
+        Me.TextBox20.Location = New System.Drawing.Point(91, 127)
         Me.TextBox20.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox20.Name = "TextBox20"
         Me.TextBox20.ReadOnly = True
-        Me.TextBox20.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox20.Size = New System.Drawing.Size(76, 22)
         Me.TextBox20.TabIndex = 54
         Me.TextBox20.Text = "5"
         Me.TextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7167,11 +7169,11 @@ Partial Class Form1
         'TextBox21
         '
         Me.TextBox21.BackColor = System.Drawing.Color.Silver
-        Me.TextBox21.Location = New System.Drawing.Point(331, 122)
+        Me.TextBox21.Location = New System.Drawing.Point(265, 97)
         Me.TextBox21.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.ReadOnly = True
-        Me.TextBox21.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox21.Size = New System.Drawing.Size(76, 22)
         Me.TextBox21.TabIndex = 54
         Me.TextBox21.Text = "60"
         Me.TextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7179,11 +7181,11 @@ Partial Class Form1
         'TextBox22
         '
         Me.TextBox22.BackColor = System.Drawing.Color.Silver
-        Me.TextBox22.Location = New System.Drawing.Point(113, 314)
+        Me.TextBox22.Location = New System.Drawing.Point(91, 251)
         Me.TextBox22.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox22.Name = "TextBox22"
         Me.TextBox22.ReadOnly = True
-        Me.TextBox22.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox22.Size = New System.Drawing.Size(76, 22)
         Me.TextBox22.TabIndex = 54
         Me.TextBox22.Text = "6"
         Me.TextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7191,11 +7193,11 @@ Partial Class Form1
         'TextBox23
         '
         Me.TextBox23.BackColor = System.Drawing.Color.Silver
-        Me.TextBox23.Location = New System.Drawing.Point(113, 122)
+        Me.TextBox23.Location = New System.Drawing.Point(91, 97)
         Me.TextBox23.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox23.Name = "TextBox23"
         Me.TextBox23.ReadOnly = True
-        Me.TextBox23.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox23.Size = New System.Drawing.Size(76, 22)
         Me.TextBox23.TabIndex = 54
         Me.TextBox23.Text = "6"
         Me.TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7203,11 +7205,11 @@ Partial Class Form1
         'TextBox24
         '
         Me.TextBox24.BackColor = System.Drawing.Color.Silver
-        Me.TextBox24.Location = New System.Drawing.Point(331, 314)
+        Me.TextBox24.Location = New System.Drawing.Point(265, 251)
         Me.TextBox24.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox24.Name = "TextBox24"
         Me.TextBox24.ReadOnly = True
-        Me.TextBox24.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox24.Size = New System.Drawing.Size(76, 22)
         Me.TextBox24.TabIndex = 54
         Me.TextBox24.Text = "50"
         Me.TextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7215,11 +7217,11 @@ Partial Class Form1
         'TextBox33
         '
         Me.TextBox33.BackColor = System.Drawing.Color.Silver
-        Me.TextBox33.Location = New System.Drawing.Point(331, 85)
+        Me.TextBox33.Location = New System.Drawing.Point(265, 68)
         Me.TextBox33.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox33.Name = "TextBox33"
         Me.TextBox33.ReadOnly = True
-        Me.TextBox33.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox33.Size = New System.Drawing.Size(76, 22)
         Me.TextBox33.TabIndex = 54
         Me.TextBox33.Text = "25"
         Me.TextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7227,11 +7229,11 @@ Partial Class Form1
         'TextBox34
         '
         Me.TextBox34.BackColor = System.Drawing.Color.Silver
-        Me.TextBox34.Location = New System.Drawing.Point(113, 277)
+        Me.TextBox34.Location = New System.Drawing.Point(91, 221)
         Me.TextBox34.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox34.Name = "TextBox34"
         Me.TextBox34.ReadOnly = True
-        Me.TextBox34.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox34.Size = New System.Drawing.Size(76, 22)
         Me.TextBox34.TabIndex = 54
         Me.TextBox34.Text = "75"
         Me.TextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7239,11 +7241,11 @@ Partial Class Form1
         'TextBox35
         '
         Me.TextBox35.BackColor = System.Drawing.Color.Silver
-        Me.TextBox35.Location = New System.Drawing.Point(113, 85)
+        Me.TextBox35.Location = New System.Drawing.Point(91, 68)
         Me.TextBox35.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox35.Name = "TextBox35"
         Me.TextBox35.ReadOnly = True
-        Me.TextBox35.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox35.Size = New System.Drawing.Size(76, 22)
         Me.TextBox35.TabIndex = 54
         Me.TextBox35.Text = "75"
         Me.TextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7263,7 +7265,7 @@ Partial Class Form1
         '
         Me.Label283.AutoSize = True
         Me.Label283.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label283.Location = New System.Drawing.Point(116, 197)
+        Me.Label283.Location = New System.Drawing.Point(116, 196)
         Me.Label283.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label283.Name = "Label283"
         Me.Label283.Size = New System.Drawing.Size(234, 29)
@@ -7284,11 +7286,11 @@ Partial Class Form1
         'TextBox36
         '
         Me.TextBox36.BackColor = System.Drawing.Color.Silver
-        Me.TextBox36.Location = New System.Drawing.Point(331, 277)
+        Me.TextBox36.Location = New System.Drawing.Point(265, 221)
         Me.TextBox36.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox36.Name = "TextBox36"
         Me.TextBox36.ReadOnly = True
-        Me.TextBox36.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox36.Size = New System.Drawing.Size(76, 22)
         Me.TextBox36.TabIndex = 48
         Me.TextBox36.Text = "12.5"
         Me.TextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7296,11 +7298,11 @@ Partial Class Form1
         'TextBox37
         '
         Me.TextBox37.BackColor = System.Drawing.Color.Silver
-        Me.TextBox37.Location = New System.Drawing.Point(331, 48)
+        Me.TextBox37.Location = New System.Drawing.Point(265, 38)
         Me.TextBox37.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox37.Name = "TextBox37"
         Me.TextBox37.ReadOnly = True
-        Me.TextBox37.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox37.Size = New System.Drawing.Size(76, 22)
         Me.TextBox37.TabIndex = 48
         Me.TextBox37.Text = "12.5"
         Me.TextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7320,7 +7322,7 @@ Partial Class Form1
         '
         Me.Label286.AutoSize = True
         Me.Label286.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label286.Location = New System.Drawing.Point(251, 89)
+        Me.Label286.Location = New System.Drawing.Point(251, 88)
         Me.Label286.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label286.Name = "Label286"
         Me.Label286.Size = New System.Drawing.Size(65, 21)
@@ -7330,10 +7332,10 @@ Partial Class Form1
         'txt_VB_Pipe_Length_3
         '
         Me.txt_VB_Pipe_Length_3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_VB_Pipe_Length_3.Location = New System.Drawing.Point(331, 396)
+        Me.txt_VB_Pipe_Length_3.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_3.Name = "txt_VB_Pipe_Length_3"
-        Me.txt_VB_Pipe_Length_3.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VB_Pipe_Length_3.Size = New System.Drawing.Size(76, 22)
         Me.txt_VB_Pipe_Length_3.TabIndex = 48
         Me.txt_VB_Pipe_Length_3.Text = "300"
         Me.txt_VB_Pipe_Length_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7341,11 +7343,11 @@ Partial Class Form1
         'TextBox39
         '
         Me.TextBox39.BackColor = System.Drawing.Color.Silver
-        Me.TextBox39.Location = New System.Drawing.Point(113, 240)
+        Me.TextBox39.Location = New System.Drawing.Point(91, 192)
         Me.TextBox39.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox39.Name = "TextBox39"
         Me.TextBox39.ReadOnly = True
-        Me.TextBox39.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox39.Size = New System.Drawing.Size(76, 22)
         Me.TextBox39.TabIndex = 48
         Me.TextBox39.Text = "40"
         Me.TextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7354,7 +7356,7 @@ Partial Class Form1
         '
         Me.Label325.AutoSize = True
         Me.Label325.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label325.Location = New System.Drawing.Point(251, 281)
+        Me.Label325.Location = New System.Drawing.Point(251, 280)
         Me.Label325.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label325.Name = "Label325"
         Me.Label325.Size = New System.Drawing.Size(65, 21)
@@ -7364,11 +7366,11 @@ Partial Class Form1
         'TextBox40
         '
         Me.TextBox40.BackColor = System.Drawing.Color.Silver
-        Me.TextBox40.Location = New System.Drawing.Point(113, 48)
+        Me.TextBox40.Location = New System.Drawing.Point(91, 38)
         Me.TextBox40.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox40.Name = "TextBox40"
         Me.TextBox40.ReadOnly = True
-        Me.TextBox40.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox40.Size = New System.Drawing.Size(76, 22)
         Me.TextBox40.TabIndex = 48
         Me.TextBox40.Text = "85"
         Me.TextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7377,7 +7379,7 @@ Partial Class Form1
         '
         Me.Label326.AutoSize = True
         Me.Label326.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label326.Location = New System.Drawing.Point(15, 281)
+        Me.Label326.Location = New System.Drawing.Point(15, 280)
         Me.Label326.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label326.Name = "Label326"
         Me.Label326.Size = New System.Drawing.Size(92, 21)
@@ -7421,7 +7423,7 @@ Partial Class Form1
         '
         Me.Label330.AutoSize = True
         Me.Label330.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label330.Location = New System.Drawing.Point(15, 89)
+        Me.Label330.Location = New System.Drawing.Point(15, 88)
         Me.Label330.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label330.Name = "Label330"
         Me.Label330.Size = New System.Drawing.Size(92, 21)
@@ -7495,10 +7497,10 @@ Partial Class Form1
         'PictureBox36
         '
         Me.PictureBox36.Image = CType(resources.GetObject("PictureBox36.Image"), System.Drawing.Image)
-        Me.PictureBox36.Location = New System.Drawing.Point(869, 0)
+        Me.PictureBox36.Location = New System.Drawing.Point(695, 0)
         Me.PictureBox36.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox36.Name = "PictureBox36"
-        Me.PictureBox36.Size = New System.Drawing.Size(360, 281)
+        Me.PictureBox36.Size = New System.Drawing.Size(288, 225)
         Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox36.TabIndex = 57
         Me.PictureBox36.TabStop = False
@@ -7506,10 +7508,10 @@ Partial Class Form1
         'PictureBox39
         '
         Me.PictureBox39.Image = CType(resources.GetObject("PictureBox39.Image"), System.Drawing.Image)
-        Me.PictureBox39.Location = New System.Drawing.Point(444, 0)
+        Me.PictureBox39.Location = New System.Drawing.Point(355, 0)
         Me.PictureBox39.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox39.Name = "PictureBox39"
-        Me.PictureBox39.Size = New System.Drawing.Size(429, 281)
+        Me.PictureBox39.Size = New System.Drawing.Size(343, 225)
         Me.PictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox39.TabIndex = 56
         Me.PictureBox39.TabStop = False
@@ -7529,7 +7531,7 @@ Partial Class Form1
         '
         Me.Label288.AutoSize = True
         Me.Label288.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label288.Location = New System.Drawing.Point(15, 165)
+        Me.Label288.Location = New System.Drawing.Point(15, 164)
         Me.Label288.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label288.Name = "Label288"
         Me.Label288.Size = New System.Drawing.Size(80, 21)
@@ -7572,11 +7574,11 @@ Partial Class Form1
         'TextBox25
         '
         Me.TextBox25.BackColor = System.Drawing.Color.Silver
-        Me.TextBox25.Location = New System.Drawing.Point(331, 240)
+        Me.TextBox25.Location = New System.Drawing.Point(265, 192)
         Me.TextBox25.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.ReadOnly = True
-        Me.TextBox25.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox25.Size = New System.Drawing.Size(76, 22)
         Me.TextBox25.TabIndex = 54
         Me.TextBox25.Text = "5"
         Me.TextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7584,11 +7586,11 @@ Partial Class Form1
         'TextBox26
         '
         Me.TextBox26.BackColor = System.Drawing.Color.Silver
-        Me.TextBox26.Location = New System.Drawing.Point(113, 159)
+        Me.TextBox26.Location = New System.Drawing.Point(91, 127)
         Me.TextBox26.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox26.Name = "TextBox26"
         Me.TextBox26.ReadOnly = True
-        Me.TextBox26.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox26.Size = New System.Drawing.Size(76, 22)
         Me.TextBox26.TabIndex = 54
         Me.TextBox26.Text = "5"
         Me.TextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7596,11 +7598,11 @@ Partial Class Form1
         'TextBox27
         '
         Me.TextBox27.BackColor = System.Drawing.Color.Silver
-        Me.TextBox27.Location = New System.Drawing.Point(331, 122)
+        Me.TextBox27.Location = New System.Drawing.Point(265, 97)
         Me.TextBox27.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox27.Name = "TextBox27"
         Me.TextBox27.ReadOnly = True
-        Me.TextBox27.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox27.Size = New System.Drawing.Size(76, 22)
         Me.TextBox27.TabIndex = 54
         Me.TextBox27.Text = "60"
         Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7608,11 +7610,11 @@ Partial Class Form1
         'TextBox28
         '
         Me.TextBox28.BackColor = System.Drawing.Color.Silver
-        Me.TextBox28.Location = New System.Drawing.Point(113, 314)
+        Me.TextBox28.Location = New System.Drawing.Point(91, 251)
         Me.TextBox28.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox28.Name = "TextBox28"
         Me.TextBox28.ReadOnly = True
-        Me.TextBox28.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox28.Size = New System.Drawing.Size(76, 22)
         Me.TextBox28.TabIndex = 54
         Me.TextBox28.Text = "6"
         Me.TextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7620,11 +7622,11 @@ Partial Class Form1
         'TextBox29
         '
         Me.TextBox29.BackColor = System.Drawing.Color.Silver
-        Me.TextBox29.Location = New System.Drawing.Point(113, 122)
+        Me.TextBox29.Location = New System.Drawing.Point(91, 97)
         Me.TextBox29.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox29.Name = "TextBox29"
         Me.TextBox29.ReadOnly = True
-        Me.TextBox29.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox29.Size = New System.Drawing.Size(76, 22)
         Me.TextBox29.TabIndex = 54
         Me.TextBox29.Text = "6"
         Me.TextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7632,11 +7634,11 @@ Partial Class Form1
         'TextBox30
         '
         Me.TextBox30.BackColor = System.Drawing.Color.Silver
-        Me.TextBox30.Location = New System.Drawing.Point(331, 314)
+        Me.TextBox30.Location = New System.Drawing.Point(265, 251)
         Me.TextBox30.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox30.Name = "TextBox30"
         Me.TextBox30.ReadOnly = True
-        Me.TextBox30.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox30.Size = New System.Drawing.Size(76, 22)
         Me.TextBox30.TabIndex = 54
         Me.TextBox30.Text = "50"
         Me.TextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7644,11 +7646,11 @@ Partial Class Form1
         'TextBox41
         '
         Me.TextBox41.BackColor = System.Drawing.Color.Silver
-        Me.TextBox41.Location = New System.Drawing.Point(331, 85)
+        Me.TextBox41.Location = New System.Drawing.Point(265, 68)
         Me.TextBox41.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox41.Name = "TextBox41"
         Me.TextBox41.ReadOnly = True
-        Me.TextBox41.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox41.Size = New System.Drawing.Size(76, 22)
         Me.TextBox41.TabIndex = 54
         Me.TextBox41.Text = "25"
         Me.TextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7656,11 +7658,11 @@ Partial Class Form1
         'TextBox42
         '
         Me.TextBox42.BackColor = System.Drawing.Color.Silver
-        Me.TextBox42.Location = New System.Drawing.Point(113, 277)
+        Me.TextBox42.Location = New System.Drawing.Point(91, 221)
         Me.TextBox42.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox42.Name = "TextBox42"
         Me.TextBox42.ReadOnly = True
-        Me.TextBox42.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox42.Size = New System.Drawing.Size(76, 22)
         Me.TextBox42.TabIndex = 54
         Me.TextBox42.Text = "75"
         Me.TextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7668,11 +7670,11 @@ Partial Class Form1
         'TextBox43
         '
         Me.TextBox43.BackColor = System.Drawing.Color.Silver
-        Me.TextBox43.Location = New System.Drawing.Point(113, 85)
+        Me.TextBox43.Location = New System.Drawing.Point(91, 68)
         Me.TextBox43.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox43.Name = "TextBox43"
         Me.TextBox43.ReadOnly = True
-        Me.TextBox43.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox43.Size = New System.Drawing.Size(76, 22)
         Me.TextBox43.TabIndex = 54
         Me.TextBox43.Text = "75"
         Me.TextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7692,7 +7694,7 @@ Partial Class Form1
         '
         Me.Label293.AutoSize = True
         Me.Label293.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label293.Location = New System.Drawing.Point(116, 197)
+        Me.Label293.Location = New System.Drawing.Point(116, 196)
         Me.Label293.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label293.Name = "Label293"
         Me.Label293.Size = New System.Drawing.Size(234, 29)
@@ -7713,11 +7715,11 @@ Partial Class Form1
         'TextBox44
         '
         Me.TextBox44.BackColor = System.Drawing.Color.Silver
-        Me.TextBox44.Location = New System.Drawing.Point(331, 277)
+        Me.TextBox44.Location = New System.Drawing.Point(265, 221)
         Me.TextBox44.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox44.Name = "TextBox44"
         Me.TextBox44.ReadOnly = True
-        Me.TextBox44.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox44.Size = New System.Drawing.Size(76, 22)
         Me.TextBox44.TabIndex = 48
         Me.TextBox44.Text = "12.5"
         Me.TextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7725,11 +7727,11 @@ Partial Class Form1
         'TextBox45
         '
         Me.TextBox45.BackColor = System.Drawing.Color.Silver
-        Me.TextBox45.Location = New System.Drawing.Point(331, 48)
+        Me.TextBox45.Location = New System.Drawing.Point(265, 38)
         Me.TextBox45.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox45.Name = "TextBox45"
         Me.TextBox45.ReadOnly = True
-        Me.TextBox45.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox45.Size = New System.Drawing.Size(76, 22)
         Me.TextBox45.TabIndex = 48
         Me.TextBox45.Text = "12.5"
         Me.TextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7749,7 +7751,7 @@ Partial Class Form1
         '
         Me.Label333.AutoSize = True
         Me.Label333.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label333.Location = New System.Drawing.Point(251, 89)
+        Me.Label333.Location = New System.Drawing.Point(251, 88)
         Me.Label333.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label333.Name = "Label333"
         Me.Label333.Size = New System.Drawing.Size(65, 21)
@@ -7759,10 +7761,10 @@ Partial Class Form1
         'txt_VB_Pipe_Length_4
         '
         Me.txt_VB_Pipe_Length_4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_VB_Pipe_Length_4.Location = New System.Drawing.Point(331, 396)
+        Me.txt_VB_Pipe_Length_4.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_4.Name = "txt_VB_Pipe_Length_4"
-        Me.txt_VB_Pipe_Length_4.Size = New System.Drawing.Size(95, 27)
+        Me.txt_VB_Pipe_Length_4.Size = New System.Drawing.Size(76, 22)
         Me.txt_VB_Pipe_Length_4.TabIndex = 48
         Me.txt_VB_Pipe_Length_4.Text = "300"
         Me.txt_VB_Pipe_Length_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7770,11 +7772,11 @@ Partial Class Form1
         'TextBox47
         '
         Me.TextBox47.BackColor = System.Drawing.Color.Silver
-        Me.TextBox47.Location = New System.Drawing.Point(113, 240)
+        Me.TextBox47.Location = New System.Drawing.Point(91, 192)
         Me.TextBox47.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox47.Name = "TextBox47"
         Me.TextBox47.ReadOnly = True
-        Me.TextBox47.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox47.Size = New System.Drawing.Size(76, 22)
         Me.TextBox47.TabIndex = 48
         Me.TextBox47.Text = "40"
         Me.TextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7783,7 +7785,7 @@ Partial Class Form1
         '
         Me.Label334.AutoSize = True
         Me.Label334.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label334.Location = New System.Drawing.Point(251, 281)
+        Me.Label334.Location = New System.Drawing.Point(251, 280)
         Me.Label334.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label334.Name = "Label334"
         Me.Label334.Size = New System.Drawing.Size(65, 21)
@@ -7793,11 +7795,11 @@ Partial Class Form1
         'TextBox48
         '
         Me.TextBox48.BackColor = System.Drawing.Color.Silver
-        Me.TextBox48.Location = New System.Drawing.Point(113, 48)
+        Me.TextBox48.Location = New System.Drawing.Point(91, 38)
         Me.TextBox48.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox48.Name = "TextBox48"
         Me.TextBox48.ReadOnly = True
-        Me.TextBox48.Size = New System.Drawing.Size(95, 27)
+        Me.TextBox48.Size = New System.Drawing.Size(76, 22)
         Me.TextBox48.TabIndex = 48
         Me.TextBox48.Text = "85"
         Me.TextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7806,7 +7808,7 @@ Partial Class Form1
         '
         Me.Label335.AutoSize = True
         Me.Label335.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label335.Location = New System.Drawing.Point(15, 281)
+        Me.Label335.Location = New System.Drawing.Point(15, 280)
         Me.Label335.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label335.Name = "Label335"
         Me.Label335.Size = New System.Drawing.Size(92, 21)
@@ -7850,7 +7852,7 @@ Partial Class Form1
         '
         Me.Label340.AutoSize = True
         Me.Label340.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label340.Location = New System.Drawing.Point(15, 89)
+        Me.Label340.Location = New System.Drawing.Point(15, 88)
         Me.Label340.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label340.Name = "Label340"
         Me.Label340.Size = New System.Drawing.Size(92, 21)
@@ -7904,10 +7906,10 @@ Partial Class Form1
         Me.Button9.BackColor = System.Drawing.Color.Green
         Me.Button9.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.White
-        Me.Button9.Location = New System.Drawing.Point(28, 416)
+        Me.Button9.Location = New System.Drawing.Point(22, 332)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(188, 44)
+        Me.Button9.Size = New System.Drawing.Size(150, 35)
         Me.Button9.TabIndex = 73
         Me.Button9.Text = "Create 3D"
         Me.Button9.UseVisualStyleBackColor = False
@@ -7918,10 +7920,10 @@ Partial Class Form1
         Me.txt_SR_mat.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_SR_mat.FormattingEnabled = True
         Me.txt_SR_mat.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.txt_SR_mat.Location = New System.Drawing.Point(193, 207)
+        Me.txt_SR_mat.Location = New System.Drawing.Point(154, 165)
         Me.txt_SR_mat.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_mat.Name = "txt_SR_mat"
-        Me.txt_SR_mat.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_mat.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_mat.TabIndex = 107
         Me.txt_SR_mat.Text = "A276 Gr.316L"
         '
@@ -7941,10 +7943,10 @@ Partial Class Form1
         Me.Button10.BackColor = System.Drawing.Color.Green
         Me.Button10.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.Color.White
-        Me.Button10.Location = New System.Drawing.Point(240, 416)
+        Me.Button10.Location = New System.Drawing.Point(192, 332)
         Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(188, 44)
+        Me.Button10.Size = New System.Drawing.Size(150, 35)
         Me.Button10.TabIndex = 105
         Me.Button10.Text = "Edit 3D"
         Me.Button10.UseVisualStyleBackColor = False
@@ -7953,7 +7955,7 @@ Partial Class Form1
         '
         Me.Label253.AutoSize = True
         Me.Label253.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label253.Location = New System.Drawing.Point(91, 369)
+        Me.Label253.Location = New System.Drawing.Point(91, 368)
         Me.Label253.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label253.Name = "Label253"
         Me.Label253.Size = New System.Drawing.Size(87, 21)
@@ -7985,10 +7987,10 @@ Partial Class Form1
         'PictureBox29
         '
         Me.PictureBox29.Image = CType(resources.GetObject("PictureBox29.Image"), System.Drawing.Image)
-        Me.PictureBox29.Location = New System.Drawing.Point(1207, 0)
+        Me.PictureBox29.Location = New System.Drawing.Point(965, 0)
         Me.PictureBox29.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(465, 406)
+        Me.PictureBox29.Size = New System.Drawing.Size(372, 325)
         Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox29.TabIndex = 102
         Me.PictureBox29.TabStop = False
@@ -7996,10 +7998,10 @@ Partial Class Form1
         'PictureBox32
         '
         Me.PictureBox32.Image = CType(resources.GetObject("PictureBox32.Image"), System.Drawing.Image)
-        Me.PictureBox32.Location = New System.Drawing.Point(459, 0)
+        Me.PictureBox32.Location = New System.Drawing.Point(367, 0)
         Me.PictureBox32.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox32.Name = "PictureBox32"
-        Me.PictureBox32.Size = New System.Drawing.Size(752, 406)
+        Me.PictureBox32.Size = New System.Drawing.Size(602, 325)
         Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox32.TabIndex = 51
         Me.PictureBox32.TabStop = False
@@ -8007,10 +8009,10 @@ Partial Class Form1
         'txt_SR_Length
         '
         Me.txt_SR_Length.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_SR_Length.Location = New System.Drawing.Point(193, 57)
+        Me.txt_SR_Length.Location = New System.Drawing.Point(154, 45)
         Me.txt_SR_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Length.Name = "txt_SR_Length"
-        Me.txt_SR_Length.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_Length.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_Length.TabIndex = 40
         Me.txt_SR_Length.Text = "400"
         Me.txt_SR_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8040,10 +8042,10 @@ Partial Class Form1
         'txt_SR_Dist_Rung
         '
         Me.txt_SR_Dist_Rung.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_SR_Dist_Rung.Location = New System.Drawing.Point(193, 366)
+        Me.txt_SR_Dist_Rung.Location = New System.Drawing.Point(154, 292)
         Me.txt_SR_Dist_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Dist_Rung.Name = "txt_SR_Dist_Rung"
-        Me.txt_SR_Dist_Rung.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_Dist_Rung.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_Dist_Rung.TabIndex = 24
         Me.txt_SR_Dist_Rung.Text = "2"
         Me.txt_SR_Dist_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8051,10 +8053,10 @@ Partial Class Form1
         'txt_SR_No_Rung
         '
         Me.txt_SR_No_Rung.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_SR_No_Rung.Location = New System.Drawing.Point(193, 330)
+        Me.txt_SR_No_Rung.Location = New System.Drawing.Point(154, 264)
         Me.txt_SR_No_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_No_Rung.Name = "txt_SR_No_Rung"
-        Me.txt_SR_No_Rung.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_No_Rung.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_No_Rung.TabIndex = 24
         Me.txt_SR_No_Rung.Text = "300"
         Me.txt_SR_No_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8062,10 +8064,10 @@ Partial Class Form1
         'txt_SR_Dist_base
         '
         Me.txt_SR_Dist_base.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_SR_Dist_base.Location = New System.Drawing.Point(193, 294)
+        Me.txt_SR_Dist_base.Location = New System.Drawing.Point(154, 235)
         Me.txt_SR_Dist_base.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Dist_base.Name = "txt_SR_Dist_base"
-        Me.txt_SR_Dist_base.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_Dist_base.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_Dist_base.TabIndex = 24
         Me.txt_SR_Dist_base.Text = "500"
         Me.txt_SR_Dist_base.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8073,10 +8075,10 @@ Partial Class Form1
         'txt_SR_Fillet
         '
         Me.txt_SR_Fillet.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_SR_Fillet.Location = New System.Drawing.Point(193, 166)
+        Me.txt_SR_Fillet.Location = New System.Drawing.Point(154, 132)
         Me.txt_SR_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Fillet.Name = "txt_SR_Fillet"
-        Me.txt_SR_Fillet.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_Fillet.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_Fillet.TabIndex = 24
         Me.txt_SR_Fillet.Text = "20"
         Me.txt_SR_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8106,10 +8108,10 @@ Partial Class Form1
         'txt_SR_Dia
         '
         Me.txt_SR_Dia.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_SR_Dia.Location = New System.Drawing.Point(193, 129)
+        Me.txt_SR_Dia.Location = New System.Drawing.Point(154, 103)
         Me.txt_SR_Dia.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Dia.Name = "txt_SR_Dia"
-        Me.txt_SR_Dia.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_Dia.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_Dia.TabIndex = 21
         Me.txt_SR_Dia.Text = "20"
         Me.txt_SR_Dia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8117,10 +8119,10 @@ Partial Class Form1
         'txt_SR_Height
         '
         Me.txt_SR_Height.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_SR_Height.Location = New System.Drawing.Point(193, 92)
+        Me.txt_SR_Height.Location = New System.Drawing.Point(154, 73)
         Me.txt_SR_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Height.Name = "txt_SR_Height"
-        Me.txt_SR_Height.Size = New System.Drawing.Size(221, 27)
+        Me.txt_SR_Height.Size = New System.Drawing.Size(177, 22)
         Me.txt_SR_Height.TabIndex = 20
         Me.txt_SR_Height.Text = "75"
         Me.txt_SR_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8140,7 +8142,7 @@ Partial Class Form1
         '
         Me.Label263.AutoSize = True
         Me.Label263.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label263.Location = New System.Drawing.Point(72, 133)
+        Me.Label263.Location = New System.Drawing.Point(72, 132)
         Me.Label263.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label263.Name = "Label263"
         Me.Label263.Size = New System.Drawing.Size(109, 21)
@@ -8207,10 +8209,10 @@ Partial Class Form1
         'txt_NP3_width_AD
         '
         Me.txt_NP3_width_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP3_width_AD.Location = New System.Drawing.Point(188, 308)
+        Me.txt_NP3_width_AD.Location = New System.Drawing.Point(151, 246)
         Me.txt_NP3_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_width_AD.Name = "txt_NP3_width_AD"
-        Me.txt_NP3_width_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP3_width_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP3_width_AD.TabIndex = 120
         Me.txt_NP3_width_AD.Text = "110"
         Me.txt_NP3_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8218,10 +8220,10 @@ Partial Class Form1
         'txt_NP2_width_AD
         '
         Me.txt_NP2_width_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP2_width_AD.Location = New System.Drawing.Point(188, 231)
+        Me.txt_NP2_width_AD.Location = New System.Drawing.Point(151, 185)
         Me.txt_NP2_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_width_AD.Name = "txt_NP2_width_AD"
-        Me.txt_NP2_width_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP2_width_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP2_width_AD.TabIndex = 120
         Me.txt_NP2_width_AD.Text = "75"
         Me.txt_NP2_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8229,10 +8231,10 @@ Partial Class Form1
         'txt_NP1_width_AD
         '
         Me.txt_NP1_width_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP1_width_AD.Location = New System.Drawing.Point(189, 154)
+        Me.txt_NP1_width_AD.Location = New System.Drawing.Point(151, 123)
         Me.txt_NP1_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_width_AD.Name = "txt_NP1_width_AD"
-        Me.txt_NP1_width_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP1_width_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP1_width_AD.TabIndex = 120
         Me.txt_NP1_width_AD.Text = "145"
         Me.txt_NP1_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8240,10 +8242,10 @@ Partial Class Form1
         'txt_NP3_length_AD
         '
         Me.txt_NP3_length_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP3_length_AD.Location = New System.Drawing.Point(188, 271)
+        Me.txt_NP3_length_AD.Location = New System.Drawing.Point(151, 217)
         Me.txt_NP3_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_length_AD.Name = "txt_NP3_length_AD"
-        Me.txt_NP3_length_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP3_length_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP3_length_AD.TabIndex = 119
         Me.txt_NP3_length_AD.Text = "200"
         Me.txt_NP3_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8251,10 +8253,10 @@ Partial Class Form1
         'txt_NP2_length_AD
         '
         Me.txt_NP2_length_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP2_length_AD.Location = New System.Drawing.Point(188, 194)
+        Me.txt_NP2_length_AD.Location = New System.Drawing.Point(151, 155)
         Me.txt_NP2_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_length_AD.Name = "txt_NP2_length_AD"
-        Me.txt_NP2_length_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP2_length_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP2_length_AD.TabIndex = 119
         Me.txt_NP2_length_AD.Text = "200"
         Me.txt_NP2_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8262,10 +8264,10 @@ Partial Class Form1
         'txt_NP1_length_AD
         '
         Me.txt_NP1_length_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP1_length_AD.Location = New System.Drawing.Point(189, 117)
+        Me.txt_NP1_length_AD.Location = New System.Drawing.Point(151, 94)
         Me.txt_NP1_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_length_AD.Name = "txt_NP1_length_AD"
-        Me.txt_NP1_length_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP1_length_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP1_length_AD.TabIndex = 119
         Me.txt_NP1_length_AD.Text = "200"
         Me.txt_NP1_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8306,10 +8308,10 @@ Partial Class Form1
         'txt_NP_DFB_AD
         '
         Me.txt_NP_DFB_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_DFB_AD.Location = New System.Drawing.Point(507, 418)
+        Me.txt_NP_DFB_AD.Location = New System.Drawing.Point(406, 334)
         Me.txt_NP_DFB_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_DFB_AD.Name = "txt_NP_DFB_AD"
-        Me.txt_NP_DFB_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_DFB_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_DFB_AD.TabIndex = 55
         Me.txt_NP_DFB_AD.Text = "600"
         Me.txt_NP_DFB_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8317,10 +8319,10 @@ Partial Class Form1
         'txt_NP_Ori_AD
         '
         Me.txt_NP_Ori_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_Ori_AD.Location = New System.Drawing.Point(188, 418)
+        Me.txt_NP_Ori_AD.Location = New System.Drawing.Point(151, 334)
         Me.txt_NP_Ori_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Ori_AD.Name = "txt_NP_Ori_AD"
-        Me.txt_NP_Ori_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Ori_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Ori_AD.TabIndex = 55
         Me.txt_NP_Ori_AD.Text = "90"
         Me.txt_NP_Ori_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8449,10 +8451,10 @@ Partial Class Form1
         'txt_NP3_D3_AD
         '
         Me.txt_NP3_D3_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP3_D3_AD.Location = New System.Drawing.Point(507, 308)
+        Me.txt_NP3_D3_AD.Location = New System.Drawing.Point(406, 246)
         Me.txt_NP3_D3_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_D3_AD.Name = "txt_NP3_D3_AD"
-        Me.txt_NP3_D3_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP3_D3_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP3_D3_AD.TabIndex = 113
         Me.txt_NP3_D3_AD.Text = "15"
         Me.txt_NP3_D3_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8460,10 +8462,10 @@ Partial Class Form1
         'txt_NP2_D2_AD
         '
         Me.txt_NP2_D2_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP2_D2_AD.Location = New System.Drawing.Point(507, 231)
+        Me.txt_NP2_D2_AD.Location = New System.Drawing.Point(406, 185)
         Me.txt_NP2_D2_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_D2_AD.Name = "txt_NP2_D2_AD"
-        Me.txt_NP2_D2_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP2_D2_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP2_D2_AD.TabIndex = 113
         Me.txt_NP2_D2_AD.Text = "15"
         Me.txt_NP2_D2_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8471,10 +8473,10 @@ Partial Class Form1
         'txt_NP3_thk_AD
         '
         Me.txt_NP3_thk_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP3_thk_AD.Location = New System.Drawing.Point(507, 271)
+        Me.txt_NP3_thk_AD.Location = New System.Drawing.Point(406, 217)
         Me.txt_NP3_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_thk_AD.Name = "txt_NP3_thk_AD"
-        Me.txt_NP3_thk_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP3_thk_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP3_thk_AD.TabIndex = 112
         Me.txt_NP3_thk_AD.Text = "3"
         Me.txt_NP3_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8482,10 +8484,10 @@ Partial Class Form1
         'txt_NP2_thk_AD
         '
         Me.txt_NP2_thk_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP2_thk_AD.Location = New System.Drawing.Point(507, 194)
+        Me.txt_NP2_thk_AD.Location = New System.Drawing.Point(406, 155)
         Me.txt_NP2_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_thk_AD.Name = "txt_NP2_thk_AD"
-        Me.txt_NP2_thk_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP2_thk_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP2_thk_AD.TabIndex = 112
         Me.txt_NP2_thk_AD.Text = "3"
         Me.txt_NP2_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8493,10 +8495,10 @@ Partial Class Form1
         'txt_NP1_D1_AD
         '
         Me.txt_NP1_D1_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP1_D1_AD.Location = New System.Drawing.Point(508, 154)
+        Me.txt_NP1_D1_AD.Location = New System.Drawing.Point(407, 123)
         Me.txt_NP1_D1_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_D1_AD.Name = "txt_NP1_D1_AD"
-        Me.txt_NP1_D1_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP1_D1_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP1_D1_AD.TabIndex = 113
         Me.txt_NP1_D1_AD.Text = "15"
         Me.txt_NP1_D1_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8504,10 +8506,10 @@ Partial Class Form1
         'txt_NP1_thk_AD
         '
         Me.txt_NP1_thk_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP1_thk_AD.Location = New System.Drawing.Point(508, 117)
+        Me.txt_NP1_thk_AD.Location = New System.Drawing.Point(407, 94)
         Me.txt_NP1_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_thk_AD.Name = "txt_NP1_thk_AD"
-        Me.txt_NP1_thk_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP1_thk_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP1_thk_AD.TabIndex = 112
         Me.txt_NP1_thk_AD.Text = "3"
         Me.txt_NP1_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8515,10 +8517,10 @@ Partial Class Form1
         'PictureBox31
         '
         Me.PictureBox31.Image = CType(resources.GetObject("PictureBox31.Image"), System.Drawing.Image)
-        Me.PictureBox31.Location = New System.Drawing.Point(1205, 10)
+        Me.PictureBox31.Location = New System.Drawing.Point(964, 8)
         Me.PictureBox31.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(423, 425)
+        Me.PictureBox31.Size = New System.Drawing.Size(338, 340)
         Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox31.TabIndex = 111
         Me.PictureBox31.TabStop = False
@@ -8528,10 +8530,10 @@ Partial Class Form1
         Me.cmb_NP3_Mat_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_NP3_Mat_AD.FormattingEnabled = True
         Me.cmb_NP3_Mat_AD.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_NP3_Mat_AD.Location = New System.Drawing.Point(507, 383)
+        Me.cmb_NP3_Mat_AD.Location = New System.Drawing.Point(406, 306)
         Me.cmb_NP3_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP3_Mat_AD.Name = "cmb_NP3_Mat_AD"
-        Me.cmb_NP3_Mat_AD.Size = New System.Drawing.Size(157, 27)
+        Me.cmb_NP3_Mat_AD.Size = New System.Drawing.Size(126, 22)
         Me.cmb_NP3_Mat_AD.TabIndex = 110
         Me.cmb_NP3_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8540,10 +8542,10 @@ Partial Class Form1
         Me.cmb_NP2_Mat_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_NP2_Mat_AD.FormattingEnabled = True
         Me.cmb_NP2_Mat_AD.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_NP2_Mat_AD.Location = New System.Drawing.Point(509, 345)
+        Me.cmb_NP2_Mat_AD.Location = New System.Drawing.Point(407, 276)
         Me.cmb_NP2_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP2_Mat_AD.Name = "cmb_NP2_Mat_AD"
-        Me.cmb_NP2_Mat_AD.Size = New System.Drawing.Size(156, 27)
+        Me.cmb_NP2_Mat_AD.Size = New System.Drawing.Size(125, 22)
         Me.cmb_NP2_Mat_AD.TabIndex = 110
         Me.cmb_NP2_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8552,10 +8554,10 @@ Partial Class Form1
         Me.cmb_NP1_Mat_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_NP1_Mat_AD.FormattingEnabled = True
         Me.cmb_NP1_Mat_AD.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_NP1_Mat_AD.Location = New System.Drawing.Point(189, 383)
+        Me.cmb_NP1_Mat_AD.Location = New System.Drawing.Point(151, 306)
         Me.cmb_NP1_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP1_Mat_AD.Name = "cmb_NP1_Mat_AD"
-        Me.cmb_NP1_Mat_AD.Size = New System.Drawing.Size(157, 27)
+        Me.cmb_NP1_Mat_AD.Size = New System.Drawing.Size(126, 22)
         Me.cmb_NP1_Mat_AD.TabIndex = 109
         Me.cmb_NP1_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8564,10 +8566,10 @@ Partial Class Form1
         Me.cmb_NPB_Mat_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_NPB_Mat_AD.FormattingEnabled = True
         Me.cmb_NPB_Mat_AD.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_NPB_Mat_AD.Location = New System.Drawing.Point(189, 347)
+        Me.cmb_NPB_Mat_AD.Location = New System.Drawing.Point(151, 278)
         Me.cmb_NPB_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NPB_Mat_AD.Name = "cmb_NPB_Mat_AD"
-        Me.cmb_NPB_Mat_AD.Size = New System.Drawing.Size(157, 27)
+        Me.cmb_NPB_Mat_AD.Size = New System.Drawing.Size(126, 22)
         Me.cmb_NPB_Mat_AD.TabIndex = 109
         Me.cmb_NPB_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8618,10 +8620,10 @@ Partial Class Form1
         'PictureBox28
         '
         Me.PictureBox28.Image = CType(resources.GetObject("PictureBox28.Image"), System.Drawing.Image)
-        Me.PictureBox28.Location = New System.Drawing.Point(1631, 4)
+        Me.PictureBox28.Location = New System.Drawing.Point(1305, 3)
         Me.PictureBox28.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(320, 496)
+        Me.PictureBox28.Size = New System.Drawing.Size(256, 397)
         Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox28.TabIndex = 76
         Me.PictureBox28.TabStop = False
@@ -8629,10 +8631,10 @@ Partial Class Form1
         'PictureBox30
         '
         Me.PictureBox30.Image = CType(resources.GetObject("PictureBox30.Image"), System.Drawing.Image)
-        Me.PictureBox30.Location = New System.Drawing.Point(712, 0)
+        Me.PictureBox30.Location = New System.Drawing.Point(570, 0)
         Me.PictureBox30.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.Size = New System.Drawing.Size(491, 500)
+        Me.PictureBox30.Size = New System.Drawing.Size(393, 400)
         Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox30.TabIndex = 51
         Me.PictureBox30.TabStop = False
@@ -8640,10 +8642,10 @@ Partial Class Form1
         'txt_NPB_width_AD
         '
         Me.txt_NPB_width_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_width_AD.Location = New System.Drawing.Point(188, 76)
+        Me.txt_NPB_width_AD.Location = New System.Drawing.Point(151, 61)
         Me.txt_NPB_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_width_AD.Name = "txt_NPB_width_AD"
-        Me.txt_NPB_width_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_width_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_width_AD.TabIndex = 42
         Me.txt_NPB_width_AD.Text = "90"
         Me.txt_NPB_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8651,10 +8653,10 @@ Partial Class Form1
         'txt_NPB_length_AD
         '
         Me.txt_NPB_length_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_length_AD.Location = New System.Drawing.Point(188, 39)
+        Me.txt_NPB_length_AD.Location = New System.Drawing.Point(151, 31)
         Me.txt_NPB_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_length_AD.Name = "txt_NPB_length_AD"
-        Me.txt_NPB_length_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_length_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_length_AD.TabIndex = 40
         Me.txt_NPB_length_AD.Text = "240"
         Me.txt_NPB_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8717,10 +8719,10 @@ Partial Class Form1
         'txt_NPB_fillet_AD
         '
         Me.txt_NPB_fillet_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_fillet_AD.Location = New System.Drawing.Point(507, 76)
+        Me.txt_NPB_fillet_AD.Location = New System.Drawing.Point(406, 61)
         Me.txt_NPB_fillet_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_fillet_AD.Name = "txt_NPB_fillet_AD"
-        Me.txt_NPB_fillet_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_fillet_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_fillet_AD.TabIndex = 30
         Me.txt_NPB_fillet_AD.Text = "12"
         Me.txt_NPB_fillet_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8728,10 +8730,10 @@ Partial Class Form1
         'txt_NPB_thk_AD
         '
         Me.txt_NPB_thk_AD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_thk_AD.Location = New System.Drawing.Point(507, 39)
+        Me.txt_NPB_thk_AD.Location = New System.Drawing.Point(406, 31)
         Me.txt_NPB_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_thk_AD.Name = "txt_NPB_thk_AD"
-        Me.txt_NPB_thk_AD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_thk_AD.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_thk_AD.TabIndex = 29
         Me.txt_NPB_thk_AD.Text = "6"
         Me.txt_NPB_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8781,7 +8783,7 @@ Partial Class Form1
         '
         Me.CB_OT_EL_EDIT_PARAMS.AutoSize = True
         Me.CB_OT_EL_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_OT_EL_EDIT_PARAMS.Location = New System.Drawing.Point(13, 348)
+        Me.CB_OT_EL_EDIT_PARAMS.Location = New System.Drawing.Point(12, 348)
         Me.CB_OT_EL_EDIT_PARAMS.Margin = New System.Windows.Forms.Padding(4)
         Me.CB_OT_EL_EDIT_PARAMS.Name = "CB_OT_EL_EDIT_PARAMS"
         Me.CB_OT_EL_EDIT_PARAMS.Size = New System.Drawing.Size(145, 25)
@@ -8793,7 +8795,7 @@ Partial Class Form1
         '
         Me.CB_STIFF_4.AutoSize = True
         Me.CB_STIFF_4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_STIFF_4.Location = New System.Drawing.Point(1505, 15)
+        Me.CB_STIFF_4.Location = New System.Drawing.Point(1504, 15)
         Me.CB_STIFF_4.Margin = New System.Windows.Forms.Padding(4)
         Me.CB_STIFF_4.Name = "CB_STIFF_4"
         Me.CB_STIFF_4.Size = New System.Drawing.Size(60, 25)
@@ -8805,7 +8807,7 @@ Partial Class Form1
         '
         Me.CB_STIFF_3.AutoSize = True
         Me.CB_STIFF_3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_STIFF_3.Location = New System.Drawing.Point(1505, 348)
+        Me.CB_STIFF_3.Location = New System.Drawing.Point(1504, 348)
         Me.CB_STIFF_3.Margin = New System.Windows.Forms.Padding(4)
         Me.CB_STIFF_3.Name = "CB_STIFF_3"
         Me.CB_STIFF_3.Size = New System.Drawing.Size(60, 25)
@@ -8817,7 +8819,7 @@ Partial Class Form1
         '
         Me.CB_STIFF_2.AutoSize = True
         Me.CB_STIFF_2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_STIFF_2.Location = New System.Drawing.Point(1793, 348)
+        Me.CB_STIFF_2.Location = New System.Drawing.Point(1792, 348)
         Me.CB_STIFF_2.Margin = New System.Windows.Forms.Padding(4)
         Me.CB_STIFF_2.Name = "CB_STIFF_2"
         Me.CB_STIFF_2.Size = New System.Drawing.Size(60, 25)
@@ -8829,7 +8831,7 @@ Partial Class Form1
         '
         Me.CB_STIFF_1.AutoSize = True
         Me.CB_STIFF_1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_STIFF_1.Location = New System.Drawing.Point(1793, 15)
+        Me.CB_STIFF_1.Location = New System.Drawing.Point(1792, 15)
         Me.CB_STIFF_1.Margin = New System.Windows.Forms.Padding(4)
         Me.CB_STIFF_1.Name = "CB_STIFF_1"
         Me.CB_STIFF_1.Size = New System.Drawing.Size(60, 25)
@@ -8840,10 +8842,10 @@ Partial Class Form1
         'PictureBox21
         '
         Me.PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), System.Drawing.Image)
-        Me.PictureBox21.Location = New System.Drawing.Point(1424, 0)
+        Me.PictureBox21.Location = New System.Drawing.Point(1139, 0)
         Me.PictureBox21.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(511, 388)
+        Me.PictureBox21.Size = New System.Drawing.Size(409, 310)
         Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox21.TabIndex = 58
         Me.PictureBox21.TabStop = False
@@ -8851,10 +8853,10 @@ Partial Class Form1
         'PictureBox20
         '
         Me.PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), System.Drawing.Image)
-        Me.PictureBox20.Location = New System.Drawing.Point(1131, 0)
+        Me.PictureBox20.Location = New System.Drawing.Point(904, 0)
         Me.PictureBox20.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(299, 388)
+        Me.PictureBox20.Size = New System.Drawing.Size(239, 310)
         Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox20.TabIndex = 58
         Me.PictureBox20.TabStop = False
@@ -8862,10 +8864,10 @@ Partial Class Form1
         'PictureBox19
         '
         Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
-        Me.PictureBox19.Location = New System.Drawing.Point(625, 0)
+        Me.PictureBox19.Location = New System.Drawing.Point(500, 0)
         Me.PictureBox19.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(509, 388)
+        Me.PictureBox19.Size = New System.Drawing.Size(407, 310)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox19.TabIndex = 57
         Me.PictureBox19.TabStop = False
@@ -8875,20 +8877,20 @@ Partial Class Form1
         Me.txt_EL_MAT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txt_EL_MAT.FormattingEnabled = True
         Me.txt_EL_MAT.Items.AddRange(New Object() {"A-516 Gr.60", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 516 Gr.65", "A 285 Gr.C", "IS 2062 Gr.A/B", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.304H", "A 240 Gr.321", "A 240 Gr.410", "A 240 Gr.410S", "A 240 Gr.347"})
-        Me.txt_EL_MAT.Location = New System.Drawing.Point(449, 172)
+        Me.txt_EL_MAT.Location = New System.Drawing.Point(359, 137)
         Me.txt_EL_MAT.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_MAT.Name = "txt_EL_MAT"
-        Me.txt_EL_MAT.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_MAT.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_MAT.TabIndex = 52
         Me.txt_EL_MAT.Text = "A 240 Gr.316L"
         '
         'txt_EL_FILLET
         '
         Me.txt_EL_FILLET.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_FILLET.Location = New System.Drawing.Point(449, 135)
+        Me.txt_EL_FILLET.Location = New System.Drawing.Point(359, 108)
         Me.txt_EL_FILLET.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_FILLET.Name = "txt_EL_FILLET"
-        Me.txt_EL_FILLET.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_FILLET.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_FILLET.TabIndex = 51
         Me.txt_EL_FILLET.Text = "5"
         Me.txt_EL_FILLET.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8896,10 +8898,10 @@ Partial Class Form1
         'txt_EL_VERT_DIST
         '
         Me.txt_EL_VERT_DIST.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_VERT_DIST.Location = New System.Drawing.Point(449, 98)
+        Me.txt_EL_VERT_DIST.Location = New System.Drawing.Point(359, 78)
         Me.txt_EL_VERT_DIST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_VERT_DIST.Name = "txt_EL_VERT_DIST"
-        Me.txt_EL_VERT_DIST.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_VERT_DIST.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_VERT_DIST.TabIndex = 51
         Me.txt_EL_VERT_DIST.Text = "15"
         Me.txt_EL_VERT_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8907,10 +8909,10 @@ Partial Class Form1
         'txt_EL_HOR_DIST
         '
         Me.txt_EL_HOR_DIST.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_HOR_DIST.Location = New System.Drawing.Point(449, 62)
+        Me.txt_EL_HOR_DIST.Location = New System.Drawing.Point(359, 49)
         Me.txt_EL_HOR_DIST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOR_DIST.Name = "txt_EL_HOR_DIST"
-        Me.txt_EL_HOR_DIST.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_HOR_DIST.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_HOR_DIST.TabIndex = 51
         Me.txt_EL_HOR_DIST.Text = "38"
         Me.txt_EL_HOR_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8918,10 +8920,10 @@ Partial Class Form1
         'txt_EL_HOLE_DIST
         '
         Me.txt_EL_HOLE_DIST.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_HOLE_DIST.Location = New System.Drawing.Point(449, 208)
+        Me.txt_EL_HOLE_DIST.Location = New System.Drawing.Point(359, 166)
         Me.txt_EL_HOLE_DIST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOLE_DIST.Name = "txt_EL_HOLE_DIST"
-        Me.txt_EL_HOLE_DIST.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_HOLE_DIST.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_HOLE_DIST.TabIndex = 51
         Me.txt_EL_HOLE_DIST.Text = "45"
         Me.txt_EL_HOLE_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8929,10 +8931,10 @@ Partial Class Form1
         'txt_EL_HOLE_NO
         '
         Me.txt_EL_HOLE_NO.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_HOLE_NO.Location = New System.Drawing.Point(115, 206)
+        Me.txt_EL_HOLE_NO.Location = New System.Drawing.Point(92, 164)
         Me.txt_EL_HOLE_NO.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOLE_NO.Name = "txt_EL_HOLE_NO"
-        Me.txt_EL_HOLE_NO.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_HOLE_NO.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_HOLE_NO.TabIndex = 51
         Me.txt_EL_HOLE_NO.Text = "2"
         Me.txt_EL_HOLE_NO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8940,10 +8942,10 @@ Partial Class Form1
         'txt_EL_HOLE_DIA
         '
         Me.txt_EL_HOLE_DIA.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_HOLE_DIA.Location = New System.Drawing.Point(115, 170)
+        Me.txt_EL_HOLE_DIA.Location = New System.Drawing.Point(92, 136)
         Me.txt_EL_HOLE_DIA.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOLE_DIA.Name = "txt_EL_HOLE_DIA"
-        Me.txt_EL_HOLE_DIA.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_HOLE_DIA.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_HOLE_DIA.TabIndex = 51
         Me.txt_EL_HOLE_DIA.Text = "15"
         Me.txt_EL_HOLE_DIA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8951,10 +8953,10 @@ Partial Class Form1
         'txt_EL_THK
         '
         Me.txt_EL_THK.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_THK.Location = New System.Drawing.Point(115, 133)
+        Me.txt_EL_THK.Location = New System.Drawing.Point(92, 106)
         Me.txt_EL_THK.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_THK.Name = "txt_EL_THK"
-        Me.txt_EL_THK.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_THK.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_THK.TabIndex = 51
         Me.txt_EL_THK.Text = "6"
         Me.txt_EL_THK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8962,10 +8964,10 @@ Partial Class Form1
         'txt_EL_HEIGHT
         '
         Me.txt_EL_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_HEIGHT.Location = New System.Drawing.Point(115, 96)
+        Me.txt_EL_HEIGHT.Location = New System.Drawing.Point(92, 76)
         Me.txt_EL_HEIGHT.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HEIGHT.Name = "txt_EL_HEIGHT"
-        Me.txt_EL_HEIGHT.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_HEIGHT.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_HEIGHT.TabIndex = 51
         Me.txt_EL_HEIGHT.Text = "75"
         Me.txt_EL_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8973,10 +8975,10 @@ Partial Class Form1
         'txt_EL_DIST_BASE
         '
         Me.txt_EL_DIST_BASE.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_DIST_BASE.Location = New System.Drawing.Point(339, 304)
+        Me.txt_EL_DIST_BASE.Location = New System.Drawing.Point(271, 243)
         Me.txt_EL_DIST_BASE.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_DIST_BASE.Name = "txt_EL_DIST_BASE"
-        Me.txt_EL_DIST_BASE.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_DIST_BASE.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_DIST_BASE.TabIndex = 51
         Me.txt_EL_DIST_BASE.Text = "308"
         Me.txt_EL_DIST_BASE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8984,10 +8986,10 @@ Partial Class Form1
         'txt_EL_LENGTH
         '
         Me.txt_EL_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_EL_LENGTH.Location = New System.Drawing.Point(115, 59)
+        Me.txt_EL_LENGTH.Location = New System.Drawing.Point(92, 47)
         Me.txt_EL_LENGTH.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_LENGTH.Name = "txt_EL_LENGTH"
-        Me.txt_EL_LENGTH.Size = New System.Drawing.Size(167, 27)
+        Me.txt_EL_LENGTH.Size = New System.Drawing.Size(134, 22)
         Me.txt_EL_LENGTH.TabIndex = 51
         Me.txt_EL_LENGTH.Text = "150"
         Me.txt_EL_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8996,7 +8998,7 @@ Partial Class Form1
         '
         Me.Label77.AutoSize = True
         Me.Label77.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label77.Location = New System.Drawing.Point(361, 176)
+        Me.Label77.Location = New System.Drawing.Point(360, 176)
         Me.Label77.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label77.Name = "Label77"
         Me.Label77.Size = New System.Drawing.Size(69, 21)
@@ -9007,7 +9009,7 @@ Partial Class Form1
         '
         Me.Label76.AutoSize = True
         Me.Label76.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label76.Location = New System.Drawing.Point(353, 139)
+        Me.Label76.Location = New System.Drawing.Point(352, 139)
         Me.Label76.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label76.Name = "Label76"
         Me.Label76.Size = New System.Drawing.Size(80, 21)
@@ -9018,7 +9020,7 @@ Partial Class Form1
         '
         Me.Label81.AutoSize = True
         Me.Label81.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label81.Location = New System.Drawing.Point(297, 214)
+        Me.Label81.Location = New System.Drawing.Point(296, 214)
         Me.Label81.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label81.Name = "Label81"
         Me.Label81.Size = New System.Drawing.Size(141, 21)
@@ -9029,7 +9031,7 @@ Partial Class Form1
         '
         Me.Label75.AutoSize = True
         Me.Label75.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label75.Location = New System.Drawing.Point(329, 102)
+        Me.Label75.Location = New System.Drawing.Point(328, 102)
         Me.Label75.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label75.Name = "Label75"
         Me.Label75.Size = New System.Drawing.Size(106, 21)
@@ -9051,7 +9053,7 @@ Partial Class Form1
         '
         Me.Label74.AutoSize = True
         Me.Label74.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label74.Location = New System.Drawing.Point(333, 65)
+        Me.Label74.Location = New System.Drawing.Point(332, 64)
         Me.Label74.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label74.Name = "Label74"
         Me.Label74.Size = New System.Drawing.Size(103, 21)
@@ -9062,7 +9064,7 @@ Partial Class Form1
         '
         Me.Label73.AutoSize = True
         Me.Label73.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label73.Location = New System.Drawing.Point(9, 176)
+        Me.Label73.Location = New System.Drawing.Point(8, 176)
         Me.Label73.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label73.Name = "Label73"
         Me.Label73.Size = New System.Drawing.Size(104, 21)
@@ -9073,7 +9075,7 @@ Partial Class Form1
         '
         Me.Label72.AutoSize = True
         Me.Label72.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label72.Location = New System.Drawing.Point(41, 139)
+        Me.Label72.Location = New System.Drawing.Point(40, 139)
         Me.Label72.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label72.Name = "Label72"
         Me.Label72.Size = New System.Drawing.Size(74, 21)
@@ -9095,7 +9097,7 @@ Partial Class Form1
         '
         Me.Label71.AutoSize = True
         Me.Label71.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label71.Location = New System.Drawing.Point(25, 102)
+        Me.Label71.Location = New System.Drawing.Point(24, 102)
         Me.Label71.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(92, 21)
@@ -9106,7 +9108,7 @@ Partial Class Form1
         '
         Me.Label70.AutoSize = True
         Me.Label70.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label70.Location = New System.Drawing.Point(25, 65)
+        Me.Label70.Location = New System.Drawing.Point(24, 64)
         Me.Label70.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label70.Name = "Label70"
         Me.Label70.Size = New System.Drawing.Size(93, 21)
@@ -9193,10 +9195,10 @@ Partial Class Form1
         'PictureBox18
         '
         Me.PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), System.Drawing.Image)
-        Me.PictureBox18.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox18.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox18.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox18.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox18.TabIndex = 56
         Me.PictureBox18.TabStop = False
@@ -9205,7 +9207,7 @@ Partial Class Form1
         '
         Me.Label372.AutoSize = True
         Me.Label372.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label372.Location = New System.Drawing.Point(47, 379)
+        Me.Label372.Location = New System.Drawing.Point(47, 380)
         Me.Label372.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label372.Name = "Label372"
         Me.Label372.Size = New System.Drawing.Size(139, 21)
@@ -9216,7 +9218,7 @@ Partial Class Form1
         '
         Me.Label83.AutoSize = True
         Me.Label83.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label83.Location = New System.Drawing.Point(59, 343)
+        Me.Label83.Location = New System.Drawing.Point(59, 344)
         Me.Label83.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label83.Name = "Label83"
         Me.Label83.Size = New System.Drawing.Size(127, 21)
@@ -9227,7 +9229,7 @@ Partial Class Form1
         '
         Me.Label336.AutoSize = True
         Me.Label336.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label336.Location = New System.Drawing.Point(35, 267)
+        Me.Label336.Location = New System.Drawing.Point(35, 268)
         Me.Label336.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label336.Name = "Label336"
         Me.Label336.Size = New System.Drawing.Size(147, 21)
@@ -9238,7 +9240,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(33, 234)
+        Me.Label3.Location = New System.Drawing.Point(33, 235)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(148, 21)
@@ -9259,10 +9261,10 @@ Partial Class Form1
         'txt_DP_Offset_Length1
         '
         Me.txt_DP_Offset_Length1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_DP_Offset_Length1.Location = New System.Drawing.Point(199, 375)
+        Me.txt_DP_Offset_Length1.Location = New System.Drawing.Point(159, 300)
         Me.txt_DP_Offset_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Offset_Length1.Name = "txt_DP_Offset_Length1"
-        Me.txt_DP_Offset_Length1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_DP_Offset_Length1.Size = New System.Drawing.Size(177, 22)
         Me.txt_DP_Offset_Length1.TabIndex = 54
         Me.txt_DP_Offset_Length1.Text = "1982"
         Me.txt_DP_Offset_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9270,10 +9272,10 @@ Partial Class Form1
         'txt_DP_Length1
         '
         Me.txt_DP_Length1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_DP_Length1.Location = New System.Drawing.Point(197, 340)
+        Me.txt_DP_Length1.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length1.Name = "txt_DP_Length1"
-        Me.txt_DP_Length1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_DP_Length1.Size = New System.Drawing.Size(177, 22)
         Me.txt_DP_Length1.TabIndex = 54
         Me.txt_DP_Length1.Text = "2338"
         Me.txt_DP_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9281,10 +9283,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Base1
         '
         Me.txt_PS_Dist_from_Base1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Base1.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_Dist_from_Base1.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base1.Name = "txt_PS_Dist_from_Base1"
-        Me.txt_PS_Dist_from_Base1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Base1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Base1.TabIndex = 54
         Me.txt_PS_Dist_from_Base1.Text = "150"
         Me.txt_PS_Dist_from_Base1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9292,10 +9294,10 @@ Partial Class Form1
         'txt_PS_Angle_Dist1
         '
         Me.txt_PS_Angle_Dist1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Angle_Dist1.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_Angle_Dist1.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist1.Name = "txt_PS_Angle_Dist1"
-        Me.txt_PS_Angle_Dist1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Angle_Dist1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Angle_Dist1.TabIndex = 54
         Me.txt_PS_Angle_Dist1.Text = "268"
         Me.txt_PS_Angle_Dist1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9303,10 +9305,10 @@ Partial Class Form1
         'txt_PS_Dist_bw_Support1
         '
         Me.txt_PS_Dist_bw_Support1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_bw_Support1.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_Dist_bw_Support1.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support1.Name = "txt_PS_Dist_bw_Support1"
-        Me.txt_PS_Dist_bw_Support1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_bw_Support1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_bw_Support1.TabIndex = 54
         Me.txt_PS_Dist_bw_Support1.Text = "1200"
         Me.txt_PS_Dist_bw_Support1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9314,10 +9316,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Top1
         '
         Me.txt_PS_Dist_from_Top1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Top1.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_Dist_from_Top1.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top1.Name = "txt_PS_Dist_from_Top1"
-        Me.txt_PS_Dist_from_Top1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Top1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Top1.TabIndex = 54
         Me.txt_PS_Dist_from_Top1.Text = "308"
         Me.txt_PS_Dist_from_Top1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9325,11 +9327,11 @@ Partial Class Form1
         'txt_PS_Dia1
         '
         Me.txt_PS_Dia1.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Dia1.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_Dia1.Location = New System.Drawing.Point(157, 38)
         Me.txt_PS_Dia1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia1.Name = "txt_PS_Dia1"
         Me.txt_PS_Dia1.ReadOnly = True
-        Me.txt_PS_Dia1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dia1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dia1.TabIndex = 51
         Me.txt_PS_Dia1.Text = "1200"
         Me.txt_PS_Dia1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9338,7 +9340,7 @@ Partial Class Form1
         '
         Me.Label123.AutoSize = True
         Me.Label123.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label123.Location = New System.Drawing.Point(67, 50)
+        Me.Label123.Location = New System.Drawing.Point(67, 51)
         Me.Label123.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label123.Name = "Label123"
         Me.Label123.Size = New System.Drawing.Size(113, 21)
@@ -9349,7 +9351,7 @@ Partial Class Form1
         '
         Me.Label82.AutoSize = True
         Me.Label82.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label82.Location = New System.Drawing.Point(124, 295)
+        Me.Label82.Location = New System.Drawing.Point(124, 296)
         Me.Label82.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label82.Name = "Label82"
         Me.Label82.Size = New System.Drawing.Size(217, 29)
@@ -9360,7 +9362,7 @@ Partial Class Form1
         '
         Me.Label164.AutoSize = True
         Me.Label164.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label164.Location = New System.Drawing.Point(124, 11)
+        Me.Label164.Location = New System.Drawing.Point(124, 12)
         Me.Label164.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label164.Name = "Label164"
         Me.Label164.Size = New System.Drawing.Size(263, 29)
@@ -9370,10 +9372,10 @@ Partial Class Form1
         'txt_PS_No1
         '
         Me.txt_PS_No1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_No1.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_No1.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No1.Name = "txt_PS_No1"
-        Me.txt_PS_No1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_No1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_No1.TabIndex = 48
         Me.txt_PS_No1.Text = "2"
         Me.txt_PS_No1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9403,11 +9405,11 @@ Partial Class Form1
         'txt_PS_Thk1
         '
         Me.txt_PS_Thk1.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Thk1.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_Thk1.Location = New System.Drawing.Point(157, 68)
         Me.txt_PS_Thk1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk1.Name = "txt_PS_Thk1"
         Me.txt_PS_Thk1.ReadOnly = True
-        Me.txt_PS_Thk1.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Thk1.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Thk1.TabIndex = 46
         Me.txt_PS_Thk1.Text = "6"
         Me.txt_PS_Thk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9416,7 +9418,7 @@ Partial Class Form1
         '
         Me.Label167.AutoSize = True
         Me.Label167.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label167.Location = New System.Drawing.Point(69, 87)
+        Me.Label167.Location = New System.Drawing.Point(69, 88)
         Me.Label167.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label167.Name = "Label167"
         Me.Label167.Size = New System.Drawing.Size(113, 21)
@@ -9466,10 +9468,10 @@ Partial Class Form1
         'PictureBox40
         '
         Me.PictureBox40.Image = CType(resources.GetObject("PictureBox40.Image"), System.Drawing.Image)
-        Me.PictureBox40.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox40.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox40.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox40.Name = "PictureBox40"
-        Me.PictureBox40.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox40.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox40.TabIndex = 56
         Me.PictureBox40.TabStop = False
@@ -9478,7 +9480,7 @@ Partial Class Form1
         '
         Me.Label342.AutoSize = True
         Me.Label342.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label342.Location = New System.Drawing.Point(59, 343)
+        Me.Label342.Location = New System.Drawing.Point(59, 344)
         Me.Label342.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label342.Name = "Label342"
         Me.Label342.Size = New System.Drawing.Size(127, 21)
@@ -9489,7 +9491,7 @@ Partial Class Form1
         '
         Me.Label343.AutoSize = True
         Me.Label343.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label343.Location = New System.Drawing.Point(35, 267)
+        Me.Label343.Location = New System.Drawing.Point(35, 268)
         Me.Label343.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label343.Name = "Label343"
         Me.Label343.Size = New System.Drawing.Size(147, 21)
@@ -9500,7 +9502,7 @@ Partial Class Form1
         '
         Me.Label344.AutoSize = True
         Me.Label344.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label344.Location = New System.Drawing.Point(33, 234)
+        Me.Label344.Location = New System.Drawing.Point(33, 235)
         Me.Label344.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label344.Name = "Label344"
         Me.Label344.Size = New System.Drawing.Size(148, 21)
@@ -9521,10 +9523,10 @@ Partial Class Form1
         'txt_DP_Length2
         '
         Me.txt_DP_Length2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_DP_Length2.Location = New System.Drawing.Point(197, 340)
+        Me.txt_DP_Length2.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length2.Name = "txt_DP_Length2"
-        Me.txt_DP_Length2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_DP_Length2.Size = New System.Drawing.Size(177, 22)
         Me.txt_DP_Length2.TabIndex = 54
         Me.txt_DP_Length2.Text = "2328"
         Me.txt_DP_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9532,10 +9534,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Base2
         '
         Me.txt_PS_Dist_from_Base2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Base2.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_Dist_from_Base2.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base2.Name = "txt_PS_Dist_from_Base2"
-        Me.txt_PS_Dist_from_Base2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Base2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Base2.TabIndex = 54
         Me.txt_PS_Dist_from_Base2.Text = "150"
         Me.txt_PS_Dist_from_Base2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9543,10 +9545,10 @@ Partial Class Form1
         'txt_PS_Angle_Dist2
         '
         Me.txt_PS_Angle_Dist2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Angle_Dist2.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_Angle_Dist2.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist2.Name = "txt_PS_Angle_Dist2"
-        Me.txt_PS_Angle_Dist2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Angle_Dist2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Angle_Dist2.TabIndex = 54
         Me.txt_PS_Angle_Dist2.Text = "268"
         Me.txt_PS_Angle_Dist2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9554,10 +9556,10 @@ Partial Class Form1
         'txt_PS_Dist_bw_Support2
         '
         Me.txt_PS_Dist_bw_Support2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_bw_Support2.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_Dist_bw_Support2.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support2.Name = "txt_PS_Dist_bw_Support2"
-        Me.txt_PS_Dist_bw_Support2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_bw_Support2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_bw_Support2.TabIndex = 54
         Me.txt_PS_Dist_bw_Support2.Text = "1200"
         Me.txt_PS_Dist_bw_Support2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9565,10 +9567,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Top2
         '
         Me.txt_PS_Dist_from_Top2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Top2.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_Dist_from_Top2.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top2.Name = "txt_PS_Dist_from_Top2"
-        Me.txt_PS_Dist_from_Top2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Top2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Top2.TabIndex = 54
         Me.txt_PS_Dist_from_Top2.Text = "308"
         Me.txt_PS_Dist_from_Top2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9576,11 +9578,11 @@ Partial Class Form1
         'txt_PS_Dia2
         '
         Me.txt_PS_Dia2.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Dia2.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_Dia2.Location = New System.Drawing.Point(157, 38)
         Me.txt_PS_Dia2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia2.Name = "txt_PS_Dia2"
         Me.txt_PS_Dia2.ReadOnly = True
-        Me.txt_PS_Dia2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dia2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dia2.TabIndex = 51
         Me.txt_PS_Dia2.Text = "1200"
         Me.txt_PS_Dia2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9589,7 +9591,7 @@ Partial Class Form1
         '
         Me.Label346.AutoSize = True
         Me.Label346.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label346.Location = New System.Drawing.Point(67, 50)
+        Me.Label346.Location = New System.Drawing.Point(67, 51)
         Me.Label346.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label346.Name = "Label346"
         Me.Label346.Size = New System.Drawing.Size(113, 21)
@@ -9600,7 +9602,7 @@ Partial Class Form1
         '
         Me.Label347.AutoSize = True
         Me.Label347.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label347.Location = New System.Drawing.Point(124, 295)
+        Me.Label347.Location = New System.Drawing.Point(124, 296)
         Me.Label347.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label347.Name = "Label347"
         Me.Label347.Size = New System.Drawing.Size(217, 29)
@@ -9611,7 +9613,7 @@ Partial Class Form1
         '
         Me.Label348.AutoSize = True
         Me.Label348.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label348.Location = New System.Drawing.Point(124, 11)
+        Me.Label348.Location = New System.Drawing.Point(124, 12)
         Me.Label348.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label348.Name = "Label348"
         Me.Label348.Size = New System.Drawing.Size(263, 29)
@@ -9621,10 +9623,10 @@ Partial Class Form1
         'txt_PS_No2
         '
         Me.txt_PS_No2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_No2.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_No2.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No2.Name = "txt_PS_No2"
-        Me.txt_PS_No2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_No2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_No2.TabIndex = 48
         Me.txt_PS_No2.Text = "2"
         Me.txt_PS_No2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9654,11 +9656,11 @@ Partial Class Form1
         'txt_PS_Thk2
         '
         Me.txt_PS_Thk2.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Thk2.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_Thk2.Location = New System.Drawing.Point(157, 68)
         Me.txt_PS_Thk2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk2.Name = "txt_PS_Thk2"
         Me.txt_PS_Thk2.ReadOnly = True
-        Me.txt_PS_Thk2.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Thk2.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Thk2.TabIndex = 46
         Me.txt_PS_Thk2.Text = "6"
         Me.txt_PS_Thk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9667,7 +9669,7 @@ Partial Class Form1
         '
         Me.Label351.AutoSize = True
         Me.Label351.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label351.Location = New System.Drawing.Point(69, 87)
+        Me.Label351.Location = New System.Drawing.Point(69, 88)
         Me.Label351.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label351.Name = "Label351"
         Me.Label351.Size = New System.Drawing.Size(113, 21)
@@ -9716,10 +9718,10 @@ Partial Class Form1
         'PictureBox41
         '
         Me.PictureBox41.Image = CType(resources.GetObject("PictureBox41.Image"), System.Drawing.Image)
-        Me.PictureBox41.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox41.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox41.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox41.Name = "PictureBox41"
-        Me.PictureBox41.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox41.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox41.TabIndex = 56
         Me.PictureBox41.TabStop = False
@@ -9728,7 +9730,7 @@ Partial Class Form1
         '
         Me.Label352.AutoSize = True
         Me.Label352.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label352.Location = New System.Drawing.Point(59, 343)
+        Me.Label352.Location = New System.Drawing.Point(59, 344)
         Me.Label352.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label352.Name = "Label352"
         Me.Label352.Size = New System.Drawing.Size(127, 21)
@@ -9739,7 +9741,7 @@ Partial Class Form1
         '
         Me.Label353.AutoSize = True
         Me.Label353.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label353.Location = New System.Drawing.Point(35, 267)
+        Me.Label353.Location = New System.Drawing.Point(35, 268)
         Me.Label353.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label353.Name = "Label353"
         Me.Label353.Size = New System.Drawing.Size(147, 21)
@@ -9750,7 +9752,7 @@ Partial Class Form1
         '
         Me.Label354.AutoSize = True
         Me.Label354.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label354.Location = New System.Drawing.Point(33, 234)
+        Me.Label354.Location = New System.Drawing.Point(33, 235)
         Me.Label354.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label354.Name = "Label354"
         Me.Label354.Size = New System.Drawing.Size(148, 21)
@@ -9771,10 +9773,10 @@ Partial Class Form1
         'txt_DP_Length3
         '
         Me.txt_DP_Length3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_DP_Length3.Location = New System.Drawing.Point(197, 340)
+        Me.txt_DP_Length3.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length3.Name = "txt_DP_Length3"
-        Me.txt_DP_Length3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_DP_Length3.Size = New System.Drawing.Size(177, 22)
         Me.txt_DP_Length3.TabIndex = 54
         Me.txt_DP_Length3.Text = "2328"
         Me.txt_DP_Length3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9782,10 +9784,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Base3
         '
         Me.txt_PS_Dist_from_Base3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Base3.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_Dist_from_Base3.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base3.Name = "txt_PS_Dist_from_Base3"
-        Me.txt_PS_Dist_from_Base3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Base3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Base3.TabIndex = 54
         Me.txt_PS_Dist_from_Base3.Text = "150"
         Me.txt_PS_Dist_from_Base3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9793,10 +9795,10 @@ Partial Class Form1
         'txt_PS_Angle_Dist3
         '
         Me.txt_PS_Angle_Dist3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Angle_Dist3.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_Angle_Dist3.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist3.Name = "txt_PS_Angle_Dist3"
-        Me.txt_PS_Angle_Dist3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Angle_Dist3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Angle_Dist3.TabIndex = 54
         Me.txt_PS_Angle_Dist3.Text = "268"
         Me.txt_PS_Angle_Dist3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9804,10 +9806,10 @@ Partial Class Form1
         'txt_PS_Dist_bw_Support3
         '
         Me.txt_PS_Dist_bw_Support3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_bw_Support3.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_Dist_bw_Support3.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support3.Name = "txt_PS_Dist_bw_Support3"
-        Me.txt_PS_Dist_bw_Support3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_bw_Support3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_bw_Support3.TabIndex = 54
         Me.txt_PS_Dist_bw_Support3.Text = "1200"
         Me.txt_PS_Dist_bw_Support3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9815,10 +9817,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Top3
         '
         Me.txt_PS_Dist_from_Top3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Top3.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_Dist_from_Top3.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top3.Name = "txt_PS_Dist_from_Top3"
-        Me.txt_PS_Dist_from_Top3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Top3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Top3.TabIndex = 54
         Me.txt_PS_Dist_from_Top3.Text = "308"
         Me.txt_PS_Dist_from_Top3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9826,11 +9828,11 @@ Partial Class Form1
         'txt_PS_Dia3
         '
         Me.txt_PS_Dia3.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Dia3.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_Dia3.Location = New System.Drawing.Point(157, 38)
         Me.txt_PS_Dia3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia3.Name = "txt_PS_Dia3"
         Me.txt_PS_Dia3.ReadOnly = True
-        Me.txt_PS_Dia3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dia3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dia3.TabIndex = 51
         Me.txt_PS_Dia3.Text = "1200"
         Me.txt_PS_Dia3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9839,7 +9841,7 @@ Partial Class Form1
         '
         Me.Label356.AutoSize = True
         Me.Label356.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label356.Location = New System.Drawing.Point(67, 50)
+        Me.Label356.Location = New System.Drawing.Point(67, 51)
         Me.Label356.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label356.Name = "Label356"
         Me.Label356.Size = New System.Drawing.Size(113, 21)
@@ -9850,7 +9852,7 @@ Partial Class Form1
         '
         Me.Label357.AutoSize = True
         Me.Label357.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label357.Location = New System.Drawing.Point(124, 295)
+        Me.Label357.Location = New System.Drawing.Point(124, 296)
         Me.Label357.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label357.Name = "Label357"
         Me.Label357.Size = New System.Drawing.Size(217, 29)
@@ -9861,7 +9863,7 @@ Partial Class Form1
         '
         Me.Label358.AutoSize = True
         Me.Label358.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label358.Location = New System.Drawing.Point(124, 11)
+        Me.Label358.Location = New System.Drawing.Point(124, 12)
         Me.Label358.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label358.Name = "Label358"
         Me.Label358.Size = New System.Drawing.Size(263, 29)
@@ -9871,10 +9873,10 @@ Partial Class Form1
         'txt_PS_No3
         '
         Me.txt_PS_No3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_No3.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_No3.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No3.Name = "txt_PS_No3"
-        Me.txt_PS_No3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_No3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_No3.TabIndex = 48
         Me.txt_PS_No3.Text = "2"
         Me.txt_PS_No3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9904,11 +9906,11 @@ Partial Class Form1
         'txt_PS_Thk3
         '
         Me.txt_PS_Thk3.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Thk3.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_Thk3.Location = New System.Drawing.Point(157, 68)
         Me.txt_PS_Thk3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk3.Name = "txt_PS_Thk3"
         Me.txt_PS_Thk3.ReadOnly = True
-        Me.txt_PS_Thk3.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Thk3.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Thk3.TabIndex = 46
         Me.txt_PS_Thk3.Text = "6"
         Me.txt_PS_Thk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9917,7 +9919,7 @@ Partial Class Form1
         '
         Me.Label361.AutoSize = True
         Me.Label361.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label361.Location = New System.Drawing.Point(69, 87)
+        Me.Label361.Location = New System.Drawing.Point(69, 88)
         Me.Label361.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label361.Name = "Label361"
         Me.Label361.Size = New System.Drawing.Size(113, 21)
@@ -9966,10 +9968,10 @@ Partial Class Form1
         'PictureBox42
         '
         Me.PictureBox42.Image = CType(resources.GetObject("PictureBox42.Image"), System.Drawing.Image)
-        Me.PictureBox42.Location = New System.Drawing.Point(464, 1)
+        Me.PictureBox42.Location = New System.Drawing.Point(371, 1)
         Me.PictureBox42.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox42.Name = "PictureBox42"
-        Me.PictureBox42.Size = New System.Drawing.Size(281, 532)
+        Me.PictureBox42.Size = New System.Drawing.Size(225, 426)
         Me.PictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox42.TabIndex = 56
         Me.PictureBox42.TabStop = False
@@ -9978,7 +9980,7 @@ Partial Class Form1
         '
         Me.Label362.AutoSize = True
         Me.Label362.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label362.Location = New System.Drawing.Point(59, 343)
+        Me.Label362.Location = New System.Drawing.Point(59, 344)
         Me.Label362.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label362.Name = "Label362"
         Me.Label362.Size = New System.Drawing.Size(127, 21)
@@ -9989,7 +9991,7 @@ Partial Class Form1
         '
         Me.Label363.AutoSize = True
         Me.Label363.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label363.Location = New System.Drawing.Point(35, 267)
+        Me.Label363.Location = New System.Drawing.Point(35, 268)
         Me.Label363.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label363.Name = "Label363"
         Me.Label363.Size = New System.Drawing.Size(147, 21)
@@ -10000,7 +10002,7 @@ Partial Class Form1
         '
         Me.Label364.AutoSize = True
         Me.Label364.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label364.Location = New System.Drawing.Point(33, 234)
+        Me.Label364.Location = New System.Drawing.Point(33, 235)
         Me.Label364.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label364.Name = "Label364"
         Me.Label364.Size = New System.Drawing.Size(148, 21)
@@ -10021,10 +10023,10 @@ Partial Class Form1
         'txt_DP_Length4
         '
         Me.txt_DP_Length4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_DP_Length4.Location = New System.Drawing.Point(197, 340)
+        Me.txt_DP_Length4.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length4.Name = "txt_DP_Length4"
-        Me.txt_DP_Length4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_DP_Length4.Size = New System.Drawing.Size(177, 22)
         Me.txt_DP_Length4.TabIndex = 54
         Me.txt_DP_Length4.Text = "2328"
         Me.txt_DP_Length4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10032,10 +10034,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Base4
         '
         Me.txt_PS_Dist_from_Base4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Base4.Location = New System.Drawing.Point(197, 263)
+        Me.txt_PS_Dist_from_Base4.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base4.Name = "txt_PS_Dist_from_Base4"
-        Me.txt_PS_Dist_from_Base4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Base4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Base4.TabIndex = 54
         Me.txt_PS_Dist_from_Base4.Text = "150"
         Me.txt_PS_Dist_from_Base4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10043,10 +10045,10 @@ Partial Class Form1
         'txt_PS_Angle_Dist4
         '
         Me.txt_PS_Angle_Dist4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Angle_Dist4.Location = New System.Drawing.Point(197, 228)
+        Me.txt_PS_Angle_Dist4.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist4.Name = "txt_PS_Angle_Dist4"
-        Me.txt_PS_Angle_Dist4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Angle_Dist4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Angle_Dist4.TabIndex = 54
         Me.txt_PS_Angle_Dist4.Text = "268"
         Me.txt_PS_Angle_Dist4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10054,10 +10056,10 @@ Partial Class Form1
         'txt_PS_Dist_bw_Support4
         '
         Me.txt_PS_Dist_bw_Support4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_bw_Support4.Location = New System.Drawing.Point(197, 156)
+        Me.txt_PS_Dist_bw_Support4.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support4.Name = "txt_PS_Dist_bw_Support4"
-        Me.txt_PS_Dist_bw_Support4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_bw_Support4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_bw_Support4.TabIndex = 54
         Me.txt_PS_Dist_bw_Support4.Text = "1200"
         Me.txt_PS_Dist_bw_Support4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10065,10 +10067,10 @@ Partial Class Form1
         'txt_PS_Dist_from_Top4
         '
         Me.txt_PS_Dist_from_Top4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_Dist_from_Top4.Location = New System.Drawing.Point(197, 192)
+        Me.txt_PS_Dist_from_Top4.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top4.Name = "txt_PS_Dist_from_Top4"
-        Me.txt_PS_Dist_from_Top4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dist_from_Top4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dist_from_Top4.TabIndex = 54
         Me.txt_PS_Dist_from_Top4.Text = "308"
         Me.txt_PS_Dist_from_Top4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10076,11 +10078,11 @@ Partial Class Form1
         'txt_PS_Dia4
         '
         Me.txt_PS_Dia4.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Dia4.Location = New System.Drawing.Point(197, 47)
+        Me.txt_PS_Dia4.Location = New System.Drawing.Point(157, 38)
         Me.txt_PS_Dia4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia4.Name = "txt_PS_Dia4"
         Me.txt_PS_Dia4.ReadOnly = True
-        Me.txt_PS_Dia4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Dia4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Dia4.TabIndex = 51
         Me.txt_PS_Dia4.Text = "1200"
         Me.txt_PS_Dia4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10089,7 +10091,7 @@ Partial Class Form1
         '
         Me.Label366.AutoSize = True
         Me.Label366.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label366.Location = New System.Drawing.Point(67, 50)
+        Me.Label366.Location = New System.Drawing.Point(67, 51)
         Me.Label366.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label366.Name = "Label366"
         Me.Label366.Size = New System.Drawing.Size(113, 21)
@@ -10100,7 +10102,7 @@ Partial Class Form1
         '
         Me.Label367.AutoSize = True
         Me.Label367.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label367.Location = New System.Drawing.Point(124, 295)
+        Me.Label367.Location = New System.Drawing.Point(124, 296)
         Me.Label367.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label367.Name = "Label367"
         Me.Label367.Size = New System.Drawing.Size(217, 29)
@@ -10111,7 +10113,7 @@ Partial Class Form1
         '
         Me.Label368.AutoSize = True
         Me.Label368.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label368.Location = New System.Drawing.Point(124, 11)
+        Me.Label368.Location = New System.Drawing.Point(124, 12)
         Me.Label368.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label368.Name = "Label368"
         Me.Label368.Size = New System.Drawing.Size(263, 29)
@@ -10121,10 +10123,10 @@ Partial Class Form1
         'txt_PS_No4
         '
         Me.txt_PS_No4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_PS_No4.Location = New System.Drawing.Point(197, 121)
+        Me.txt_PS_No4.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No4.Name = "txt_PS_No4"
-        Me.txt_PS_No4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_No4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_No4.TabIndex = 48
         Me.txt_PS_No4.Text = "2"
         Me.txt_PS_No4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10154,11 +10156,11 @@ Partial Class Form1
         'txt_PS_Thk4
         '
         Me.txt_PS_Thk4.BackColor = System.Drawing.Color.Silver
-        Me.txt_PS_Thk4.Location = New System.Drawing.Point(197, 84)
+        Me.txt_PS_Thk4.Location = New System.Drawing.Point(157, 68)
         Me.txt_PS_Thk4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk4.Name = "txt_PS_Thk4"
         Me.txt_PS_Thk4.ReadOnly = True
-        Me.txt_PS_Thk4.Size = New System.Drawing.Size(221, 27)
+        Me.txt_PS_Thk4.Size = New System.Drawing.Size(177, 22)
         Me.txt_PS_Thk4.TabIndex = 46
         Me.txt_PS_Thk4.Text = "6"
         Me.txt_PS_Thk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10167,7 +10169,7 @@ Partial Class Form1
         '
         Me.Label371.AutoSize = True
         Me.Label371.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label371.Location = New System.Drawing.Point(69, 87)
+        Me.Label371.Location = New System.Drawing.Point(69, 88)
         Me.Label371.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label371.Name = "Label371"
         Me.Label371.Size = New System.Drawing.Size(113, 21)
@@ -10221,10 +10223,10 @@ Partial Class Form1
         Me.Update_3D.BackColor = System.Drawing.Color.Green
         Me.Update_3D.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Update_3D.ForeColor = System.Drawing.Color.White
-        Me.Update_3D.Location = New System.Drawing.Point(16, 450)
+        Me.Update_3D.Location = New System.Drawing.Point(13, 360)
         Me.Update_3D.Margin = New System.Windows.Forms.Padding(4)
         Me.Update_3D.Name = "Update_3D"
-        Me.Update_3D.Size = New System.Drawing.Size(188, 44)
+        Me.Update_3D.Size = New System.Drawing.Size(150, 35)
         Me.Update_3D.TabIndex = 73
         Me.Update_3D.Text = "Create 3D"
         Me.Update_3D.UseVisualStyleBackColor = False
@@ -10235,10 +10237,10 @@ Partial Class Form1
         Me.cmb_GLR_Mat.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_GLR_Mat.FormattingEnabled = True
         Me.cmb_GLR_Mat.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_GLR_Mat.Location = New System.Drawing.Point(177, 245)
+        Me.cmb_GLR_Mat.Location = New System.Drawing.Point(142, 196)
         Me.cmb_GLR_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_GLR_Mat.Name = "cmb_GLR_Mat"
-        Me.cmb_GLR_Mat.Size = New System.Drawing.Size(221, 27)
+        Me.cmb_GLR_Mat.Size = New System.Drawing.Size(177, 22)
         Me.cmb_GLR_Mat.TabIndex = 107
         Me.cmb_GLR_Mat.Text = "A276 Gr.316L"
         '
@@ -10258,10 +10260,10 @@ Partial Class Form1
         Me.Edit_3D.BackColor = System.Drawing.Color.Green
         Me.Edit_3D.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Edit_3D.ForeColor = System.Drawing.Color.White
-        Me.Edit_3D.Location = New System.Drawing.Point(228, 450)
+        Me.Edit_3D.Location = New System.Drawing.Point(182, 360)
         Me.Edit_3D.Margin = New System.Windows.Forms.Padding(4)
         Me.Edit_3D.Name = "Edit_3D"
-        Me.Edit_3D.Size = New System.Drawing.Size(188, 44)
+        Me.Edit_3D.Size = New System.Drawing.Size(150, 35)
         Me.Edit_3D.TabIndex = 105
         Me.Edit_3D.Text = "Update 3D"
         Me.Edit_3D.UseVisualStyleBackColor = False
@@ -10292,7 +10294,7 @@ Partial Class Form1
         '
         Me.Label126.AutoSize = True
         Me.Label126.Font = New System.Drawing.Font("Calibri", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label126.Location = New System.Drawing.Point(109, 282)
+        Me.Label126.Location = New System.Drawing.Point(109, 283)
         Me.Label126.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label126.Name = "Label126"
         Me.Label126.Size = New System.Drawing.Size(231, 29)
@@ -10302,10 +10304,10 @@ Partial Class Form1
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(1207, 0)
+        Me.PictureBox9.Location = New System.Drawing.Point(966, 0)
         Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(465, 406)
+        Me.PictureBox9.Size = New System.Drawing.Size(372, 325)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox9.TabIndex = 102
         Me.PictureBox9.TabStop = False
@@ -10313,10 +10315,10 @@ Partial Class Form1
         'PictureBox10
         '
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(459, 0)
+        Me.PictureBox10.Location = New System.Drawing.Point(367, 0)
         Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(740, 406)
+        Me.PictureBox10.Size = New System.Drawing.Size(592, 325)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox10.TabIndex = 51
         Me.PictureBox10.TabStop = False
@@ -10324,10 +10326,10 @@ Partial Class Form1
         'txt_GLR_Width
         '
         Me.txt_GLR_Width.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_Width.Location = New System.Drawing.Point(177, 94)
+        Me.txt_GLR_Width.Location = New System.Drawing.Point(142, 75)
         Me.txt_GLR_Width.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Width.Name = "txt_GLR_Width"
-        Me.txt_GLR_Width.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_Width.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_Width.TabIndex = 42
         Me.txt_GLR_Width.Text = "75"
         Me.txt_GLR_Width.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10346,10 +10348,10 @@ Partial Class Form1
         'txt_GLR_Length
         '
         Me.txt_GLR_Length.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_Length.Location = New System.Drawing.Point(177, 57)
+        Me.txt_GLR_Length.Location = New System.Drawing.Point(142, 46)
         Me.txt_GLR_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Length.Name = "txt_GLR_Length"
-        Me.txt_GLR_Length.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_Length.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_Length.TabIndex = 40
         Me.txt_GLR_Length.Text = "455"
         Me.txt_GLR_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10379,10 +10381,10 @@ Partial Class Form1
         'txt_GLR_No_Rung
         '
         Me.txt_GLR_No_Rung.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_No_Rung.Location = New System.Drawing.Point(181, 400)
+        Me.txt_GLR_No_Rung.Location = New System.Drawing.Point(145, 320)
         Me.txt_GLR_No_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_No_Rung.Name = "txt_GLR_No_Rung"
-        Me.txt_GLR_No_Rung.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_No_Rung.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_No_Rung.TabIndex = 24
         Me.txt_GLR_No_Rung.Text = "2"
         Me.txt_GLR_No_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10390,10 +10392,10 @@ Partial Class Form1
         'txt_GLR_Dist_Rung
         '
         Me.txt_GLR_Dist_Rung.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_Dist_Rung.Location = New System.Drawing.Point(181, 364)
+        Me.txt_GLR_Dist_Rung.Location = New System.Drawing.Point(145, 291)
         Me.txt_GLR_Dist_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Dist_Rung.Name = "txt_GLR_Dist_Rung"
-        Me.txt_GLR_Dist_Rung.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_Dist_Rung.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_Dist_Rung.TabIndex = 24
         Me.txt_GLR_Dist_Rung.Text = "1000"
         Me.txt_GLR_Dist_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10401,10 +10403,10 @@ Partial Class Form1
         'txt_GLR_Dist_base
         '
         Me.txt_GLR_Dist_base.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_Dist_base.Location = New System.Drawing.Point(181, 329)
+        Me.txt_GLR_Dist_base.Location = New System.Drawing.Point(145, 263)
         Me.txt_GLR_Dist_base.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Dist_base.Name = "txt_GLR_Dist_base"
-        Me.txt_GLR_Dist_base.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_Dist_base.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_Dist_base.TabIndex = 24
         Me.txt_GLR_Dist_base.Text = "250"
         Me.txt_GLR_Dist_base.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10412,10 +10414,10 @@ Partial Class Form1
         'txt_GLR_Fillet
         '
         Me.txt_GLR_Fillet.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_Fillet.Location = New System.Drawing.Point(177, 204)
+        Me.txt_GLR_Fillet.Location = New System.Drawing.Point(142, 163)
         Me.txt_GLR_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Fillet.Name = "txt_GLR_Fillet"
-        Me.txt_GLR_Fillet.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_Fillet.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_Fillet.TabIndex = 24
         Me.txt_GLR_Fillet.Text = "20"
         Me.txt_GLR_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10445,10 +10447,10 @@ Partial Class Form1
         'txt_GLR_Diameter
         '
         Me.txt_GLR_Diameter.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_Diameter.Location = New System.Drawing.Point(177, 167)
+        Me.txt_GLR_Diameter.Location = New System.Drawing.Point(142, 134)
         Me.txt_GLR_Diameter.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Diameter.Name = "txt_GLR_Diameter"
-        Me.txt_GLR_Diameter.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_Diameter.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_Diameter.TabIndex = 21
         Me.txt_GLR_Diameter.Text = "20"
         Me.txt_GLR_Diameter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10456,10 +10458,10 @@ Partial Class Form1
         'txt_GLR_Height
         '
         Me.txt_GLR_Height.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_GLR_Height.Location = New System.Drawing.Point(177, 130)
+        Me.txt_GLR_Height.Location = New System.Drawing.Point(142, 104)
         Me.txt_GLR_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Height.Name = "txt_GLR_Height"
-        Me.txt_GLR_Height.Size = New System.Drawing.Size(221, 27)
+        Me.txt_GLR_Height.Size = New System.Drawing.Size(177, 22)
         Me.txt_GLR_Height.TabIndex = 20
         Me.txt_GLR_Height.Text = "175"
         Me.txt_GLR_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10468,7 +10470,7 @@ Partial Class Form1
         '
         Me.Label152.AutoSize = True
         Me.Label152.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label152.Location = New System.Drawing.Point(75, 134)
+        Me.Label152.Location = New System.Drawing.Point(75, 135)
         Me.Label152.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label152.Name = "Label152"
         Me.Label152.Size = New System.Drawing.Size(92, 21)
@@ -10540,10 +10542,10 @@ Partial Class Form1
         Me.cmb_NPB_Mat.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_NPB_Mat.FormattingEnabled = True
         Me.cmb_NPB_Mat.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_NPB_Mat.Location = New System.Drawing.Point(544, 298)
+        Me.cmb_NPB_Mat.Location = New System.Drawing.Point(436, 238)
         Me.cmb_NPB_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NPB_Mat.Name = "cmb_NPB_Mat"
-        Me.cmb_NPB_Mat.Size = New System.Drawing.Size(159, 27)
+        Me.cmb_NPB_Mat.Size = New System.Drawing.Size(127, 22)
         Me.cmb_NPB_Mat.TabIndex = 110
         Me.cmb_NPB_Mat.Text = "A 240 Gr.316L"
         '
@@ -10552,10 +10554,10 @@ Partial Class Form1
         Me.ComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.ComboBox4.Location = New System.Drawing.Point(188, 331)
+        Me.ComboBox4.Location = New System.Drawing.Point(151, 265)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(159, 27)
+        Me.ComboBox4.Size = New System.Drawing.Size(127, 22)
         Me.ComboBox4.TabIndex = 109
         Me.ComboBox4.Text = "A 240 Gr.316L"
         '
@@ -10564,10 +10566,10 @@ Partial Class Form1
         Me.cmb_NP_Mat.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_NP_Mat.FormattingEnabled = True
         Me.cmb_NP_Mat.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A-516 Gr.70 N", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_NP_Mat.Location = New System.Drawing.Point(188, 298)
+        Me.cmb_NP_Mat.Location = New System.Drawing.Point(151, 238)
         Me.cmb_NP_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP_Mat.Name = "cmb_NP_Mat"
-        Me.cmb_NP_Mat.Size = New System.Drawing.Size(159, 27)
+        Me.cmb_NP_Mat.Size = New System.Drawing.Size(127, 22)
         Me.cmb_NP_Mat.TabIndex = 109
         Me.cmb_NP_Mat.Text = "A 240 Gr.316L"
         '
@@ -10575,7 +10577,7 @@ Partial Class Form1
         '
         Me.Label174.AutoSize = True
         Me.Label174.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label174.Location = New System.Drawing.Point(375, 302)
+        Me.Label174.Location = New System.Drawing.Point(376, 302)
         Me.Label174.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label174.Name = "Label174"
         Me.Label174.Size = New System.Drawing.Size(148, 21)
@@ -10586,7 +10588,7 @@ Partial Class Form1
         '
         Me.Label68.AutoSize = True
         Me.Label68.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label68.Location = New System.Drawing.Point(43, 335)
+        Me.Label68.Location = New System.Drawing.Point(44, 335)
         Me.Label68.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label68.Name = "Label68"
         Me.Label68.Size = New System.Drawing.Size(131, 21)
@@ -10609,10 +10611,10 @@ Partial Class Form1
         Me.Button5.BackColor = System.Drawing.Color.Green
         Me.Button5.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(444, 406)
+        Me.Button5.Location = New System.Drawing.Point(356, 325)
         Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(224, 62)
+        Me.Button5.Size = New System.Drawing.Size(179, 50)
         Me.Button5.TabIndex = 105
         Me.Button5.Text = "Edit 3D"
         Me.Button5.UseVisualStyleBackColor = False
@@ -10620,10 +10622,10 @@ Partial Class Form1
         'PictureBox14
         '
         Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
-        Me.PictureBox14.Location = New System.Drawing.Point(1720, 0)
+        Me.PictureBox14.Location = New System.Drawing.Point(1376, 0)
         Me.PictureBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(320, 425)
+        Me.PictureBox14.Size = New System.Drawing.Size(256, 340)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox14.TabIndex = 76
         Me.PictureBox14.TabStop = False
@@ -10631,10 +10633,10 @@ Partial Class Form1
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(1373, 0)
+        Me.PictureBox8.Location = New System.Drawing.Point(1099, 0)
         Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(349, 425)
+        Me.PictureBox8.Size = New System.Drawing.Size(279, 340)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox8.TabIndex = 75
         Me.PictureBox8.TabStop = False
@@ -10642,10 +10644,10 @@ Partial Class Form1
         'txt_NP_Orientation
         '
         Me.txt_NP_Orientation.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_Orientation.Location = New System.Drawing.Point(188, 260)
+        Me.txt_NP_Orientation.Location = New System.Drawing.Point(151, 208)
         Me.txt_NP_Orientation.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Orientation.Name = "txt_NP_Orientation"
-        Me.txt_NP_Orientation.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Orientation.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Orientation.TabIndex = 55
         Me.txt_NP_Orientation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10665,10 +10667,10 @@ Partial Class Form1
         Me.Button4.BackColor = System.Drawing.Color.Green
         Me.Button4.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.White
-        Me.Button4.Location = New System.Drawing.Point(95, 400)
+        Me.Button4.Location = New System.Drawing.Point(76, 320)
         Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(241, 74)
+        Me.Button4.Size = New System.Drawing.Size(193, 59)
         Me.Button4.TabIndex = 73
         Me.Button4.Text = "Update 3D"
         Me.Button4.UseVisualStyleBackColor = False
@@ -10676,11 +10678,11 @@ Partial Class Form1
         'txt_NP_Dist_Centre
         '
         Me.txt_NP_Dist_Centre.BackColor = System.Drawing.Color.Silver
-        Me.txt_NP_Dist_Centre.Location = New System.Drawing.Point(544, 260)
+        Me.txt_NP_Dist_Centre.Location = New System.Drawing.Point(436, 208)
         Me.txt_NP_Dist_Centre.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist_Centre.Name = "txt_NP_Dist_Centre"
         Me.txt_NP_Dist_Centre.ReadOnly = True
-        Me.txt_NP_Dist_Centre.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Dist_Centre.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Dist_Centre.TabIndex = 53
         Me.txt_NP_Dist_Centre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10698,10 +10700,10 @@ Partial Class Form1
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(712, 0)
+        Me.PictureBox7.Location = New System.Drawing.Point(570, 0)
         Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(664, 421)
+        Me.PictureBox7.Size = New System.Drawing.Size(531, 337)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox7.TabIndex = 51
         Me.PictureBox7.TabStop = False
@@ -10709,10 +10711,10 @@ Partial Class Form1
         'txt_NP_width
         '
         Me.txt_NP_width.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_width.Location = New System.Drawing.Point(188, 76)
+        Me.txt_NP_width.Location = New System.Drawing.Point(151, 61)
         Me.txt_NP_width.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_width.Name = "txt_NP_width"
-        Me.txt_NP_width.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_width.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_width.TabIndex = 42
         Me.txt_NP_width.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10730,10 +10732,10 @@ Partial Class Form1
         'txt_NP_length
         '
         Me.txt_NP_length.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_length.Location = New System.Drawing.Point(188, 39)
+        Me.txt_NP_length.Location = New System.Drawing.Point(151, 31)
         Me.txt_NP_length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_length.Name = "txt_NP_length"
-        Me.txt_NP_length.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_length.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_length.TabIndex = 40
         Me.txt_NP_length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10741,7 +10743,7 @@ Partial Class Form1
         '
         Me.Label129.AutoSize = True
         Me.Label129.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label129.Location = New System.Drawing.Point(3, 43)
+        Me.Label129.Location = New System.Drawing.Point(4, 43)
         Me.Label129.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label129.Name = "Label129"
         Me.Label129.Size = New System.Drawing.Size(177, 21)
@@ -10762,10 +10764,10 @@ Partial Class Form1
         'txt_ST_Thk
         '
         Me.txt_ST_Thk.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_ST_Thk.Location = New System.Drawing.Point(544, 187)
+        Me.txt_ST_Thk.Location = New System.Drawing.Point(436, 150)
         Me.txt_ST_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_ST_Thk.Name = "txt_ST_Thk"
-        Me.txt_ST_Thk.Size = New System.Drawing.Size(159, 27)
+        Me.txt_ST_Thk.Size = New System.Drawing.Size(127, 22)
         Me.txt_ST_Thk.TabIndex = 36
         Me.txt_ST_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10783,10 +10785,10 @@ Partial Class Form1
         'txt_NP_Dist_Base
         '
         Me.txt_NP_Dist_Base.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_Dist_Base.Location = New System.Drawing.Point(544, 224)
+        Me.txt_NP_Dist_Base.Location = New System.Drawing.Point(436, 179)
         Me.txt_NP_Dist_Base.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist_Base.Name = "txt_NP_Dist_Base"
-        Me.txt_NP_Dist_Base.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Dist_Base.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Dist_Base.TabIndex = 34
         Me.txt_NP_Dist_Base.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10804,40 +10806,40 @@ Partial Class Form1
         'txt_ST_Height
         '
         Me.txt_ST_Height.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_ST_Height.Location = New System.Drawing.Point(544, 150)
+        Me.txt_ST_Height.Location = New System.Drawing.Point(436, 120)
         Me.txt_ST_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_ST_Height.Name = "txt_ST_Height"
-        Me.txt_ST_Height.Size = New System.Drawing.Size(159, 27)
+        Me.txt_ST_Height.Size = New System.Drawing.Size(127, 22)
         Me.txt_ST_Height.TabIndex = 32
         Me.txt_ST_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_ST_Length
         '
         Me.txt_ST_Length.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_ST_Length.Location = New System.Drawing.Point(544, 113)
+        Me.txt_ST_Length.Location = New System.Drawing.Point(436, 90)
         Me.txt_ST_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_ST_Length.Name = "txt_ST_Length"
-        Me.txt_ST_Length.Size = New System.Drawing.Size(159, 27)
+        Me.txt_ST_Length.Size = New System.Drawing.Size(127, 22)
         Me.txt_ST_Length.TabIndex = 31
         Me.txt_ST_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_NP_Dist
         '
         Me.txt_NP_Dist.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_Dist.Location = New System.Drawing.Point(544, 76)
+        Me.txt_NP_Dist.Location = New System.Drawing.Point(436, 61)
         Me.txt_NP_Dist.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist.Name = "txt_NP_Dist"
-        Me.txt_NP_Dist.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Dist.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Dist.TabIndex = 30
         Me.txt_NP_Dist.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_NP_Fillet
         '
         Me.txt_NP_Fillet.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_Fillet.Location = New System.Drawing.Point(544, 39)
+        Me.txt_NP_Fillet.Location = New System.Drawing.Point(436, 31)
         Me.txt_NP_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Fillet.Name = "txt_NP_Fillet"
-        Me.txt_NP_Fillet.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_Fillet.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_Fillet.TabIndex = 29
         Me.txt_NP_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10877,20 +10879,20 @@ Partial Class Form1
         'txt_NPB_thk
         '
         Me.txt_NPB_thk.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_thk.Location = New System.Drawing.Point(188, 224)
+        Me.txt_NPB_thk.Location = New System.Drawing.Point(151, 179)
         Me.txt_NPB_thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_thk.Name = "txt_NPB_thk"
-        Me.txt_NPB_thk.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_thk.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_thk.TabIndex = 25
         Me.txt_NPB_thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_NPB_width
         '
         Me.txt_NPB_width.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_width.Location = New System.Drawing.Point(188, 187)
+        Me.txt_NPB_width.Location = New System.Drawing.Point(151, 150)
         Me.txt_NPB_width.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_width.Name = "txt_NPB_width"
-        Me.txt_NPB_width.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_width.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_width.TabIndex = 24
         Me.txt_NPB_width.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10919,20 +10921,20 @@ Partial Class Form1
         'txt_NPB_length
         '
         Me.txt_NPB_length.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NPB_length.Location = New System.Drawing.Point(188, 150)
+        Me.txt_NPB_length.Location = New System.Drawing.Point(151, 120)
         Me.txt_NPB_length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_length.Name = "txt_NPB_length"
-        Me.txt_NPB_length.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NPB_length.Size = New System.Drawing.Size(127, 22)
         Me.txt_NPB_length.TabIndex = 21
         Me.txt_NPB_length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_NP_thk
         '
         Me.txt_NP_thk.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_NP_thk.Location = New System.Drawing.Point(188, 113)
+        Me.txt_NP_thk.Location = New System.Drawing.Point(151, 90)
         Me.txt_NP_thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_thk.Name = "txt_NP_thk"
-        Me.txt_NP_thk.Size = New System.Drawing.Size(159, 27)
+        Me.txt_NP_thk.Size = New System.Drawing.Size(127, 22)
         Me.txt_NP_thk.TabIndex = 20
         Me.txt_NP_thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10940,7 +10942,7 @@ Partial Class Form1
         '
         Me.Label139.AutoSize = True
         Me.Label139.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label139.Location = New System.Drawing.Point(455, 43)
+        Me.Label139.Location = New System.Drawing.Point(456, 43)
         Me.Label139.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label139.Name = "Label139"
         Me.Label139.Size = New System.Drawing.Size(80, 21)
@@ -10962,7 +10964,7 @@ Partial Class Form1
         '
         Me.Label141.AutoSize = True
         Me.Label141.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label141.Location = New System.Drawing.Point(7, 154)
+        Me.Label141.Location = New System.Drawing.Point(8, 154)
         Me.Label141.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label141.Name = "Label141"
         Me.Label141.Size = New System.Drawing.Size(172, 21)
@@ -11025,10 +11027,10 @@ Partial Class Form1
         Me.cmb_LL_Plate_Mat.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_LL_Plate_Mat.FormattingEnabled = True
         Me.cmb_LL_Plate_Mat.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_LL_Plate_Mat.Location = New System.Drawing.Point(508, 263)
+        Me.cmb_LL_Plate_Mat.Location = New System.Drawing.Point(407, 210)
         Me.cmb_LL_Plate_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_LL_Plate_Mat.Name = "cmb_LL_Plate_Mat"
-        Me.cmb_LL_Plate_Mat.Size = New System.Drawing.Size(159, 27)
+        Me.cmb_LL_Plate_Mat.Size = New System.Drawing.Size(127, 22)
         Me.cmb_LL_Plate_Mat.TabIndex = 69
         Me.cmb_LL_Plate_Mat.Text = "A-516 Gr.70"
         '
@@ -11037,10 +11039,10 @@ Partial Class Form1
         Me.cmb_LL_Pad_Mat.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cmb_LL_Pad_Mat.FormattingEnabled = True
         Me.cmb_LL_Pad_Mat.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.cmb_LL_Pad_Mat.Location = New System.Drawing.Point(176, 263)
+        Me.cmb_LL_Pad_Mat.Location = New System.Drawing.Point(141, 210)
         Me.cmb_LL_Pad_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_LL_Pad_Mat.Name = "cmb_LL_Pad_Mat"
-        Me.cmb_LL_Pad_Mat.Size = New System.Drawing.Size(159, 27)
+        Me.cmb_LL_Pad_Mat.Size = New System.Drawing.Size(127, 22)
         Me.cmb_LL_Pad_Mat.TabIndex = 69
         Me.cmb_LL_Pad_Mat.Text = "A 240 Gr.316L"
         '
@@ -11048,19 +11050,19 @@ Partial Class Form1
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"SA 516 Gr.60", "SA 516 Gr.70", "SA 516 Gr.60/70", "SA 516 Gr.65", "SA 285 Gr.C", "IS 2062 Gr.A/B", "SA 240 Gr.304", "SA 240 Gr.304L", "SA 240 Gr.316", "SA 240 Gr.316L", "SA 240 Gr.304H", "SA 240 Gr.321", "SA 240 Gr.410", "SA 240 Gr.410S", "SA 240 Gr.347"})
-        Me.ComboBox1.Location = New System.Drawing.Point(176, 263)
+        Me.ComboBox1.Location = New System.Drawing.Point(141, 210)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(159, 27)
+        Me.ComboBox1.Size = New System.Drawing.Size(127, 22)
         Me.ComboBox1.TabIndex = 69
         '
         'PictureBox13
         '
         Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
-        Me.PictureBox13.Location = New System.Drawing.Point(1715, 4)
+        Me.PictureBox13.Location = New System.Drawing.Point(1372, 3)
         Me.PictureBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(337, 406)
+        Me.PictureBox13.Size = New System.Drawing.Size(270, 325)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox13.TabIndex = 53
         Me.PictureBox13.TabStop = False
@@ -11068,10 +11070,10 @@ Partial Class Form1
         'PictureBox12
         '
         Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
-        Me.PictureBox12.Location = New System.Drawing.Point(1312, 4)
+        Me.PictureBox12.Location = New System.Drawing.Point(1050, 3)
         Me.PictureBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(404, 406)
+        Me.PictureBox12.Size = New System.Drawing.Size(323, 325)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox12.TabIndex = 52
         Me.PictureBox12.TabStop = False
@@ -11079,10 +11081,10 @@ Partial Class Form1
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(676, 4)
+        Me.PictureBox5.Location = New System.Drawing.Point(541, 3)
         Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(640, 406)
+        Me.PictureBox5.Size = New System.Drawing.Size(512, 325)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 51
         Me.PictureBox5.TabStop = False
@@ -11090,10 +11092,10 @@ Partial Class Form1
         'txt_LL_Ang_Bw
         '
         Me.txt_LL_Ang_Bw.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_Ang_Bw.Location = New System.Drawing.Point(507, 380)
+        Me.txt_LL_Ang_Bw.Location = New System.Drawing.Point(406, 304)
         Me.txt_LL_Ang_Bw.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Ang_Bw.Name = "txt_LL_Ang_Bw"
-        Me.txt_LL_Ang_Bw.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_Ang_Bw.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_Ang_Bw.TabIndex = 50
         Me.txt_LL_Ang_Bw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11111,10 +11113,10 @@ Partial Class Form1
         'txt_LL_Dist
         '
         Me.txt_LL_Dist.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_Dist.Location = New System.Drawing.Point(507, 345)
+        Me.txt_LL_Dist.Location = New System.Drawing.Point(406, 276)
         Me.txt_LL_Dist.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Dist.Name = "txt_LL_Dist"
-        Me.txt_LL_Dist.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_Dist.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_Dist.TabIndex = 48
         Me.txt_LL_Dist.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11132,10 +11134,10 @@ Partial Class Form1
         'txt_LL_Number
         '
         Me.txt_LL_Number.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_Number.Location = New System.Drawing.Point(175, 380)
+        Me.txt_LL_Number.Location = New System.Drawing.Point(140, 304)
         Me.txt_LL_Number.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Number.Name = "txt_LL_Number"
-        Me.txt_LL_Number.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_Number.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_Number.TabIndex = 46
         Me.txt_LL_Number.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11153,10 +11155,10 @@ Partial Class Form1
         'txt_LL_Ang
         '
         Me.txt_LL_Ang.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_Ang.Location = New System.Drawing.Point(175, 345)
+        Me.txt_LL_Ang.Location = New System.Drawing.Point(140, 276)
         Me.txt_LL_Ang.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Ang.Name = "txt_LL_Ang"
-        Me.txt_LL_Ang.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_Ang.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_Ang.TabIndex = 44
         Me.txt_LL_Ang.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11174,10 +11176,10 @@ Partial Class Form1
         'txt_LL_ST
         '
         Me.txt_LL_ST.BackColor = System.Drawing.Color.Silver
-        Me.txt_LL_ST.Location = New System.Drawing.Point(176, 80)
+        Me.txt_LL_ST.Location = New System.Drawing.Point(141, 64)
         Me.txt_LL_ST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_ST.Name = "txt_LL_ST"
-        Me.txt_LL_ST.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_ST.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_ST.TabIndex = 42
         Me.txt_LL_ST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11195,10 +11197,10 @@ Partial Class Form1
         'txt_LL_ID
         '
         Me.txt_LL_ID.BackColor = System.Drawing.Color.Silver
-        Me.txt_LL_ID.Location = New System.Drawing.Point(176, 43)
+        Me.txt_LL_ID.Location = New System.Drawing.Point(141, 34)
         Me.txt_LL_ID.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_ID.Name = "txt_LL_ID"
-        Me.txt_LL_ID.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_ID.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_ID.TabIndex = 40
         Me.txt_LL_ID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11238,10 +11240,10 @@ Partial Class Form1
         'txt_LL_P_BL
         '
         Me.txt_LL_P_BL.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_P_BL.Location = New System.Drawing.Point(508, 191)
+        Me.txt_LL_P_BL.Location = New System.Drawing.Point(407, 153)
         Me.txt_LL_P_BL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_BL.Name = "txt_LL_P_BL"
-        Me.txt_LL_P_BL.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_P_BL.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_P_BL.TabIndex = 36
         Me.txt_LL_P_BL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11259,10 +11261,10 @@ Partial Class Form1
         'txt_LL_P_Thk
         '
         Me.txt_LL_P_Thk.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_P_Thk.Location = New System.Drawing.Point(508, 228)
+        Me.txt_LL_P_Thk.Location = New System.Drawing.Point(407, 182)
         Me.txt_LL_P_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_Thk.Name = "txt_LL_P_Thk"
-        Me.txt_LL_P_Thk.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_P_Thk.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_P_Thk.TabIndex = 34
         Me.txt_LL_P_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11291,40 +11293,40 @@ Partial Class Form1
         'txt_LL_P_CR
         '
         Me.txt_LL_P_CR.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_P_CR.Location = New System.Drawing.Point(508, 154)
+        Me.txt_LL_P_CR.Location = New System.Drawing.Point(407, 123)
         Me.txt_LL_P_CR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_CR.Name = "txt_LL_P_CR"
-        Me.txt_LL_P_CR.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_P_CR.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_P_CR.TabIndex = 32
         Me.txt_LL_P_CR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LL_P_HD
         '
         Me.txt_LL_P_HD.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_P_HD.Location = New System.Drawing.Point(508, 117)
+        Me.txt_LL_P_HD.Location = New System.Drawing.Point(407, 94)
         Me.txt_LL_P_HD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_HD.Name = "txt_LL_P_HD"
-        Me.txt_LL_P_HD.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_P_HD.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_P_HD.TabIndex = 31
         Me.txt_LL_P_HD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LL_P_H
         '
         Me.txt_LL_P_H.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_P_H.Location = New System.Drawing.Point(508, 80)
+        Me.txt_LL_P_H.Location = New System.Drawing.Point(407, 64)
         Me.txt_LL_P_H.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_H.Name = "txt_LL_P_H"
-        Me.txt_LL_P_H.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_P_H.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_P_H.TabIndex = 30
         Me.txt_LL_P_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LL_P_L
         '
         Me.txt_LL_P_L.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_P_L.Location = New System.Drawing.Point(508, 43)
+        Me.txt_LL_P_L.Location = New System.Drawing.Point(407, 34)
         Me.txt_LL_P_L.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_L.Name = "txt_LL_P_L"
-        Me.txt_LL_P_L.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_P_L.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_P_L.TabIndex = 29
         Me.txt_LL_P_L.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11364,20 +11366,20 @@ Partial Class Form1
         'txt_LL_PF
         '
         Me.txt_LL_PF.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_PF.Location = New System.Drawing.Point(176, 228)
+        Me.txt_LL_PF.Location = New System.Drawing.Point(141, 182)
         Me.txt_LL_PF.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PF.Name = "txt_LL_PF"
-        Me.txt_LL_PF.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_PF.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_PF.TabIndex = 25
         Me.txt_LL_PF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LL_PT
         '
         Me.txt_LL_PT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_PT.Location = New System.Drawing.Point(176, 191)
+        Me.txt_LL_PT.Location = New System.Drawing.Point(141, 153)
         Me.txt_LL_PT.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PT.Name = "txt_LL_PT"
-        Me.txt_LL_PT.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_PT.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_PT.TabIndex = 24
         Me.txt_LL_PT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11417,20 +11419,20 @@ Partial Class Form1
         'txt_LL_PH
         '
         Me.txt_LL_PH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_PH.Location = New System.Drawing.Point(176, 154)
+        Me.txt_LL_PH.Location = New System.Drawing.Point(141, 123)
         Me.txt_LL_PH.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PH.Name = "txt_LL_PH"
-        Me.txt_LL_PH.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_PH.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_PH.TabIndex = 21
         Me.txt_LL_PH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_LL_PL
         '
         Me.txt_LL_PL.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LL_PL.Location = New System.Drawing.Point(176, 117)
+        Me.txt_LL_PL.Location = New System.Drawing.Point(141, 94)
         Me.txt_LL_PL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PL.Name = "txt_LL_PL"
-        Me.txt_LL_PL.Size = New System.Drawing.Size(159, 27)
+        Me.txt_LL_PL.Size = New System.Drawing.Size(127, 22)
         Me.txt_LL_PL.TabIndex = 20
         Me.txt_LL_PL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -13096,6 +13098,8 @@ Partial Class Form1
         '
         'TabPage17
         '
+        Me.TabPage17.Controls.Add(Me.Button11)
+        Me.TabPage17.Controls.Add(Me.Button12)
         Me.TabPage17.Controls.Add(Me.Button1)
         Me.TabPage17.Controls.Add(Me.DGV_Notes)
         Me.TabPage17.Location = New System.Drawing.Point(4, 28)
@@ -13114,9 +13118,9 @@ Partial Class Form1
         Me.Button1.Location = New System.Drawing.Point(0, 651)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(309, 59)
+        Me.Button1.Size = New System.Drawing.Size(203, 48)
         Me.Button1.TabIndex = 76
-        Me.Button1.Text = "Create 2D Drawing"
+        Me.Button1.Text = "Detail Drawing"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'DGV_Notes
@@ -13336,11 +13340,33 @@ Partial Class Form1
         Me.PictureBox17.TabIndex = 4
         Me.PictureBox17.TabStop = False
         '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(438, 825)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(128, 49)
+        Me.Button11.TabIndex = 77
+        Me.Button11.Text = "Button11"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.Green
+        Me.Button12.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.ForeColor = System.Drawing.Color.White
+        Me.Button12.Location = New System.Drawing.Point(211, 652)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(203, 48)
+        Me.Button12.TabIndex = 76
+        Me.Button12.Text = "GA Drawing"
+        Me.Button12.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1949, 845)
+        Me.ClientSize = New System.Drawing.Size(1951, 881)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.PictureBox17)
         Me.Controls.Add(Me.TabControl1)
@@ -14599,4 +14625,6 @@ Partial Class Form1
     Friend WithEvents TextBox38 As TextBox
     Friend WithEvents Label401 As Label
     Friend WithEvents txt_LLA_Ang_bw As TextBox
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
 End Class
