@@ -1777,7 +1777,115 @@ Public Class Form1
 
     End Function
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button12.Click
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        '=========================================
+        ' 0️⃣ Make sure a working copy exists
+        '=========================================
+        If String.IsNullOrWhiteSpace(CurrentProjectFolder) OrElse Not IO.Directory.Exists(CurrentProjectFolder) Then
+            MessageBox.Show("❌ No working copy found. Please run 'Edit 3D' first.", "2D Drawing")
+            Exit Sub
+        End If
+
+        Dim invApp As Inventor.Application = Nothing
+        Try
+            invApp = CType(Marshal.GetActiveObject("Inventor.Application"), Inventor.Application)
+        Catch
+            MessageBox.Show("❌ Inventor is not running.", "2D Drawing")
+            Exit Sub
+        End Try
+
+        '=========================================
+        ' 2️⃣ Decide Drawing File
+        '=========================================
+        Dim isBeam As Boolean = LegSupportState.CurrentSupportType.ToString().ToUpper() = "BEAM"
+        Dim fileName As String = ""
+
+        If SelectedClient = "ARAMCO" Then
+            fileName = If(isBeam, "Main_Assembly_2D_Drawing_.dwg", "Main_Assembly_2D_Drawing.dwg")
+        ElseIf SelectedClient = "ADNOC" Then
+            fileName = If(isBeam, "Main_Assembly_2D_Drawing_.dwg", "Main_Assembly_2D_Drawing.dwg")
+        ElseIf SelectedClient = "QATAR" Then
+            fileName = If(isBeam, "Main_Assembly_2D_Drawing_.dwg", "Main_Assembly_2D_Drawing.dwg")
+        Else
+            MessageBox.Show("❌ Unknown client.", "2D Drawing")
+            Exit Sub
+        End If
+
+        '=========================================
+        ' 3️⃣ Combine Full Path
+        '=========================================
+        Dim drawingPath As String = IO.Path.Combine(CurrentProjectFolder, fileName)
+        If Not IO.File.Exists(drawingPath) Then
+            MessageBox.Show("❌ Drawing file not found:" & vbCrLf & drawingPath, "2D Drawing")
+            Exit Sub
+        End If
+
+        '=========================================
+        ' 4️⃣ Open Drawing
+        '=========================================
+        Dim drawDoc As DrawingDocument = Nothing
+        Try
+            drawDoc = CType(invApp.Documents.Open(drawingPath, True), DrawingDocument)
+        Catch ex As Exception
+            MessageBox.Show("❌ Failed to open drawing: " & ex.Message, "2D Drawing")
+            Exit Sub
+        End Try
+
+        '=========================================
+        ' ✅ DEBUG — FIND CORRECT ROW/CELL API
+        '=========================================
+        'Dim sheet As Object = drawDoc.Sheets.Item(1)
+        'Dim tables As Object = sheet.CustomTables
+        'DebugCellMembers(tables)
+
+        '=========================================
+        ' 5️⃣ UPDATE SHEET 1 DATA
+        '=========================================
+        'UpdateDrawingSheet1(drawDoc, invApp)
+
+        '=========================================
+        ' 6️⃣ UPDATE MODEL
+        '=========================================
+        Try
+            drawDoc.Update()
+        Catch ex As Exception
+            Debug.WriteLine($"❌ Draw update failed: {ex.Message}")
+        End Try
+
+        '=========================================
+        ' 7️⃣ Fit All Sheets
+        '=========================================
+        Try
+            For Each sh As Inventor.Sheet In drawDoc.Sheets
+                sh.Activate()
+                invApp.ActiveView.Fit()
+                invApp.ActiveView.Update()
+            Next
+        Catch ex As Exception
+            Debug.WriteLine($"❌ Sheet fit failed: {ex.Message}")
+        End Try
+
+        '=========================================
+        ' 8️⃣ Activate Sheet 1
+        '=========================================
+        Try
+            drawDoc.Sheets.Item(1).Activate()
+        Catch ex As Exception
+            Debug.WriteLine($"❌ Sheet 1 activation failed: {ex.Message}")
+        End Try
+
+        '=========================================
+        ' 9️⃣ Save
+        '=========================================
+        Try
+            drawDoc.Save()
+        Catch ex As Exception
+            Debug.WriteLine($"❌ Save failed: {ex.Message}")
+        End Try
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         '=========================================
         ' 0️⃣ Make sure a working copy exists
@@ -24844,7 +24952,6 @@ NextAngle:
     Private Sub txt_Shell_Finished_Thk_TextChanged(sender As Object, e As EventArgs) Handles txt_Shell_Finished_Thk.TextChanged
         UpdateReinforcementRingDimensions()
     End Sub
-
 
 #End Region
 

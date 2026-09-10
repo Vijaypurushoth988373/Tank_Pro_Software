@@ -1049,6 +1049,8 @@ Partial Class Form1
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabPage17 = New System.Windows.Forms.TabPage()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DGV_Notes = New System.Windows.Forms.DataGridView()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
@@ -1067,8 +1069,6 @@ Partial Class Form1
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label178 = New System.Windows.Forms.Label()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout
         Me.TabPage21.SuspendLayout
         Me.TabPage2.SuspendLayout
@@ -4090,7 +4090,7 @@ Partial Class Form1
         Me.txt_LLA_Ang_bw.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Ang_bw.Name = "txt_LLA_Ang_bw"
         Me.txt_LLA_Ang_bw.ReadOnly = True
-        Me.txt_LLA_Ang_bw.Size = New System.Drawing.Size(138, 22)
+        Me.txt_LLA_Ang_bw.Size = New System.Drawing.Size(138, 27)
         Me.txt_LLA_Ang_bw.TabIndex = 122
         Me.txt_LLA_Ang_bw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -4179,7 +4179,7 @@ Partial Class Form1
         Me.txt_LLA_Leg_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Leg_Length.Name = "txt_LLA_Leg_Length"
         Me.txt_LLA_Leg_Length.ReadOnly = True
-        Me.txt_LLA_Leg_Length.Size = New System.Drawing.Size(138, 22)
+        Me.txt_LLA_Leg_Length.Size = New System.Drawing.Size(138, 27)
         Me.txt_LLA_Leg_Length.TabIndex = 52
         Me.txt_LLA_Leg_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -4189,7 +4189,7 @@ Partial Class Form1
         Me.txt_LLA_Base_To_W_L.Location = New System.Drawing.Point(463, 105)
         Me.txt_LLA_Base_To_W_L.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Base_To_W_L.Name = "txt_LLA_Base_To_W_L"
-        Me.txt_LLA_Base_To_W_L.Size = New System.Drawing.Size(138, 22)
+        Me.txt_LLA_Base_To_W_L.Size = New System.Drawing.Size(138, 27)
         Me.txt_LLA_Base_To_W_L.TabIndex = 50
         Me.txt_LLA_Base_To_W_L.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -4199,7 +4199,7 @@ Partial Class Form1
         Me.txt_LLA_Base_To_TL.Location = New System.Drawing.Point(463, 76)
         Me.txt_LLA_Base_To_TL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_Base_To_TL.Name = "txt_LLA_Base_To_TL"
-        Me.txt_LLA_Base_To_TL.Size = New System.Drawing.Size(138, 22)
+        Me.txt_LLA_Base_To_TL.Size = New System.Drawing.Size(138, 27)
         Me.txt_LLA_Base_To_TL.TabIndex = 49
         Me.txt_LLA_Base_To_TL.Text = "1398.5"
         Me.txt_LLA_Base_To_TL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4255,7 +4255,7 @@ Partial Class Form1
         Me.txt_LLA_NOL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LLA_NOL.Name = "txt_LLA_NOL"
         Me.txt_LLA_NOL.ReadOnly = True
-        Me.txt_LLA_NOL.Size = New System.Drawing.Size(138, 22)
+        Me.txt_LLA_NOL.Size = New System.Drawing.Size(138, 27)
         Me.txt_LLA_NOL.TabIndex = 42
         Me.txt_LLA_NOL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -4265,7 +4265,7 @@ Partial Class Form1
         Me.txt_LSA_Angle.Location = New System.Drawing.Point(163, 76)
         Me.txt_LSA_Angle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LSA_Angle.Name = "txt_LSA_Angle"
-        Me.txt_LSA_Angle.Size = New System.Drawing.Size(138, 22)
+        Me.txt_LSA_Angle.Size = New System.Drawing.Size(138, 27)
         Me.txt_LSA_Angle.TabIndex = 41
         Me.txt_LSA_Angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -4436,7 +4436,7 @@ Partial Class Form1
         Me.txt_BP_Assm_Angle.Location = New System.Drawing.Point(223, 231)
         Me.txt_BP_Assm_Angle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Assm_Angle.Name = "txt_BP_Assm_Angle"
-        Me.txt_BP_Assm_Angle.Size = New System.Drawing.Size(118, 22)
+        Me.txt_BP_Assm_Angle.Size = New System.Drawing.Size(118, 27)
         Me.txt_BP_Assm_Angle.TabIndex = 42
         Me.txt_BP_Assm_Angle.Text = "180"
         Me.txt_BP_Assm_Angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4447,7 +4447,7 @@ Partial Class Form1
         Me.txt_BP_No_of_BP_Assm.Location = New System.Drawing.Point(223, 201)
         Me.txt_BP_No_of_BP_Assm.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_No_of_BP_Assm.Name = "txt_BP_No_of_BP_Assm"
-        Me.txt_BP_No_of_BP_Assm.Size = New System.Drawing.Size(118, 22)
+        Me.txt_BP_No_of_BP_Assm.Size = New System.Drawing.Size(118, 27)
         Me.txt_BP_No_of_BP_Assm.TabIndex = 42
         Me.txt_BP_No_of_BP_Assm.Text = "2"
         Me.txt_BP_No_of_BP_Assm.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4458,7 +4458,7 @@ Partial Class Form1
         Me.txt_BP_Dist_bw_BP.Location = New System.Drawing.Point(223, 134)
         Me.txt_BP_Dist_bw_BP.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Dist_bw_BP.Name = "txt_BP_Dist_bw_BP"
-        Me.txt_BP_Dist_bw_BP.Size = New System.Drawing.Size(118, 22)
+        Me.txt_BP_Dist_bw_BP.Size = New System.Drawing.Size(118, 27)
         Me.txt_BP_Dist_bw_BP.TabIndex = 42
         Me.txt_BP_Dist_bw_BP.Text = "1500"
         Me.txt_BP_Dist_bw_BP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4469,7 +4469,7 @@ Partial Class Form1
         Me.txt_BP_No_of_BP.Location = New System.Drawing.Point(223, 104)
         Me.txt_BP_No_of_BP.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_No_of_BP.Name = "txt_BP_No_of_BP"
-        Me.txt_BP_No_of_BP.Size = New System.Drawing.Size(118, 22)
+        Me.txt_BP_No_of_BP.Size = New System.Drawing.Size(118, 27)
         Me.txt_BP_No_of_BP.TabIndex = 42
         Me.txt_BP_No_of_BP.Text = "2"
         Me.txt_BP_No_of_BP.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4480,7 +4480,7 @@ Partial Class Form1
         Me.txt_BP_Angle.Location = New System.Drawing.Point(223, 75)
         Me.txt_BP_Angle.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Angle.Name = "txt_BP_Angle"
-        Me.txt_BP_Angle.Size = New System.Drawing.Size(118, 22)
+        Me.txt_BP_Angle.Size = New System.Drawing.Size(118, 27)
         Me.txt_BP_Angle.TabIndex = 42
         Me.txt_BP_Angle.Text = "60"
         Me.txt_BP_Angle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4491,7 +4491,7 @@ Partial Class Form1
         Me.txt_BP_Length.Location = New System.Drawing.Point(223, 46)
         Me.txt_BP_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_BP_Length.Name = "txt_BP_Length"
-        Me.txt_BP_Length.Size = New System.Drawing.Size(118, 22)
+        Me.txt_BP_Length.Size = New System.Drawing.Size(118, 27)
         Me.txt_BP_Length.TabIndex = 42
         Me.txt_BP_Length.Text = "2050"
         Me.txt_BP_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4629,7 +4629,7 @@ Partial Class Form1
         Me.txt_NPB_mat_QTR.Location = New System.Drawing.Point(435, 179)
         Me.txt_NPB_mat_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_mat_QTR.Name = "txt_NPB_mat_QTR"
-        Me.txt_NPB_mat_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_mat_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_mat_QTR.TabIndex = 110
         Me.txt_NPB_mat_QTR.Text = "A 240 Gr.316L"
         '
@@ -4641,7 +4641,7 @@ Partial Class Form1
         Me.txt_NP_mat_QTR.Location = New System.Drawing.Point(435, 61)
         Me.txt_NP_mat_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_mat_QTR.Name = "txt_NP_mat_QTR"
-        Me.txt_NP_mat_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_mat_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_mat_QTR.TabIndex = 109
         Me.txt_NP_mat_QTR.Text = "A 240 Gr.316L"
         '
@@ -4695,7 +4695,7 @@ Partial Class Form1
         Me.txt_NP_Orientation_QTR.Location = New System.Drawing.Point(151, 150)
         Me.txt_NP_Orientation_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Orientation_QTR.Name = "txt_NP_Orientation_QTR"
-        Me.txt_NP_Orientation_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Orientation_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Orientation_QTR.TabIndex = 55
         Me.txt_NP_Orientation_QTR.Text = "225"
         Me.txt_NP_Orientation_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4728,7 +4728,7 @@ Partial Class Form1
         Me.txt_NP_width_QTR.Location = New System.Drawing.Point(151, 61)
         Me.txt_NP_width_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_width_QTR.Name = "txt_NP_width_QTR"
-        Me.txt_NP_width_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_width_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_width_QTR.TabIndex = 42
         Me.txt_NP_width_QTR.Text = "100"
         Me.txt_NP_width_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4750,7 +4750,7 @@ Partial Class Form1
         Me.txt_NP_length_QTR.Location = New System.Drawing.Point(151, 32)
         Me.txt_NP_length_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_length_QTR.Name = "txt_NP_length_QTR"
-        Me.txt_NP_length_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_length_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_length_QTR.TabIndex = 40
         Me.txt_NP_length_QTR.Text = "160"
         Me.txt_NP_length_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4783,7 +4783,7 @@ Partial Class Form1
         Me.txt_NP_Dist_Base_QTR.Location = New System.Drawing.Point(151, 179)
         Me.txt_NP_Dist_Base_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist_Base_QTR.Name = "txt_NP_Dist_Base_QTR"
-        Me.txt_NP_Dist_Base_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Dist_Base_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Dist_Base_QTR.TabIndex = 34
         Me.txt_NP_Dist_Base_QTR.Text = "600"
         Me.txt_NP_Dist_Base_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4805,7 +4805,7 @@ Partial Class Form1
         Me.txt_NPB_Fillet_QTR.Location = New System.Drawing.Point(435, 151)
         Me.txt_NPB_Fillet_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_Fillet_QTR.Name = "txt_NPB_Fillet_QTR"
-        Me.txt_NPB_Fillet_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_Fillet_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_Fillet_QTR.TabIndex = 29
         Me.txt_NPB_Fillet_QTR.Text = "3"
         Me.txt_NPB_Fillet_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4816,7 +4816,7 @@ Partial Class Form1
         Me.txt_NPB_height_QTR.Location = New System.Drawing.Point(435, 121)
         Me.txt_NPB_height_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_height_QTR.Name = "txt_NPB_height_QTR"
-        Me.txt_NPB_height_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_height_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_height_QTR.TabIndex = 29
         Me.txt_NPB_height_QTR.Text = "120"
         Me.txt_NPB_height_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4827,7 +4827,7 @@ Partial Class Form1
         Me.txt_NPB_thk_QTR.Location = New System.Drawing.Point(435, 91)
         Me.txt_NPB_thk_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_thk_QTR.Name = "txt_NPB_thk_QTR"
-        Me.txt_NPB_thk_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_thk_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_thk_QTR.TabIndex = 25
         Me.txt_NPB_thk_QTR.Text = "6"
         Me.txt_NPB_thk_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4838,7 +4838,7 @@ Partial Class Form1
         Me.txt_NPB_width_QTR.Location = New System.Drawing.Point(151, 120)
         Me.txt_NPB_width_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_width_QTR.Name = "txt_NPB_width_QTR"
-        Me.txt_NPB_width_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_width_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_width_QTR.TabIndex = 24
         Me.txt_NPB_width_QTR.Text = "50"
         Me.txt_NPB_width_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4871,7 +4871,7 @@ Partial Class Form1
         Me.txt_NPB_length_QTR.Location = New System.Drawing.Point(151, 91)
         Me.txt_NPB_length_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_length_QTR.Name = "txt_NPB_length_QTR"
-        Me.txt_NPB_length_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_length_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_length_QTR.TabIndex = 21
         Me.txt_NPB_length_QTR.Text = "180"
         Me.txt_NPB_length_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -4882,7 +4882,7 @@ Partial Class Form1
         Me.txt_NP_thk_QTR.Location = New System.Drawing.Point(435, 32)
         Me.txt_NP_thk_QTR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_thk_QTR.Name = "txt_NP_thk_QTR"
-        Me.txt_NP_thk_QTR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_thk_QTR.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_thk_QTR.TabIndex = 20
         Me.txt_NP_thk_QTR.Text = "3"
         Me.txt_NP_thk_QTR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5005,7 +5005,7 @@ Partial Class Form1
         Me.txt_PS_ad_Angle1.Location = New System.Drawing.Point(158, 242)
         Me.txt_PS_ad_Angle1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle1.Name = "txt_PS_ad_Angle1"
-        Me.txt_PS_ad_Angle1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Angle1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Angle1.TabIndex = 57
         Me.txt_PS_ad_Angle1.Text = "225"
         Me.txt_PS_ad_Angle1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5082,7 +5082,7 @@ Partial Class Form1
         Me.txt_adn_DP1_Length2.Location = New System.Drawing.Point(158, 342)
         Me.txt_adn_DP1_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP1_Length2.Name = "txt_adn_DP1_Length2"
-        Me.txt_adn_DP1_Length2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP1_Length2.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP1_Length2.TabIndex = 54
         Me.txt_adn_DP1_Length2.Text = "1283"
         Me.txt_adn_DP1_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5093,7 +5093,7 @@ Partial Class Form1
         Me.txt_adn_DP1_Length1.Location = New System.Drawing.Point(158, 313)
         Me.txt_adn_DP1_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP1_Length1.Name = "txt_adn_DP1_Length1"
-        Me.txt_adn_DP1_Length1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP1_Length1.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP1_Length1.TabIndex = 54
         Me.txt_adn_DP1_Length1.Text = "969"
         Me.txt_adn_DP1_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5104,7 +5104,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Base1.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base1.Name = "txt_PS_ad_Dist_from_Base1"
-        Me.txt_PS_ad_Dist_from_Base1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Base1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Base1.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base1.Text = "351"
         Me.txt_PS_ad_Dist_from_Base1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5115,7 +5115,7 @@ Partial Class Form1
         Me.txt_PS_ad_Angle_Dist1.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist1.Name = "txt_PS_ad_Angle_Dist1"
-        Me.txt_PS_ad_Angle_Dist1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Angle_Dist1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Angle_Dist1.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist1.Text = "332"
         Me.txt_PS_ad_Angle_Dist1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5126,7 +5126,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_bw_Support1.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support1.Name = "txt_PS_ad_Dist_bw_Support1"
-        Me.txt_PS_ad_Dist_bw_Support1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_bw_Support1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_bw_Support1.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support1.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5137,7 +5137,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Top1.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top1.Name = "txt_PS_ad_Dist_from_Top1"
-        Me.txt_PS_ad_Dist_from_Top1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Top1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Top1.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top1.Text = "308"
         Me.txt_PS_ad_Dist_from_Top1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5149,7 +5149,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dia1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia1.Name = "txt_PS_ad_Dia1"
         Me.txt_PS_ad_Dia1.ReadOnly = True
-        Me.txt_PS_ad_Dia1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dia1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dia1.TabIndex = 51
         Me.txt_PS_ad_Dia1.Text = "1200"
         Me.txt_PS_ad_Dia1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5193,7 +5193,7 @@ Partial Class Form1
         Me.txt_PS_ad_No1.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No1.Name = "txt_PS_ad_No1"
-        Me.txt_PS_ad_No1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_No1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_No1.TabIndex = 48
         Me.txt_PS_ad_No1.Text = "2"
         Me.txt_PS_ad_No1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5227,7 +5227,7 @@ Partial Class Form1
         Me.txt_PS_ad_Thk1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk1.Name = "txt_PS_ad_Thk1"
         Me.txt_PS_ad_Thk1.ReadOnly = True
-        Me.txt_PS_ad_Thk1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Thk1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Thk1.TabIndex = 46
         Me.txt_PS_ad_Thk1.Text = "6"
         Me.txt_PS_ad_Thk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5304,7 +5304,7 @@ Partial Class Form1
         Me.txt_PS_ad_Angle2.Location = New System.Drawing.Point(158, 242)
         Me.txt_PS_ad_Angle2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle2.Name = "txt_PS_ad_Angle2"
-        Me.txt_PS_ad_Angle2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Angle2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Angle2.TabIndex = 59
         Me.txt_PS_ad_Angle2.Text = "135"
         Me.txt_PS_ad_Angle2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5381,7 +5381,7 @@ Partial Class Form1
         Me.txt_adn_DP2_Length2.Location = New System.Drawing.Point(158, 338)
         Me.txt_adn_DP2_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP2_Length2.Name = "txt_adn_DP2_Length2"
-        Me.txt_adn_DP2_Length2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP2_Length2.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP2_Length2.TabIndex = 54
         Me.txt_adn_DP2_Length2.Text = "1283"
         Me.txt_adn_DP2_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5392,7 +5392,7 @@ Partial Class Form1
         Me.txt_adn_DP2_Length1.Location = New System.Drawing.Point(158, 309)
         Me.txt_adn_DP2_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP2_Length1.Name = "txt_adn_DP2_Length1"
-        Me.txt_adn_DP2_Length1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP2_Length1.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP2_Length1.TabIndex = 54
         Me.txt_adn_DP2_Length1.Text = "969"
         Me.txt_adn_DP2_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5403,7 +5403,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Base2.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base2.Name = "txt_PS_ad_Dist_from_Base2"
-        Me.txt_PS_ad_Dist_from_Base2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Base2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Base2.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base2.Text = "351"
         Me.txt_PS_ad_Dist_from_Base2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5414,7 +5414,7 @@ Partial Class Form1
         Me.txt_PS_ad_Angle_Dist2.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist2.Name = "txt_PS_ad_Angle_Dist2"
-        Me.txt_PS_ad_Angle_Dist2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Angle_Dist2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Angle_Dist2.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist2.Text = "332"
         Me.txt_PS_ad_Angle_Dist2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5425,7 +5425,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_bw_Support2.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support2.Name = "txt_PS_ad_Dist_bw_Support2"
-        Me.txt_PS_ad_Dist_bw_Support2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_bw_Support2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_bw_Support2.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support2.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5436,7 +5436,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Top2.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top2.Name = "txt_PS_ad_Dist_from_Top2"
-        Me.txt_PS_ad_Dist_from_Top2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Top2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Top2.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top2.Text = "308"
         Me.txt_PS_ad_Dist_from_Top2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5448,7 +5448,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dia2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia2.Name = "txt_PS_ad_Dia2"
         Me.txt_PS_ad_Dia2.ReadOnly = True
-        Me.txt_PS_ad_Dia2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dia2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dia2.TabIndex = 51
         Me.txt_PS_ad_Dia2.Text = "1200"
         Me.txt_PS_ad_Dia2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5492,7 +5492,7 @@ Partial Class Form1
         Me.txt_PS_ad_No2.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No2.Name = "txt_PS_ad_No2"
-        Me.txt_PS_ad_No2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_No2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_No2.TabIndex = 48
         Me.txt_PS_ad_No2.Text = "2"
         Me.txt_PS_ad_No2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5526,7 +5526,7 @@ Partial Class Form1
         Me.txt_PS_ad_Thk2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk2.Name = "txt_PS_ad_Thk2"
         Me.txt_PS_ad_Thk2.ReadOnly = True
-        Me.txt_PS_ad_Thk2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Thk2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Thk2.TabIndex = 46
         Me.txt_PS_ad_Thk2.Text = "6"
         Me.txt_PS_ad_Thk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5602,7 +5602,7 @@ Partial Class Form1
         Me.txt_PS_ad_Angle3.Location = New System.Drawing.Point(158, 242)
         Me.txt_PS_ad_Angle3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle3.Name = "txt_PS_ad_Angle3"
-        Me.txt_PS_ad_Angle3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Angle3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Angle3.TabIndex = 59
         Me.txt_PS_ad_Angle3.Text = "90"
         Me.txt_PS_ad_Angle3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5679,7 +5679,7 @@ Partial Class Form1
         Me.txt_adn_DP3_Length2.Location = New System.Drawing.Point(161, 341)
         Me.txt_adn_DP3_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP3_Length2.Name = "txt_adn_DP3_Length2"
-        Me.txt_adn_DP3_Length2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP3_Length2.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP3_Length2.TabIndex = 54
         Me.txt_adn_DP3_Length2.Text = "1306"
         Me.txt_adn_DP3_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5690,7 +5690,7 @@ Partial Class Form1
         Me.txt_adn_DP3_Length1.Location = New System.Drawing.Point(161, 312)
         Me.txt_adn_DP3_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP3_Length1.Name = "txt_adn_DP3_Length1"
-        Me.txt_adn_DP3_Length1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP3_Length1.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP3_Length1.TabIndex = 54
         Me.txt_adn_DP3_Length1.Text = "969"
         Me.txt_adn_DP3_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5701,7 +5701,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Base3.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base3.Name = "txt_PS_ad_Dist_from_Base3"
-        Me.txt_PS_ad_Dist_from_Base3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Base3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Base3.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base3.Text = "150"
         Me.txt_PS_ad_Dist_from_Base3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5712,7 +5712,7 @@ Partial Class Form1
         Me.txt_PS_ad_Angle_Dist3.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist3.Name = "txt_PS_ad_Angle_Dist3"
-        Me.txt_PS_ad_Angle_Dist3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Angle_Dist3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Angle_Dist3.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist3.Text = "268"
         Me.txt_PS_ad_Angle_Dist3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5723,7 +5723,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_bw_Support3.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support3.Name = "txt_PS_ad_Dist_bw_Support3"
-        Me.txt_PS_ad_Dist_bw_Support3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_bw_Support3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_bw_Support3.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support3.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5734,7 +5734,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Top3.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top3.Name = "txt_PS_ad_Dist_from_Top3"
-        Me.txt_PS_ad_Dist_from_Top3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Top3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Top3.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top3.Text = "308"
         Me.txt_PS_ad_Dist_from_Top3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5746,7 +5746,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dia3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia3.Name = "txt_PS_ad_Dia3"
         Me.txt_PS_ad_Dia3.ReadOnly = True
-        Me.txt_PS_ad_Dia3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dia3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dia3.TabIndex = 51
         Me.txt_PS_ad_Dia3.Text = "1200"
         Me.txt_PS_ad_Dia3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5790,7 +5790,7 @@ Partial Class Form1
         Me.txt_PS_ad_No3.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No3.Name = "txt_PS_ad_No3"
-        Me.txt_PS_ad_No3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_No3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_No3.TabIndex = 48
         Me.txt_PS_ad_No3.Text = "2"
         Me.txt_PS_ad_No3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5824,7 +5824,7 @@ Partial Class Form1
         Me.txt_PS_ad_Thk3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk3.Name = "txt_PS_ad_Thk3"
         Me.txt_PS_ad_Thk3.ReadOnly = True
-        Me.txt_PS_ad_Thk3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Thk3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Thk3.TabIndex = 46
         Me.txt_PS_ad_Thk3.Text = "6"
         Me.txt_PS_ad_Thk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5900,7 +5900,7 @@ Partial Class Form1
         Me.TextBox51.Location = New System.Drawing.Point(158, 240)
         Me.TextBox51.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox51.Name = "TextBox51"
-        Me.TextBox51.Size = New System.Drawing.Size(177, 22)
+        Me.TextBox51.Size = New System.Drawing.Size(177, 27)
         Me.TextBox51.TabIndex = 59
         Me.TextBox51.Text = "315"
         Me.TextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5977,7 +5977,7 @@ Partial Class Form1
         Me.txt_adn_DP4_Length2.Location = New System.Drawing.Point(158, 340)
         Me.txt_adn_DP4_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP4_Length2.Name = "txt_adn_DP4_Length2"
-        Me.txt_adn_DP4_Length2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP4_Length2.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP4_Length2.TabIndex = 54
         Me.txt_adn_DP4_Length2.Text = "1283"
         Me.txt_adn_DP4_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5988,7 +5988,7 @@ Partial Class Form1
         Me.txt_adn_DP4_Length1.Location = New System.Drawing.Point(158, 312)
         Me.txt_adn_DP4_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_adn_DP4_Length1.Name = "txt_adn_DP4_Length1"
-        Me.txt_adn_DP4_Length1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_adn_DP4_Length1.Size = New System.Drawing.Size(177, 27)
         Me.txt_adn_DP4_Length1.TabIndex = 54
         Me.txt_adn_DP4_Length1.Text = "969"
         Me.txt_adn_DP4_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -5999,7 +5999,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Base4.Location = New System.Drawing.Point(158, 211)
         Me.txt_PS_ad_Dist_from_Base4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Base4.Name = "txt_PS_ad_Dist_from_Base4"
-        Me.txt_PS_ad_Dist_from_Base4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Base4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Base4.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Base4.Text = "150"
         Me.txt_PS_ad_Dist_from_Base4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6010,7 +6010,7 @@ Partial Class Form1
         Me.txt_PS_ad_Angle_Dist4.Location = New System.Drawing.Point(158, 183)
         Me.txt_PS_ad_Angle_Dist4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Angle_Dist4.Name = "txt_PS_ad_Angle_Dist4"
-        Me.txt_PS_ad_Angle_Dist4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Angle_Dist4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Angle_Dist4.TabIndex = 54
         Me.txt_PS_ad_Angle_Dist4.Text = "268"
         Me.txt_PS_ad_Angle_Dist4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6021,7 +6021,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_bw_Support4.Location = New System.Drawing.Point(158, 125)
         Me.txt_PS_ad_Dist_bw_Support4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_bw_Support4.Name = "txt_PS_ad_Dist_bw_Support4"
-        Me.txt_PS_ad_Dist_bw_Support4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_bw_Support4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_bw_Support4.TabIndex = 54
         Me.txt_PS_ad_Dist_bw_Support4.Text = "1200"
         Me.txt_PS_ad_Dist_bw_Support4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6032,7 +6032,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dist_from_Top4.Location = New System.Drawing.Point(158, 154)
         Me.txt_PS_ad_Dist_from_Top4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dist_from_Top4.Name = "txt_PS_ad_Dist_from_Top4"
-        Me.txt_PS_ad_Dist_from_Top4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dist_from_Top4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dist_from_Top4.TabIndex = 54
         Me.txt_PS_ad_Dist_from_Top4.Text = "308"
         Me.txt_PS_ad_Dist_from_Top4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6044,7 +6044,7 @@ Partial Class Form1
         Me.txt_PS_ad_Dia4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Dia4.Name = "txt_PS_ad_Dia4"
         Me.txt_PS_ad_Dia4.ReadOnly = True
-        Me.txt_PS_ad_Dia4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Dia4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Dia4.TabIndex = 51
         Me.txt_PS_ad_Dia4.Text = "1200"
         Me.txt_PS_ad_Dia4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6088,7 +6088,7 @@ Partial Class Form1
         Me.txt_PS_ad_No4.Location = New System.Drawing.Point(158, 97)
         Me.txt_PS_ad_No4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_No4.Name = "txt_PS_ad_No4"
-        Me.txt_PS_ad_No4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_No4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_No4.TabIndex = 48
         Me.txt_PS_ad_No4.Text = "2"
         Me.txt_PS_ad_No4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6122,7 +6122,7 @@ Partial Class Form1
         Me.txt_PS_ad_Thk4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_ad_Thk4.Name = "txt_PS_ad_Thk4"
         Me.txt_PS_ad_Thk4.ReadOnly = True
-        Me.txt_PS_ad_Thk4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_ad_Thk4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_ad_Thk4.TabIndex = 46
         Me.txt_PS_ad_Thk4.Text = "6"
         Me.txt_PS_ad_Thk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6290,7 +6290,7 @@ Partial Class Form1
         Me.txt_VBP2_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Fillet.Name = "txt_VBP2_Fillet"
         Me.txt_VBP2_Fillet.ReadOnly = True
-        Me.txt_VBP2_Fillet.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP2_Fillet.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP2_Fillet.TabIndex = 54
         Me.txt_VBP2_Fillet.Text = "5"
         Me.txt_VBP2_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6302,7 +6302,7 @@ Partial Class Form1
         Me.txt_VBP1_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Fillet.Name = "txt_VBP1_Fillet"
         Me.txt_VBP1_Fillet.ReadOnly = True
-        Me.txt_VBP1_Fillet.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP1_Fillet.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP1_Fillet.TabIndex = 54
         Me.txt_VBP1_Fillet.Text = "5"
         Me.txt_VBP1_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6314,7 +6314,7 @@ Partial Class Form1
         Me.txt_VBP1_D3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_D3.Name = "txt_VBP1_D3"
         Me.txt_VBP1_D3.ReadOnly = True
-        Me.txt_VBP1_D3.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP1_D3.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP1_D3.TabIndex = 54
         Me.txt_VBP1_D3.Text = "60"
         Me.txt_VBP1_D3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6326,7 +6326,7 @@ Partial Class Form1
         Me.txt_VBP2_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Thk.Name = "txt_VBP2_Thk"
         Me.txt_VBP2_Thk.ReadOnly = True
-        Me.txt_VBP2_Thk.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP2_Thk.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP2_Thk.TabIndex = 54
         Me.txt_VBP2_Thk.Text = "6"
         Me.txt_VBP2_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6338,7 +6338,7 @@ Partial Class Form1
         Me.txt_VBP1_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Thk.Name = "txt_VBP1_Thk"
         Me.txt_VBP1_Thk.ReadOnly = True
-        Me.txt_VBP1_Thk.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP1_Thk.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP1_Thk.TabIndex = 54
         Me.txt_VBP1_Thk.Text = "6"
         Me.txt_VBP1_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6350,7 +6350,7 @@ Partial Class Form1
         Me.txt_VBP2_D2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_D2.Name = "txt_VBP2_D2"
         Me.txt_VBP2_D2.ReadOnly = True
-        Me.txt_VBP2_D2.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP2_D2.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP2_D2.TabIndex = 54
         Me.txt_VBP2_D2.Text = "50"
         Me.txt_VBP2_D2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6362,7 +6362,7 @@ Partial Class Form1
         Me.txt_VBP1_D2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_D2.Name = "txt_VBP1_D2"
         Me.txt_VBP1_D2.ReadOnly = True
-        Me.txt_VBP1_D2.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP1_D2.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP1_D2.TabIndex = 54
         Me.txt_VBP1_D2.Text = "25"
         Me.txt_VBP1_D2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6374,7 +6374,7 @@ Partial Class Form1
         Me.txt_VBP2_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Height.Name = "txt_VBP2_Height"
         Me.txt_VBP2_Height.ReadOnly = True
-        Me.txt_VBP2_Height.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP2_Height.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP2_Height.TabIndex = 54
         Me.txt_VBP2_Height.Text = "75"
         Me.txt_VBP2_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6386,7 +6386,7 @@ Partial Class Form1
         Me.txt_VBP1_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Height.Name = "txt_VBP1_Height"
         Me.txt_VBP1_Height.ReadOnly = True
-        Me.txt_VBP1_Height.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP1_Height.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP1_Height.TabIndex = 54
         Me.txt_VBP1_Height.Text = "75"
         Me.txt_VBP1_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6431,7 +6431,7 @@ Partial Class Form1
         Me.txt_VBP2_D1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_D1.Name = "txt_VBP2_D1"
         Me.txt_VBP2_D1.ReadOnly = True
-        Me.txt_VBP2_D1.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP2_D1.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP2_D1.TabIndex = 48
         Me.txt_VBP2_D1.Text = "12.5"
         Me.txt_VBP2_D1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6443,7 +6443,7 @@ Partial Class Form1
         Me.txt_VBP1_D1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_D1.Name = "txt_VBP1_D1"
         Me.txt_VBP1_D1.ReadOnly = True
-        Me.txt_VBP1_D1.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP1_D1.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP1_D1.TabIndex = 48
         Me.txt_VBP1_D1.Text = "12.5"
         Me.txt_VBP1_D1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6476,7 +6476,7 @@ Partial Class Form1
         Me.txt_VB_Pipe_Length_1.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_1.Name = "txt_VB_Pipe_Length_1"
-        Me.txt_VB_Pipe_Length_1.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VB_Pipe_Length_1.Size = New System.Drawing.Size(76, 27)
         Me.txt_VB_Pipe_Length_1.TabIndex = 48
         Me.txt_VB_Pipe_Length_1.Text = "314"
         Me.txt_VB_Pipe_Length_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6488,7 +6488,7 @@ Partial Class Form1
         Me.txt_VBP2_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP2_Length.Name = "txt_VBP2_Length"
         Me.txt_VBP2_Length.ReadOnly = True
-        Me.txt_VBP2_Length.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP2_Length.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP2_Length.TabIndex = 48
         Me.txt_VBP2_Length.Text = "40"
         Me.txt_VBP2_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6511,7 +6511,7 @@ Partial Class Form1
         Me.txt_VBP1_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VBP1_Length.Name = "txt_VBP1_Length"
         Me.txt_VBP1_Length.ReadOnly = True
-        Me.txt_VBP1_Length.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VBP1_Length.Size = New System.Drawing.Size(76, 27)
         Me.txt_VBP1_Length.TabIndex = 48
         Me.txt_VBP1_Length.Text = "85"
         Me.txt_VBP1_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6720,7 +6720,7 @@ Partial Class Form1
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(76, 27)
         Me.TextBox1.TabIndex = 54
         Me.TextBox1.Text = "5"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6732,7 +6732,7 @@ Partial Class Form1
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
-        Me.TextBox8.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox8.Size = New System.Drawing.Size(76, 27)
         Me.TextBox8.TabIndex = 54
         Me.TextBox8.Text = "5"
         Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6744,7 +6744,7 @@ Partial Class Form1
         Me.TextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox9.Size = New System.Drawing.Size(76, 27)
         Me.TextBox9.TabIndex = 54
         Me.TextBox9.Text = "60"
         Me.TextBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6756,7 +6756,7 @@ Partial Class Form1
         Me.TextBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
-        Me.TextBox10.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox10.Size = New System.Drawing.Size(76, 27)
         Me.TextBox10.TabIndex = 54
         Me.TextBox10.Text = "6"
         Me.TextBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6768,7 +6768,7 @@ Partial Class Form1
         Me.TextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.ReadOnly = True
-        Me.TextBox11.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox11.Size = New System.Drawing.Size(76, 27)
         Me.TextBox11.TabIndex = 54
         Me.TextBox11.Text = "6"
         Me.TextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6780,7 +6780,7 @@ Partial Class Form1
         Me.TextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.ReadOnly = True
-        Me.TextBox12.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox12.Size = New System.Drawing.Size(76, 27)
         Me.TextBox12.TabIndex = 54
         Me.TextBox12.Text = "50"
         Me.TextBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6792,7 +6792,7 @@ Partial Class Form1
         Me.TextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.ReadOnly = True
-        Me.TextBox13.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox13.Size = New System.Drawing.Size(76, 27)
         Me.TextBox13.TabIndex = 54
         Me.TextBox13.Text = "25"
         Me.TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6804,7 +6804,7 @@ Partial Class Form1
         Me.TextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.ReadOnly = True
-        Me.TextBox14.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox14.Size = New System.Drawing.Size(76, 27)
         Me.TextBox14.TabIndex = 54
         Me.TextBox14.Text = "75"
         Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6816,7 +6816,7 @@ Partial Class Form1
         Me.TextBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.ReadOnly = True
-        Me.TextBox15.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox15.Size = New System.Drawing.Size(76, 27)
         Me.TextBox15.TabIndex = 54
         Me.TextBox15.Text = "75"
         Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6861,7 +6861,7 @@ Partial Class Form1
         Me.TextBox16.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.ReadOnly = True
-        Me.TextBox16.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox16.Size = New System.Drawing.Size(76, 27)
         Me.TextBox16.TabIndex = 48
         Me.TextBox16.Text = "12.5"
         Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6873,7 +6873,7 @@ Partial Class Form1
         Me.TextBox17.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox17.Name = "TextBox17"
         Me.TextBox17.ReadOnly = True
-        Me.TextBox17.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox17.Size = New System.Drawing.Size(76, 27)
         Me.TextBox17.TabIndex = 48
         Me.TextBox17.Text = "12.5"
         Me.TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6906,7 +6906,7 @@ Partial Class Form1
         Me.txt_VB_Pipe_Length_2.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_2.Name = "txt_VB_Pipe_Length_2"
-        Me.txt_VB_Pipe_Length_2.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VB_Pipe_Length_2.Size = New System.Drawing.Size(76, 27)
         Me.txt_VB_Pipe_Length_2.TabIndex = 48
         Me.txt_VB_Pipe_Length_2.Text = "163"
         Me.txt_VB_Pipe_Length_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6918,7 +6918,7 @@ Partial Class Form1
         Me.TextBox31.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox31.Name = "TextBox31"
         Me.TextBox31.ReadOnly = True
-        Me.TextBox31.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox31.Size = New System.Drawing.Size(76, 27)
         Me.TextBox31.TabIndex = 48
         Me.TextBox31.Text = "40"
         Me.TextBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -6941,7 +6941,7 @@ Partial Class Form1
         Me.TextBox32.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox32.Name = "TextBox32"
         Me.TextBox32.ReadOnly = True
-        Me.TextBox32.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox32.Size = New System.Drawing.Size(76, 27)
         Me.TextBox32.TabIndex = 48
         Me.TextBox32.Text = "85"
         Me.TextBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7149,7 +7149,7 @@ Partial Class Form1
         Me.TextBox19.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox19.Name = "TextBox19"
         Me.TextBox19.ReadOnly = True
-        Me.TextBox19.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox19.Size = New System.Drawing.Size(76, 27)
         Me.TextBox19.TabIndex = 54
         Me.TextBox19.Text = "5"
         Me.TextBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7161,7 +7161,7 @@ Partial Class Form1
         Me.TextBox20.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox20.Name = "TextBox20"
         Me.TextBox20.ReadOnly = True
-        Me.TextBox20.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox20.Size = New System.Drawing.Size(76, 27)
         Me.TextBox20.TabIndex = 54
         Me.TextBox20.Text = "5"
         Me.TextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7173,7 +7173,7 @@ Partial Class Form1
         Me.TextBox21.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.ReadOnly = True
-        Me.TextBox21.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox21.Size = New System.Drawing.Size(76, 27)
         Me.TextBox21.TabIndex = 54
         Me.TextBox21.Text = "60"
         Me.TextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7185,7 +7185,7 @@ Partial Class Form1
         Me.TextBox22.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox22.Name = "TextBox22"
         Me.TextBox22.ReadOnly = True
-        Me.TextBox22.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox22.Size = New System.Drawing.Size(76, 27)
         Me.TextBox22.TabIndex = 54
         Me.TextBox22.Text = "6"
         Me.TextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7197,7 +7197,7 @@ Partial Class Form1
         Me.TextBox23.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox23.Name = "TextBox23"
         Me.TextBox23.ReadOnly = True
-        Me.TextBox23.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox23.Size = New System.Drawing.Size(76, 27)
         Me.TextBox23.TabIndex = 54
         Me.TextBox23.Text = "6"
         Me.TextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7209,7 +7209,7 @@ Partial Class Form1
         Me.TextBox24.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox24.Name = "TextBox24"
         Me.TextBox24.ReadOnly = True
-        Me.TextBox24.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox24.Size = New System.Drawing.Size(76, 27)
         Me.TextBox24.TabIndex = 54
         Me.TextBox24.Text = "50"
         Me.TextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7221,7 +7221,7 @@ Partial Class Form1
         Me.TextBox33.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox33.Name = "TextBox33"
         Me.TextBox33.ReadOnly = True
-        Me.TextBox33.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox33.Size = New System.Drawing.Size(76, 27)
         Me.TextBox33.TabIndex = 54
         Me.TextBox33.Text = "25"
         Me.TextBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7233,7 +7233,7 @@ Partial Class Form1
         Me.TextBox34.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox34.Name = "TextBox34"
         Me.TextBox34.ReadOnly = True
-        Me.TextBox34.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox34.Size = New System.Drawing.Size(76, 27)
         Me.TextBox34.TabIndex = 54
         Me.TextBox34.Text = "75"
         Me.TextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7245,7 +7245,7 @@ Partial Class Form1
         Me.TextBox35.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox35.Name = "TextBox35"
         Me.TextBox35.ReadOnly = True
-        Me.TextBox35.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox35.Size = New System.Drawing.Size(76, 27)
         Me.TextBox35.TabIndex = 54
         Me.TextBox35.Text = "75"
         Me.TextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7290,7 +7290,7 @@ Partial Class Form1
         Me.TextBox36.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox36.Name = "TextBox36"
         Me.TextBox36.ReadOnly = True
-        Me.TextBox36.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox36.Size = New System.Drawing.Size(76, 27)
         Me.TextBox36.TabIndex = 48
         Me.TextBox36.Text = "12.5"
         Me.TextBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7302,7 +7302,7 @@ Partial Class Form1
         Me.TextBox37.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox37.Name = "TextBox37"
         Me.TextBox37.ReadOnly = True
-        Me.TextBox37.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox37.Size = New System.Drawing.Size(76, 27)
         Me.TextBox37.TabIndex = 48
         Me.TextBox37.Text = "12.5"
         Me.TextBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7335,7 +7335,7 @@ Partial Class Form1
         Me.txt_VB_Pipe_Length_3.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_3.Name = "txt_VB_Pipe_Length_3"
-        Me.txt_VB_Pipe_Length_3.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VB_Pipe_Length_3.Size = New System.Drawing.Size(76, 27)
         Me.txt_VB_Pipe_Length_3.TabIndex = 48
         Me.txt_VB_Pipe_Length_3.Text = "300"
         Me.txt_VB_Pipe_Length_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7347,7 +7347,7 @@ Partial Class Form1
         Me.TextBox39.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox39.Name = "TextBox39"
         Me.TextBox39.ReadOnly = True
-        Me.TextBox39.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox39.Size = New System.Drawing.Size(76, 27)
         Me.TextBox39.TabIndex = 48
         Me.TextBox39.Text = "40"
         Me.TextBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7370,7 +7370,7 @@ Partial Class Form1
         Me.TextBox40.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox40.Name = "TextBox40"
         Me.TextBox40.ReadOnly = True
-        Me.TextBox40.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox40.Size = New System.Drawing.Size(76, 27)
         Me.TextBox40.TabIndex = 48
         Me.TextBox40.Text = "85"
         Me.TextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7578,7 +7578,7 @@ Partial Class Form1
         Me.TextBox25.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.ReadOnly = True
-        Me.TextBox25.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox25.Size = New System.Drawing.Size(76, 27)
         Me.TextBox25.TabIndex = 54
         Me.TextBox25.Text = "5"
         Me.TextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7590,7 +7590,7 @@ Partial Class Form1
         Me.TextBox26.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox26.Name = "TextBox26"
         Me.TextBox26.ReadOnly = True
-        Me.TextBox26.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox26.Size = New System.Drawing.Size(76, 27)
         Me.TextBox26.TabIndex = 54
         Me.TextBox26.Text = "5"
         Me.TextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7602,7 +7602,7 @@ Partial Class Form1
         Me.TextBox27.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox27.Name = "TextBox27"
         Me.TextBox27.ReadOnly = True
-        Me.TextBox27.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox27.Size = New System.Drawing.Size(76, 27)
         Me.TextBox27.TabIndex = 54
         Me.TextBox27.Text = "60"
         Me.TextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7614,7 +7614,7 @@ Partial Class Form1
         Me.TextBox28.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox28.Name = "TextBox28"
         Me.TextBox28.ReadOnly = True
-        Me.TextBox28.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox28.Size = New System.Drawing.Size(76, 27)
         Me.TextBox28.TabIndex = 54
         Me.TextBox28.Text = "6"
         Me.TextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7626,7 +7626,7 @@ Partial Class Form1
         Me.TextBox29.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox29.Name = "TextBox29"
         Me.TextBox29.ReadOnly = True
-        Me.TextBox29.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox29.Size = New System.Drawing.Size(76, 27)
         Me.TextBox29.TabIndex = 54
         Me.TextBox29.Text = "6"
         Me.TextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7638,7 +7638,7 @@ Partial Class Form1
         Me.TextBox30.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox30.Name = "TextBox30"
         Me.TextBox30.ReadOnly = True
-        Me.TextBox30.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox30.Size = New System.Drawing.Size(76, 27)
         Me.TextBox30.TabIndex = 54
         Me.TextBox30.Text = "50"
         Me.TextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7650,7 +7650,7 @@ Partial Class Form1
         Me.TextBox41.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox41.Name = "TextBox41"
         Me.TextBox41.ReadOnly = True
-        Me.TextBox41.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox41.Size = New System.Drawing.Size(76, 27)
         Me.TextBox41.TabIndex = 54
         Me.TextBox41.Text = "25"
         Me.TextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7662,7 +7662,7 @@ Partial Class Form1
         Me.TextBox42.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox42.Name = "TextBox42"
         Me.TextBox42.ReadOnly = True
-        Me.TextBox42.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox42.Size = New System.Drawing.Size(76, 27)
         Me.TextBox42.TabIndex = 54
         Me.TextBox42.Text = "75"
         Me.TextBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7674,7 +7674,7 @@ Partial Class Form1
         Me.TextBox43.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox43.Name = "TextBox43"
         Me.TextBox43.ReadOnly = True
-        Me.TextBox43.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox43.Size = New System.Drawing.Size(76, 27)
         Me.TextBox43.TabIndex = 54
         Me.TextBox43.Text = "75"
         Me.TextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7719,7 +7719,7 @@ Partial Class Form1
         Me.TextBox44.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox44.Name = "TextBox44"
         Me.TextBox44.ReadOnly = True
-        Me.TextBox44.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox44.Size = New System.Drawing.Size(76, 27)
         Me.TextBox44.TabIndex = 48
         Me.TextBox44.Text = "12.5"
         Me.TextBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7731,7 +7731,7 @@ Partial Class Form1
         Me.TextBox45.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox45.Name = "TextBox45"
         Me.TextBox45.ReadOnly = True
-        Me.TextBox45.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox45.Size = New System.Drawing.Size(76, 27)
         Me.TextBox45.TabIndex = 48
         Me.TextBox45.Text = "12.5"
         Me.TextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7764,7 +7764,7 @@ Partial Class Form1
         Me.txt_VB_Pipe_Length_4.Location = New System.Drawing.Point(265, 316)
         Me.txt_VB_Pipe_Length_4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_VB_Pipe_Length_4.Name = "txt_VB_Pipe_Length_4"
-        Me.txt_VB_Pipe_Length_4.Size = New System.Drawing.Size(76, 22)
+        Me.txt_VB_Pipe_Length_4.Size = New System.Drawing.Size(76, 27)
         Me.txt_VB_Pipe_Length_4.TabIndex = 48
         Me.txt_VB_Pipe_Length_4.Text = "300"
         Me.txt_VB_Pipe_Length_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7776,7 +7776,7 @@ Partial Class Form1
         Me.TextBox47.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox47.Name = "TextBox47"
         Me.TextBox47.ReadOnly = True
-        Me.TextBox47.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox47.Size = New System.Drawing.Size(76, 27)
         Me.TextBox47.TabIndex = 48
         Me.TextBox47.Text = "40"
         Me.TextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7799,7 +7799,7 @@ Partial Class Form1
         Me.TextBox48.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox48.Name = "TextBox48"
         Me.TextBox48.ReadOnly = True
-        Me.TextBox48.Size = New System.Drawing.Size(76, 22)
+        Me.TextBox48.Size = New System.Drawing.Size(76, 27)
         Me.TextBox48.TabIndex = 48
         Me.TextBox48.Text = "85"
         Me.TextBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -7923,7 +7923,7 @@ Partial Class Form1
         Me.txt_SR_mat.Location = New System.Drawing.Point(154, 165)
         Me.txt_SR_mat.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_mat.Name = "txt_SR_mat"
-        Me.txt_SR_mat.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_mat.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_mat.TabIndex = 107
         Me.txt_SR_mat.Text = "A276 Gr.316L"
         '
@@ -8012,7 +8012,7 @@ Partial Class Form1
         Me.txt_SR_Length.Location = New System.Drawing.Point(154, 45)
         Me.txt_SR_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Length.Name = "txt_SR_Length"
-        Me.txt_SR_Length.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_Length.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_Length.TabIndex = 40
         Me.txt_SR_Length.Text = "400"
         Me.txt_SR_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8045,7 +8045,7 @@ Partial Class Form1
         Me.txt_SR_Dist_Rung.Location = New System.Drawing.Point(154, 292)
         Me.txt_SR_Dist_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Dist_Rung.Name = "txt_SR_Dist_Rung"
-        Me.txt_SR_Dist_Rung.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_Dist_Rung.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_Dist_Rung.TabIndex = 24
         Me.txt_SR_Dist_Rung.Text = "2"
         Me.txt_SR_Dist_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8056,7 +8056,7 @@ Partial Class Form1
         Me.txt_SR_No_Rung.Location = New System.Drawing.Point(154, 264)
         Me.txt_SR_No_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_No_Rung.Name = "txt_SR_No_Rung"
-        Me.txt_SR_No_Rung.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_No_Rung.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_No_Rung.TabIndex = 24
         Me.txt_SR_No_Rung.Text = "300"
         Me.txt_SR_No_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8067,7 +8067,7 @@ Partial Class Form1
         Me.txt_SR_Dist_base.Location = New System.Drawing.Point(154, 235)
         Me.txt_SR_Dist_base.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Dist_base.Name = "txt_SR_Dist_base"
-        Me.txt_SR_Dist_base.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_Dist_base.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_Dist_base.TabIndex = 24
         Me.txt_SR_Dist_base.Text = "500"
         Me.txt_SR_Dist_base.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8078,7 +8078,7 @@ Partial Class Form1
         Me.txt_SR_Fillet.Location = New System.Drawing.Point(154, 132)
         Me.txt_SR_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Fillet.Name = "txt_SR_Fillet"
-        Me.txt_SR_Fillet.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_Fillet.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_Fillet.TabIndex = 24
         Me.txt_SR_Fillet.Text = "20"
         Me.txt_SR_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8111,7 +8111,7 @@ Partial Class Form1
         Me.txt_SR_Dia.Location = New System.Drawing.Point(154, 103)
         Me.txt_SR_Dia.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Dia.Name = "txt_SR_Dia"
-        Me.txt_SR_Dia.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_Dia.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_Dia.TabIndex = 21
         Me.txt_SR_Dia.Text = "20"
         Me.txt_SR_Dia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8122,7 +8122,7 @@ Partial Class Form1
         Me.txt_SR_Height.Location = New System.Drawing.Point(154, 73)
         Me.txt_SR_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_SR_Height.Name = "txt_SR_Height"
-        Me.txt_SR_Height.Size = New System.Drawing.Size(177, 22)
+        Me.txt_SR_Height.Size = New System.Drawing.Size(177, 27)
         Me.txt_SR_Height.TabIndex = 20
         Me.txt_SR_Height.Text = "75"
         Me.txt_SR_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8212,7 +8212,7 @@ Partial Class Form1
         Me.txt_NP3_width_AD.Location = New System.Drawing.Point(151, 246)
         Me.txt_NP3_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_width_AD.Name = "txt_NP3_width_AD"
-        Me.txt_NP3_width_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP3_width_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP3_width_AD.TabIndex = 120
         Me.txt_NP3_width_AD.Text = "110"
         Me.txt_NP3_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8223,7 +8223,7 @@ Partial Class Form1
         Me.txt_NP2_width_AD.Location = New System.Drawing.Point(151, 185)
         Me.txt_NP2_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_width_AD.Name = "txt_NP2_width_AD"
-        Me.txt_NP2_width_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP2_width_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP2_width_AD.TabIndex = 120
         Me.txt_NP2_width_AD.Text = "75"
         Me.txt_NP2_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8234,7 +8234,7 @@ Partial Class Form1
         Me.txt_NP1_width_AD.Location = New System.Drawing.Point(151, 123)
         Me.txt_NP1_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_width_AD.Name = "txt_NP1_width_AD"
-        Me.txt_NP1_width_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP1_width_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP1_width_AD.TabIndex = 120
         Me.txt_NP1_width_AD.Text = "145"
         Me.txt_NP1_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8245,7 +8245,7 @@ Partial Class Form1
         Me.txt_NP3_length_AD.Location = New System.Drawing.Point(151, 217)
         Me.txt_NP3_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_length_AD.Name = "txt_NP3_length_AD"
-        Me.txt_NP3_length_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP3_length_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP3_length_AD.TabIndex = 119
         Me.txt_NP3_length_AD.Text = "200"
         Me.txt_NP3_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8256,7 +8256,7 @@ Partial Class Form1
         Me.txt_NP2_length_AD.Location = New System.Drawing.Point(151, 155)
         Me.txt_NP2_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_length_AD.Name = "txt_NP2_length_AD"
-        Me.txt_NP2_length_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP2_length_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP2_length_AD.TabIndex = 119
         Me.txt_NP2_length_AD.Text = "200"
         Me.txt_NP2_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8267,7 +8267,7 @@ Partial Class Form1
         Me.txt_NP1_length_AD.Location = New System.Drawing.Point(151, 94)
         Me.txt_NP1_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_length_AD.Name = "txt_NP1_length_AD"
-        Me.txt_NP1_length_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP1_length_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP1_length_AD.TabIndex = 119
         Me.txt_NP1_length_AD.Text = "200"
         Me.txt_NP1_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8311,7 +8311,7 @@ Partial Class Form1
         Me.txt_NP_DFB_AD.Location = New System.Drawing.Point(406, 334)
         Me.txt_NP_DFB_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_DFB_AD.Name = "txt_NP_DFB_AD"
-        Me.txt_NP_DFB_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_DFB_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_DFB_AD.TabIndex = 55
         Me.txt_NP_DFB_AD.Text = "600"
         Me.txt_NP_DFB_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8322,7 +8322,7 @@ Partial Class Form1
         Me.txt_NP_Ori_AD.Location = New System.Drawing.Point(151, 334)
         Me.txt_NP_Ori_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Ori_AD.Name = "txt_NP_Ori_AD"
-        Me.txt_NP_Ori_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Ori_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Ori_AD.TabIndex = 55
         Me.txt_NP_Ori_AD.Text = "90"
         Me.txt_NP_Ori_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8454,7 +8454,7 @@ Partial Class Form1
         Me.txt_NP3_D3_AD.Location = New System.Drawing.Point(406, 246)
         Me.txt_NP3_D3_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_D3_AD.Name = "txt_NP3_D3_AD"
-        Me.txt_NP3_D3_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP3_D3_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP3_D3_AD.TabIndex = 113
         Me.txt_NP3_D3_AD.Text = "15"
         Me.txt_NP3_D3_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8465,7 +8465,7 @@ Partial Class Form1
         Me.txt_NP2_D2_AD.Location = New System.Drawing.Point(406, 185)
         Me.txt_NP2_D2_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_D2_AD.Name = "txt_NP2_D2_AD"
-        Me.txt_NP2_D2_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP2_D2_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP2_D2_AD.TabIndex = 113
         Me.txt_NP2_D2_AD.Text = "15"
         Me.txt_NP2_D2_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8476,7 +8476,7 @@ Partial Class Form1
         Me.txt_NP3_thk_AD.Location = New System.Drawing.Point(406, 217)
         Me.txt_NP3_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP3_thk_AD.Name = "txt_NP3_thk_AD"
-        Me.txt_NP3_thk_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP3_thk_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP3_thk_AD.TabIndex = 112
         Me.txt_NP3_thk_AD.Text = "3"
         Me.txt_NP3_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8487,7 +8487,7 @@ Partial Class Form1
         Me.txt_NP2_thk_AD.Location = New System.Drawing.Point(406, 155)
         Me.txt_NP2_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP2_thk_AD.Name = "txt_NP2_thk_AD"
-        Me.txt_NP2_thk_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP2_thk_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP2_thk_AD.TabIndex = 112
         Me.txt_NP2_thk_AD.Text = "3"
         Me.txt_NP2_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8498,7 +8498,7 @@ Partial Class Form1
         Me.txt_NP1_D1_AD.Location = New System.Drawing.Point(407, 123)
         Me.txt_NP1_D1_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_D1_AD.Name = "txt_NP1_D1_AD"
-        Me.txt_NP1_D1_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP1_D1_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP1_D1_AD.TabIndex = 113
         Me.txt_NP1_D1_AD.Text = "15"
         Me.txt_NP1_D1_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8509,7 +8509,7 @@ Partial Class Form1
         Me.txt_NP1_thk_AD.Location = New System.Drawing.Point(407, 94)
         Me.txt_NP1_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP1_thk_AD.Name = "txt_NP1_thk_AD"
-        Me.txt_NP1_thk_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP1_thk_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP1_thk_AD.TabIndex = 112
         Me.txt_NP1_thk_AD.Text = "3"
         Me.txt_NP1_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8533,7 +8533,7 @@ Partial Class Form1
         Me.cmb_NP3_Mat_AD.Location = New System.Drawing.Point(406, 306)
         Me.cmb_NP3_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP3_Mat_AD.Name = "cmb_NP3_Mat_AD"
-        Me.cmb_NP3_Mat_AD.Size = New System.Drawing.Size(126, 22)
+        Me.cmb_NP3_Mat_AD.Size = New System.Drawing.Size(126, 27)
         Me.cmb_NP3_Mat_AD.TabIndex = 110
         Me.cmb_NP3_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8545,7 +8545,7 @@ Partial Class Form1
         Me.cmb_NP2_Mat_AD.Location = New System.Drawing.Point(407, 276)
         Me.cmb_NP2_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP2_Mat_AD.Name = "cmb_NP2_Mat_AD"
-        Me.cmb_NP2_Mat_AD.Size = New System.Drawing.Size(125, 22)
+        Me.cmb_NP2_Mat_AD.Size = New System.Drawing.Size(125, 27)
         Me.cmb_NP2_Mat_AD.TabIndex = 110
         Me.cmb_NP2_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8557,7 +8557,7 @@ Partial Class Form1
         Me.cmb_NP1_Mat_AD.Location = New System.Drawing.Point(151, 306)
         Me.cmb_NP1_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP1_Mat_AD.Name = "cmb_NP1_Mat_AD"
-        Me.cmb_NP1_Mat_AD.Size = New System.Drawing.Size(126, 22)
+        Me.cmb_NP1_Mat_AD.Size = New System.Drawing.Size(126, 27)
         Me.cmb_NP1_Mat_AD.TabIndex = 109
         Me.cmb_NP1_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8569,7 +8569,7 @@ Partial Class Form1
         Me.cmb_NPB_Mat_AD.Location = New System.Drawing.Point(151, 278)
         Me.cmb_NPB_Mat_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NPB_Mat_AD.Name = "cmb_NPB_Mat_AD"
-        Me.cmb_NPB_Mat_AD.Size = New System.Drawing.Size(126, 22)
+        Me.cmb_NPB_Mat_AD.Size = New System.Drawing.Size(126, 27)
         Me.cmb_NPB_Mat_AD.TabIndex = 109
         Me.cmb_NPB_Mat_AD.Text = "A 240 Gr.316L"
         '
@@ -8645,7 +8645,7 @@ Partial Class Form1
         Me.txt_NPB_width_AD.Location = New System.Drawing.Point(151, 61)
         Me.txt_NPB_width_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_width_AD.Name = "txt_NPB_width_AD"
-        Me.txt_NPB_width_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_width_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_width_AD.TabIndex = 42
         Me.txt_NPB_width_AD.Text = "90"
         Me.txt_NPB_width_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8656,7 +8656,7 @@ Partial Class Form1
         Me.txt_NPB_length_AD.Location = New System.Drawing.Point(151, 31)
         Me.txt_NPB_length_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_length_AD.Name = "txt_NPB_length_AD"
-        Me.txt_NPB_length_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_length_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_length_AD.TabIndex = 40
         Me.txt_NPB_length_AD.Text = "240"
         Me.txt_NPB_length_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8722,7 +8722,7 @@ Partial Class Form1
         Me.txt_NPB_fillet_AD.Location = New System.Drawing.Point(406, 61)
         Me.txt_NPB_fillet_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_fillet_AD.Name = "txt_NPB_fillet_AD"
-        Me.txt_NPB_fillet_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_fillet_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_fillet_AD.TabIndex = 30
         Me.txt_NPB_fillet_AD.Text = "12"
         Me.txt_NPB_fillet_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8733,7 +8733,7 @@ Partial Class Form1
         Me.txt_NPB_thk_AD.Location = New System.Drawing.Point(406, 31)
         Me.txt_NPB_thk_AD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_thk_AD.Name = "txt_NPB_thk_AD"
-        Me.txt_NPB_thk_AD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_thk_AD.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_thk_AD.TabIndex = 29
         Me.txt_NPB_thk_AD.Text = "6"
         Me.txt_NPB_thk_AD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8880,7 +8880,7 @@ Partial Class Form1
         Me.txt_EL_MAT.Location = New System.Drawing.Point(359, 137)
         Me.txt_EL_MAT.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_MAT.Name = "txt_EL_MAT"
-        Me.txt_EL_MAT.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_MAT.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_MAT.TabIndex = 52
         Me.txt_EL_MAT.Text = "A 240 Gr.316L"
         '
@@ -8890,7 +8890,7 @@ Partial Class Form1
         Me.txt_EL_FILLET.Location = New System.Drawing.Point(359, 108)
         Me.txt_EL_FILLET.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_FILLET.Name = "txt_EL_FILLET"
-        Me.txt_EL_FILLET.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_FILLET.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_FILLET.TabIndex = 51
         Me.txt_EL_FILLET.Text = "5"
         Me.txt_EL_FILLET.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8901,7 +8901,7 @@ Partial Class Form1
         Me.txt_EL_VERT_DIST.Location = New System.Drawing.Point(359, 78)
         Me.txt_EL_VERT_DIST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_VERT_DIST.Name = "txt_EL_VERT_DIST"
-        Me.txt_EL_VERT_DIST.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_VERT_DIST.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_VERT_DIST.TabIndex = 51
         Me.txt_EL_VERT_DIST.Text = "15"
         Me.txt_EL_VERT_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8912,7 +8912,7 @@ Partial Class Form1
         Me.txt_EL_HOR_DIST.Location = New System.Drawing.Point(359, 49)
         Me.txt_EL_HOR_DIST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOR_DIST.Name = "txt_EL_HOR_DIST"
-        Me.txt_EL_HOR_DIST.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_HOR_DIST.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_HOR_DIST.TabIndex = 51
         Me.txt_EL_HOR_DIST.Text = "38"
         Me.txt_EL_HOR_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8923,7 +8923,7 @@ Partial Class Form1
         Me.txt_EL_HOLE_DIST.Location = New System.Drawing.Point(359, 166)
         Me.txt_EL_HOLE_DIST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOLE_DIST.Name = "txt_EL_HOLE_DIST"
-        Me.txt_EL_HOLE_DIST.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_HOLE_DIST.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_HOLE_DIST.TabIndex = 51
         Me.txt_EL_HOLE_DIST.Text = "45"
         Me.txt_EL_HOLE_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8934,7 +8934,7 @@ Partial Class Form1
         Me.txt_EL_HOLE_NO.Location = New System.Drawing.Point(92, 164)
         Me.txt_EL_HOLE_NO.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOLE_NO.Name = "txt_EL_HOLE_NO"
-        Me.txt_EL_HOLE_NO.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_HOLE_NO.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_HOLE_NO.TabIndex = 51
         Me.txt_EL_HOLE_NO.Text = "2"
         Me.txt_EL_HOLE_NO.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8945,7 +8945,7 @@ Partial Class Form1
         Me.txt_EL_HOLE_DIA.Location = New System.Drawing.Point(92, 136)
         Me.txt_EL_HOLE_DIA.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HOLE_DIA.Name = "txt_EL_HOLE_DIA"
-        Me.txt_EL_HOLE_DIA.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_HOLE_DIA.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_HOLE_DIA.TabIndex = 51
         Me.txt_EL_HOLE_DIA.Text = "15"
         Me.txt_EL_HOLE_DIA.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8956,7 +8956,7 @@ Partial Class Form1
         Me.txt_EL_THK.Location = New System.Drawing.Point(92, 106)
         Me.txt_EL_THK.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_THK.Name = "txt_EL_THK"
-        Me.txt_EL_THK.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_THK.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_THK.TabIndex = 51
         Me.txt_EL_THK.Text = "6"
         Me.txt_EL_THK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8967,7 +8967,7 @@ Partial Class Form1
         Me.txt_EL_HEIGHT.Location = New System.Drawing.Point(92, 76)
         Me.txt_EL_HEIGHT.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_HEIGHT.Name = "txt_EL_HEIGHT"
-        Me.txt_EL_HEIGHT.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_HEIGHT.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_HEIGHT.TabIndex = 51
         Me.txt_EL_HEIGHT.Text = "75"
         Me.txt_EL_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8978,7 +8978,7 @@ Partial Class Form1
         Me.txt_EL_DIST_BASE.Location = New System.Drawing.Point(271, 243)
         Me.txt_EL_DIST_BASE.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_DIST_BASE.Name = "txt_EL_DIST_BASE"
-        Me.txt_EL_DIST_BASE.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_DIST_BASE.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_DIST_BASE.TabIndex = 51
         Me.txt_EL_DIST_BASE.Text = "308"
         Me.txt_EL_DIST_BASE.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -8989,7 +8989,7 @@ Partial Class Form1
         Me.txt_EL_LENGTH.Location = New System.Drawing.Point(92, 47)
         Me.txt_EL_LENGTH.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_EL_LENGTH.Name = "txt_EL_LENGTH"
-        Me.txt_EL_LENGTH.Size = New System.Drawing.Size(134, 22)
+        Me.txt_EL_LENGTH.Size = New System.Drawing.Size(134, 27)
         Me.txt_EL_LENGTH.TabIndex = 51
         Me.txt_EL_LENGTH.Text = "150"
         Me.txt_EL_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9264,7 +9264,7 @@ Partial Class Form1
         Me.txt_DP_Offset_Length1.Location = New System.Drawing.Point(159, 300)
         Me.txt_DP_Offset_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Offset_Length1.Name = "txt_DP_Offset_Length1"
-        Me.txt_DP_Offset_Length1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_DP_Offset_Length1.Size = New System.Drawing.Size(177, 27)
         Me.txt_DP_Offset_Length1.TabIndex = 54
         Me.txt_DP_Offset_Length1.Text = "1982"
         Me.txt_DP_Offset_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9275,7 +9275,7 @@ Partial Class Form1
         Me.txt_DP_Length1.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length1.Name = "txt_DP_Length1"
-        Me.txt_DP_Length1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_DP_Length1.Size = New System.Drawing.Size(177, 27)
         Me.txt_DP_Length1.TabIndex = 54
         Me.txt_DP_Length1.Text = "2338"
         Me.txt_DP_Length1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9286,7 +9286,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Base1.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base1.Name = "txt_PS_Dist_from_Base1"
-        Me.txt_PS_Dist_from_Base1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Base1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Base1.TabIndex = 54
         Me.txt_PS_Dist_from_Base1.Text = "150"
         Me.txt_PS_Dist_from_Base1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9297,7 +9297,7 @@ Partial Class Form1
         Me.txt_PS_Angle_Dist1.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist1.Name = "txt_PS_Angle_Dist1"
-        Me.txt_PS_Angle_Dist1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Angle_Dist1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Angle_Dist1.TabIndex = 54
         Me.txt_PS_Angle_Dist1.Text = "268"
         Me.txt_PS_Angle_Dist1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9308,7 +9308,7 @@ Partial Class Form1
         Me.txt_PS_Dist_bw_Support1.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support1.Name = "txt_PS_Dist_bw_Support1"
-        Me.txt_PS_Dist_bw_Support1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_bw_Support1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_bw_Support1.TabIndex = 54
         Me.txt_PS_Dist_bw_Support1.Text = "1200"
         Me.txt_PS_Dist_bw_Support1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9319,7 +9319,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Top1.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top1.Name = "txt_PS_Dist_from_Top1"
-        Me.txt_PS_Dist_from_Top1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Top1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Top1.TabIndex = 54
         Me.txt_PS_Dist_from_Top1.Text = "308"
         Me.txt_PS_Dist_from_Top1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9331,7 +9331,7 @@ Partial Class Form1
         Me.txt_PS_Dia1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia1.Name = "txt_PS_Dia1"
         Me.txt_PS_Dia1.ReadOnly = True
-        Me.txt_PS_Dia1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dia1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dia1.TabIndex = 51
         Me.txt_PS_Dia1.Text = "1200"
         Me.txt_PS_Dia1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9375,7 +9375,7 @@ Partial Class Form1
         Me.txt_PS_No1.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No1.Name = "txt_PS_No1"
-        Me.txt_PS_No1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_No1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_No1.TabIndex = 48
         Me.txt_PS_No1.Text = "2"
         Me.txt_PS_No1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9409,7 +9409,7 @@ Partial Class Form1
         Me.txt_PS_Thk1.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk1.Name = "txt_PS_Thk1"
         Me.txt_PS_Thk1.ReadOnly = True
-        Me.txt_PS_Thk1.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Thk1.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Thk1.TabIndex = 46
         Me.txt_PS_Thk1.Text = "6"
         Me.txt_PS_Thk1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9526,7 +9526,7 @@ Partial Class Form1
         Me.txt_DP_Length2.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length2.Name = "txt_DP_Length2"
-        Me.txt_DP_Length2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_DP_Length2.Size = New System.Drawing.Size(177, 27)
         Me.txt_DP_Length2.TabIndex = 54
         Me.txt_DP_Length2.Text = "2328"
         Me.txt_DP_Length2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9537,7 +9537,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Base2.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base2.Name = "txt_PS_Dist_from_Base2"
-        Me.txt_PS_Dist_from_Base2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Base2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Base2.TabIndex = 54
         Me.txt_PS_Dist_from_Base2.Text = "150"
         Me.txt_PS_Dist_from_Base2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9548,7 +9548,7 @@ Partial Class Form1
         Me.txt_PS_Angle_Dist2.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist2.Name = "txt_PS_Angle_Dist2"
-        Me.txt_PS_Angle_Dist2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Angle_Dist2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Angle_Dist2.TabIndex = 54
         Me.txt_PS_Angle_Dist2.Text = "268"
         Me.txt_PS_Angle_Dist2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9559,7 +9559,7 @@ Partial Class Form1
         Me.txt_PS_Dist_bw_Support2.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support2.Name = "txt_PS_Dist_bw_Support2"
-        Me.txt_PS_Dist_bw_Support2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_bw_Support2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_bw_Support2.TabIndex = 54
         Me.txt_PS_Dist_bw_Support2.Text = "1200"
         Me.txt_PS_Dist_bw_Support2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9570,7 +9570,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Top2.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top2.Name = "txt_PS_Dist_from_Top2"
-        Me.txt_PS_Dist_from_Top2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Top2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Top2.TabIndex = 54
         Me.txt_PS_Dist_from_Top2.Text = "308"
         Me.txt_PS_Dist_from_Top2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9582,7 +9582,7 @@ Partial Class Form1
         Me.txt_PS_Dia2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia2.Name = "txt_PS_Dia2"
         Me.txt_PS_Dia2.ReadOnly = True
-        Me.txt_PS_Dia2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dia2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dia2.TabIndex = 51
         Me.txt_PS_Dia2.Text = "1200"
         Me.txt_PS_Dia2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9626,7 +9626,7 @@ Partial Class Form1
         Me.txt_PS_No2.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No2.Name = "txt_PS_No2"
-        Me.txt_PS_No2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_No2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_No2.TabIndex = 48
         Me.txt_PS_No2.Text = "2"
         Me.txt_PS_No2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9660,7 +9660,7 @@ Partial Class Form1
         Me.txt_PS_Thk2.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk2.Name = "txt_PS_Thk2"
         Me.txt_PS_Thk2.ReadOnly = True
-        Me.txt_PS_Thk2.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Thk2.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Thk2.TabIndex = 46
         Me.txt_PS_Thk2.Text = "6"
         Me.txt_PS_Thk2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9776,7 +9776,7 @@ Partial Class Form1
         Me.txt_DP_Length3.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length3.Name = "txt_DP_Length3"
-        Me.txt_DP_Length3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_DP_Length3.Size = New System.Drawing.Size(177, 27)
         Me.txt_DP_Length3.TabIndex = 54
         Me.txt_DP_Length3.Text = "2328"
         Me.txt_DP_Length3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9787,7 +9787,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Base3.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base3.Name = "txt_PS_Dist_from_Base3"
-        Me.txt_PS_Dist_from_Base3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Base3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Base3.TabIndex = 54
         Me.txt_PS_Dist_from_Base3.Text = "150"
         Me.txt_PS_Dist_from_Base3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9798,7 +9798,7 @@ Partial Class Form1
         Me.txt_PS_Angle_Dist3.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist3.Name = "txt_PS_Angle_Dist3"
-        Me.txt_PS_Angle_Dist3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Angle_Dist3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Angle_Dist3.TabIndex = 54
         Me.txt_PS_Angle_Dist3.Text = "268"
         Me.txt_PS_Angle_Dist3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9809,7 +9809,7 @@ Partial Class Form1
         Me.txt_PS_Dist_bw_Support3.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support3.Name = "txt_PS_Dist_bw_Support3"
-        Me.txt_PS_Dist_bw_Support3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_bw_Support3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_bw_Support3.TabIndex = 54
         Me.txt_PS_Dist_bw_Support3.Text = "1200"
         Me.txt_PS_Dist_bw_Support3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9820,7 +9820,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Top3.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top3.Name = "txt_PS_Dist_from_Top3"
-        Me.txt_PS_Dist_from_Top3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Top3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Top3.TabIndex = 54
         Me.txt_PS_Dist_from_Top3.Text = "308"
         Me.txt_PS_Dist_from_Top3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9832,7 +9832,7 @@ Partial Class Form1
         Me.txt_PS_Dia3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia3.Name = "txt_PS_Dia3"
         Me.txt_PS_Dia3.ReadOnly = True
-        Me.txt_PS_Dia3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dia3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dia3.TabIndex = 51
         Me.txt_PS_Dia3.Text = "1200"
         Me.txt_PS_Dia3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9876,7 +9876,7 @@ Partial Class Form1
         Me.txt_PS_No3.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No3.Name = "txt_PS_No3"
-        Me.txt_PS_No3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_No3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_No3.TabIndex = 48
         Me.txt_PS_No3.Text = "2"
         Me.txt_PS_No3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -9910,7 +9910,7 @@ Partial Class Form1
         Me.txt_PS_Thk3.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk3.Name = "txt_PS_Thk3"
         Me.txt_PS_Thk3.ReadOnly = True
-        Me.txt_PS_Thk3.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Thk3.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Thk3.TabIndex = 46
         Me.txt_PS_Thk3.Text = "6"
         Me.txt_PS_Thk3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10026,7 +10026,7 @@ Partial Class Form1
         Me.txt_DP_Length4.Location = New System.Drawing.Point(157, 272)
         Me.txt_DP_Length4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_DP_Length4.Name = "txt_DP_Length4"
-        Me.txt_DP_Length4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_DP_Length4.Size = New System.Drawing.Size(177, 27)
         Me.txt_DP_Length4.TabIndex = 54
         Me.txt_DP_Length4.Text = "2328"
         Me.txt_DP_Length4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10037,7 +10037,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Base4.Location = New System.Drawing.Point(157, 211)
         Me.txt_PS_Dist_from_Base4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Base4.Name = "txt_PS_Dist_from_Base4"
-        Me.txt_PS_Dist_from_Base4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Base4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Base4.TabIndex = 54
         Me.txt_PS_Dist_from_Base4.Text = "150"
         Me.txt_PS_Dist_from_Base4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10048,7 +10048,7 @@ Partial Class Form1
         Me.txt_PS_Angle_Dist4.Location = New System.Drawing.Point(157, 183)
         Me.txt_PS_Angle_Dist4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Angle_Dist4.Name = "txt_PS_Angle_Dist4"
-        Me.txt_PS_Angle_Dist4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Angle_Dist4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Angle_Dist4.TabIndex = 54
         Me.txt_PS_Angle_Dist4.Text = "268"
         Me.txt_PS_Angle_Dist4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10059,7 +10059,7 @@ Partial Class Form1
         Me.txt_PS_Dist_bw_Support4.Location = New System.Drawing.Point(157, 125)
         Me.txt_PS_Dist_bw_Support4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_bw_Support4.Name = "txt_PS_Dist_bw_Support4"
-        Me.txt_PS_Dist_bw_Support4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_bw_Support4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_bw_Support4.TabIndex = 54
         Me.txt_PS_Dist_bw_Support4.Text = "1200"
         Me.txt_PS_Dist_bw_Support4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10070,7 +10070,7 @@ Partial Class Form1
         Me.txt_PS_Dist_from_Top4.Location = New System.Drawing.Point(157, 154)
         Me.txt_PS_Dist_from_Top4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dist_from_Top4.Name = "txt_PS_Dist_from_Top4"
-        Me.txt_PS_Dist_from_Top4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dist_from_Top4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dist_from_Top4.TabIndex = 54
         Me.txt_PS_Dist_from_Top4.Text = "308"
         Me.txt_PS_Dist_from_Top4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10082,7 +10082,7 @@ Partial Class Form1
         Me.txt_PS_Dia4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Dia4.Name = "txt_PS_Dia4"
         Me.txt_PS_Dia4.ReadOnly = True
-        Me.txt_PS_Dia4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Dia4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Dia4.TabIndex = 51
         Me.txt_PS_Dia4.Text = "1200"
         Me.txt_PS_Dia4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10126,7 +10126,7 @@ Partial Class Form1
         Me.txt_PS_No4.Location = New System.Drawing.Point(157, 97)
         Me.txt_PS_No4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_No4.Name = "txt_PS_No4"
-        Me.txt_PS_No4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_No4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_No4.TabIndex = 48
         Me.txt_PS_No4.Text = "2"
         Me.txt_PS_No4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10160,7 +10160,7 @@ Partial Class Form1
         Me.txt_PS_Thk4.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_PS_Thk4.Name = "txt_PS_Thk4"
         Me.txt_PS_Thk4.ReadOnly = True
-        Me.txt_PS_Thk4.Size = New System.Drawing.Size(177, 22)
+        Me.txt_PS_Thk4.Size = New System.Drawing.Size(177, 27)
         Me.txt_PS_Thk4.TabIndex = 46
         Me.txt_PS_Thk4.Text = "6"
         Me.txt_PS_Thk4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10240,7 +10240,7 @@ Partial Class Form1
         Me.cmb_GLR_Mat.Location = New System.Drawing.Point(142, 196)
         Me.cmb_GLR_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_GLR_Mat.Name = "cmb_GLR_Mat"
-        Me.cmb_GLR_Mat.Size = New System.Drawing.Size(177, 22)
+        Me.cmb_GLR_Mat.Size = New System.Drawing.Size(177, 27)
         Me.cmb_GLR_Mat.TabIndex = 107
         Me.cmb_GLR_Mat.Text = "A276 Gr.316L"
         '
@@ -10329,7 +10329,7 @@ Partial Class Form1
         Me.txt_GLR_Width.Location = New System.Drawing.Point(142, 75)
         Me.txt_GLR_Width.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Width.Name = "txt_GLR_Width"
-        Me.txt_GLR_Width.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_Width.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_Width.TabIndex = 42
         Me.txt_GLR_Width.Text = "75"
         Me.txt_GLR_Width.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10351,7 +10351,7 @@ Partial Class Form1
         Me.txt_GLR_Length.Location = New System.Drawing.Point(142, 46)
         Me.txt_GLR_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Length.Name = "txt_GLR_Length"
-        Me.txt_GLR_Length.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_Length.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_Length.TabIndex = 40
         Me.txt_GLR_Length.Text = "455"
         Me.txt_GLR_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10384,7 +10384,7 @@ Partial Class Form1
         Me.txt_GLR_No_Rung.Location = New System.Drawing.Point(145, 320)
         Me.txt_GLR_No_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_No_Rung.Name = "txt_GLR_No_Rung"
-        Me.txt_GLR_No_Rung.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_No_Rung.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_No_Rung.TabIndex = 24
         Me.txt_GLR_No_Rung.Text = "2"
         Me.txt_GLR_No_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10395,7 +10395,7 @@ Partial Class Form1
         Me.txt_GLR_Dist_Rung.Location = New System.Drawing.Point(145, 291)
         Me.txt_GLR_Dist_Rung.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Dist_Rung.Name = "txt_GLR_Dist_Rung"
-        Me.txt_GLR_Dist_Rung.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_Dist_Rung.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_Dist_Rung.TabIndex = 24
         Me.txt_GLR_Dist_Rung.Text = "1000"
         Me.txt_GLR_Dist_Rung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10406,7 +10406,7 @@ Partial Class Form1
         Me.txt_GLR_Dist_base.Location = New System.Drawing.Point(145, 263)
         Me.txt_GLR_Dist_base.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Dist_base.Name = "txt_GLR_Dist_base"
-        Me.txt_GLR_Dist_base.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_Dist_base.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_Dist_base.TabIndex = 24
         Me.txt_GLR_Dist_base.Text = "250"
         Me.txt_GLR_Dist_base.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10417,7 +10417,7 @@ Partial Class Form1
         Me.txt_GLR_Fillet.Location = New System.Drawing.Point(142, 163)
         Me.txt_GLR_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Fillet.Name = "txt_GLR_Fillet"
-        Me.txt_GLR_Fillet.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_Fillet.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_Fillet.TabIndex = 24
         Me.txt_GLR_Fillet.Text = "20"
         Me.txt_GLR_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10450,7 +10450,7 @@ Partial Class Form1
         Me.txt_GLR_Diameter.Location = New System.Drawing.Point(142, 134)
         Me.txt_GLR_Diameter.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Diameter.Name = "txt_GLR_Diameter"
-        Me.txt_GLR_Diameter.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_Diameter.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_Diameter.TabIndex = 21
         Me.txt_GLR_Diameter.Text = "20"
         Me.txt_GLR_Diameter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10461,7 +10461,7 @@ Partial Class Form1
         Me.txt_GLR_Height.Location = New System.Drawing.Point(142, 104)
         Me.txt_GLR_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_GLR_Height.Name = "txt_GLR_Height"
-        Me.txt_GLR_Height.Size = New System.Drawing.Size(177, 22)
+        Me.txt_GLR_Height.Size = New System.Drawing.Size(177, 27)
         Me.txt_GLR_Height.TabIndex = 20
         Me.txt_GLR_Height.Text = "175"
         Me.txt_GLR_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -10545,7 +10545,7 @@ Partial Class Form1
         Me.cmb_NPB_Mat.Location = New System.Drawing.Point(436, 238)
         Me.cmb_NPB_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NPB_Mat.Name = "cmb_NPB_Mat"
-        Me.cmb_NPB_Mat.Size = New System.Drawing.Size(127, 22)
+        Me.cmb_NPB_Mat.Size = New System.Drawing.Size(127, 27)
         Me.cmb_NPB_Mat.TabIndex = 110
         Me.cmb_NPB_Mat.Text = "A 240 Gr.316L"
         '
@@ -10557,7 +10557,7 @@ Partial Class Form1
         Me.ComboBox4.Location = New System.Drawing.Point(151, 265)
         Me.ComboBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(127, 22)
+        Me.ComboBox4.Size = New System.Drawing.Size(127, 27)
         Me.ComboBox4.TabIndex = 109
         Me.ComboBox4.Text = "A 240 Gr.316L"
         '
@@ -10569,7 +10569,7 @@ Partial Class Form1
         Me.cmb_NP_Mat.Location = New System.Drawing.Point(151, 238)
         Me.cmb_NP_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_NP_Mat.Name = "cmb_NP_Mat"
-        Me.cmb_NP_Mat.Size = New System.Drawing.Size(127, 22)
+        Me.cmb_NP_Mat.Size = New System.Drawing.Size(127, 27)
         Me.cmb_NP_Mat.TabIndex = 109
         Me.cmb_NP_Mat.Text = "A 240 Gr.316L"
         '
@@ -10647,7 +10647,7 @@ Partial Class Form1
         Me.txt_NP_Orientation.Location = New System.Drawing.Point(151, 208)
         Me.txt_NP_Orientation.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Orientation.Name = "txt_NP_Orientation"
-        Me.txt_NP_Orientation.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Orientation.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Orientation.TabIndex = 55
         Me.txt_NP_Orientation.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10682,7 +10682,7 @@ Partial Class Form1
         Me.txt_NP_Dist_Centre.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist_Centre.Name = "txt_NP_Dist_Centre"
         Me.txt_NP_Dist_Centre.ReadOnly = True
-        Me.txt_NP_Dist_Centre.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Dist_Centre.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Dist_Centre.TabIndex = 53
         Me.txt_NP_Dist_Centre.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10714,7 +10714,7 @@ Partial Class Form1
         Me.txt_NP_width.Location = New System.Drawing.Point(151, 61)
         Me.txt_NP_width.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_width.Name = "txt_NP_width"
-        Me.txt_NP_width.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_width.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_width.TabIndex = 42
         Me.txt_NP_width.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10735,7 +10735,7 @@ Partial Class Form1
         Me.txt_NP_length.Location = New System.Drawing.Point(151, 31)
         Me.txt_NP_length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_length.Name = "txt_NP_length"
-        Me.txt_NP_length.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_length.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_length.TabIndex = 40
         Me.txt_NP_length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10767,7 +10767,7 @@ Partial Class Form1
         Me.txt_ST_Thk.Location = New System.Drawing.Point(436, 150)
         Me.txt_ST_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_ST_Thk.Name = "txt_ST_Thk"
-        Me.txt_ST_Thk.Size = New System.Drawing.Size(127, 22)
+        Me.txt_ST_Thk.Size = New System.Drawing.Size(127, 27)
         Me.txt_ST_Thk.TabIndex = 36
         Me.txt_ST_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10788,7 +10788,7 @@ Partial Class Form1
         Me.txt_NP_Dist_Base.Location = New System.Drawing.Point(436, 179)
         Me.txt_NP_Dist_Base.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist_Base.Name = "txt_NP_Dist_Base"
-        Me.txt_NP_Dist_Base.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Dist_Base.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Dist_Base.TabIndex = 34
         Me.txt_NP_Dist_Base.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10809,7 +10809,7 @@ Partial Class Form1
         Me.txt_ST_Height.Location = New System.Drawing.Point(436, 120)
         Me.txt_ST_Height.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_ST_Height.Name = "txt_ST_Height"
-        Me.txt_ST_Height.Size = New System.Drawing.Size(127, 22)
+        Me.txt_ST_Height.Size = New System.Drawing.Size(127, 27)
         Me.txt_ST_Height.TabIndex = 32
         Me.txt_ST_Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10819,7 +10819,7 @@ Partial Class Form1
         Me.txt_ST_Length.Location = New System.Drawing.Point(436, 90)
         Me.txt_ST_Length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_ST_Length.Name = "txt_ST_Length"
-        Me.txt_ST_Length.Size = New System.Drawing.Size(127, 22)
+        Me.txt_ST_Length.Size = New System.Drawing.Size(127, 27)
         Me.txt_ST_Length.TabIndex = 31
         Me.txt_ST_Length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10829,7 +10829,7 @@ Partial Class Form1
         Me.txt_NP_Dist.Location = New System.Drawing.Point(436, 61)
         Me.txt_NP_Dist.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Dist.Name = "txt_NP_Dist"
-        Me.txt_NP_Dist.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Dist.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Dist.TabIndex = 30
         Me.txt_NP_Dist.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10839,7 +10839,7 @@ Partial Class Form1
         Me.txt_NP_Fillet.Location = New System.Drawing.Point(436, 31)
         Me.txt_NP_Fillet.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_Fillet.Name = "txt_NP_Fillet"
-        Me.txt_NP_Fillet.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_Fillet.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_Fillet.TabIndex = 29
         Me.txt_NP_Fillet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10882,7 +10882,7 @@ Partial Class Form1
         Me.txt_NPB_thk.Location = New System.Drawing.Point(151, 179)
         Me.txt_NPB_thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_thk.Name = "txt_NPB_thk"
-        Me.txt_NPB_thk.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_thk.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_thk.TabIndex = 25
         Me.txt_NPB_thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10892,7 +10892,7 @@ Partial Class Form1
         Me.txt_NPB_width.Location = New System.Drawing.Point(151, 150)
         Me.txt_NPB_width.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_width.Name = "txt_NPB_width"
-        Me.txt_NPB_width.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_width.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_width.TabIndex = 24
         Me.txt_NPB_width.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10924,7 +10924,7 @@ Partial Class Form1
         Me.txt_NPB_length.Location = New System.Drawing.Point(151, 120)
         Me.txt_NPB_length.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NPB_length.Name = "txt_NPB_length"
-        Me.txt_NPB_length.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NPB_length.Size = New System.Drawing.Size(127, 27)
         Me.txt_NPB_length.TabIndex = 21
         Me.txt_NPB_length.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -10934,7 +10934,7 @@ Partial Class Form1
         Me.txt_NP_thk.Location = New System.Drawing.Point(151, 90)
         Me.txt_NP_thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_NP_thk.Name = "txt_NP_thk"
-        Me.txt_NP_thk.Size = New System.Drawing.Size(127, 22)
+        Me.txt_NP_thk.Size = New System.Drawing.Size(127, 27)
         Me.txt_NP_thk.TabIndex = 20
         Me.txt_NP_thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11030,7 +11030,7 @@ Partial Class Form1
         Me.cmb_LL_Plate_Mat.Location = New System.Drawing.Point(407, 210)
         Me.cmb_LL_Plate_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_LL_Plate_Mat.Name = "cmb_LL_Plate_Mat"
-        Me.cmb_LL_Plate_Mat.Size = New System.Drawing.Size(127, 22)
+        Me.cmb_LL_Plate_Mat.Size = New System.Drawing.Size(127, 27)
         Me.cmb_LL_Plate_Mat.TabIndex = 69
         Me.cmb_LL_Plate_Mat.Text = "A-516 Gr.70"
         '
@@ -11042,7 +11042,7 @@ Partial Class Form1
         Me.cmb_LL_Pad_Mat.Location = New System.Drawing.Point(141, 210)
         Me.cmb_LL_Pad_Mat.Margin = New System.Windows.Forms.Padding(4)
         Me.cmb_LL_Pad_Mat.Name = "cmb_LL_Pad_Mat"
-        Me.cmb_LL_Pad_Mat.Size = New System.Drawing.Size(127, 22)
+        Me.cmb_LL_Pad_Mat.Size = New System.Drawing.Size(127, 27)
         Me.cmb_LL_Pad_Mat.TabIndex = 69
         Me.cmb_LL_Pad_Mat.Text = "A 240 Gr.316L"
         '
@@ -11053,7 +11053,7 @@ Partial Class Form1
         Me.ComboBox1.Location = New System.Drawing.Point(141, 210)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(127, 22)
+        Me.ComboBox1.Size = New System.Drawing.Size(127, 27)
         Me.ComboBox1.TabIndex = 69
         '
         'PictureBox13
@@ -11095,7 +11095,7 @@ Partial Class Form1
         Me.txt_LL_Ang_Bw.Location = New System.Drawing.Point(406, 304)
         Me.txt_LL_Ang_Bw.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Ang_Bw.Name = "txt_LL_Ang_Bw"
-        Me.txt_LL_Ang_Bw.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_Ang_Bw.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_Ang_Bw.TabIndex = 50
         Me.txt_LL_Ang_Bw.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11116,7 +11116,7 @@ Partial Class Form1
         Me.txt_LL_Dist.Location = New System.Drawing.Point(406, 276)
         Me.txt_LL_Dist.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Dist.Name = "txt_LL_Dist"
-        Me.txt_LL_Dist.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_Dist.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_Dist.TabIndex = 48
         Me.txt_LL_Dist.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11137,7 +11137,7 @@ Partial Class Form1
         Me.txt_LL_Number.Location = New System.Drawing.Point(140, 304)
         Me.txt_LL_Number.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Number.Name = "txt_LL_Number"
-        Me.txt_LL_Number.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_Number.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_Number.TabIndex = 46
         Me.txt_LL_Number.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11158,7 +11158,7 @@ Partial Class Form1
         Me.txt_LL_Ang.Location = New System.Drawing.Point(140, 276)
         Me.txt_LL_Ang.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_Ang.Name = "txt_LL_Ang"
-        Me.txt_LL_Ang.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_Ang.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_Ang.TabIndex = 44
         Me.txt_LL_Ang.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11179,7 +11179,7 @@ Partial Class Form1
         Me.txt_LL_ST.Location = New System.Drawing.Point(141, 64)
         Me.txt_LL_ST.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_ST.Name = "txt_LL_ST"
-        Me.txt_LL_ST.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_ST.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_ST.TabIndex = 42
         Me.txt_LL_ST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11200,7 +11200,7 @@ Partial Class Form1
         Me.txt_LL_ID.Location = New System.Drawing.Point(141, 34)
         Me.txt_LL_ID.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_ID.Name = "txt_LL_ID"
-        Me.txt_LL_ID.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_ID.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_ID.TabIndex = 40
         Me.txt_LL_ID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11243,7 +11243,7 @@ Partial Class Form1
         Me.txt_LL_P_BL.Location = New System.Drawing.Point(407, 153)
         Me.txt_LL_P_BL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_BL.Name = "txt_LL_P_BL"
-        Me.txt_LL_P_BL.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_P_BL.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_P_BL.TabIndex = 36
         Me.txt_LL_P_BL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11264,7 +11264,7 @@ Partial Class Form1
         Me.txt_LL_P_Thk.Location = New System.Drawing.Point(407, 182)
         Me.txt_LL_P_Thk.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_Thk.Name = "txt_LL_P_Thk"
-        Me.txt_LL_P_Thk.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_P_Thk.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_P_Thk.TabIndex = 34
         Me.txt_LL_P_Thk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11296,7 +11296,7 @@ Partial Class Form1
         Me.txt_LL_P_CR.Location = New System.Drawing.Point(407, 123)
         Me.txt_LL_P_CR.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_CR.Name = "txt_LL_P_CR"
-        Me.txt_LL_P_CR.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_P_CR.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_P_CR.TabIndex = 32
         Me.txt_LL_P_CR.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11306,7 +11306,7 @@ Partial Class Form1
         Me.txt_LL_P_HD.Location = New System.Drawing.Point(407, 94)
         Me.txt_LL_P_HD.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_HD.Name = "txt_LL_P_HD"
-        Me.txt_LL_P_HD.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_P_HD.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_P_HD.TabIndex = 31
         Me.txt_LL_P_HD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11316,7 +11316,7 @@ Partial Class Form1
         Me.txt_LL_P_H.Location = New System.Drawing.Point(407, 64)
         Me.txt_LL_P_H.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_H.Name = "txt_LL_P_H"
-        Me.txt_LL_P_H.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_P_H.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_P_H.TabIndex = 30
         Me.txt_LL_P_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11326,7 +11326,7 @@ Partial Class Form1
         Me.txt_LL_P_L.Location = New System.Drawing.Point(407, 34)
         Me.txt_LL_P_L.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_P_L.Name = "txt_LL_P_L"
-        Me.txt_LL_P_L.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_P_L.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_P_L.TabIndex = 29
         Me.txt_LL_P_L.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11369,7 +11369,7 @@ Partial Class Form1
         Me.txt_LL_PF.Location = New System.Drawing.Point(141, 182)
         Me.txt_LL_PF.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PF.Name = "txt_LL_PF"
-        Me.txt_LL_PF.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_PF.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_PF.TabIndex = 25
         Me.txt_LL_PF.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11379,7 +11379,7 @@ Partial Class Form1
         Me.txt_LL_PT.Location = New System.Drawing.Point(141, 153)
         Me.txt_LL_PT.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PT.Name = "txt_LL_PT"
-        Me.txt_LL_PT.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_PT.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_PT.TabIndex = 24
         Me.txt_LL_PT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11422,7 +11422,7 @@ Partial Class Form1
         Me.txt_LL_PH.Location = New System.Drawing.Point(141, 123)
         Me.txt_LL_PH.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PH.Name = "txt_LL_PH"
-        Me.txt_LL_PH.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_PH.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_PH.TabIndex = 21
         Me.txt_LL_PH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -11432,7 +11432,7 @@ Partial Class Form1
         Me.txt_LL_PL.Location = New System.Drawing.Point(141, 94)
         Me.txt_LL_PL.Margin = New System.Windows.Forms.Padding(4)
         Me.txt_LL_PL.Name = "txt_LL_PL"
-        Me.txt_LL_PL.Size = New System.Drawing.Size(127, 22)
+        Me.txt_LL_PL.Size = New System.Drawing.Size(127, 27)
         Me.txt_LL_PL.TabIndex = 20
         Me.txt_LL_PL.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -13110,6 +13110,28 @@ Partial Class Form1
         Me.TabPage17.Text = "NOTES"
         Me.TabPage17.UseVisualStyleBackColor = True
         '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(438, 825)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(128, 49)
+        Me.Button11.TabIndex = 77
+        Me.Button11.Text = "Button11"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.Green
+        Me.Button12.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.ForeColor = System.Drawing.Color.White
+        Me.Button12.Location = New System.Drawing.Point(211, 652)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(203, 48)
+        Me.Button12.TabIndex = 76
+        Me.Button12.Text = "GA Drawing"
+        Me.Button12.UseVisualStyleBackColor = False
+        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Green
@@ -13339,28 +13361,6 @@ Partial Class Form1
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox17.TabIndex = 4
         Me.PictureBox17.TabStop = False
-        '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(438, 825)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(128, 49)
-        Me.Button11.TabIndex = 77
-        Me.Button11.Text = "Button11"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.BackColor = System.Drawing.Color.Green
-        Me.Button12.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.ForeColor = System.Drawing.Color.White
-        Me.Button12.Location = New System.Drawing.Point(211, 652)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(203, 48)
-        Me.Button12.TabIndex = 76
-        Me.Button12.Text = "GA Drawing"
-        Me.Button12.UseVisualStyleBackColor = False
         '
         'Form1
         '
