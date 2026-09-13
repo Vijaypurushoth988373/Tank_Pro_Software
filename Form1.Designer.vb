@@ -8529,7 +8529,7 @@ Partial Class Form1
         Me.TabPage_Dip1.Location = New System.Drawing.Point(4, 24)
         Me.TabPage_Dip1.Name = "TabPage_Dip1"
         Me.TabPage_Dip1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage_Dip1.Size = New System.Drawing.Size(838, 378)
+        Me.TabPage_Dip1.Size = New System.Drawing.Size(92, 72)
         Me.TabPage_Dip1.TabIndex = 0
         Me.TabPage_Dip1.Text = "Dip Pipe 1"
         Me.TabPage_Dip1.UseVisualStyleBackColor = True
@@ -8781,7 +8781,7 @@ Partial Class Form1
         Me.TabPage_Dip2.Location = New System.Drawing.Point(4, 24)
         Me.TabPage_Dip2.Name = "TabPage_Dip2"
         Me.TabPage_Dip2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage_Dip2.Size = New System.Drawing.Size(838, 378)
+        Me.TabPage_Dip2.Size = New System.Drawing.Size(92, 72)
         Me.TabPage_Dip2.TabIndex = 1
         Me.TabPage_Dip2.Text = "Dip Pipe 2"
         Me.TabPage_Dip2.UseVisualStyleBackColor = True
@@ -9010,7 +9010,7 @@ Partial Class Form1
         Me.TabPage_Dip3.Controls.Add(Me.Panel_PS3)
         Me.TabPage_Dip3.Location = New System.Drawing.Point(4, 24)
         Me.TabPage_Dip3.Name = "TabPage_Dip3"
-        Me.TabPage_Dip3.Size = New System.Drawing.Size(838, 378)
+        Me.TabPage_Dip3.Size = New System.Drawing.Size(92, 72)
         Me.TabPage_Dip3.TabIndex = 2
         Me.TabPage_Dip3.Text = "Dip Pipe 3"
         Me.TabPage_Dip3.UseVisualStyleBackColor = True
@@ -9506,7 +9506,6 @@ Partial Class Form1
         Me.Update_3D.TabIndex = 73
         Me.Update_3D.Text = "Create 3D"
         Me.Update_3D.UseVisualStyleBackColor = False
-        Me.Update_3D.Visible = False
         '
         'cmb_GLR_Mat
         '
