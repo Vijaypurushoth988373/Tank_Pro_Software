@@ -7122,17 +7122,24 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
             '==================================================
             ' 1) GET OR START INVENTOR
             '==================================================
+            Dim startedNewInventor As Boolean = False
             Try
                 invApp = CType(Marshal.GetActiveObject("Inventor.Application"), Inventor.Application)
             Catch
                 invApp = CType(Activator.CreateInstance(Type.GetTypeFromProgID("Inventor.Application")), Inventor.Application)
                 invApp.Visible = True
+                startedNewInventor = True
             End Try
 
             If invApp Is Nothing Then
                 MessageBox.Show("❌ Unable to start Inventor.", "Edit 3D")
                 Exit Sub
             End If
+
+            ' A freshly-launched Inventor process isn't ready to answer COM calls yet —
+            ' wait for it, otherwise the next call (project select/activate) can fail with
+            ' "The RPC server is unavailable".
+            If startedNewInventor Then WaitForInventorReady(invApp)
 
             invApp.SilentOperation = True
 
