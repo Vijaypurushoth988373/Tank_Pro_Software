@@ -1911,14 +1911,6 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         '=========================================
-        ' 0️⃣ Make sure a working copy exists
-        '=========================================
-        If String.IsNullOrWhiteSpace(CurrentProjectFolder) OrElse Not IO.Directory.Exists(CurrentProjectFolder) Then
-            MessageBox.Show("❌ No working copy found. Please run 'Edit 3D' first.", "2D Drawing")
-            Exit Sub
-        End If
-
-        '=========================================
         ' 1️⃣ Connect to running Inventor session
         '=========================================
         Dim invApp As Inventor.Application = Nothing
@@ -1928,6 +1920,23 @@ Public Class Form1
             MessageBox.Show("❌ Inventor is not running.", "2D Drawing")
             Exit Sub
         End Try
+
+        '=========================================
+        ' 0️⃣ Resolve the folder to open the drawing from directly off Inventor's own
+        ' ACTIVE project, instead of the CurrentProjectFolder field — that field can be
+        ' stale/out of sync with whichever project Inventor is actually working in
+        ' (e.g. Update 3D activates a different project than the original working copy).
+        '=========================================
+        Dim activeProjectFolder As String = ""
+        Try
+            activeProjectFolder = IO.Path.GetDirectoryName(invApp.DesignProjectManager.ActiveDesignProject.FullFileName)
+        Catch
+        End Try
+
+        If String.IsNullOrWhiteSpace(activeProjectFolder) OrElse Not IO.Directory.Exists(activeProjectFolder) Then
+            MessageBox.Show("❌ No working copy found. Please run 'Edit 3D' first.", "2D Drawing")
+            Exit Sub
+        End If
 
         '=========================================
         ' 2️⃣ Decide Drawing File
@@ -1949,7 +1958,7 @@ Public Class Form1
         '=========================================
         ' 3️⃣ Combine Full Path
         '=========================================
-        Dim drawingPath As String = IO.Path.Combine(CurrentProjectFolder, fileName)
+        Dim drawingPath As String = IO.Path.Combine(activeProjectFolder, fileName)
         If Not IO.File.Exists(drawingPath) Then
             MessageBox.Show("❌ Drawing file not found:" & vbCrLf & drawingPath, "2D Drawing")
             Exit Sub
