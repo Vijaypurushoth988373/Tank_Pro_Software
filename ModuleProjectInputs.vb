@@ -38,6 +38,45 @@ Public Module ProjectInputsManager
         End While
     End Sub
 
+    ' =====================================================================================
+    ' True for the well-known transient RPC HRESULTs Inventor throws while its COM server is
+    ' still settling right after launch — even after invApp.Ready reports True, the very next
+    ' call can still race the process and fail once before succeeding. Used to decide whether
+    ' a failed Inventor COM call is worth a short retry instead of failing immediately.
+    ' =====================================================================================
+    Public Function IsTransientRpcError(ex As Exception) As Boolean
+        Select Case CUInt(ex.HResult)
+            Case &H800706BAUI  ' RPC server is unavailable
+                Return True
+            Case &H800706BEUI  ' The remote procedure call failed
+                Return True
+            Case &H8001010AUI  ' RPC_E_SERVERCALL_RETRYLATER
+                Return True
+            Case &H80010105UI  ' RPC_E_SERVERFAULT
+                Return True
+            Case Else
+                Return False
+        End Select
+    End Function
+
+    ' =====================================================================================
+    ' Runs a single Inventor COM call, retrying a few times (pumping the UI message loop and
+    ' backing off between attempts) if it fails with one of the transient RPC errors above.
+    ' Re-throws the last exception if it's not transient, or once retries are exhausted.
+    ' =====================================================================================
+    Public Function RetryInventorCall(Of T)(call_ As Func(Of T), Optional maxAttempts As Integer = 5) As T
+        Dim attempt As Integer = 0
+        Do
+            attempt += 1
+            Try
+                Return call_()
+            Catch ex As Exception When IsTransientRpcError(ex) AndAlso attempt < maxAttempts
+                System.Windows.Forms.Application.DoEvents()
+                System.Threading.Thread.Sleep(500 * attempt)
+            End Try
+        Loop
+    End Function
+
     Public IsLoadingInputs As Boolean = False
 
     ' =====================================================================================
