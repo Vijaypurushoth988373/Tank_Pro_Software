@@ -1165,7 +1165,15 @@ Public Class Form1
     '     document is already a copy (outside the master root), it is edited/saved as before.
     '==========================================================================================
 
-    Private Const MASTER_ROOT As String = "D:\Projects\Inventor"
+    ' Z: is the primary location; fall back to the D: copy if it isn't found there
+    ' (e.g. Z: not mapped/available on this machine).
+    Private ReadOnly Property MASTER_ROOT As String
+        Get
+            Dim zRoot As String = "Z:\Projects\Inventor"
+            Dim dRoot As String = "D:\Projects\Inventor"
+            Return If(IO.Directory.Exists(zRoot), zRoot, dRoot)
+        End Get
+    End Property
 
     ' Holds the folder of the most recently created WORKING COPY of the project.
     ' Set by Button4_Click (Edit 3D) after the copy is made, and consumed by
