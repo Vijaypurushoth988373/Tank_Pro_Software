@@ -27,6 +27,7 @@ Partial Class Form4
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TP_Skirt = New System.Windows.Forms.TabPage()
+        Me.CB_SKIRT_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.txt_SkirtS_ID = New System.Windows.Forms.TextBox()
         Me.Label32 = New System.Windows.Forms.Label()
@@ -36,6 +37,7 @@ Partial Class Form4
         Me.Label19 = New System.Windows.Forms.Label()
         Me.PB_LS_BEAM = New System.Windows.Forms.PictureBox()
         Me.TP_Base_Plate = New System.Windows.Forms.TabPage()
+        Me.CB_BP_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_SkirtS_BP_OD = New System.Windows.Forms.TextBox()
@@ -53,6 +55,7 @@ Partial Class Form4
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TP_Gusset_Plate = New System.Windows.Forms.TabPage()
+        Me.CB_GP_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txt_SkirtS_GP_THK = New System.Windows.Forms.TextBox()
@@ -64,6 +67,7 @@ Partial Class Form4
         Me.Label13 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TP_Anchor_Lug = New System.Windows.Forms.TabPage()
+        Me.CB_AL_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.txt_SkirtS_AL_1_OD = New System.Windows.Forms.TextBox()
@@ -92,10 +96,6 @@ Partial Class Form4
         Me.Label14 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.CB_BP_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
-        Me.CB_GP_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
-        Me.CB_AL_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
-        Me.CB_SKIRT_EDIT_PARAMS = New System.Windows.Forms.CheckBox()
         Me.Panel7.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TP_Skirt.SuspendLayout()
@@ -162,6 +162,17 @@ Partial Class Form4
         Me.TP_Skirt.TabIndex = 5
         Me.TP_Skirt.Text = "Skirt"
         Me.TP_Skirt.UseVisualStyleBackColor = True
+        '
+        'CB_SKIRT_EDIT_PARAMS
+        '
+        Me.CB_SKIRT_EDIT_PARAMS.AutoSize = True
+        Me.CB_SKIRT_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.CB_SKIRT_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
+        Me.CB_SKIRT_EDIT_PARAMS.Name = "CB_SKIRT_EDIT_PARAMS"
+        Me.CB_SKIRT_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
+        Me.CB_SKIRT_EDIT_PARAMS.TabIndex = 158
+        Me.CB_SKIRT_EDIT_PARAMS.Text = "Edit Parameters"
+        Me.CB_SKIRT_EDIT_PARAMS.UseVisualStyleBackColor = True
         '
         'Label31
         '
@@ -271,6 +282,17 @@ Partial Class Form4
         Me.TP_Base_Plate.TabIndex = 6
         Me.TP_Base_Plate.Text = "Base Plate"
         Me.TP_Base_Plate.UseVisualStyleBackColor = True
+        '
+        'CB_BP_EDIT_PARAMS
+        '
+        Me.CB_BP_EDIT_PARAMS.AutoSize = True
+        Me.CB_BP_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.CB_BP_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
+        Me.CB_BP_EDIT_PARAMS.Name = "CB_BP_EDIT_PARAMS"
+        Me.CB_BP_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
+        Me.CB_BP_EDIT_PARAMS.TabIndex = 137
+        Me.CB_BP_EDIT_PARAMS.Text = "Edit Parameters"
+        Me.CB_BP_EDIT_PARAMS.UseVisualStyleBackColor = True
         '
         'Label4
         '
@@ -459,6 +481,17 @@ Partial Class Form4
         Me.TP_Gusset_Plate.Text = "Gusset Plate"
         Me.TP_Gusset_Plate.UseVisualStyleBackColor = True
         '
+        'CB_GP_EDIT_PARAMS
+        '
+        Me.CB_GP_EDIT_PARAMS.AutoSize = True
+        Me.CB_GP_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.CB_GP_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
+        Me.CB_GP_EDIT_PARAMS.Name = "CB_GP_EDIT_PARAMS"
+        Me.CB_GP_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
+        Me.CB_GP_EDIT_PARAMS.TabIndex = 146
+        Me.CB_GP_EDIT_PARAMS.Text = "Edit Parameters"
+        Me.CB_GP_EDIT_PARAMS.UseVisualStyleBackColor = True
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -577,6 +610,17 @@ Partial Class Form4
         Me.TP_Anchor_Lug.TabIndex = 8
         Me.TP_Anchor_Lug.Text = "Anchor Lug"
         Me.TP_Anchor_Lug.UseVisualStyleBackColor = True
+        '
+        'CB_AL_EDIT_PARAMS
+        '
+        Me.CB_AL_EDIT_PARAMS.AutoSize = True
+        Me.CB_AL_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.CB_AL_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
+        Me.CB_AL_EDIT_PARAMS.Name = "CB_AL_EDIT_PARAMS"
+        Me.CB_AL_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
+        Me.CB_AL_EDIT_PARAMS.TabIndex = 157
+        Me.CB_AL_EDIT_PARAMS.Text = "Edit Parameters"
+        Me.CB_AL_EDIT_PARAMS.UseVisualStyleBackColor = True
         '
         'Panel2
         '
@@ -877,57 +921,13 @@ Partial Class Form4
         '
         'PictureBox17
         '
-        Me.PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), System.Drawing.Image)
+        Me.PictureBox17.Image = Global.Project_CD._24._12.My.Resources.Resources.WhatsApp_Image_2026_09_12_at_4_06_14_PM
         Me.PictureBox17.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(190, 85)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox17.TabIndex = 80
         Me.PictureBox17.TabStop = False
-        '
-        'CB_BP_EDIT_PARAMS
-        '
-        Me.CB_BP_EDIT_PARAMS.AutoSize = True
-        Me.CB_BP_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_BP_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
-        Me.CB_BP_EDIT_PARAMS.Name = "CB_BP_EDIT_PARAMS"
-        Me.CB_BP_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
-        Me.CB_BP_EDIT_PARAMS.TabIndex = 137
-        Me.CB_BP_EDIT_PARAMS.Text = "Edit Parameters"
-        Me.CB_BP_EDIT_PARAMS.UseVisualStyleBackColor = True
-        '
-        'CB_GP_EDIT_PARAMS
-        '
-        Me.CB_GP_EDIT_PARAMS.AutoSize = True
-        Me.CB_GP_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_GP_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
-        Me.CB_GP_EDIT_PARAMS.Name = "CB_GP_EDIT_PARAMS"
-        Me.CB_GP_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
-        Me.CB_GP_EDIT_PARAMS.TabIndex = 146
-        Me.CB_GP_EDIT_PARAMS.Text = "Edit Parameters"
-        Me.CB_GP_EDIT_PARAMS.UseVisualStyleBackColor = True
-        '
-        'CB_AL_EDIT_PARAMS
-        '
-        Me.CB_AL_EDIT_PARAMS.AutoSize = True
-        Me.CB_AL_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_AL_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
-        Me.CB_AL_EDIT_PARAMS.Name = "CB_AL_EDIT_PARAMS"
-        Me.CB_AL_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
-        Me.CB_AL_EDIT_PARAMS.TabIndex = 157
-        Me.CB_AL_EDIT_PARAMS.Text = "Edit Parameters"
-        Me.CB_AL_EDIT_PARAMS.UseVisualStyleBackColor = True
-        '
-        'CB_SKIRT_EDIT_PARAMS
-        '
-        Me.CB_SKIRT_EDIT_PARAMS.AutoSize = True
-        Me.CB_SKIRT_EDIT_PARAMS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.CB_SKIRT_EDIT_PARAMS.Location = New System.Drawing.Point(8, 273)
-        Me.CB_SKIRT_EDIT_PARAMS.Name = "CB_SKIRT_EDIT_PARAMS"
-        Me.CB_SKIRT_EDIT_PARAMS.Size = New System.Drawing.Size(114, 19)
-        Me.CB_SKIRT_EDIT_PARAMS.TabIndex = 158
-        Me.CB_SKIRT_EDIT_PARAMS.Text = "Edit Parameters"
-        Me.CB_SKIRT_EDIT_PARAMS.UseVisualStyleBackColor = True
         '
         'Form4
         '
@@ -937,6 +937,7 @@ Partial Class Form4
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.PictureBox17)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form4"
         Me.Text = "VESSEL / TANK 3D MODEL & DRAWING AUTOMATION"
         Me.Panel7.ResumeLayout(False)

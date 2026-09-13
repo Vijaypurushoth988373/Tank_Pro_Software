@@ -245,7 +245,7 @@ Partial Class Form2
         Me.TabPage4.Controls.Add(Me.Label19)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(752, 305)
+        Me.TabPage4.Size = New System.Drawing.Size(752, 556)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Leg Support"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -1016,7 +1016,7 @@ Partial Class Form2
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(752, 519)
+        Me.TabPage2.Size = New System.Drawing.Size(752, 556)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Closure Support Plate"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -1388,7 +1388,7 @@ Partial Class Form2
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(752, 519)
+        Me.TabPage3.Size = New System.Drawing.Size(752, 556)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Bottom Plate"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -1713,7 +1713,7 @@ Partial Class Form2
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(752, 519)
+        Me.TabPage5.Size = New System.Drawing.Size(752, 556)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "RF Pad"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -2018,7 +2018,7 @@ Partial Class Form2
         '
         'PictureBox17
         '
-        Me.PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), System.Drawing.Image)
+        Me.PictureBox17.Image = Global.Project_CD._24._12.My.Resources.Resources.WhatsApp_Image_2026_09_12_at_4_06_14_PM
         Me.PictureBox17.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(190, 85)
@@ -2034,6 +2034,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.PictureBox17)
         Me.Controls.Add(Me.TabControl1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
         Me.Text = "VESSEL / TANK 3D MODEL & DRAWING AUTOMATION"
         CType(Me.PB_BP_ANGLE, System.ComponentModel.ISupportInitialize).EndInit()

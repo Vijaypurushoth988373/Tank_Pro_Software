@@ -75,6 +75,40 @@ Partial Class Form5
         Me.txt_LugS_RF_THK = New System.Windows.Forms.TextBox()
         Me.PB_RFPAD_ = New System.Windows.Forms.PictureBox()
         Me.TP_Gusset_Plate_ = New System.Windows.Forms.TabPage()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.txt_LugS_GP2_MATERIAL = New System.Windows.Forms.ComboBox()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.txt_LugS_GP2_ARC_RADIUS = New System.Windows.Forms.TextBox()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.txt_LugS_GP2_LENGTH = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP2_CUT_HEIGHT = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP2_CUT_LENGTH = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP2_DIST = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP2_THK = New System.Windows.Forms.TextBox()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.txt_LugS_GP2_HEIGHT = New System.Windows.Forms.TextBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.txt_LugS_GP_MATERIAL = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txt_LugS_GP_ARC_RADIUS = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.txt_LugS_GP_LENGTH = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP_CUT_HEIGHT = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP_CUT_LENGTH = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP_DIST = New System.Windows.Forms.TextBox()
+        Me.txt_LugS_GP_THK = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txt_LugS_GP_HEIGHT = New System.Windows.Forms.TextBox()
         Me.CB_GP_PARAMS_EDIT = New System.Windows.Forms.CheckBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -103,40 +137,6 @@ Partial Class Form5
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.txt_LugS_GP_MATERIAL = New System.Windows.Forms.ComboBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txt_LugS_GP_ARC_RADIUS = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.txt_LugS_GP_LENGTH = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP_CUT_HEIGHT = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP_CUT_LENGTH = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP_DIST = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP_THK = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.txt_LugS_GP_HEIGHT = New System.Windows.Forms.TextBox()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.txt_LugS_GP2_MATERIAL = New System.Windows.Forms.ComboBox()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.txt_LugS_GP2_ARC_RADIUS = New System.Windows.Forms.TextBox()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.txt_LugS_GP2_LENGTH = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP2_CUT_HEIGHT = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP2_CUT_LENGTH = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP2_DIST = New System.Windows.Forms.TextBox()
-        Me.txt_LugS_GP2_THK = New System.Windows.Forms.TextBox()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.txt_LugS_GP2_HEIGHT = New System.Windows.Forms.TextBox()
         Me.Panel7.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -148,14 +148,14 @@ Partial Class Form5
         Me.TP_RF_Pad.SuspendLayout()
         CType(Me.PB_RFPAD_, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TP_Gusset_Plate_.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TP_Top_Plate.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel7
@@ -181,7 +181,7 @@ Partial Class Form5
         '
         'PictureBox17
         '
-        Me.PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), System.Drawing.Image)
+        Me.PictureBox17.Image = Global.Project_CD._24._12.My.Resources.Resources.WhatsApp_Image_2026_09_12_at_4_06_14_PM
         Me.PictureBox17.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(190, 85)
@@ -211,7 +211,7 @@ Partial Class Form5
         Me.TP_Base_Plate.Controls.Add(Me.PictureBox1)
         Me.TP_Base_Plate.Location = New System.Drawing.Point(4, 22)
         Me.TP_Base_Plate.Name = "TP_Base_Plate"
-        Me.TP_Base_Plate.Size = New System.Drawing.Size(752, 306)
+        Me.TP_Base_Plate.Size = New System.Drawing.Size(752, 587)
         Me.TP_Base_Plate.TabIndex = 6
         Me.TP_Base_Plate.Text = "Base Plate"
         Me.TP_Base_Plate.UseVisualStyleBackColor = True
@@ -587,7 +587,7 @@ Partial Class Form5
         Me.TP_RF_Pad.Controls.Add(Me.PB_RFPAD_)
         Me.TP_RF_Pad.Location = New System.Drawing.Point(4, 22)
         Me.TP_RF_Pad.Name = "TP_RF_Pad"
-        Me.TP_RF_Pad.Size = New System.Drawing.Size(752, 306)
+        Me.TP_RF_Pad.Size = New System.Drawing.Size(752, 587)
         Me.TP_RF_Pad.TabIndex = 7
         Me.TP_RF_Pad.Text = "RF Pad"
         Me.TP_RF_Pad.UseVisualStyleBackColor = True
@@ -742,6 +742,390 @@ Partial Class Form5
         Me.TP_Gusset_Plate_.TabIndex = 8
         Me.TP_Gusset_Plate_.Text = "Gusset Plate"
         Me.TP_Gusset_Plate_.UseVisualStyleBackColor = True
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_MATERIAL)
+        Me.Panel6.Controls.Add(Me.Label39)
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_ARC_RADIUS)
+        Me.Panel6.Controls.Add(Me.Label40)
+        Me.Panel6.Controls.Add(Me.Label41)
+        Me.Panel6.Controls.Add(Me.Label42)
+        Me.Panel6.Controls.Add(Me.Label43)
+        Me.Panel6.Controls.Add(Me.Label44)
+        Me.Panel6.Controls.Add(Me.Label45)
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_LENGTH)
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_CUT_HEIGHT)
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_CUT_LENGTH)
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_DIST)
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_THK)
+        Me.Panel6.Controls.Add(Me.Label46)
+        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_HEIGHT)
+        Me.Panel6.Location = New System.Drawing.Point(29, 320)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(335, 244)
+        Me.Panel6.TabIndex = 158
+        '
+        'txt_LugS_GP2_MATERIAL
+        '
+        Me.txt_LugS_GP2_MATERIAL.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_MATERIAL.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_MATERIAL.FormattingEnabled = True
+        Me.txt_LugS_GP2_MATERIAL.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
+        Me.txt_LugS_GP2_MATERIAL.Location = New System.Drawing.Point(145, 218)
+        Me.txt_LugS_GP2_MATERIAL.Name = "txt_LugS_GP2_MATERIAL"
+        Me.txt_LugS_GP2_MATERIAL.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_MATERIAL.TabIndex = 169
+        Me.txt_LugS_GP2_MATERIAL.Text = "A 240 Gr.316L"
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(62, 220)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(55, 15)
+        Me.Label39.TabIndex = 168
+        Me.Label39.Text = "Material"
+        '
+        'txt_LugS_GP2_ARC_RADIUS
+        '
+        Me.txt_LugS_GP2_ARC_RADIUS.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_ARC_RADIUS.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_ARC_RADIUS.Location = New System.Drawing.Point(145, 12)
+        Me.txt_LugS_GP2_ARC_RADIUS.Name = "txt_LugS_GP2_ARC_RADIUS"
+        Me.txt_LugS_GP2_ARC_RADIUS.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_ARC_RADIUS.TabIndex = 155
+        Me.txt_LugS_GP2_ARC_RADIUS.Text = "616"
+        Me.txt_LugS_GP2_ARC_RADIUS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(25, 14)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(92, 15)
+        Me.Label40.TabIndex = 167
+        Me.Label40.Text = "Arc Radius, mm"
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.Location = New System.Drawing.Point(49, 44)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(68, 15)
+        Me.Label41.TabIndex = 154
+        Me.Label41.Text = "Length, mm"
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.Location = New System.Drawing.Point(28, 190)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(89, 15)
+        Me.Label42.TabIndex = 163
+        Me.Label42.Text = "Cut Height, mm"
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.Location = New System.Drawing.Point(28, 160)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(89, 15)
+        Me.Label43.TabIndex = 164
+        Me.Label43.Text = "Cut Length, mm"
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Location = New System.Drawing.Point(1, 132)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(116, 15)
+        Me.Label44.TabIndex = 165
+        Me.Label44.Text = "Dist b/w plates, mm"
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.Location = New System.Drawing.Point(30, 104)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(87, 15)
+        Me.Label45.TabIndex = 166
+        Me.Label45.Text = "Thickness, mm"
+        '
+        'txt_LugS_GP2_LENGTH
+        '
+        Me.txt_LugS_GP2_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_LENGTH.Location = New System.Drawing.Point(145, 42)
+        Me.txt_LugS_GP2_LENGTH.Name = "txt_LugS_GP2_LENGTH"
+        Me.txt_LugS_GP2_LENGTH.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_LENGTH.TabIndex = 156
+        Me.txt_LugS_GP2_LENGTH.Text = "161"
+        Me.txt_LugS_GP2_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP2_CUT_HEIGHT
+        '
+        Me.txt_LugS_GP2_CUT_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_CUT_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_CUT_HEIGHT.Location = New System.Drawing.Point(145, 188)
+        Me.txt_LugS_GP2_CUT_HEIGHT.Name = "txt_LugS_GP2_CUT_HEIGHT"
+        Me.txt_LugS_GP2_CUT_HEIGHT.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_CUT_HEIGHT.TabIndex = 159
+        Me.txt_LugS_GP2_CUT_HEIGHT.Text = "170"
+        Me.txt_LugS_GP2_CUT_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP2_CUT_LENGTH
+        '
+        Me.txt_LugS_GP2_CUT_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_CUT_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_CUT_LENGTH.Location = New System.Drawing.Point(145, 158)
+        Me.txt_LugS_GP2_CUT_LENGTH.Name = "txt_LugS_GP2_CUT_LENGTH"
+        Me.txt_LugS_GP2_CUT_LENGTH.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_CUT_LENGTH.TabIndex = 160
+        Me.txt_LugS_GP2_CUT_LENGTH.Text = "123"
+        Me.txt_LugS_GP2_CUT_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP2_DIST
+        '
+        Me.txt_LugS_GP2_DIST.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_DIST.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_DIST.Location = New System.Drawing.Point(145, 130)
+        Me.txt_LugS_GP2_DIST.Name = "txt_LugS_GP2_DIST"
+        Me.txt_LugS_GP2_DIST.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_DIST.TabIndex = 161
+        Me.txt_LugS_GP2_DIST.Text = "50"
+        Me.txt_LugS_GP2_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP2_THK
+        '
+        Me.txt_LugS_GP2_THK.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_THK.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_THK.Location = New System.Drawing.Point(145, 102)
+        Me.txt_LugS_GP2_THK.Name = "txt_LugS_GP2_THK"
+        Me.txt_LugS_GP2_THK.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_THK.TabIndex = 162
+        Me.txt_LugS_GP2_THK.Text = "20"
+        Me.txt_LugS_GP2_THK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.Location = New System.Drawing.Point(49, 74)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(68, 15)
+        Me.Label46.TabIndex = 157
+        Me.Label46.Text = "Height, mm"
+        '
+        'txt_LugS_GP2_HEIGHT
+        '
+        Me.txt_LugS_GP2_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP2_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP2_HEIGHT.Location = New System.Drawing.Point(145, 72)
+        Me.txt_LugS_GP2_HEIGHT.Name = "txt_LugS_GP2_HEIGHT"
+        Me.txt_LugS_GP2_HEIGHT.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP2_HEIGHT.TabIndex = 158
+        Me.txt_LugS_GP2_HEIGHT.Text = "220"
+        Me.txt_LugS_GP2_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_MATERIAL)
+        Me.Panel5.Controls.Add(Me.Label11)
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_ARC_RADIUS)
+        Me.Panel5.Controls.Add(Me.Label12)
+        Me.Panel5.Controls.Add(Me.Label13)
+        Me.Panel5.Controls.Add(Me.Label17)
+        Me.Panel5.Controls.Add(Me.Label16)
+        Me.Panel5.Controls.Add(Me.Label18)
+        Me.Panel5.Controls.Add(Me.Label14)
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_LENGTH)
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_CUT_HEIGHT)
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_CUT_LENGTH)
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_DIST)
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_THK)
+        Me.Panel5.Controls.Add(Me.Label15)
+        Me.Panel5.Controls.Add(Me.txt_LugS_GP_HEIGHT)
+        Me.Panel5.Location = New System.Drawing.Point(29, 35)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(335, 244)
+        Me.Panel5.TabIndex = 157
+        '
+        'txt_LugS_GP_MATERIAL
+        '
+        Me.txt_LugS_GP_MATERIAL.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_MATERIAL.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_MATERIAL.FormattingEnabled = True
+        Me.txt_LugS_GP_MATERIAL.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
+        Me.txt_LugS_GP_MATERIAL.Location = New System.Drawing.Point(145, 218)
+        Me.txt_LugS_GP_MATERIAL.Name = "txt_LugS_GP_MATERIAL"
+        Me.txt_LugS_GP_MATERIAL.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_MATERIAL.TabIndex = 169
+        Me.txt_LugS_GP_MATERIAL.Text = "A 240 Gr.316L"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(62, 220)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(55, 15)
+        Me.Label11.TabIndex = 168
+        Me.Label11.Text = "Material"
+        '
+        'txt_LugS_GP_ARC_RADIUS
+        '
+        Me.txt_LugS_GP_ARC_RADIUS.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_ARC_RADIUS.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_ARC_RADIUS.Location = New System.Drawing.Point(145, 12)
+        Me.txt_LugS_GP_ARC_RADIUS.Name = "txt_LugS_GP_ARC_RADIUS"
+        Me.txt_LugS_GP_ARC_RADIUS.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_ARC_RADIUS.TabIndex = 155
+        Me.txt_LugS_GP_ARC_RADIUS.Text = "616"
+        Me.txt_LugS_GP_ARC_RADIUS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(25, 14)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(92, 15)
+        Me.Label12.TabIndex = 167
+        Me.Label12.Text = "Arc Radius, mm"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(49, 44)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(68, 15)
+        Me.Label13.TabIndex = 154
+        Me.Label13.Text = "Length, mm"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(28, 190)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(89, 15)
+        Me.Label17.TabIndex = 163
+        Me.Label17.Text = "Cut Height, mm"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(28, 160)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(89, 15)
+        Me.Label16.TabIndex = 164
+        Me.Label16.Text = "Cut Length, mm"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(1, 132)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(116, 15)
+        Me.Label18.TabIndex = 165
+        Me.Label18.Text = "Dist b/w plates, mm"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(30, 104)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(87, 15)
+        Me.Label14.TabIndex = 166
+        Me.Label14.Text = "Thickness, mm"
+        '
+        'txt_LugS_GP_LENGTH
+        '
+        Me.txt_LugS_GP_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_LENGTH.Location = New System.Drawing.Point(145, 42)
+        Me.txt_LugS_GP_LENGTH.Name = "txt_LugS_GP_LENGTH"
+        Me.txt_LugS_GP_LENGTH.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_LENGTH.TabIndex = 156
+        Me.txt_LugS_GP_LENGTH.Text = "161"
+        Me.txt_LugS_GP_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP_CUT_HEIGHT
+        '
+        Me.txt_LugS_GP_CUT_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_CUT_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_CUT_HEIGHT.Location = New System.Drawing.Point(145, 188)
+        Me.txt_LugS_GP_CUT_HEIGHT.Name = "txt_LugS_GP_CUT_HEIGHT"
+        Me.txt_LugS_GP_CUT_HEIGHT.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_CUT_HEIGHT.TabIndex = 159
+        Me.txt_LugS_GP_CUT_HEIGHT.Text = "170"
+        Me.txt_LugS_GP_CUT_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP_CUT_LENGTH
+        '
+        Me.txt_LugS_GP_CUT_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_CUT_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_CUT_LENGTH.Location = New System.Drawing.Point(145, 158)
+        Me.txt_LugS_GP_CUT_LENGTH.Name = "txt_LugS_GP_CUT_LENGTH"
+        Me.txt_LugS_GP_CUT_LENGTH.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_CUT_LENGTH.TabIndex = 160
+        Me.txt_LugS_GP_CUT_LENGTH.Text = "123"
+        Me.txt_LugS_GP_CUT_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP_DIST
+        '
+        Me.txt_LugS_GP_DIST.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_DIST.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_DIST.Location = New System.Drawing.Point(145, 130)
+        Me.txt_LugS_GP_DIST.Name = "txt_LugS_GP_DIST"
+        Me.txt_LugS_GP_DIST.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_DIST.TabIndex = 161
+        Me.txt_LugS_GP_DIST.Text = "50"
+        Me.txt_LugS_GP_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'txt_LugS_GP_THK
+        '
+        Me.txt_LugS_GP_THK.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_THK.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_THK.Location = New System.Drawing.Point(145, 102)
+        Me.txt_LugS_GP_THK.Name = "txt_LugS_GP_THK"
+        Me.txt_LugS_GP_THK.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_THK.TabIndex = 162
+        Me.txt_LugS_GP_THK.Text = "20"
+        Me.txt_LugS_GP_THK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(49, 74)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(68, 15)
+        Me.Label15.TabIndex = 157
+        Me.Label15.Text = "Height, mm"
+        '
+        'txt_LugS_GP_HEIGHT
+        '
+        Me.txt_LugS_GP_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txt_LugS_GP_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.txt_LugS_GP_HEIGHT.Location = New System.Drawing.Point(145, 72)
+        Me.txt_LugS_GP_HEIGHT.Name = "txt_LugS_GP_HEIGHT"
+        Me.txt_LugS_GP_HEIGHT.Size = New System.Drawing.Size(167, 22)
+        Me.txt_LugS_GP_HEIGHT.TabIndex = 158
+        Me.txt_LugS_GP_HEIGHT.Text = "220"
+        Me.txt_LugS_GP_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'CB_GP_PARAMS_EDIT
         '
@@ -1054,390 +1438,6 @@ Partial Class Form5
         Me.Label19.TabIndex = 163
         Me.Label19.Text = "Top Plate Parameters"
         '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_MATERIAL)
-        Me.Panel5.Controls.Add(Me.Label11)
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_ARC_RADIUS)
-        Me.Panel5.Controls.Add(Me.Label12)
-        Me.Panel5.Controls.Add(Me.Label13)
-        Me.Panel5.Controls.Add(Me.Label17)
-        Me.Panel5.Controls.Add(Me.Label16)
-        Me.Panel5.Controls.Add(Me.Label18)
-        Me.Panel5.Controls.Add(Me.Label14)
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_LENGTH)
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_CUT_HEIGHT)
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_CUT_LENGTH)
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_DIST)
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_THK)
-        Me.Panel5.Controls.Add(Me.Label15)
-        Me.Panel5.Controls.Add(Me.txt_LugS_GP_HEIGHT)
-        Me.Panel5.Location = New System.Drawing.Point(29, 35)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(335, 244)
-        Me.Panel5.TabIndex = 157
-        '
-        'txt_LugS_GP_MATERIAL
-        '
-        Me.txt_LugS_GP_MATERIAL.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_MATERIAL.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_MATERIAL.FormattingEnabled = True
-        Me.txt_LugS_GP_MATERIAL.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.txt_LugS_GP_MATERIAL.Location = New System.Drawing.Point(145, 218)
-        Me.txt_LugS_GP_MATERIAL.Name = "txt_LugS_GP_MATERIAL"
-        Me.txt_LugS_GP_MATERIAL.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_MATERIAL.TabIndex = 169
-        Me.txt_LugS_GP_MATERIAL.Text = "A 240 Gr.316L"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(62, 220)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(55, 15)
-        Me.Label11.TabIndex = 168
-        Me.Label11.Text = "Material"
-        '
-        'txt_LugS_GP_ARC_RADIUS
-        '
-        Me.txt_LugS_GP_ARC_RADIUS.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_ARC_RADIUS.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_ARC_RADIUS.Location = New System.Drawing.Point(145, 12)
-        Me.txt_LugS_GP_ARC_RADIUS.Name = "txt_LugS_GP_ARC_RADIUS"
-        Me.txt_LugS_GP_ARC_RADIUS.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_ARC_RADIUS.TabIndex = 155
-        Me.txt_LugS_GP_ARC_RADIUS.Text = "616"
-        Me.txt_LugS_GP_ARC_RADIUS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(25, 14)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(92, 15)
-        Me.Label12.TabIndex = 167
-        Me.Label12.Text = "Arc Radius, mm"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(49, 44)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(68, 15)
-        Me.Label13.TabIndex = 154
-        Me.Label13.Text = "Length, mm"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(28, 190)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(89, 15)
-        Me.Label17.TabIndex = 163
-        Me.Label17.Text = "Cut Height, mm"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(28, 160)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(89, 15)
-        Me.Label16.TabIndex = 164
-        Me.Label16.Text = "Cut Length, mm"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(1, 132)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(116, 15)
-        Me.Label18.TabIndex = 165
-        Me.Label18.Text = "Dist b/w plates, mm"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(30, 104)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(87, 15)
-        Me.Label14.TabIndex = 166
-        Me.Label14.Text = "Thickness, mm"
-        '
-        'txt_LugS_GP_LENGTH
-        '
-        Me.txt_LugS_GP_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_LENGTH.Location = New System.Drawing.Point(145, 42)
-        Me.txt_LugS_GP_LENGTH.Name = "txt_LugS_GP_LENGTH"
-        Me.txt_LugS_GP_LENGTH.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_LENGTH.TabIndex = 156
-        Me.txt_LugS_GP_LENGTH.Text = "161"
-        Me.txt_LugS_GP_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP_CUT_HEIGHT
-        '
-        Me.txt_LugS_GP_CUT_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_CUT_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_CUT_HEIGHT.Location = New System.Drawing.Point(145, 188)
-        Me.txt_LugS_GP_CUT_HEIGHT.Name = "txt_LugS_GP_CUT_HEIGHT"
-        Me.txt_LugS_GP_CUT_HEIGHT.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_CUT_HEIGHT.TabIndex = 159
-        Me.txt_LugS_GP_CUT_HEIGHT.Text = "170"
-        Me.txt_LugS_GP_CUT_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP_CUT_LENGTH
-        '
-        Me.txt_LugS_GP_CUT_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_CUT_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_CUT_LENGTH.Location = New System.Drawing.Point(145, 158)
-        Me.txt_LugS_GP_CUT_LENGTH.Name = "txt_LugS_GP_CUT_LENGTH"
-        Me.txt_LugS_GP_CUT_LENGTH.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_CUT_LENGTH.TabIndex = 160
-        Me.txt_LugS_GP_CUT_LENGTH.Text = "123"
-        Me.txt_LugS_GP_CUT_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP_DIST
-        '
-        Me.txt_LugS_GP_DIST.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_DIST.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_DIST.Location = New System.Drawing.Point(145, 130)
-        Me.txt_LugS_GP_DIST.Name = "txt_LugS_GP_DIST"
-        Me.txt_LugS_GP_DIST.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_DIST.TabIndex = 161
-        Me.txt_LugS_GP_DIST.Text = "50"
-        Me.txt_LugS_GP_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP_THK
-        '
-        Me.txt_LugS_GP_THK.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_THK.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_THK.Location = New System.Drawing.Point(145, 102)
-        Me.txt_LugS_GP_THK.Name = "txt_LugS_GP_THK"
-        Me.txt_LugS_GP_THK.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_THK.TabIndex = 162
-        Me.txt_LugS_GP_THK.Text = "20"
-        Me.txt_LugS_GP_THK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(49, 74)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(68, 15)
-        Me.Label15.TabIndex = 157
-        Me.Label15.Text = "Height, mm"
-        '
-        'txt_LugS_GP_HEIGHT
-        '
-        Me.txt_LugS_GP_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP_HEIGHT.Location = New System.Drawing.Point(145, 72)
-        Me.txt_LugS_GP_HEIGHT.Name = "txt_LugS_GP_HEIGHT"
-        Me.txt_LugS_GP_HEIGHT.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP_HEIGHT.TabIndex = 158
-        Me.txt_LugS_GP_HEIGHT.Text = "220"
-        Me.txt_LugS_GP_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_MATERIAL)
-        Me.Panel6.Controls.Add(Me.Label39)
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_ARC_RADIUS)
-        Me.Panel6.Controls.Add(Me.Label40)
-        Me.Panel6.Controls.Add(Me.Label41)
-        Me.Panel6.Controls.Add(Me.Label42)
-        Me.Panel6.Controls.Add(Me.Label43)
-        Me.Panel6.Controls.Add(Me.Label44)
-        Me.Panel6.Controls.Add(Me.Label45)
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_LENGTH)
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_CUT_HEIGHT)
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_CUT_LENGTH)
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_DIST)
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_THK)
-        Me.Panel6.Controls.Add(Me.Label46)
-        Me.Panel6.Controls.Add(Me.txt_LugS_GP2_HEIGHT)
-        Me.Panel6.Location = New System.Drawing.Point(29, 320)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(335, 244)
-        Me.Panel6.TabIndex = 158
-        '
-        'txt_LugS_GP2_MATERIAL
-        '
-        Me.txt_LugS_GP2_MATERIAL.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_MATERIAL.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_MATERIAL.FormattingEnabled = True
-        Me.txt_LugS_GP2_MATERIAL.Items.AddRange(New Object() {"A36", "S275JR", "IS 2062 Gr.A/B", "A 285 Gr.C", "A-516 Gr.60", "A-516 Gr.65", "A-516 Gr.70", "A 516 Gr.60/70", "A 240 Gr.304", "A 240 Gr.304L", "A 240 Gr.304H", "A 240 Gr.316", "A 240 Gr.316L", "A 240 Gr.321", "A 240 Gr.347", "A 240 Gr.410", "A 240 Gr.410S", "A276 Gr.316L", "A 312 TP316L", "A-182 Gr.F316L", "SS 316", "A325M Type-1 / A563M Class 10S / F436M", "A193 Gr.B7 / A194 Gr.2H / F436", "Neoprene Rubber", "Brass"})
-        Me.txt_LugS_GP2_MATERIAL.Location = New System.Drawing.Point(145, 218)
-        Me.txt_LugS_GP2_MATERIAL.Name = "txt_LugS_GP2_MATERIAL"
-        Me.txt_LugS_GP2_MATERIAL.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_MATERIAL.TabIndex = 169
-        Me.txt_LugS_GP2_MATERIAL.Text = "A 240 Gr.316L"
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(62, 220)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(55, 15)
-        Me.Label39.TabIndex = 168
-        Me.Label39.Text = "Material"
-        '
-        'txt_LugS_GP2_ARC_RADIUS
-        '
-        Me.txt_LugS_GP2_ARC_RADIUS.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_ARC_RADIUS.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_ARC_RADIUS.Location = New System.Drawing.Point(145, 12)
-        Me.txt_LugS_GP2_ARC_RADIUS.Name = "txt_LugS_GP2_ARC_RADIUS"
-        Me.txt_LugS_GP2_ARC_RADIUS.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_ARC_RADIUS.TabIndex = 155
-        Me.txt_LugS_GP2_ARC_RADIUS.Text = "616"
-        Me.txt_LugS_GP2_ARC_RADIUS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(25, 14)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(92, 15)
-        Me.Label40.TabIndex = 167
-        Me.Label40.Text = "Arc Radius, mm"
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.Location = New System.Drawing.Point(49, 44)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(68, 15)
-        Me.Label41.TabIndex = 154
-        Me.Label41.Text = "Length, mm"
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.Location = New System.Drawing.Point(28, 190)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(89, 15)
-        Me.Label42.TabIndex = 163
-        Me.Label42.Text = "Cut Height, mm"
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label43.Location = New System.Drawing.Point(28, 160)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(89, 15)
-        Me.Label43.TabIndex = 164
-        Me.Label43.Text = "Cut Length, mm"
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.Location = New System.Drawing.Point(1, 132)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(116, 15)
-        Me.Label44.TabIndex = 165
-        Me.Label44.Text = "Dist b/w plates, mm"
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.Location = New System.Drawing.Point(30, 104)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(87, 15)
-        Me.Label45.TabIndex = 166
-        Me.Label45.Text = "Thickness, mm"
-        '
-        'txt_LugS_GP2_LENGTH
-        '
-        Me.txt_LugS_GP2_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_LENGTH.Location = New System.Drawing.Point(145, 42)
-        Me.txt_LugS_GP2_LENGTH.Name = "txt_LugS_GP2_LENGTH"
-        Me.txt_LugS_GP2_LENGTH.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_LENGTH.TabIndex = 156
-        Me.txt_LugS_GP2_LENGTH.Text = "161"
-        Me.txt_LugS_GP2_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP2_CUT_HEIGHT
-        '
-        Me.txt_LugS_GP2_CUT_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_CUT_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_CUT_HEIGHT.Location = New System.Drawing.Point(145, 188)
-        Me.txt_LugS_GP2_CUT_HEIGHT.Name = "txt_LugS_GP2_CUT_HEIGHT"
-        Me.txt_LugS_GP2_CUT_HEIGHT.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_CUT_HEIGHT.TabIndex = 159
-        Me.txt_LugS_GP2_CUT_HEIGHT.Text = "170"
-        Me.txt_LugS_GP2_CUT_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP2_CUT_LENGTH
-        '
-        Me.txt_LugS_GP2_CUT_LENGTH.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_CUT_LENGTH.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_CUT_LENGTH.Location = New System.Drawing.Point(145, 158)
-        Me.txt_LugS_GP2_CUT_LENGTH.Name = "txt_LugS_GP2_CUT_LENGTH"
-        Me.txt_LugS_GP2_CUT_LENGTH.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_CUT_LENGTH.TabIndex = 160
-        Me.txt_LugS_GP2_CUT_LENGTH.Text = "123"
-        Me.txt_LugS_GP2_CUT_LENGTH.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP2_DIST
-        '
-        Me.txt_LugS_GP2_DIST.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_DIST.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_DIST.Location = New System.Drawing.Point(145, 130)
-        Me.txt_LugS_GP2_DIST.Name = "txt_LugS_GP2_DIST"
-        Me.txt_LugS_GP2_DIST.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_DIST.TabIndex = 161
-        Me.txt_LugS_GP2_DIST.Text = "50"
-        Me.txt_LugS_GP2_DIST.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'txt_LugS_GP2_THK
-        '
-        Me.txt_LugS_GP2_THK.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_THK.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_THK.Location = New System.Drawing.Point(145, 102)
-        Me.txt_LugS_GP2_THK.Name = "txt_LugS_GP2_THK"
-        Me.txt_LugS_GP2_THK.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_THK.TabIndex = 162
-        Me.txt_LugS_GP2_THK.Text = "20"
-        Me.txt_LugS_GP2_THK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'Label46
-        '
-        Me.Label46.AutoSize = True
-        Me.Label46.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.Location = New System.Drawing.Point(49, 74)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(68, 15)
-        Me.Label46.TabIndex = 157
-        Me.Label46.Text = "Height, mm"
-        '
-        'txt_LugS_GP2_HEIGHT
-        '
-        Me.txt_LugS_GP2_HEIGHT.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txt_LugS_GP2_HEIGHT.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.txt_LugS_GP2_HEIGHT.Location = New System.Drawing.Point(145, 72)
-        Me.txt_LugS_GP2_HEIGHT.Name = "txt_LugS_GP2_HEIGHT"
-        Me.txt_LugS_GP2_HEIGHT.Size = New System.Drawing.Size(167, 22)
-        Me.txt_LugS_GP2_HEIGHT.TabIndex = 158
-        Me.txt_LugS_GP2_HEIGHT.Text = "220"
-        Me.txt_LugS_GP2_HEIGHT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1446,6 +1446,7 @@ Partial Class Form5
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.PictureBox17)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form5"
         Me.Text = "VESSEL / TANK 3D MODEL & DRAWING AUTOMATION"
         Me.Panel7.ResumeLayout(False)
@@ -1465,6 +1466,10 @@ Partial Class Form5
         CType(Me.PB_RFPAD_, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TP_Gusset_Plate_.ResumeLayout(False)
         Me.TP_Gusset_Plate_.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TP_Top_Plate.ResumeLayout(False)
         Me.TP_Top_Plate.PerformLayout()
@@ -1474,10 +1479,6 @@ Partial Class Form5
         Me.Panel3.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

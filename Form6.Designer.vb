@@ -58,7 +58,7 @@ Partial Class Form6
         '
         'PictureBox17
         '
-        Me.PictureBox17.Image = CType(resources.GetObject("PictureBox17.Image"), System.Drawing.Image)
+        Me.PictureBox17.Image = Global.Project_CD._24._12.My.Resources.Resources.WhatsApp_Image_2026_09_12_at_4_06_14_PM
         Me.PictureBox17.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(190, 85)
@@ -356,6 +356,7 @@ Partial Class Form6
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.PictureBox17)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form6"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "VESSEL / TANK 3D MODEL & DRAWING AUTOMATION"

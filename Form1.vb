@@ -23,7 +23,6 @@ Public Class Form1
         DGV_Nozzle_Tab_Shell.Columns("Stiffener_Shell").Visible = False
         Panel_EL.Visible = False
         TC_Dip_Pipe.Visible = False
-        Panel12.Visible = False
 
         CB_STIFF_1.Checked = True
         CB_STIFF_2.Checked = True
@@ -24177,23 +24176,23 @@ NextAngle:
 
         If ShellLength < 600 Then
 
-            Update_3D.Visible = False
-            Edit_3D.Visible = False
+            'Update_3D.Visible = False
+            'Edit_3D.Visible = False
 
-            Button4.Visible = True
-            Button5.Visible = True
+            'Button4.Visible = True
+            'Button5.Visible = True
 
-            RB_OT_GLR.Visible = False
+            'RB_OT_GLR.Visible = False
 
         Else
 
-            Update_3D.Visible = True
-            Edit_3D.Visible = True
+            'Update_3D.Visible = True
+            'Edit_3D.Visible = True
 
-            Button4.Visible = False
-            Button5.Visible = False
+            'Button4.Visible = False
+            'Button5.Visible = False
 
-            RB_OT_GLR.Visible = True
+            'RB_OT_GLR.Visible = True
 
         End If
 
@@ -24952,6 +24951,8 @@ NextAngle:
     Private Sub txt_Shell_Finished_Thk_TextChanged(sender As Object, e As EventArgs) Handles txt_Shell_Finished_Thk.TextChanged
         UpdateReinforcementRingDimensions()
     End Sub
+
+
 
 #End Region
 

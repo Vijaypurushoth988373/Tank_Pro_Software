@@ -297,6 +297,10 @@
     <None Include="resources\Saudi-Aramco-logo.png" />
     <None Include="resources\ADNOC-Logo.jpg" />
     <None Include="resources\Qatar_Logo.jpg" />
+    <None Include="resources\WhatsApp Image 2026-09-12 at 4.06.14 PM %283%29.jpeg" />
+    <None Include="resources\WhatsApp Image 2026-09-12 at 4.06.14 PM %282%29.jpeg" />
+    <None Include="resources\WhatsApp Image 2026-09-12 at 4.06.14 PM %281%29.jpeg" />
+    <None Include="resources\WhatsApp Image 2026-09-12 at 4.06.14 PM.jpeg" />
     <Content Include="Screenshot 2026-02-17 083929.ico" />
   </ItemGroup>
   <ItemGroup>
