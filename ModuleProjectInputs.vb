@@ -52,6 +52,34 @@ Public Module ProjectInputsManager
     End Sub
 
     ' =====================================================================================
+    ' Blocks (pumping the UI message loop) until Inventor.Application has fully left the
+    ' Running Object Table, or the timeout elapses. Inventor.Application.Quit() returns as
+    ' soon as Inventor acknowledges the request, not once the process has actually finished
+    ' tearing down (unloading add-ins, releasing file locks, deregistering from the ROT) —
+    ' proceeding immediately to grab/start a new instance can hit the still-dying old process
+    ' and throw "The RPC server is unavailable". Call this right after Quit(), before
+    ' releasing COM references or requesting another Inventor instance.
+    ' =====================================================================================
+    Public Sub WaitForInventorClosed(Optional timeoutMs As Integer = 60000)
+        Dim sw As New Diagnostics.Stopwatch()
+        sw.Start()
+        While sw.ElapsedMilliseconds < timeoutMs
+            Try
+                Dim stillRunning = Runtime.InteropServices.Marshal.GetActiveObject("Inventor.Application")
+                If stillRunning IsNot Nothing Then
+                    Runtime.InteropServices.Marshal.ReleaseComObject(stillRunning)
+                End If
+            Catch
+                ' GetActiveObject throws once nothing is registered in the ROT anymore —
+                ' Inventor has fully closed.
+                Exit Sub
+            End Try
+            System.Windows.Forms.Application.DoEvents()
+            System.Threading.Thread.Sleep(300)
+        End While
+    End Sub
+
+    ' =====================================================================================
     ' True for the well-known transient RPC HRESULTs Inventor throws while its COM server is
     ' still settling right after launch — even after invApp.Ready reports True, the very next
     ' call can still race the process and fail once before succeeding. Used to decide whether
