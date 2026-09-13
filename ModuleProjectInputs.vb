@@ -24,17 +24,30 @@ Public Module ProjectInputsManager
     ' once, right after creating a NEW Inventor instance (not one grabbed via
     ' Marshal.GetActiveObject, which is already running), before making any other calls on it.
     ' =====================================================================================
-    Public Sub WaitForInventorReady(invApp As Inventor.Application, Optional timeoutMs As Integer = 30000)
+    Public Sub WaitForInventorReady(invApp As Inventor.Application, Optional timeoutMs As Integer = 60000)
+        ' Give the freshly-launched process a moment to spin up before even attempting the
+        ' first COM call — polling immediately just spends the timeout hitting the RPC error
+        ' over and over while Inventor's server-side endpoint isn't listening yet at all.
+        System.Windows.Forms.Application.DoEvents()
+        System.Threading.Thread.Sleep(2000)
+
         Dim sw As New Diagnostics.Stopwatch()
         sw.Start()
         While sw.ElapsedMilliseconds < timeoutMs
             Try
-                If invApp.Ready Then Exit Sub
+                If invApp.Ready Then
+                    ' invApp.Ready can flip True slightly before Inventor's other COM
+                    ' subsystems (DesignProjectManager, etc.) are actually reachable —
+                    ' a short grace period here avoids handing back control right into
+                    ' another race.
+                    System.Threading.Thread.Sleep(1500)
+                    Exit Sub
+                End If
             Catch
                 ' COM server not answering yet — keep waiting.
             End Try
             System.Windows.Forms.Application.DoEvents()
-            System.Threading.Thread.Sleep(250)
+            System.Threading.Thread.Sleep(500)
         End While
     End Sub
 
@@ -64,7 +77,7 @@ Public Module ProjectInputsManager
     ' backing off between attempts) if it fails with one of the transient RPC errors above.
     ' Re-throws the last exception if it's not transient, or once retries are exhausted.
     ' =====================================================================================
-    Public Function RetryInventorCall(Of T)(call_ As Func(Of T), Optional maxAttempts As Integer = 5) As T
+    Public Function RetryInventorCall(Of T)(call_ As Func(Of T), Optional maxAttempts As Integer = 10) As T
         Dim attempt As Integer = 0
         Do
             attempt += 1
@@ -72,7 +85,7 @@ Public Module ProjectInputsManager
                 Return call_()
             Catch ex As Exception When IsTransientRpcError(ex) AndAlso attempt < maxAttempts
                 System.Windows.Forms.Application.DoEvents()
-                System.Threading.Thread.Sleep(500 * attempt)
+                System.Threading.Thread.Sleep(Math.Min(1000 * attempt, 5000))
             End Try
         Loop
     End Function
