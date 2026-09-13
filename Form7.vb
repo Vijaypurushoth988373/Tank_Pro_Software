@@ -60,6 +60,10 @@ Public Class Form7
                 Try
                     invApp = CType(CreateObject("Inventor.Application"), Inventor.Application)
                     invApp.Visible = True
+                    ' A freshly-launched Inventor process isn't ready to answer COM calls
+                    ' yet — wait for it, otherwise the next call can fail with "The RPC
+                    ' server is unavailable".
+                    WaitForInventorReady(invApp)
                 Catch ex As Exception
                     invApp = Nothing
                 End Try
