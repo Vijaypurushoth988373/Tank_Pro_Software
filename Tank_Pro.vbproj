@@ -112,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BOM.vb" />
+    <Compile Include="My Project\ApplicationEvents.vb" />
     <Compile Include="Client_UI.Designer.vb">
       <DependentUpon>Client_UI.vb</DependentUpon>
     </Compile>
