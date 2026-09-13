@@ -7102,7 +7102,15 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
 
 #Region "EDIT FUNCTIONS"
 
-    Private Const MASTER_ROOT As String = "D:\HORIZONTAL_TANK"
+    ' Z: is the primary location; fall back to the D: copy if it isn't found there
+    ' (e.g. Z: not mapped/available on this machine).
+    Private ReadOnly Property MASTER_ROOT As String
+        Get
+            Dim zRoot As String = "Z:\HORIZONTAL_TANK"
+            Dim dRoot As String = "D:\HORIZONTAL_TANK"
+            Return If(IO.Directory.Exists(zRoot), zRoot, dRoot)
+        End Get
+    End Property
     Private CurrentProjectFolder As String = String.Empty
 
     Private Sub Edit_3D_Click(sender As Object, e As EventArgs) Handles Edit_3D.Click, Button2.Click
