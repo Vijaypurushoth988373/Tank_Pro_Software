@@ -5549,14 +5549,20 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         If Not IO.File.Exists(ipjPath) Then Return Nothing
 
         Try
-            Dim dpm As Inventor.DesignProjectManager = invApp.DesignProjectManager
+            ' Even after invApp.Ready reports True, the very next COM call into Inventor can
+            ' still race the process and fail once with a transient RPC error before
+            ' succeeding — so each individual call here is retried a few times.
+            Dim dpm As Inventor.DesignProjectManager = RetryInventorCall(Function() invApp.DesignProjectManager)
 
             '==================================================
             ' 1) Check if project already added
             '==================================================
             For Each proj As Inventor.DesignProject In dpm.DesignProjects
                 If String.Equals(proj.FullFileName, ipjPath, StringComparison.OrdinalIgnoreCase) Then
-                    proj.Activate()
+                    RetryInventorCall(Function() As Object
+                                           proj.Activate()
+                                           Return Nothing
+                                       End Function)
                     Return proj
                 End If
             Next
@@ -5564,12 +5570,15 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
             '==================================================
             ' 2) Add EXISTING project (.ipj)
             '==================================================
-            Dim newProj As Inventor.DesignProject = dpm.DesignProjects.AddExisting(ipjPath)
+            Dim newProj As Inventor.DesignProject = RetryInventorCall(Function() dpm.DesignProjects.AddExisting(ipjPath))
 
             '==================================================
             ' 3) Activate
             '==================================================
-            newProj.Activate()
+            RetryInventorCall(Function() As Object
+                                   newProj.Activate()
+                                   Return Nothing
+                               End Function)
 
             Return newProj
 
