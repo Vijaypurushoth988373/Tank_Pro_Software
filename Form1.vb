@@ -1702,9 +1702,9 @@ Public Class Form1
             For Each proj As Inventor.DesignProject In dpm.DesignProjects
                 If String.Equals(proj.FullFileName, ipjPath, StringComparison.OrdinalIgnoreCase) Then
                     RetryInventorCall(Function() As Object
-                                           proj.Activate()
-                                           Return Nothing
-                                       End Function)
+                                          proj.Activate()
+                                          Return Nothing
+                                      End Function)
                     Return proj
                 End If
             Next
@@ -1718,9 +1718,9 @@ Public Class Form1
             ' 3) Activate
             '==================================================
             RetryInventorCall(Function() As Object
-                                   newProj.Activate()
-                                   Return Nothing
-                               End Function)
+                                  newProj.Activate()
+                                  Return Nothing
+                              End Function)
 
             Return newProj
 
