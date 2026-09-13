@@ -15,6 +15,29 @@ Imports System.Reflection
 
 Public Module ProjectInputsManager
 
+    ' =====================================================================================
+    ' Blocks (pumping the UI message loop) until a freshly-started Inventor.Application COM
+    ' server has finished initializing, or the timeout elapses. Activator.CreateInstance for
+    ' Inventor.Application returns as soon as the process is launched, well before Inventor
+    ' is actually ready to answer COM calls — calling straight into DesignProjects.AddExisting
+    ' or similar right after can throw "The RPC server is unavailable" (0x800706BA). Call this
+    ' once, right after creating a NEW Inventor instance (not one grabbed via
+    ' Marshal.GetActiveObject, which is already running), before making any other calls on it.
+    ' =====================================================================================
+    Public Sub WaitForInventorReady(invApp As Inventor.Application, Optional timeoutMs As Integer = 30000)
+        Dim sw As New Diagnostics.Stopwatch()
+        sw.Start()
+        While sw.ElapsedMilliseconds < timeoutMs
+            Try
+                If invApp.Ready Then Exit Sub
+            Catch
+                ' COM server not answering yet — keep waiting.
+            End Try
+            System.Windows.Forms.Application.DoEvents()
+            System.Threading.Thread.Sleep(250)
+        End While
+    End Sub
+
     Public IsLoadingInputs As Boolean = False
 
     ' =====================================================================================
