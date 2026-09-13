@@ -1189,17 +1189,24 @@ Public Class Form1
             '==================================================
             ' 1) GET OR START INVENTOR
             '==================================================
+            Dim startedNewInventor As Boolean = False
             Try
                 invApp = CType(Marshal.GetActiveObject("Inventor.Application"), Inventor.Application)
             Catch
                 invApp = CType(Activator.CreateInstance(Type.GetTypeFromProgID("Inventor.Application")), Inventor.Application)
                 invApp.Visible = True
+                startedNewInventor = True
             End Try
 
             If invApp Is Nothing Then
                 MessageBox.Show("❌ Unable to start Inventor.", "Edit 3D")
                 Exit Sub
             End If
+
+            ' A freshly-launched Inventor process isn't ready to answer COM calls yet —
+            ' wait for it, otherwise the next call can fail with "The RPC server is
+            ' unavailable".
+            If startedNewInventor Then WaitForInventorReady(invApp)
 
             invApp.SilentOperation = True
 
@@ -5381,6 +5388,11 @@ Public Class Form1
                 Try
                     invApp = CType(CreateObject("Inventor.Application"), Inventor.Application)
                     invApp.Visible = True
+                    ' A freshly-launched Inventor process isn't ready to answer COM calls
+                    ' yet — wait for it, otherwise the next call (e.g. reusing an
+                    ' already-copied project with no file-copy delay in between) can fail
+                    ' with "The RPC server is unavailable".
+                    WaitForInventorReady(invApp)
                 Catch ex As Exception
                     ' Inventor failed to start → continue without stopping
                     invApp = Nothing
@@ -7927,6 +7939,7 @@ SkipPipeSupport:
             Try
                 inv = CType(Activator.CreateInstance(Type.GetTypeFromProgID("Inventor.Application")), Inventor.Application)
                 inv.Visible = True
+                WaitForInventorReady(inv)
             Catch
                 inv = Nothing
             End Try
@@ -8094,6 +8107,7 @@ SkipPipeSupport:
             ' Inventor is NOT running → start a new instance
             inv = CType(CreateObject("Inventor.Application"), Inventor.Application)
             inv.Visible = True
+            WaitForInventorReady(inv)
         End Try
         Return inv
     End Function
@@ -8144,6 +8158,7 @@ SkipPipeSupport:
 
             ' Make the Inventor window visible to the user
             invApp.Visible = True
+            WaitForInventorReady(invApp)
         End Try
 
         ' Return the Inventor application object
