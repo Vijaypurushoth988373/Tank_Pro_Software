@@ -1520,7 +1520,7 @@ Partial Class Form7
         Me.txt_Proj_Code.Name = "txt_Proj_Code"
         Me.txt_Proj_Code.Size = New System.Drawing.Size(147, 23)
         Me.txt_Proj_Code.TabIndex = 36
-        Me.txt_Proj_Code.Text = "CD.24.002.C02.001"
+        Me.txt_Proj_Code.Text = "TEST"
         Me.txt_Proj_Code.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txt_EH_Inside_Dia
