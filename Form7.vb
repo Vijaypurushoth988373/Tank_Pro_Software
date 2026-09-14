@@ -1401,12 +1401,13 @@ Public Class Form7
         End Try
 
 
+        ' SHOW LOADING UI — up before Quit() so the user sees progress for the
+        ' whole close-then-reopen gap below, not just partway through it.
         '========================================
-        ' WAIT BEFORE QUITTING INVENTOR
-        '========================================
+        Dim loading As New LOAD()
+        loading.Show()
+        loading.Refresh()
         System.Windows.Forms.Application.DoEvents()
-        'System.Threading.Thread.Sleep(2000)
-
 
         '========================================
         ' CLOSE INVENTOR SAFELY
@@ -1419,6 +1420,12 @@ Public Class Form7
             Debug.WriteLine(ex.Message)
         End Try
 
+        ' Quit() returns once Inventor acknowledges the request, not once the process has
+        ' actually finished tearing down — wait for it to fully leave the Running Object
+        ' Table before releasing our references and asking for a new/active instance,
+        ' otherwise the next COM call can hit the still-dying process and throw
+        ' "The RPC server is unavailable".
+        WaitForInventorClosed()
 
         '========================================
         ' RELEASE COM OBJECTS
@@ -1440,24 +1447,17 @@ Public Class Form7
         GC.Collect()
         GC.WaitForPendingFinalizers()
 
-        '========================================
-        ' SHOW LOADING UI (3–5 sec)
-        '========================================
-        Dim loading As New LOAD()
-        loading.Show()
-        loading.Refresh()
-
-        System.Windows.Forms.Application.DoEvents()
-
         Try
             '==================================================
             ' 1) GET OR START INVENTOR
             '==================================================
+            Dim startedNewInventor As Boolean = False
             Try
                 invApp = CType(Marshal.GetActiveObject("Inventor.Application"), Inventor.Application)
             Catch
                 invApp = CType(Activator.CreateInstance(Type.GetTypeFromProgID("Inventor.Application")), Inventor.Application)
                 invApp.Visible = True
+                startedNewInventor = True
             End Try
 
             If invApp Is Nothing Then
@@ -1465,6 +1465,11 @@ Public Class Form7
                 loading.Close()
                 Exit Sub
             End If
+
+            ' A freshly-launched Inventor process isn't ready to answer COM calls yet —
+            ' wait for it, otherwise the next call (project select/activate) can fail with
+            ' "The RPC server is unavailable".
+            If startedNewInventor Then WaitForInventorReady(invApp)
 
             invApp.SilentOperation = True
             loading.Close()
