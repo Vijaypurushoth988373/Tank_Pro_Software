@@ -5478,7 +5478,7 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
         '--------------------------------------------
         ' 2️ HARD-CODED ROOT (AS REQUIRED)
         '--------------------------------------------
-        Dim rootPath As String = "D:\HORIZONTAL_TANK"
+        Dim rootPath As String = "D:\Projects\HORIZONTAL_TANK"
 
         If Not IO.Directory.Exists(rootPath) Then
             Return String.Empty
@@ -5724,7 +5724,7 @@ offsetDistMm As Double, Optional includePad As Boolean = True, Optional flangeCl
             ElseIf dia <= 2200 Then
                 projectFolder = ""
             Else
-                projectFolder = "D:\HORIZONTAL_TANK\ADNOC_HOR_VESSEL_2700\ADNOC"
+                projectFolder = "D:\Projects\HORIZONTAL_TANK\ADNOC_HOR_VESSEL_2700\ADNOC"
             End If
 
         ElseIf SelectedClient = "QATAR" Then
